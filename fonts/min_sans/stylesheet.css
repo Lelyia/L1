@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Min Sans';
+    src: url('MinSans-Black.woff2') format('woff2'),
+        url('MinSans-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Min Sans';
+    src: url('MinSans-Medium.woff2') format('woff2'),
+        url('MinSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Min Sans';
+    src: url('MinSans-Black.woff2') format('woff2'),
+        url('MinSans-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Min Sans';
+    src: url('MinSans-Regular.woff2') format('woff2'),
+        url('MinSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Min Sans';
+    src: url('MinSans-Medium.woff2') format('woff2'),
+        url('MinSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Min Sans';
+    src: url('MinSans-Regular.woff2') format('woff2'),
+        url('MinSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
