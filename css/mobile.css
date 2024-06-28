@@ -464,6 +464,10 @@
      margin-top: 0;
  }
 
+ .slider__button {
+    display: none;
+ }
+
  .slider picture {
      position: absolute;
      top: 0;
