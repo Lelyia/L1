@@ -7,6 +7,8 @@
 }
 
 @media (min-width: 960px) and (max-width:1439px) {
+
+    /* navigation */
     .page__header-wrapper--opened .header__contacts-email {
         display: block;
         font-family: "Geologica", Arial, sans-serif;
@@ -84,6 +86,13 @@
         height: max-content;
     }
 
+    .button.button-main {
+        margin-top: 64px;
+        margin-bottom: 32px;
+    }
+
+    /* Main */
+
     .slider picture {
         height: 1000px;
     }
@@ -104,12 +113,15 @@
         margin-top: 64px;
     }
 
+    /* Filters */
+
     .filter__title {
         display: none;
     }
 
     .filter__title--tablet {
         display: block;
+        margin-top: 64px;
     }
 
     ul.filters {
@@ -137,6 +149,10 @@
 
     /* Object*/
 
+    .object__title {
+        margin-bottom: 48px;
+    }
+
     .object-item:nth-child(2),
     .object-item:nth-child(3n+2) {
         margin-right: 0;
@@ -151,13 +167,14 @@
     }
 
     /* Action*/
-    .action__button {
+
+    .action-button,
+    .other__action-button,
+    .carousel__action-button {
         margin-bottom: 24px;
     }
 
-    .other {
-        margin-top: 64px;
-    }
+    /* Other */
 
     .other__title {
         margin-bottom: 48px;
@@ -168,9 +185,10 @@
         flex-direction: column;
     }
 
-    .button__phone {
+    .button.button-phone {
         text-align: center;
         width: auto;
+        margin-top: 56px;
         margin: 56px auto 115px auto;
         padding: 22px 116px 21px 152px;
         font-weight: 500;
@@ -179,13 +197,20 @@
         display: inline-block;
     }
 
-    .button__phone::before {
+    .button-phone::before {
         left: 116px;
         top: 20px;
     }
 
     .object-button {
         min-width: 928px;
+        margin-top: 4px;
+    }
+
+    /* Flats carousel */
+
+    .carousel-title {
+        margin-bottom: 48px;
     }
 
     /* Footer */
@@ -200,7 +225,7 @@
         display: none;
     }
 
-    .footer__social--tablet {
+    .footer__social-tablet {
         display: block;
         margin-top: 0;
         margin-bottom: 32px;
@@ -267,13 +292,13 @@
         grid-area: deadline;
     }
 
-    .horizontal-line-6,
-    .horizontal-line-7 {
+    .line-6,
+    .line-7 {
         display: none;
     }
 
 
-    /*
+    /* Версия на гридах с плиткой
     .footer__menu-container {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 155px 1px 201px 12px 78px 233px 1px;
@@ -305,12 +330,12 @@
         grid-auto-flow: column;
     }
    
-    .horizontal-line-6 {
+    .line-6 {
         grid-column: 1 / 5;
         grid-row: 2 / 3;
     }
    
-    .horizontal-line-7 {
+    .line-7 {
         grid-column: 1 / 5;
         grid-row: 9 / 10;
     }
@@ -387,7 +412,7 @@
         width: 50%;
     }
 
-    button.button__submit {
+    button.button-submit {
         cursor: pointer;
         width: 50%;
         border: 1px solid var(--accent);
@@ -471,7 +496,8 @@
 
 
     .object__image {
-        margin-bottom: 12px;
+        position: relative;
+        margin-bottom: 16px;
     }
 
     .object-item:not(:first-child) div.object__advantages,
@@ -497,11 +523,7 @@
     }
 
     .object__image-object {
-        height: 344px;
-    }
-
-    .object__image {
-        position: relative;
+        height: 345px;
     }
 
     .object__slider {
@@ -614,7 +636,7 @@
         top: 2px;
     }
 
-    .time__walk {
+    .object__metro-time-walk {
         display: block;
         position: relative;
         padding: 0;
@@ -622,7 +644,7 @@
         margin-right: 12px;
     }
 
-    .time__walk::before {
+    .object__metro-time-walk::before {
         position: absolute;
         content: "";
         width: 16px;
@@ -638,7 +660,7 @@
         margin-top: 6px;
     }
 
-    .button__object {
+    .object__button {
         display: none;
     }
 

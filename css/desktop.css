@@ -77,7 +77,7 @@
         margin-top: 0;
     }
 
-    .page__header-nav-toggle  {
+    .page__header-nav-toggle {
         display: none;
     }
 
@@ -175,11 +175,11 @@
         margin-right: 0;
     }
 
-    .horizontal-line {
+    .line {
         display: none;
     }
 
-    .horizontal-line-3--active {
+    .line-3--active {
         display: block;
     }
 
@@ -563,7 +563,7 @@
         position: absolute;
         left: 100px;
         top: -171px;
-        display: block;
+        display: flex;
     }
 
     .slider__button__link {
@@ -599,6 +599,8 @@
     .slider__button__link:active svg {
         stroke: var(--accent);
     }
+
+    /* Action */
 
     .action {
         margin: 0 100px 128px 100px;
@@ -662,7 +664,7 @@
     }
 
 
-    /*
+    /* вариант на гридах 
     .action__list {
         display: grid;
         grid-template-areas:
@@ -724,10 +726,13 @@
         line-height: 29px;
     }
 
-    .action__button {
+    .action-button,
+    .other__action-button,
+    .carousel__action-button {
         display: none;
     }
 
+    /* Filters */
     .filter__title {
         display: none;
     }
@@ -768,6 +773,11 @@
 
     .object {
         margin: 0 100px;
+    }
+
+    .object__title {
+        margin-top: 123px;
+        margin-bottom: 48px;
     }
 
     .object-item:nth-child(3n) {
@@ -862,11 +872,11 @@
     /* Carousel*/
 
     .carousel {
-        margin: 80px 100px 128px 100px;
+        margin: 76px 100px 96px 100px;
         position: relative;
     }
 
-    .slider__carousel {
+    .carousel__slider {
         width: 140px;
         height: 64px;
         display: flex;
@@ -875,20 +885,20 @@
         top: 127px;
     }
 
-    .carosel__link {
+    .carousel__link {
         cursor: pointer;
     }
 
-    .carosel__link:hover svg rect {
+    .carousel__link:hover svg rect {
         stroke: var(--accent-2)
     }
 
-    .carosel__link:active svg {
+    .carousel__link:active svg {
         fill: var(--color-action);
     }
 
 
-    .carosel__link:first-child {
+    .carousel__link:first-child {
         margin-right: 12px;
     }
 
@@ -913,7 +923,7 @@
     .sorting-item {
         border: 1px solid var(--background-block);
         border-radius: 900px;
-        padding: 8px 24px;
+        padding: 7px 23px;
         margin-bottom: 12px;
     }
 
@@ -935,7 +945,9 @@
         color: var(--base-white);
     }
 
-    .flat__container {
+    /* Flat */
+
+    .flat {
         margin-bottom: 24px;
     }
 
@@ -1004,7 +1016,7 @@
         margin-left: 8px;
     }
 
-    .button__flats {
+    .button-flats {
         font-weight: 400;
         font-size: 16px;
         line-height: 22px;
@@ -1018,8 +1030,20 @@
         margin: 0 auto;
     }
 
+    /* Other */
+
     .other {
         margin: 0 100px 71px 100px;
+    }
+
+    .other__title {
+        margin-bottom: 48px;
+    }
+
+    .other__subtitle {
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 38px;
     }
 
     .other__carplaces {
@@ -1080,7 +1104,7 @@
         position: relative;
     }
 
-    .slider__other {
+    .other__slider {
         display: block;
         position: absolute;
         bottom: 16px;
@@ -1092,26 +1116,26 @@
         padding: 0;
     }
 
-    .slider__other:hover svg rect {
+    .other__slider:hover svg rect {
         stroke: var(--accent);
         fill: var(--base-white);
         fill-opacity: 1;
     }
 
-    .slider__other:hover svg path {
+    .other__slider:hover svg path {
         stroke: var(--accent);
     }
 
-    .slider__other:active svg rect {
+    .other__slider:active svg rect {
         stroke: var(--accent);
         fill: var(--color-action);
     }
 
-    .slider__other:active svg path {
+    .other__slider:active svg path {
         stroke: var(--accent);
     }
 
-    .slider__other:active svg {
+    .other__slider:active svg {
         stroke: var(--accent);
     }
 
@@ -1120,7 +1144,7 @@
         pointer-events: none;
     }
 
-    .button__phone {
+    .button-phone {
         font-weight: 400;
         font-size: 16px;
         line-height: 22px;
@@ -1131,14 +1155,16 @@
         margin: 0 auto;
     }
 
-    .button__phone::before {
+    .button-phone::before {
         left: 116px;
         top: 20px;
     }
 
-    .horizontal-line-4 {
+    .line-4 {
         display: block;
     }
+
+    /* Footer */
 
     .footer__container {
         display: grid;
@@ -1146,7 +1172,7 @@
             "contacts vertical-line menu"
             "social vertical-line menu"
             "subscription vertical-line menu"
-            "horizontal-line horizontal-line horizontal-line"
+            "line line line"
             "logo logo logo";
         margin: 0 100px;
     }
@@ -1164,9 +1190,9 @@
         grid-area: subscription;
     }
 
-    .horizontal-line-9 {
+    .line-9 {
         display: block;
-        grid-area: horizontal-line;
+        grid-area: line;
     }
 
     .footer__logo-container {
@@ -1229,7 +1255,7 @@
         padding: 0;
     }
 
-    .vertical-line--mobile {
+    .vertical-line__mobile {
         width: 1px;
         height: 100%;
         background: var(--background-block);
@@ -1260,7 +1286,7 @@
         display: none;
     }
 
-    .footer__social--tablet {
+    .footer__social-tablet {
         display: block;
         font-family: "Min Sans", Arial, sans-serif;
         font-weight: 400;
@@ -1286,7 +1312,7 @@
         text-decoration-line: underline;
     }
 
-    .user-email br {
+    .label-email br {
         display: block;
     }
 
@@ -1308,7 +1334,7 @@
         margin: 12px 16px 16px 0;
     }
 
-    button.button__submit {
+    button.button-submit {
         cursor: pointer;
         width: 235px;
         border: 1px solid var(--accent);
