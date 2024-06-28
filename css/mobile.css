@@ -1676,6 +1676,10 @@
      left: 50%;
  }
 
+ .modal--active {
+    display: block;
+ }
+
  .modal__image {
      margin: 0;
      padding: 0;

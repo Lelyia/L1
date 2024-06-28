@@ -1922,6 +1922,10 @@
     var navToggle = document.querySelector(".page__header-nav-toggle");
     var linkFavourite = document.querySelector(".favourite-link");
     var modalFavourite = document.querySelector(".modal-favourite");
+    var body = document.querySelector(".page__body");
+    var favourite = document.querySelector("favourite-link");
+    var modal = document.querySelector("modal");
+    var background = document.querySelector("page__background-shadow");
 
     navMain.classList.remove("page__header-wrapper--nojs");
 
@@ -1929,12 +1933,17 @@
       if (navMain.classList.contains("page__header-wrapper--opened")) {
         navMain.classList.remove("page__header-wrapper--opened");
         navMain.classList.add("page__header-wrapper--closed");
+        body.classList.add("body-in-modal");
+        body.classList.remove("body-in-modal");
       } else {
         navMain.classList.add("page__header-wrapper--opened");
         navMain.classList.remove("page__header-wrapper--closed");
+        body.classList.remove("body-in-modal");
+        body.classList.add("body-in-modal");
       }
     });
-  </script>
+
+   </script>
 
 </body>
 
