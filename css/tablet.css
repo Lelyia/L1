@@ -101,12 +101,14 @@
         margin-top: 666px;
         font-size: 40px;
         line-height: 56px;
+        max-height: 56px;
     }
 
     .slider__complex-item {
         font-weight: 400;
         font-size: 16px;
         line-height: 22px;
+        max-height: 45px;
     }
 
     .button {
@@ -511,6 +513,7 @@
         grid-template-areas:
             "a a"
             "c b";
+        max-width: 612px;
     }
 
     .object-link {
@@ -520,6 +523,7 @@
             "a a"
             "c c"
             "b b";
+        max-width: 298px;    
     }
 
     .object__image-object {

@@ -535,6 +535,7 @@
         font-size: 48px;
         line-height: 67px;
         margin-left: 100px;
+        max-height: 67px;
     }
 
     .slider__complex-item {
@@ -545,7 +546,7 @@
         line-height: 34px;
         margin-left: 100px;
         width: 565px;
-        height: 68px;
+        max-height: 68px;
     }
 
     .button-main {
@@ -780,13 +781,8 @@
         margin-bottom: 48px;
     }
 
-    .object-item:nth-child(3n) {
+    .object-item:nth-child(4n+3) {
         margin-right: 0;
-    }
-
-    .object-item:nth-last-child(2),
-    .object-item:nth-last-child(3) {
-        display: none;
     }
 
     .object__action-item {
