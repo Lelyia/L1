@@ -161,13 +161,6 @@
         width: 300px;
     }
 
-
-    .object-item:nth-last-child(2),
-    .object-item:nth-last-child(3),
-    .object-item:nth-last-child(4) {
-        display: none;
-    }
-
     /* Action*/
 
     .action-button,
@@ -613,6 +606,10 @@
         margin-bottom: 46px;
     }
 
+    .object-item.object__classic .metro {
+        margin-bottom: 27px;
+     }
+
     .metro {
         margin-bottom: 17px;
     }
@@ -673,4 +670,91 @@
         line-height: 24px;
     }
 
+
+    /* CATALOG PAGE */
+
+    .object-item-catalog,
+    .object-item:first-child.object-item-catalog,
+    .object-item.object-item-catalog  {
+        flex-basis: 456px;
+        max-width: 456px;
+        margin-right: 16px;
+    }
+
+    .link-catalog,
+    .object-item:first-child .link-catalog.object-link {
+        max-width: 456px;
+        grid-template-areas:
+            "a b"
+            "c .";
+    }
+
+    .object-item-catalog .object__flats {
+        display: none;
+    }
+
+    .object-item-catalog:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    .object-item-catalog .object__advantages {
+        bottom: 28px;
+    }
+
+    .object-item-catalog .object__image-object {
+        height: 266px;
+    }
+
+    .catalog__slider {
+        display: none;
+    }
+
+    .title__catalog {
+        margin: 48px 0 32px;
+    }
+
+    .object-item .link-catalog .object-subtitle {
+        margin-bottom: 12px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .object-item-catalog .object__advantages-title {
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .object-item .link-catalog .metro {
+        margin-bottom: 34px;
+    }
+
+    .object-item .catalog__button {
+        display: grid;
+        margin-top: 0;
+    } 
+
+    .catalog__button .object__button-title {
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    .object-item .link-catalog .object__metro,
+    .object-item .link-catalog .object__metro-time {
+        font-size: 10px;
+        line-height: 14px;  
+    }
+
+    .object-item .link-catalog .object__price {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .object__classic .link-catalog br {
+        display: none;
+    }
+
+    .button-catalog.button.button-phone {
+        margin-top: 80px;
+        margin-bottom: 72px;
+    }
 }

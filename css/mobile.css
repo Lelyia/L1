@@ -1,4 +1,6 @@
- /* Header */
+/* MAIN PAGE*/
+
+/* Header */
 
  .page__header-wrapper {
      width: 100%;
@@ -63,6 +65,7 @@
      overflow: hidden;
      height: 100%;
      overflow-y: scroll;
+     z-index: 101;
  }
 
  /* header__stats */
@@ -213,7 +216,6 @@
      line-height: 24px;
      color: var(--base-text);
      margin-right: 34px;
-     max-width: 155px;
  }
 
  .header__contacts-email {
@@ -898,6 +900,11 @@
      border: 1px solid var(--accent);
  }
 
+ .object__classic .object-subtitle {
+    font-size: 24px;
+    line-height: 29px;
+ }    
+
  .object-link {
      pointer-events: none;
      display: grid;
@@ -964,7 +971,7 @@
 
  .object__advantages {
      position: absolute;
-     bottom: 32px;
+     bottom: 28px;
      right: 16px;
      display: flex;
      justify-content: flex-end;
@@ -1026,6 +1033,10 @@
      position: relative;
      height: 100%;
  }
+
+ .object-item.object__classic .metro {
+    margin-bottom: 27px;
+ }   
 
  /* Flats carousel */
 
@@ -1136,6 +1147,7 @@
 
  .object__button-flat {
      background-color: var(--accent);
+     padding: 12px;
  }
 
  .object__button-title {
@@ -1903,3 +1915,21 @@
          grid-area: deadline;
      }
  }
+
+ /* CATALOG PAGE */
+
+ .page__catalog.page__header-wrapper::before {
+    background-color: var(--base-white);
+ }
+
+ .title__catalog {
+    margin: 48px 0 32px;
+ }
+
+ .catalog__button {
+    margin: 41px 16px 16px;
+}
+
+.button-catalog {
+    margin-top: 28px;
+}

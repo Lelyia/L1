@@ -173,6 +173,7 @@
         line-height: 22px;
         color: var(--base-white);
         margin-right: 0;
+        max-width: 155px;
     }
 
     .line {
@@ -1401,4 +1402,8 @@
         right: 32px;
         top: 32px;
     }
+
+    /* CATALOG PAGE */
+
+    
 }
