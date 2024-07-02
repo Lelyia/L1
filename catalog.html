@@ -18,8 +18,8 @@
 
 <body class="page__body">
     <div class="page__background-shadow"></div>
-    <div class="page__container">
-        <div class="page__header-wrapper page__header-wrapper--nojs page__catalog">
+    <div class="page__container  page__catalog">
+        <div class="page__header-wrapper page__header-wrapper--nojs">
             <!-- opened / closed - открытое, закрытое меню; nojs - кнопка исчезает  при мобильных и планшетных версиях-->
             <div class="page__header-logo-wrapper">
                 <a class="page__header-logo" href="index.html">
@@ -148,7 +148,7 @@
                 </div>
             </header>
 
-            <div class="line line-3 line-3--static">
+            <div class="line line-3">
                 <p class="line__mobile"></p>
             </div>
 
@@ -469,7 +469,25 @@
 
         <main class="page-main">
             <section class="object">
-                <h2 class="object__title title title__catalog">Наши объекты</h2>
+                <ul class="object__breadcrumbs-list">
+                    <li class="object__breadcrumbs-item">
+                        <a class="object__breadcrumbs-link" href="index.html">
+                            <span>Главная</span>
+                        </a>
+                    </li>
+                    <li class="object__breadcrumbs-item">
+                        <a class="object__breadcrumbs-link" href="#">
+                            <span>Объекты</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="object__filter-catalog"> 
+                    <h2 class="object__title title title__catalog">Наши объекты</h2>
+                    <div class="object__catalog-view">
+                        <button class="catalog-button button-card catalog-button--active">Карточками</button>
+                        <button class="catalog-button button-map">На карте</button>   
+                    </div>    
+                </div>
                 <ul class="object-list">
                     <li class="object-item object__zaglyadenie object-item-catalog">
                         <div class="object__card">
@@ -541,9 +559,10 @@
                                 </div>
                             </figure>
                             <div class="object__advantages">
-                                <span class="object__advantages-title object__start">Cтарт продаж</span>
-                                <span class="object__advantages-title object__sale">15% скидки</span>
+                                <span class="object__advantages-title object__start">15% скидки</span>
+                                <span class="object__advantages-title object__sale">С лоджией</span>
                                 <span class="object__advantages-title object__roof">Высокие потолки</span>
+                                <span class="object__advantages-title object__roof">Выбор отделки</span>
                             </div>
                         </div>
 
@@ -785,7 +804,6 @@
                                 </div>
                             </figure>
                             <div class="object__advantages">
-                                <span class="object__advantages-title object__start">Cтарт продаж</span>
                                 <span class="object__advantages-title object__sale">15% скидки</span>
                                 <span class="object__advantages-title object__roof">Высокие потолки</span>
                             </div>

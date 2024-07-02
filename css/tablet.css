@@ -673,87 +673,87 @@
 
     /* CATALOG PAGE */
 
-    .object-item-catalog,
-    .object-item:first-child.object-item-catalog,
-    .object-item.object-item-catalog  {
+    .page__catalog .object-item-catalog,
+    .page__catalog .object-item:first-child.object-item-catalog,
+    .page__catalog .object-item.object-item-catalog  {
         flex-basis: 456px;
         max-width: 456px;
         margin-right: 16px;
     }
 
-    .link-catalog,
-    .object-item:first-child .link-catalog.object-link {
+    .page__catalog .link-catalog,
+    .page__catalog .object-item:first-child .link-catalog.object-link {
         max-width: 456px;
         grid-template-areas:
             "a b"
             "c .";
     }
 
-    .object-item-catalog .object__flats {
+    .page__catalog .object-item-catalog .object__flats {
         display: none;
     }
 
-    .object-item-catalog:nth-child(2n) {
+    .page__catalog .object-item-catalog:nth-child(2n) {
         margin-right: 0;
     }
 
-    .object-item-catalog .object__advantages {
+    .page__catalog .object-item-catalog .object__advantages {
         bottom: 28px;
     }
 
-    .object-item-catalog .object__image-object {
+    .page__catalog .object-item-catalog .object__image-object {
         height: 266px;
     }
 
-    .catalog__slider {
+    .page__catalog .catalog__slider {
         display: none;
     }
 
-    .title__catalog {
+    .page__catalog .title__catalog {
         margin: 48px 0 32px;
     }
 
-    .object-item .link-catalog .object-subtitle {
+    .page__catalog .object-item .link-catalog .object-subtitle {
         margin-bottom: 12px;
         font-size: 20px;
         line-height: 24px;
     }
 
-    .object-item-catalog .object__advantages-title {
+    .page__catalog .object-item-catalog .object__advantages-title {
         font-size: 10px;
         line-height: 14px;
     }
 
-    .object-item .link-catalog .metro {
+    .page__catalog .object-item .link-catalog .metro {
         margin-bottom: 34px;
     }
 
-    .object-item .catalog__button {
+    .page__catalog .object-item .catalog__button {
         display: grid;
         margin-top: 0;
     } 
 
-    .catalog__button .object__button-title {
+    .page__catalog .catalog__button .object__button-title {
         font-size: 12px;
         line-height: 17px;
     }
 
-    .object-item .link-catalog .object__metro,
-    .object-item .link-catalog .object__metro-time {
+    .page__catalog .object-item .link-catalog .object__metro,
+    .page__catalog .object-item .link-catalog .object__metro-time {
         font-size: 10px;
         line-height: 14px;  
     }
 
-    .object-item .link-catalog .object__price {
+    .page__catalog .object-item .link-catalog .object__price {
         font-size: 20px;
         line-height: 24px;
     }
 
-    .object__classic .link-catalog br {
+    .page__catalog .object__classic .link-catalog br {
         display: none;
     }
 
-    .button-catalog.button.button-phone {
+    .page__catalog .button-catalog.button.button-phone {
         margin-top: 80px;
         margin-bottom: 72px;
     }
