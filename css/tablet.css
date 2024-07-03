@@ -752,4 +752,51 @@
         margin-top: 80px;
         margin-bottom: 72px;
     }
+
+    /* PAGE OBJECT */
+
+    .page__object .complex {
+        margin-top: 630px;
+        margin-bottom: 16px;
+        margin: 630px 0 16px 0;
+        font-size: 40px;
+        line-height: 56px;
+    }
+
+    .page__object .slider__complex-list {
+        display: flex;
+        margin-bottom: 0;
+        align-items: center;
+    }
+
+    .page__object .slider__complex-item {
+        padding: 10px 0 10px 56px;
+        margin-right: 20px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 0;
+        align-items: center;
+    }
+
+    .page__object .slider__complex-item-1::before {
+        width: 40px;
+        height: 40px;
+        background-image: url("../icons/location40.svg");
+    }
+    
+    .page__object .slider__complex-item-2::before {
+        width: 40px;
+        height: 40px;
+        background-image: url("../icons/deadline40.svg");
+    }
+
+    .page__object .button-main {
+        margin-top: 32px;
+        margin-bottom: 48px;
+    }
+
+    .page__object .slider picture {
+        height: 1000px;
+     }
 }

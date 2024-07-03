@@ -1945,3 +1945,63 @@
 .page__catalog .object__catalog-view  {
     display: none;
 }
+
+/* PAGE OBJECT */
+
+.page__object .complex {
+    margin-top: 351px;
+    margin-bottom: 12px;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.page__object .slider__complex-list {
+    margin-bottom: 36px;
+}
+
+.page__object .slider__complex-item-2 {
+    display: block;
+}
+
+.page__object .slider__complex-item {
+    padding: 7.5px 48px;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.page__object .slider__complex-item-1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 32px;
+    height: 32px;
+    background-image: url("../icons/location32.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.page__object .slider__complex-item-2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 32px;
+    height: 32px;
+    background-image: url("../icons/deadline32.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.page__object .slider .action-button {
+    margin-bottom: 24px;
+}
+
+.page__object .button-main {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.page__object .slider picture {
+   height: 698px;
+}
