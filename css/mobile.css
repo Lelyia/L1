@@ -1469,17 +1469,21 @@
 
  .button-phone {
      position: relative;
-     padding: 14px 0 14px 128px;
-     text-align: left;
+     padding: 14px 0;
      width: 100%;
      margin: 48px 0 52px 0;
  }
 
- .button-phone::before {
+ .button-phone span {
+    position: relative;
+    padding: 0 0 0 36px;
+ }
+
+ .button-phone span::before {
      content: "";
      position: absolute;
-     left: 93px;
-     top: 12px;
+     left: 0;
+     top: 0;
      width: 24px;
      height: 24px;
      background-image: url("../icons/phone24.svg");

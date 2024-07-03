@@ -185,16 +185,11 @@
         width: auto;
         margin-top: 56px;
         margin: 56px auto 115px auto;
-        padding: 22px 116px 21px 152px;
+        padding: 22px 116px 21px 116px;
         font-weight: 500;
         font-size: 16px;
         line-height: 22px;
         display: inline-block;
-    }
-
-    .button-phone::before {
-        left: 116px;
-        top: 20px;
     }
 
     .object-button {

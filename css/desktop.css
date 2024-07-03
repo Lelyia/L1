@@ -1145,16 +1145,11 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 22px;
-        padding: 21px 116px 21px 152px;
+        padding: 21px 116px 21px 116px;
         width: 407px;
         height: 64px;
         border-radius: 16px;
         margin: 0 auto;
-    }
-
-    .button-phone::before {
-        left: 116px;
-        top: 20px;
     }
 
     .line-4 {
