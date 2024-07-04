@@ -498,6 +498,126 @@
           <a class="button button-main">Выбрать квартиру</a>
         </div>
       </section>
+
+      <div class="page__header-wrapper page__header-wrapper-object page__header-wrapper-object--nojs">
+        <!-- opened / closed - открытое, закрытое меню; nojs - кнопка исчезает  при мобильных и планшетных версиях-->
+        <div class="page__header-logo-wrapper">
+          <a class="page__header-logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="icons/logo_zaglyadenie-desktop.svg" type="image/svg+xml"
+                width="132" height="78">
+              <img src="icons/logo_zaglyadenie.svg" width="81" height="48" alt="Логотип Л1">
+            </picture>
+          </a>
+  
+          <h1 class="visually-hidden">Л1 Строительная компания №1</h1>
+          <button class="page__header-nav-toggle page__header-object-toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+
+        <ul class="page__header-buttons-list">
+          <li class="page__header-buttons-item page__header-buttons-call">
+            <a class="button page__header-buttons-link" href="#">
+              <span class="page__header-buttons-title">Заказать <span class="buttons-text-mobile">обратный</span> звонок</span>
+            </a>
+          </li>
+          <li class="page__header-buttons-item page__header-buttons-ipoteka">
+            <a class="button page__header-buttons-link" href="#">
+              <span class="page__header-buttons-title">Рассчитать ипотеку</span>
+            </a>
+          </li>
+          <li class="page__header-buttons-item page__header-buttons-booklet">
+            <a class="button page__header-buttons-link" href="#">
+              <span class="page__header-buttons-title">Скачать буклет <span class="buttons-text">объекта</span></span>
+            </a>
+          </li>
+          <li class="page__header-buttons-item page__header-buttons-taxi">
+            <a class="button page__header-buttons-link" href="#">
+              <span class="page__header-buttons-title">Заказать такси <span class="buttons-text-mobile">на объект</span><span class="buttons-text">в офис</span></span>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="page__header-buttons2-list">
+          <li class="page__header-buttons2-item">
+            <a class="button page__header-buttons2-link" href="#">
+              <span class="page__header-buttons2-title">Консультация</span>
+            </a>
+          </li>
+          <li class="page__header-buttons2-item">
+            <a class="button page__header-buttons2-link" href="#">
+              <span class="page__header-buttons2-title">Купить квартиру</span>
+            </a>
+          </li>
+        </ul>
+  
+        <div class="header">
+          <div class="header__stats">
+            <div class="header__contacts-container">
+              <h2 class="visually-hidden">Контакты</h2>
+              <p class="header__contacts-title">Офис продаж</p>
+              <div class="header__contacts-link">
+                <a class="header__contacts-phone" href="tel:+78123053355">+ 7 (812) 305-33-55</a>
+                <a class="header__contacts-email" href="mailto:3053355@l1n1.ru">3053355@l1n1.ru</a>
+              </div>
+            </div>
+  
+            <div class="line line-1">
+              <p class="line__mobile"></p>
+            </div>
+  
+            <nav class="header__nav">
+              <h2 class="visually-hidden">Навигация по объекту</h2>
+              <div class="header__nav-wrapper">
+                <ul class="header__nav-list">
+                  <li class="header__nav-item header__nav-about-object">
+                    <a class="header__nav-link" href="#">О проекте</a>
+                  </li>
+                  <li class="header__nav-item header__nav-infrastructure">
+                    <a class="header__nav-link" href="#">Инфраструктура</a>
+                  </li>
+                  <li class="header__nav-item header__nav-apartment">
+                    <a class="header__nav-link" href="#">Выбор квартиры</a>
+                  </li>
+                  <li class="header__nav-item header__nav-action">
+                    <a class="header__nav-link" href="#">Акции</a>
+                  </li>
+                  <li class="header__nav-item header__nav-credit">
+                    <a class="header__nav-link" href="#">Ипотека</a>
+                  </li>
+                  <li class="header__nav-item header__nav-design">
+                    <a class="header__nav-link" href="#">Отделка</a>
+                  </li>
+                  <li class="header__nav-item header__nav-advantages">
+                    <a class="header__nav-link" href="#">Преимущества</a>
+                  </li>
+                  <li class="header__nav-item header__nav-other">
+                    <a class="header__nav-link" href="#">Кроме квартир</a>
+                  </li>
+                  <li class="header__nav-item header__nav-news">
+                    <a class="header__nav-link" href="#">Новости</a>
+                  </li>
+                  <li class="header__nav-item header__nav-progress">
+                    <a class="header__nav-link" href="#">Ход строительства</a>
+                  </li>
+                  <li class="header__nav-item header__nav-documents">
+                    <a class="header__nav-link" href="#">Документы</a>
+                  </li>
+                  <li class="header__nav-item header__nav-camera">
+                    <a class="header__nav-link" href="#">Онлайн-камеры</a>
+                  </li>
+                  <li class="header__nav-item header__nav-gallery">
+                    <a class="header__nav-link" href="#">Галерея</a>
+                  </li>
+                  <li class="header__nav-item header__nav-customers">
+                    <a class="header__nav-link" href="#">Собственникам</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>  
     </main>    
 
 
@@ -798,6 +918,8 @@
     <script>
       var navMain = document.querySelector(".page__header-wrapper");
       var navToggle = document.querySelector(".page__header-nav-toggle");
+      var navObject = document.querySelector(".page__header-wrapper-object");
+      var objectToggle = document.querySelector(".page__header-object-toggle");
       var linkFavourite = document.querySelector(".favourite-link");
       var modalFavourite = document.querySelector(".modal-favourite");
       var body = document.querySelector(".page__body");
@@ -820,6 +942,22 @@
           body.classList.add("body-in-modal");
         }
       });
+
+      navObject.classList.remove("page__header-wrapper-object--nojs");
+  
+      objectToggle.addEventListener("click", function () {
+    if (navObject.classList.contains("page__header-wrapper-object--opened")) {
+      navObject.classList.remove("page__header-wrapper-object--opened");
+      navObject.classList.add("page__header-wrapper-object--closed");
+      body.classList.add("body-in-modal");
+      body.classList.remove("body-in-modal");
+    } else {
+      navObject.classList.add("page__header-wrapper-object--opened");
+      navObject.classList.remove("page__header-wrapper-object--closed");
+      body.classList.remove("body-in-modal");
+      body.classList.add("body-in-modal");
+    }
+  });
   
      </script>
   

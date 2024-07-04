@@ -765,7 +765,7 @@
 
     .page__object .slider__complex-list {
         display: flex;
-        margin-bottom: 0;
+        margin-bottom: 24px;
         align-items: center;
     }
 
@@ -799,4 +799,86 @@
     .page__object .slider picture {
         height: 1000px;
      }
+
+     .page__object .page__header-wrapper-object .page__header-logo-wrapper {
+        margin-bottom: 64px;
+    }
+
+    .page__object .page__header-buttons-link .buttons-text {
+        display: inline;
+    }
+
+    .page__object .page__header-buttons-list {
+        display: flex;
+        column-gap: 16px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        border: none;
+        margin-bottom: 32px;
+    }
+
+    .page__object .page__header-buttons-item {
+        position: relative;
+    }
+
+    .page__object .page__header-wrapper-object .page__header-buttons-link {
+        min-width: 220px;
+        font-size: 12px;
+        line-height: 17px;
+        padding: 18.5px;
+        text-align: right;
+    }
+
+    .page__object .buttons-text-mobile {
+        display: none;
+    }
+
+    .page__object .page__header-buttons-call::before {
+        content: "";
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        width: 24px;
+        height: 24px;
+        background-image: url("../icons/call24.svg");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+    }
+
+    .page__object .page__header-buttons-ipoteka::before {
+        content: "";
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        width: 24px;
+        height: 24px;
+        background-image: url("../icons/ipoteka-filter24.svg");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+    }
+
+    .page__object .page__header-buttons-booklet::before {
+        content: "";
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        width: 24px;
+        height: 24px;
+        background-image: url("../icons/Booklet24.svg");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+    }
+
+    .page__object .page__header-buttons-taxi::before {
+        content: "";
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        width: 24px;
+        height: 24px;
+        background-image: url("../icons/Taxi24.svg");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+    }
 }
