@@ -2011,6 +2011,11 @@
     background-color: var(--base-white);
 }
 
+.page__object .page__header-wrapper-object .header__nav-more {
+    display: none;
+}
+
+
 .page__object .page__header-wrapper-object.page__header-wrapper::before {
     display: none;
 }
@@ -2181,6 +2186,18 @@
     padding: 11px;
 }
 
+.page__object .page__header-wrapper-object .page__header-buttons2-title-desktop {
+    display: none;
+}
+
 .page__object .header__contacts-container {
+    display: none;
+}
+
+.page__object .header__contacts-buttons {
+    display: none;
+}
+
+.page__object .line-object  {
     display: none;
 }

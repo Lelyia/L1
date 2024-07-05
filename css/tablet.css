@@ -881,4 +881,81 @@
         background-repeat: no-repeat;
         background-position: 0 0;
     }
+
+    .page__object .page__header-wrapper-object--opened .header__contacts-container {
+        display: block;
+    }
+
+    .page__object .page__header-wrapper-object--opened .header__contacts-email {
+        display: block;
+        font-family: "Geologica", Arial, sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 24px;
+        color: var(--gray-text);
+    }
+
+    .page__object .page__header-wrapper-object--opened .page__header-buttons2-list {
+        display: none;
+    }
+
+    .page__object .page__header-wrapper-object--opened .page__header-logo-wrapper {
+        margin-bottom: 1px;
+    }
+
+    .page__object .page__header-wrapper-object--opened .header__contacts-container {
+        margin-bottom: 21px;
+    }
+
+    .page__object .page__header-wrapper-object--opened .header__contacts-connection {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .page__object .page__header-wrapper-object--opened .header__contacts-buttons {
+        display: flex;
+        column-gap: 10px;
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+    }
+
+    .page__object .page__header-wrapper-object--opened .header__contacts-button {
+        padding: 15px;
+        background: var(--base-white);
+        border: 1px solid var(--accent);
+        border-radius: 16px;
+        min-width: 216px;
+        margin: 0;
+    }
+
+    .page__object .page__header-wrapper-object--opened .header__contacts-subtitle {
+        font-weight: 400;
+        color: var(--base-text);
+    }
+
+    .page__object .page__header-wrapper-object--opened .header__contacts-connection {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-auto-flow: column;
+    }
+
+    .page__object .page__header-wrapper-object--opened .header__nav-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 20px;
+    }
+
+    .page__object .page__header-wrapper-object--opened .header__nav-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        height: max-content;
+        grid-auto-flow: column;
+    }
+
+    .page__object .page__header-wrapper-object--opened .header__nav-list-main {
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
 }

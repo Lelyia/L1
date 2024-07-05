@@ -548,6 +548,7 @@
           <li class="page__header-buttons2-item">
             <a class="button page__header-buttons2-link" href="#">
               <span class="page__header-buttons2-title">Купить квартиру</span>
+              <span class="page__header-buttons2-title-desktop">Выбрать квартиру</span>
             </a>
           </li>
         </ul>
@@ -556,10 +557,20 @@
           <div class="header__stats">
             <div class="header__contacts-container">
               <h2 class="visually-hidden">Контакты</h2>
+              <div class="header__contacts-connection">
               <p class="header__contacts-title">Офис продаж</p>
-              <div class="header__contacts-link">
-                <a class="header__contacts-phone" href="tel:+78123053355">+ 7 (812) 305-33-55</a>
-                <a class="header__contacts-email" href="mailto:3053355@l1n1.ru">3053355@l1n1.ru</a>
+                  <div class="header__contacts-link">
+                  <a class="header__contacts-phone" href="tel:+78123053355">+ 7 (812) 305-33-55</a>
+                  <a class="header__contacts-email" href="mailto:3053355@l1n1.ru">3053355@l1n1.ru</a>
+                </div>
+                <div class="header__contacts-buttons">
+                  <a class="button header__contacts-button header__contacts-show" href="#">
+                    <span class="header__contacts-subtitle">Записаться на показ</span>
+                  </a>
+                  <a class="button header__contacts-button header__contacts-show" href="#">
+                    <span class="header__contacts-subtitle">Выбрать квартиру</span>
+                  </a>
+                </div>
               </div>
             </div>
   
@@ -570,7 +581,7 @@
             <nav class="header__nav">
               <h2 class="visually-hidden">Навигация по объекту</h2>
               <div class="header__nav-wrapper">
-                <ul class="header__nav-list">
+                <ul class="header__nav-list header__nav-list-main">
                   <li class="header__nav-item header__nav-about-object">
                     <a class="header__nav-link" href="#">О проекте</a>
                   </li>
@@ -589,6 +600,11 @@
                   <li class="header__nav-item header__nav-design">
                     <a class="header__nav-link" href="#">Отделка</a>
                   </li>
+                  <li class="header__nav-item header__nav-more">
+                    <a class="header__nav-link" href="#">Еще</a>
+                  </li>
+                </ul>
+                <ul class="header__nav-list header__nav-list-additional">
                   <li class="header__nav-item header__nav-advantages">
                     <a class="header__nav-link" href="#">Преимущества</a>
                   </li>
@@ -617,6 +633,9 @@
               </div>
             </nav>
           </div>
+        </div>
+        <div class="line line-object">
+          <p class="line__mobile"></p>
         </div>  
     </main>    
 
