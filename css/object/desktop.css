@@ -20,6 +20,7 @@
 
     .page__object .slider__complex-list {
         justify-content: flex-start;
+        margin-bottom: 0;
     }
 
     .page__object .slider__complex-item {
@@ -214,6 +215,38 @@
     .page__object .slider__complex-item-2::before {
         background-image: url(../../icons/deadline-desktop40.svg);
     }
-    
 
+    .page__object .object__about-info {
+        margin: 0 100px 128px;
+        grid-template-columns: 40.9% auto;
+    }
+
+    .page__object .object__about-title {
+        margin-bottom: 16x;
+        font-size: 40px;
+        line-height: 56px;
+    }
+
+    .page__object .object__about-list {
+        max-width: 419px;
+    }
+
+    .page__object .object__about-item {
+        min-width: 178px;
+    }
+
+    .page__object .object__about-text {
+       font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 24px;
+    }
+    .page__object .object__about-data {
+      font-size: 32px;
+        line-height: 38px;
+    }
+
+    .page__object .object__about-description {
+        font-size: 14px;
+        line-height: 20px;
+    }
 }

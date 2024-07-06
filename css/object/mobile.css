@@ -277,21 +277,67 @@
     margin-bottom: 32px;
 }
 
-.page__object video {
-    width: 100%;
-    height: auto;
-    max-height: 100%;
+.page__object .object__about-info {
+    margin-bottom: 48px;
+}
+
+.page__object .object__about-info figure {
+    position: relative;
+    padding-bottom: 75%; /* задаёт высоту контейнера для 4:3 (если 16:9 — поставить 56.25%) */
+    height: 0;
+    overflow: hidden;
     background: var(--base-white);
     border: 1px solid var(--background-block);
     border-radius: 16px;
+    margin: 0 0 16px;
+}
+
+.page__object .object__about-video {
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-width: 0;
+    outline-width: 0;
+}
+
+.page__object .object__about-text {
+    padding: 0;
+    margin: 0 0 12px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.page__object .object__about-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 279px;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.page__object .object__about-item {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    min-width: 104px;
     margin-bottom: 16px;
 }
 
-.object__about-info figure {
-    margin: 0;  
+.page__object .object__about-item:nth-last-child(-n+2) {
+    margin-bottom: 0;
 }
 
-.object__about-info figcaption {
-    font-size: 14px;
-    line-height: 20px;
+.page__object .object__about-data {
+    font-family: "Geologica", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--accent-1);
+    margin-bottom: 4px;
 }

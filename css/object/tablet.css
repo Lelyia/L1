@@ -208,4 +208,40 @@
         grid-template-rows: repeat(3, 1fr);
         grid-auto-flow: column;
     }
+
+    .page__object .object__about-info {
+        display: grid;
+        grid-template-areas: 
+                            "title video"
+                            "text video"
+                            "list video";
+        column-gap: 16px;
+        grid-template-columns: 36.5% auto;
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .page__object .object__about-title {
+        grid-area: title;
+        margin-top: 0;
+        margin-bottom: 24px;
+    }
+
+    .page__object .object__about-information {
+        width: 338px;
+    }
+
+    .page__object .object__about-info figure {
+        margin-bottom: 0;
+        grid-area: video;
+    }
+
+    .page__object .object__about-text {
+        grid-area: text;
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    .page__object .object__about-list {
+        grid-area: list;
+    }
 }
