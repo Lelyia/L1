@@ -1,0 +1,88 @@
+@media (min-width: 960px) {
+    /* CATALOG PAGE */
+
+    .page__catalog .object-item-catalog,
+    .page__catalog .object-item:first-child.object-item-catalog,
+    .page__catalog .object-item.object-item-catalog  {
+        flex-basis: 456px;
+        max-width: 456px;
+        margin-right: 16px;
+    }
+
+    .page__catalog .link-catalog,
+    .page__catalog .object-item:first-child .link-catalog.object-link {
+        max-width: 456px;
+        grid-template-areas:
+            "a b"
+            "c .";
+    }
+
+    .page__catalog .object-item-catalog .object__flats {
+        display: none;
+    }
+
+    .page__catalog .object-item-catalog:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    .page__catalog .object-item-catalog .object__advantages {
+        bottom: 28px;
+    }
+
+    .page__catalog .object-item-catalog .object__image-object {
+        height: 266px;
+    }
+
+    .page__catalog .catalog__slider {
+        display: none;
+    }
+
+    .page__catalog .title__catalog {
+        margin: 48px 0 32px;
+    }
+
+    .page__catalog .object-item .link-catalog .object-subtitle {
+        margin-bottom: 12px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .page__catalog .object-item-catalog .object__advantages-title {
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .page__catalog .object-item .link-catalog .metro {
+        margin-bottom: 34px;
+    }
+
+    .page__catalog .object-item .catalog__button {
+        display: grid;
+        margin-top: 0;
+    } 
+
+    .page__catalog .catalog__button .object__button-title {
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    .page__catalog .object-item .link-catalog .object__metro,
+    .page__catalog .object-item .link-catalog .object__metro-time {
+        font-size: 10px;
+        line-height: 14px;  
+    }
+
+    .page__catalog .object-item .link-catalog .object__price {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .page__catalog .object__classic .link-catalog br {
+        display: none;
+    }
+
+    .page__catalog .button-catalog.button.button-phone {
+        margin-top: 80px;
+        margin-bottom: 72px;
+    }
+}

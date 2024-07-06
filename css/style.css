@@ -1,6 +1,12 @@
-@import "mobile.css";
-@import "tablet.css";
-@import "desktop.css";
+@import "main/mobile.css";
+@import "main/tablet.css";
+@import "main/desktop.css";
+@import "catalog/mobile.css";
+@import "catalog/tablet.css";
+@import "catalog/desktop.css";
+@import "object/mobile.css";
+@import "object/tablet.css";
+@import "object/desktop.css";
 
 /* Variables */
 

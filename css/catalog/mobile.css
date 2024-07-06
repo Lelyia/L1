@@ -1,0 +1,25 @@
+ /* CATALOG PAGE */
+
+ .page__catalog .page__header-wrapper::before {
+    background-color: var(--base-white);
+ }
+
+ .page__catalog .title__catalog {
+    margin: 48px 0 32px;
+ }
+
+ .page__catalog .catalog__button {
+    margin: 41px 16px 16px;
+}
+
+.page__catalog .button-catalog {
+    margin-top: 28px;
+}
+
+.page__catalog .object__breadcrumbs-list {
+    display: none;
+}
+
+.page__catalog .object__catalog-view  {
+    display: none;
+}
