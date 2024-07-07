@@ -8,7 +8,6 @@
     header,
     .page-main,
     footer {
-        max-width: 1440px;
         margin: 0 auto;
     }
 
@@ -518,6 +517,11 @@
 
     /*Main*/
 
+    .slider {
+        max-width: 1240px;
+        margin: 0 auto;
+    }
+
     .slider__complex {
         display: flex;
         justify-content: space-between;
@@ -535,7 +539,6 @@
         font-weight: 500;
         font-size: 48px;
         line-height: 67px;
-        margin-left: 100px;
         max-height: 67px;
     }
 
@@ -545,7 +548,6 @@
         font-weight: 400;
         font-size: 24px;
         line-height: 34px;
-        margin-left: 100px;
         width: 565px;
         max-height: 68px;
     }
@@ -554,7 +556,7 @@
         margin: 0;
         width: 298px;
         height: 64px;
-        margin-right: 100px;
+        margin: 0;
         align-self: flex-end;
     }
 
@@ -563,7 +565,7 @@
         height: 64px;
         display: flex;
         position: absolute;
-        left: 100px;
+        left: 0;
         top: -171px;
         display: flex;
     }
@@ -605,7 +607,9 @@
     /* Action */
 
     .action {
-        margin: 0 100px 128px 100px;
+        margin: 0 auto 128px auto;
+        max-width: 1240px;
+
     }
 
     .action__container {
@@ -744,7 +748,8 @@
     }
 
     .filter {
-        margin: 0 100px;
+        margin: 0 auto;
+        max-width: 1240px;
     }
 
     ul.filters {
@@ -774,7 +779,8 @@
     /* Object */
 
     .object {
-        margin: 0 100px;
+        margin: 0 auto;
+        max-width: 1240px;
     }
 
     .object__title {
@@ -869,8 +875,9 @@
     /* Carousel*/
 
     .carousel {
-        margin: 76px 100px 96px 100px;
+        margin: 76px auto 96px auto;
         position: relative;
+        max-width: 1240px;
     }
 
     .carousel__slider {
@@ -1030,7 +1037,8 @@
     /* Other */
 
     .other {
-        margin: 0 100px 71px 100px;
+        margin: 0 auto 71px auto;
+        max-width: 1240px;
     }
 
     .other__title {
@@ -1166,7 +1174,8 @@
             "subscription vertical-line menu"
             "line line line"
             "logo logo logo";
-        margin: 0 100px;
+        margin: 0 auto;
+        max-width: 1240px;
     }
 
     .footer__social-container {
@@ -1176,6 +1185,7 @@
     .footer__contacts-wrapper {
         grid-area: contacts;
         margin-top: 48px;
+        max-width: 1240px;
     }
 
     .footer__subscription-container {
@@ -1189,6 +1199,7 @@
 
     .footer__logo-container {
         grid-area: logo;
+        max-width: 1440px;
     }
 
     .footer__menu-container {

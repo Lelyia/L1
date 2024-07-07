@@ -666,11 +666,9 @@
 
       <section class="object__about-info">
         <h2 class="object-title object__about-title">О проекте</h2>
-         <figure>
-          <video class="object__about-video" src="" controls>
-            Ваш браузер не поддерживает тег <code>video</code>
-          </video>
-        </figure>
+         <div class ="object__about-video">
+          <iframe src="https://www.youtube.com/embed/HtLIPnIrj6M?si=7tHDET6_KTm0bY88" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         </div>
           <p class="object__about-text">Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
           <ul class="object__about-list">
             <li class="object__about-item">
@@ -699,6 +697,51 @@
             </li>
           </ul>
       </section>
+
+      <section class="object__selection">
+        <h2 class="object-title object__selection-title">Выбор корпуса</h2>
+        <div class="slider object__selection-slider">
+          <ul class="object__selection-list">
+            <li class="object__selection-item">
+                <picture>
+                  <img src="images/mobile/bird_gorod-pervyh_3 1.jpg" alt="Выбор корпуса"/>
+                </picture>
+            </li>
+          </ul>
+          <ul class="object__selection-button">
+            <li class="selection-button-item selection-button-item--active">
+              <span class="visually-hidden">1</span>
+            </li>
+            <li class="selection-button-item">
+              <span class="visually-hidden">2</span>
+            </li>
+            <li class="selection-button-item">
+              <span class="visually-hidden">3</span>
+            </li>
+            <li class="selection-button-item">
+              <span class="visually-hidden">4</span>
+            </li>
+            </li>
+          </ul>
+          <div class="object__selection-buttons">
+            <a class="selection__buttons-link buttons__link-left" href="">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 12L8 17M3 12L8 7M3 12H21" stroke="#212121" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span class="visually-hidden">Показать предыдущий слайд</span>
+            </a>
+
+            <a class="selection__buttons-link buttons__link-right" href="">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="#212121" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              <span class="visually-hidden">Показать следующий слайд</span>
+            </a>
+            <p class="object__selection-line"></p>
+          </div>
+        </div>
+      </section>  
+      
 
     </main>
 

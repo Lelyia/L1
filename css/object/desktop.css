@@ -9,8 +9,9 @@
     }
 
     .page__object .slider {
-        margin: 0 100px;
+        margin: 0 auto;
         margin-bottom: 48px;
+        max-width: 1240;
     }
 
     .page__object .slider__button {
@@ -55,8 +56,9 @@
 
     .page__object .page__header-wrapper-object .page__header-buttons-list {
         order: 5;
-        margin: 48px 100px;
+        margin: 48px auto;
         justify-content: space-between;
+        max-width: 1240px;
     }
 
     .page__object .page__header-wrapper-object .page__header-buttons-link {
@@ -217,12 +219,13 @@
     }
 
     .page__object .object__about-info {
-        margin: 0 100px 128px;
+        margin: 0 auto 128px;
         grid-template-columns: 40.9% auto;
+        max-width: 1240px;
     }
 
     .page__object .object__about-title {
-        margin-bottom: 16x;
+        margin-bottom: 16px;
         font-size: 40px;
         line-height: 56px;
     }
@@ -248,5 +251,10 @@
     .page__object .object__about-description {
         font-size: 14px;
         line-height: 20px;
+    }
+
+    .page__object .object__selection-title {
+        max-width: 1240px;
+        margin: 0 auto;
     }
 }

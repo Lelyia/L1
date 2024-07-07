@@ -278,10 +278,10 @@
 }
 
 .page__object .object__about-info {
-    margin-bottom: 48px;
+    margin-bottom: 64px;
 }
 
-.page__object .object__about-info figure {
+.page__object .object__about-video {
     position: relative;
     padding-bottom: 75%; /* задаёт высоту контейнера для 4:3 (если 16:9 — поставить 56.25%) */
     height: 0;
@@ -292,7 +292,7 @@
     margin: 0 0 16px;
 }
 
-.page__object .object__about-video {
+.page__object .object__about-video iframe{
     max-height: 100%;
     position: absolute;
     top: 0;
@@ -340,4 +340,48 @@
     line-height: 24px;
     color: var(--accent-1);
     margin-bottom: 4px;
+}
+
+.page__object .object__selection {
+    position: relative;
+    height: 661px;
+}
+
+.page__object .object-title.object__selection-title {
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 24px;
+    color: var(--base-white);
+    padding: 24px 16px;
+}
+
+.object__selection-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.page__object .object__selection-slider picture {
+    max-height: 661px;
+    z-index: -1;
+}
+
+.page__object .object__selection-button {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    column-gap: 12px;
+    margin: 532px 16px 16px;
+}
+
+.page__object .selection-button-item {
+    width: 43px;
+    height: 5px;
+    background: rgba(208, 208, 208, 0.5);
+    border-radius: 4px;
+}
+
+.page__object .selection-button-item--active {
+    background-color: var(--base-white);
 }
