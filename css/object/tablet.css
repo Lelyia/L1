@@ -244,4 +244,48 @@
     .page__object .object__about-list {
         grid-area: list;
     }
+
+    .page__object .object__selection-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 16px 32px;
+        align-items: center;
+    }
+
+    .page__object .object__selection-title {
+        font-size: 32px;
+        line-height: 38px;
+        margin: 0;
+    }
+
+    .page__object .object__selection-option {
+        column-gap: 0;
+        margin: 0;
+        background: var(--base-white);
+        border: 1px solid var(--background-block);
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    .page__object .option__button {
+        padding: 16px 20px;
+        border: none;
+        border-radius: 0;
+        min-width: auto;
+    }
+
+    .page__object .object__selection-buttons {
+        display: none;
+    }
+
+    .page__object .object__selection-subtitle {
+        font-size: 32px;
+        line-height: 38px;
+        padding: 32px 32px 0;
+    }
+
+    .page__object .object__selection-button {
+       justify-content: end;
+        margin-top: 554px;
+    }
 }

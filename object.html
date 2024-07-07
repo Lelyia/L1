@@ -457,7 +457,7 @@
     </div>
 
     <main class="page-main">
-      <section class="slider">
+      <section class="slider slider-main">
         <picture>
           <source media="(max-width: 1440px)" srcset="images/desktop/header_image-desktop_max.jpg" />
           <img src="images/desktop/header_image-desktop_max.jpg" alt="ЖК Загляденье" />
@@ -666,46 +666,60 @@
 
       <section class="object__about-info">
         <h2 class="object-title object__about-title">О проекте</h2>
-         <div class ="object__about-video">
-          <iframe src="https://www.youtube.com/embed/HtLIPnIrj6M?si=7tHDET6_KTm0bY88" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-         </div>
-          <p class="object__about-text">Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-          <ul class="object__about-list">
-            <li class="object__about-item">
-              <span class="object__about-subtitle object__about-data">1 500,4 м2</span>
-              <span class="object__about-subtitle object__about-description">общая площадь квартир</span>
-            </li>
-            <li class="object__about-item">
-              <span class="object__about-subtitle object__about-data">25 этажей</span>
-              <span class="object__about-subtitle object__about-description">Этажность дома</span>
-            </li>
-            <li class="object__about-item">
-              <span class="object__about-subtitle object__about-data">1 500</span>
-              <span class="object__about-subtitle object__about-description">количество квартир</span>
-            </li>
-            <li class="object__about-item">
-              <span class="object__about-subtitle object__about-data">1 500</span>
-              <span class="object__about-subtitle object__about-description">количество квартир</span>
-            </li>
-            <li class="object__about-item">
-              <span class="object__about-subtitle object__about-data">1 500</span>
-              <span class="object__about-subtitle object__about-description">количество квартир</span>
-            </li>
-            <li class="object__about-item">
-              <span class="object__about-subtitle object__about-data">1 500</span>
-              <span class="object__about-subtitle object__about-description">количество квартир</span>
-            </li>
-          </ul>
+        <div class="object__about-video">
+          <iframe src="https://www.youtube.com/embed/HtLIPnIrj6M?si=7tHDET6_KTm0bY88" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <p class="object__about-text">Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et
+          velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+          per inceptos himenaeos. Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et
+          velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+          per inceptos himenaeos.</p>
+        <ul class="object__about-list">
+          <li class="object__about-item">
+            <span class="object__about-subtitle object__about-data">1 500,4 м2</span>
+            <span class="object__about-subtitle object__about-description">общая площадь квартир</span>
+          </li>
+          <li class="object__about-item">
+            <span class="object__about-subtitle object__about-data">25 этажей</span>
+            <span class="object__about-subtitle object__about-description">Этажность дома</span>
+          </li>
+          <li class="object__about-item">
+            <span class="object__about-subtitle object__about-data">1 500</span>
+            <span class="object__about-subtitle object__about-description">количество квартир</span>
+          </li>
+          <li class="object__about-item">
+            <span class="object__about-subtitle object__about-data">1 500</span>
+            <span class="object__about-subtitle object__about-description">количество квартир</span>
+          </li>
+          <li class="object__about-item">
+            <span class="object__about-subtitle object__about-data">1 500</span>
+            <span class="object__about-subtitle object__about-description">количество квартир</span>
+          </li>
+          <li class="object__about-item">
+            <span class="object__about-subtitle object__about-data">1 500</span>
+            <span class="object__about-subtitle object__about-description">количество квартир</span>
+          </li>
+        </ul>
       </section>
 
       <section class="object__selection">
-        <h2 class="object-title object__selection-title">Выбор корпуса</h2>
+        <div class="object__selection-wrapper">
+        <h2 class="object-title object__selection-title">Выбор квартиры</h2>
+        <div class="object__selection-option">
+          <button class="button option__button option__button--active">Генплан</button>
+          <button class="button option__button">Панорама 360&deg</button>
+        </div>
+        </div>
         <div class="slider object__selection-slider">
+          <h3 class="object__selection-subtitle">Выбор корпуса</h3>
           <ul class="object__selection-list">
             <li class="object__selection-item">
-                <picture>
-                  <img src="images/mobile/bird_gorod-pervyh_3 1.jpg" alt="Выбор корпуса"/>
-                </picture>
+              <picture>
+                <img src="images/mobile/bird_gorod-pervyh_3 1.jpg" alt="Выбор корпуса" />
+              </picture>
             </li>
           </ul>
           <ul class="object__selection-button">
@@ -724,24 +738,127 @@
             </li>
           </ul>
           <div class="object__selection-buttons">
-            <a class="selection__buttons-link buttons__link-left" href="">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 12L8 17M3 12L8 7M3 12H21" stroke="#212121" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              <span class="visually-hidden">Показать предыдущий слайд</span>
-            </a>
-
-            <a class="selection__buttons-link buttons__link-right" href="">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="#212121" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <div class="selection__buttons-link">
+              <a class="buttons__link buttons__link-left" href="#">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 12L8 17M3 12L8 7M3 12H21" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
                 </svg>
-              <span class="visually-hidden">Показать следующий слайд</span>
-            </a>
+                <span class="visually-hidden">Показать предыдущий слайд</span>
+              </a>
+
+              <a class="buttons-link buttons__link-right" href="#">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 12L16 7M21 12L16 17M21 12L3 12" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                <span class="visually-hidden">Показать следующий слайд</span>
+              </a>
+            </div>
             <p class="object__selection-line"></p>
           </div>
         </div>
-      </section>  
-      
+      </section>
+
+      <section class="action">
+        <h2 class="action__title title">Акции</h2>
+        <ul class="action__list">
+          <li class="action__container action__container-1">
+            <div class="action__item">
+              <a class="action__link" href="">
+                <picture class="action__card">
+                  <img class="action__image" src="images/mobile/Design.jpg" alt="Акция 1">
+                </picture>
+                <p class="action__subtitle">Скидка<br> на повторную<br> покупку до 5%</p>
+                <span class="action__info action__deadline">До 30.04.2024</span>
+                <p class="action__house">
+                  <span class="action__info action__bairon">Байрон</span>
+                  <span class="action__info action__orlov">Граф Орлов</span>
+                </p>
+              </a>
+            </div>
+          </li>
+          <li class="action__container action__container-2">
+            <div class="action__item">
+              <a class="action__link" href="">
+                <picture class="action__card">
+                  <img class="action__image" src="images/mobile/Design.jpg" alt="Акция 1">
+                </picture>
+                <p class="action__subtitle">Скидка<br> на повторную<br> покупку до 5%</p>
+                <span class="action__info action__deadline">До 30.04.2024</span>
+                <p class="action__house">
+                  <span class="action__info action__bairon">Байрон</span>
+                  <span class="action__info action__orlov">Граф Орлов</span>
+                </p>
+              </a>
+            </div>
+
+            <div class="action__item">
+              <a class="action__link" href="">
+                <picture class="action__card">
+                  <img class="action__image" src="images/mobile/Design.jpg" alt="Акция 1">
+                </picture>
+                <p class="action__subtitle">Скидка<br> на повторную<br> покупку до 5%</p>
+                <span class="action__info action__deadline">До 30.04.2024</span>
+                <p class="action__house">
+                  <span class="action__info action__bairon">Байрон</span>
+                  <span class="action__info action__orlov">Граф Орлов</span>
+                </p>
+              </a>
+            </div>
+          </li>
+          <li class="action__container action__container-3">
+            <div class="action__item">
+              <a class="action__link" href="">
+                <picture class="action__card">
+                  <img class="action__image" src="images/desktop/action2.jpg" alt="Акция 1">
+                </picture>
+                <p class="action__subtitle">Скидка<br> на повторную<br> покупку до 5%</p>
+                <span class="action__info action__deadline">До 30.04.2024</span>
+                <p class="action__house">
+                  <span class="action__info action__bairon">Байрон</span>
+                  <span class="action__info action__orlov">Граф Орлов</span>
+                </p>
+              </a>
+            </div>
+            <div class="action__item">
+              <a class="action__link" href="">
+                <picture class="action__card">
+                  <img class="action__image" src="images/desktop/action2.jpg" alt="Акция 1">
+                </picture>
+                <p class="action__subtitle">Скидка<br> на повторную<br> покупку до 5%</p>
+                <span class="action__info action__deadline">До 30.04.2024</span>
+                <p class="action__house">
+                  <span class="action__info action__bairon">Байрон</span>
+                  <span class="action__info action__orlov">Граф Орлов</span>
+                </p>
+              </a>
+            </div>
+            <div class="action__item">
+              <a class="action__link" href="">
+                <picture class="action__card">
+                  <img class="action__image" src="images/desktop/action2.jpg" alt="Акция 1">
+                </picture>
+                <p class="action__subtitle">Скидка<br> на повторную<br> покупку до 5%</p>
+                <span class="action__info action__deadline">До 30.04.2024</span>
+                <p class="action__house">
+                  <span class="action__info action__bairon">Байрон</span>
+                  <span class="action__info action__orlov">Граф Орлов</span>
+                </p>
+              </a>
+            </div>
+          </li>
+        </ul>
+        <ul class="action-button">
+          <li class="action-button-item action-button-item--active"><span class="visually-hidden">1</span></li>
+          <li class="action-button-item"><span class="visually-hidden">2</span></li>
+          <li class="action-button-item"><span class="visually-hidden">3</span></li>
+          <li class="action-button-item"><span class="visually-hidden">4</span></li>
+          <li class="action-button-item"><span class="visually-hidden">5</span></li>
+          <li class="action-button-item"><span class="visually-hidden">6</span></li>
+        </ul>
+      </section>
+
 
     </main>
 
@@ -1054,7 +1171,7 @@
     var favourite = document.querySelector(".favourite-link");
     var modal = document.querySelector(".modal");
     var background = document.querySelector(".page__background-shadow");
-   
+
     navMain.classList.remove("page__header-wrapper--nojs");
 
     navToggle.addEventListener("click", function () {
@@ -1088,7 +1205,6 @@
         body.classList.add("body-in-modal");
       }
     });
-
   </script>
 </body>
 

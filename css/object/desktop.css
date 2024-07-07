@@ -8,10 +8,10 @@
         line-height: 67px;
     }
 
-    .page__object .slider {
+    .page__object .slider-main {
         margin: 0 auto;
         margin-bottom: 48px;
-        max-width: 1240;
+        max-width: 1240px;
     }
 
     .page__object .slider__button {
@@ -253,8 +253,38 @@
         line-height: 20px;
     }
 
-    .page__object .object__selection-title {
+    .page__object .object__selection-wrapper {
         max-width: 1240px;
-        margin: 0 auto;
+        margin: 0 auto 32px;
+    }
+
+    .page__object .object__selection-slider {
+        margin: 0 0 32px;
+        max-width: none;
+    }
+
+    .page__object .object__selection-subtitle {
+        max-width: 1240px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 32px 0 0;
+    }
+
+    .page__object .object__selection-button {
+        max-width: 1240px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .page__object .object__selection-slider picture {
+        max-height: 661px;
+        z-index: -1;
+    }
+
+    .page__object .action {
+        max-width: 1240px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
+   
