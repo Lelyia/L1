@@ -259,7 +259,7 @@
     }
 
     .page__object .object__selection-slider {
-        margin: 0 0 32px;
+        margin: 0 0 128px;
         max-width: none;
     }
 
@@ -285,6 +285,69 @@
         max-width: 1240px;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 20px;
+    }    
+
+    .page__object .action__title {
+        margin-bottom: 48px;
     }
+        
+    .page__object .ipoteka__widget {
+        display: block;
+        margin-bottom: 128px;
+    }
+
+    .page__object .ipoteka__widget-text {
+        max-width: 1240px;
+        margin: 0 auto;
+        font-family: "Geologica", Arial, sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 56px;
+        color: var(--base-text);
+        margin-bottom: 48px;
+    }
+
+    .page__object .ipoteka__widget-content {
+        position: relative;
+        width: 1440px;
+        height: 614px;
+        border: 1px solid var(--background-block);
+    }
+
+    .page__object .ipoteka__widget-description {
+        font-family: "Geologica", Arial, sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 56px;
+        color: var(--gray-text);
+        max-width: 1240px;
+        margin: 54px auto;
+    }
+
+    .page__object .ipoteka__calculation {
+        max-width: 1240px;
+        margin: 0 auto 128px;
+        padding: 32px;
+    }
+
+    .page__object .ipoteka__calculation-subtitle {
+       font-size: 32px;
+        line-height: 38px;
+   }
+
+   .page__object .ipoteka__calculation-button {
+    width: 64px;
+    height: 64px;
 }
-   
+
+.page__object .ipoteka__calculation-button::before {
+    top: 16px;
+    left: 16px;
+    width: 32px;
+    height: 32px;
+    background-image: url("../../icons/Go_to32.svg");
+}
+}   

@@ -459,3 +459,53 @@
     margin-top: 64px;
     margin-left: 16px;
 }
+
+.page__object .action-button {
+    margin-bottom: 24px;
+}
+
+.page__object .ipoteka__widget {
+    display: none;
+}
+
+.page__object .ipoteka__calculation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   background: var(--base-white);
+    border: 1px solid var(--accent);
+    border-radius: 12px;
+    margin: 0 16px;
+    padding: 16px;
+    width: auto;
+}
+
+.page__object .ipoteka__calculation-button {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    background: var(--accent);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.page__object .ipoteka__calculation-button::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 16px;
+    height: 16px;
+    background-image: url("../../icons/Go_to.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.page__object .ipoteka__calculation-subtitle {
+    font-family: "Geologica", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--base-text);
+}

@@ -288,4 +288,13 @@
        justify-content: end;
         margin-top: 554px;
     }
+
+    .page__object .ipoteka__calculation {
+        margin-bottom: 64px;
+    }
+
+.page__object .ipoteka__calculation-subtitle {
+    font-size: 20px;
+    line-height: 24px;
+    }
 }
