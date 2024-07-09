@@ -297,4 +297,12 @@
     font-size: 20px;
     line-height: 24px;
     }
+
+    .page__object .object__advantage-list {
+        column-gap: 12px;
+    }
+    
+    .page__object .object__advantage-title {
+        margin-bottom: 48px;
+    }
 }

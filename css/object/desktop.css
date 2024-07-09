@@ -224,7 +224,7 @@
         max-width: 1240px;
     }
 
-    .page__object .object__about-title {
+    .page__object .object-title {
         margin-bottom: 16px;
         font-size: 40px;
         line-height: 56px;
@@ -255,7 +255,11 @@
 
     .page__object .object__selection-wrapper {
         max-width: 1240px;
-        margin: 0 auto 32px;
+        margin: 0 auto 48px;
+    }
+
+    .page__object .object__selection-title {
+        margin-bottom: 0;
     }
 
     .page__object .object__selection-slider {
@@ -311,9 +315,10 @@
 
     .page__object .ipoteka__widget-content {
         position: relative;
-        width: 1440px;
         height: 614px;
         border: 1px solid var(--background-block);
+        max-width: 1440px;
+        margin: 0 auto;
     }
 
     .page__object .ipoteka__widget-description {
@@ -324,7 +329,8 @@
         line-height: 56px;
         color: var(--gray-text);
         max-width: 1240px;
-        margin: 54px auto;
+        margin: 0 auto;
+
     }
 
     .page__object .ipoteka__calculation {
@@ -350,4 +356,29 @@
     height: 32px;
     background-image: url("../../icons/Go_to32.svg");
 }
-}   
+
+.page__object .object__advantage {
+    position: relative;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.page__object .object__advantage-title {
+    margin: 128px auto 58px auto;
+    max-width: 1240px;
+}
+
+.page__object .object__advantage-list {
+    margin: 0 auto;
+    max-width: 1240px;
+    overflow-x: hidden;
+}
+
+.page__object .object__advantage-slider {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+}
