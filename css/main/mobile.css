@@ -4,7 +4,9 @@
 
  .page__header-wrapper {
      width: 100%;
-     position: relative;
+     position: fixed;
+     top:0;
+     z-index: 999;
  }
 
  .page__header-wrapper::before {
@@ -498,7 +500,7 @@
  .complex {
      margin: 0;
      padding: 0;
-     margin-top: 493px;
+     margin-top: 573px;
      margin-bottom: 16px;
      text-align: left;
      font-family: "Geologica", Arial, sans-serif;

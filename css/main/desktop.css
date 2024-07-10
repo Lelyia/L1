@@ -23,7 +23,8 @@
 
     /* Header */
     .page__header-wrapper {
-        position: absolute;
+        position: fixed;
+        top: 0;
         width: 100%;
         background-color: var(--opacity-background);
         backdrop-filter: blur(4px);
