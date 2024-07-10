@@ -882,17 +882,19 @@
         <div class="object__advantage-slider">
           <a class="slider__button__link left-link" href="">
             <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="0.5" y="0.5" width="63" height="63" rx="31.5" stroke="#D0D0D0"/>
-              <path d="M36 41.333L26.6667 31.9997L36 22.6663" stroke="#212121" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+              <rect x="0.5" y="0.5" width="63" height="63" rx="31.5" stroke="#D0D0D0" />
+              <path d="M36 41.333L26.6667 31.9997L36 22.6663" stroke="#212121" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
             <span class="visually-hidden">Показать предыдущий слайд</span>
           </a>
 
           <a class="slider__button__link right-link" href="">
             <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="0.5" y="0.5" width="63" height="63" rx="31.5" stroke="#D0D0D0"/>
-              <path d="M28 22.667L37.3333 32.0003L28 41.3337" stroke="#212121" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>          
+              <rect x="0.5" y="0.5" width="63" height="63" rx="31.5" stroke="#D0D0D0" />
+              <path d="M28 22.667L37.3333 32.0003L28 41.3337" stroke="#212121" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
             <span class="visually-hidden">Показать следующий слайд</span>
           </a>
         </div>
@@ -968,7 +970,91 @@
       </section>
 
       <section class="object__design">
-
+        <div class="object__design-container">
+          <h2 class="object__design-title object-title">Выбор отделки</h2>
+          <ul class="object__design-list">
+            <li class="object__design-item design-1-item object__design-item--active">
+              <ul class="design__list design-1__list">
+                <h3 class="visually-hidden">Голубика</h3>
+                <li class="design__item design-1__item">
+                  <figure class="design__card design-1__card">
+                    <img class="design_image design-1__image" src="images/mobile/Design.jpg">
+                  </figure>
+                  <ul class="object__selection-button">
+                    <li class="selection-button-item selection-button-item--active">
+                      <span class="visually-hidden">1</span>
+                    </li>
+                    <li class="selection-button-item">
+                      <span class="visually-hidden">2</span>
+                    </li>
+                    <li class="selection-button-item">
+                      <span class="visually-hidden">3</span>
+                    </li>
+                    <li class="selection-button-item">
+                      <span class="visually-hidden">4</span>
+                    </li>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="object__design-item design-2-item">
+              <ul class="design__list design-2__list">
+                <h3 class="visually-hidden">Морошка</h3>
+                <li class="design__item design-2__item">
+                  <figure class="design__card design-2__card">
+                    <img class="design_image design-2__image" src="images/mobile/Design.jpg">
+                  </figure>
+                </li>
+              </ul>
+            </li>
+            <li class="object__design-item design-3-item">
+              <ul class="design__list design-3__list">
+                <h3 class="visually-hidden">White Box</h3>
+                <li class="design__item design-3__item">
+                  <figure class="design__card design-3__card">
+                    <img class="design_image design-3__image" src="images/mobile/Design.jpg">
+                  </figure>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="object__design-slider">
+            <input class="visually-hidden" type="radio" name="object__design-buttons" id="design-1" checked="" />
+            <input class="visually-hidden" type="radio" name="object__design-buttons" id="design-2" />
+            <input class="visually-hidden" type="radio" name="object__design-buttons" id="design-3" />
+            <div class="object__design-control">
+              <label class="object__design-control-item design-item-1" for="design-1">
+                <span class="object__design-name">"Голубика"</span>
+                <p class="object__design-description">Прохладные оттенки зрительно расширят пространство, помогут
+                  расслабиться и настроиться на умиротворяющий лад, создадут дополнительное ощущение гармонии и чистоты
+                </p>
+              </label>
+              <label class="object__design-control-item design-item-2" for="design-2">
+                <span class="object__design-name">"Морошка"</span>
+                <p class="object__design-description">Теплые оттенки сделают дом визуально светлее, создадут атмосферу
+                  уюта и комфорта, поднимут эмоциональный фон, привнесут ощущение защищенности и стабильности</p>
+              </label>
+              <label class="object__design-control-item design-item-3" for="design-3">
+                <span class="object__design-name">White box</span>
+                <p class="object__design-description">Пустая квартира, которая уже готова к любой отделке. Идеально для
+                  тех, кто знает, чего хочет</p>
+              </label>
+            </div>
+          </div>
+        </div>
+        <ul class="object__design-buttons-list">
+          <li class="object__design-buttons-item object__design-buttons-3d">
+            <a class="button object__design-buttons-link" href="#">
+              <span class="object__design-buttons-title">3D-тур</span>
+            </a>
+          </li>
+          <li class="object__design-buttons-item object__design-buttons-detailed">
+            <a class="button object__design-buttons-link" href="#">
+              <span class="object__design-buttons-title">Подробнее</span>
+            </a>
+          </li>
+        </ul>
       </section>
 
 

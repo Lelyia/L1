@@ -5,7 +5,7 @@
 }
 
 .page__object .complex {
-    margin-top: 355px;
+    margin-top: 435px;
     margin-bottom: 8px;
     font-size: 24px;
     line-height: 29px;
@@ -73,6 +73,7 @@
     margin-left: 16px;
     margin-right: 16px;
     width: auto;
+    position: relative;
 }
 
 .page__object .page__header-wrapper-object .header__nav-link-more {
@@ -120,7 +121,9 @@
     overflow: hidden;
     height: 100%;
     overflow-y: scroll;
-    z-index: 101;
+    z-index: 1000;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .page__object .page__header-wrapper-object .page__header-logo-wrapper {
@@ -511,6 +514,7 @@
     line-height: 19px;
     color: var(--base-text);
 }
+
 .page__object .object__advantage {
     margin-bottom: 16px;
     margin-left: 16px;
@@ -589,4 +593,125 @@
 
 .page__object .object__advantage-slider {
     display: none;
+}
+
+.page__object .object__design {
+    margin-top: 64px;
+}
+
+.page__object .object__design-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.page__object .object__design-title {
+    margin: 0 16px 32px;
+}
+
+.page__object .object__design-item {
+    display: none;
+}
+
+.page__object .object__design-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.page__object .object__design-item--active {
+    display: block;
+    margin: 0 16px 16px;
+    position: relative;
+}
+
+.page__object .object__design-item .object__selection-button {
+    display: none;
+}
+
+.page__object .design__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.page__object .design__card {
+    width: 296px;
+    height: 429px;
+    border-radius: 16px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 343px;
+    height: 315px;
+    border-radius: 16px;
+}
+
+.page__object .design_image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.page__object .object__design-control {
+    margin: 0 16px 24px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+#design-1:checked~.object__design-control .design-item-1,
+#design-2:checked~.object__design-control .design-item-2,
+#design-3:checked~.object__design-control .design-item-3 {
+    border: 1px solid var(--accent);
+    background: var(--background-color);
+}
+
+.page__object .object__design-control-item {
+    background: var(--base-white);
+    border: 1px solid var(--background-block);
+    border-radius: 12px;
+    display: block;
+}
+
+.page__object .object__design-name {
+    font-family: "Geologica", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--base-text);
+    margin: 15px 16px 12px;
+    padding: 0;
+    display: block;
+}
+
+.page__object .object__design-description {
+    font-size: 12px;
+    line-height: 17px;
+    margin: 0 16px 15px;
+    padding: 0;
+}
+
+.page__object .object__design-buttons-list {
+    list-style: none;
+    margin: 0 16px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    margin-bottom: 64px;
+}
+
+.page__object .object__design-buttons-link {
+    margin: 0;
+}
+
+.page__object .object__design-buttons-detailed .object__design-buttons-link {
+    color: var(--base-text);
+    background: var(--base-white);
+    border: 1px solid var(--accent);
 }

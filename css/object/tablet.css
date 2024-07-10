@@ -2,9 +2,8 @@
     /* PAGE OBJECT */
 
     .page__object .complex {
-        margin-top: 630px;
         margin-bottom: 16px;
-        margin: 630px 0 16px 0;
+        margin: 710px 0 16px 0;
         font-size: 40px;
         line-height: 56px;
     }
@@ -305,4 +304,49 @@
     .page__object .object__advantage-title {
         margin-bottom: 48px;
     }
+
+    .page__object .object__design-container {
+        display: grid;
+        grid-template-areas: 
+                            "design-image design-title"
+                            "design-image design-radio";
+        column-gap: 16px;
+    }
+
+    .page__object .object__design-title {
+        grid-area: design-title;
+        font-size: 32px;
+line-height: 38px;
+margin-bottom: 24px;
+    }
+
+    .page__object .object__design-list {
+        grid-area: design-image;
+        margin-bottom: 0;
+
+    }
+
+    .page__object .object__design-slider {
+        grid-area: design-radio;
+        margin-bottom: 0;
+    }
+
+    .page__object .design__card {
+        width: 456px;
+        height: 441px;
+    }
+
+    .page__object .object__design-name {
+font-size: 24px;
+line-height: 29px;
+}
+
+.page__object .object__design-item .object__selection-button {
+    display: flex;
+    margin: 0;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+}
 }
