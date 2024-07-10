@@ -703,7 +703,8 @@
      list-style: none;
  }
 
- .filter__title--tablet {
+ .filter__title--tablet,
+ .filter__title--desktop {
      display: none;
  }
 
