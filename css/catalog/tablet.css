@@ -42,14 +42,14 @@
     }
 
     .page__catalog .object-item .link-catalog .object-subtitle {
+        line-height: 24px;
         margin-bottom: 12px;
         font-size: 20px;
-        line-height: 24px;
     }
 
     .page__catalog .object-item-catalog .object__advantages-title {
-        font-size: 10px;
         line-height: 14px;
+        font-size: 10px;
     }
 
     .page__catalog .object-item .link-catalog .metro {
@@ -62,19 +62,19 @@
     } 
 
     .page__catalog .catalog__button .object__button-title {
-        font-size: 12px;
         line-height: 17px;
+        font-size: 12px;
     }
 
     .page__catalog .object-item .link-catalog .object__metro,
     .page__catalog .object-item .link-catalog .object__metro-time {
-        font-size: 10px;
-        line-height: 14px;  
+        line-height: 14px;
+        font-size: 10px;  
     }
 
     .page__catalog .object-item .link-catalog .object__price {
-        font-size: 20px;
         line-height: 24px;
+        font-size: 20px;
     }
 
     .page__catalog .object__classic .link-catalog br {

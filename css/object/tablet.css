@@ -1,352 +1,367 @@
 @media (min-width: 960px) {
-    /* PAGE OBJECT */
+  /* PAGE OBJECT */
 
-    .page__object .complex {
-        margin-bottom: 16px;
-        margin: 710px 0 16px 0;
-        font-size: 40px;
-        line-height: 56px;
-    }
+  .page__object .complex {
+    line-height: 56px;
+    margin: 710px 0 16px 0;
+    margin-bottom: 16px;
+    font-size: 40px;
+  }
 
-    .page__object .slider__complex-list {
-        display: flex;
-        margin-bottom: 24px;
-        align-items: center;
-    }
-
-    .page__object .slider__complex-item {
-        padding: 10px 0 10px 56px;
-        margin-right: 20px;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 20px;
-        margin-bottom: 0;
-        align-items: center;
-    }
-
-    .page__object .slider__complex-item-1::before {
-        width: 40px;
-        height: 40px;
-        background-image: url("../../icons/location40.svg");
-    }
-    
-    .page__object .slider__complex-item-2::before {
-        width: 40px;
-        height: 40px;
-        background-image: url("../../icons/deadline40.svg");
-    }
-
-    .page__object .button-main {
-        margin-top: 32px;
-        margin-bottom: 48px;
-    }
-
-    .page__object .slider picture {
-        height: 1000px;
-     }
-
-     .page__object .page__header-wrapper-object .page__header-logo-wrapper {
-        margin-bottom: 64px;
-    }
-
-    .page__object .page__header-buttons-link .buttons-text {
-        display: inline;
-    }
-
-    .page__object .page__header-buttons-list {
-        display: flex;
-        column-gap: 16px;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        border: none;
-        margin-bottom: 32px;
-    }
-
-    .page__object .page__header-buttons-item {
-        position: relative;
-    }
-
-    .page__object .page__header-wrapper-object .page__header-buttons-link {
-        min-width: 220px;
-        font-size: 12px;
-        line-height: 17px;
-        padding: 18.5px;
-        text-align: right;
-    }
-
-    .page__object .buttons-text-mobile {
-        display: none;
-    }
-
-    .page__object .page__header-buttons-call::before {
-        content: "";
-        position: absolute;
-        top: 16px;
-        left: 16px;
-        width: 24px;
-        height: 24px;
-        background-image: url("../../icons/call24.svg");
-        background-repeat: no-repeat;
-        background-position: 0 0;
-    }
-
-    .page__object .page__header-buttons-ipoteka::before {
-        content: "";
-        position: absolute;
-        top: 16px;
-        left: 16px;
-        width: 24px;
-        height: 24px;
-        background-image: url("../../icons/ipoteka-filter24.svg");
-        background-repeat: no-repeat;
-        background-position: 0 0;
-    }
-
-    .page__object .page__header-buttons-booklet::before {
-        content: "";
-        position: absolute;
-        top: 16px;
-        left: 16px;
-        width: 24px;
-        height: 24px;
-        background-image: url("../../icons/Booklet24.svg");
-        background-repeat: no-repeat;
-        background-position: 0 0;
-    }
-
-    .page__object .page__header-buttons-taxi::before {
-        content: "";
-        position: absolute;
-        top: 16px;
-        left: 16px;
-        width: 24px;
-        height: 24px;
-        background-image: url("../../icons/Taxi24.svg");
-        background-repeat: no-repeat;
-        background-position: 0 0;
-    }
-
-    .page__object .page__header-wrapper-object--opened .header__contacts-container {
-        display: block;
-    }
-
-    .page__object .page__header-wrapper-object--opened .header__contacts-email {
-        display: block;
-        font-family: "Geologica", Arial, sans-serif;
-        font-weight: 300;
-        font-size: 20px;
-        line-height: 24px;
-        color: var(--gray-text);
-    }
-
-    .page__object .page__header-wrapper-object--opened .page__header-buttons2-list {
-        display: none;
-    }
-
-    .page__object .page__header-wrapper-object--opened .page__header-logo-wrapper {
-        margin-bottom: 1px;
-    }
-
-    .page__object .page__header-wrapper-object--opened .header__contacts-container {
-        margin-bottom: 21px;
-    }
-
-    .page__object .page__header-wrapper-object--opened .header__contacts-connection {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .page__object .page__header-wrapper-object--opened .header__contacts-buttons {
-        display: flex;
-        column-gap: 10px;
-        grid-column: 2 / 3;
-        grid-row: 1 / 3;
-    }
-
-    .page__object .page__header-wrapper-object--opened .header__contacts-button {
-        padding: 15px;
-        background: var(--base-white);
-        border: 1px solid var(--accent);
-        border-radius: 16px;
-        min-width: 216px;
-        margin: 0;
-    }
-
-    .page__object .page__header-wrapper-object--opened .header__contacts-subtitle {
-        font-weight: 400;
-        color: var(--base-text);
-    }
-
-    .page__object .page__header-wrapper-object--opened .header__contacts-connection {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-auto-flow: column;
-    }
-
-    .page__object .page__header-wrapper-object--opened .header__nav-list {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-     }
-
-     .page__object .page__header-wrapper-object .header__nav-item:last-child {
-        margin-bottom: 0;
-     }
-
-     .page__object .page__header-wrapper-object--opened .header__nav-list-additional {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        grid-auto-flow: column;
-     }
-
-    .page__object .page__header-wrapper-object--opened .header__nav-list-main {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        grid-auto-flow: column;
-    }
-
-    .page__object .object__about-info {
-        display: grid;
-        grid-template-areas: 
-                            "title video"
-                            "text video"
-                            "list video";
-        column-gap: 16px;
-        grid-template-columns: 36.5% auto;
-        grid-template-rows: repeat(3, auto);
-    }
-
-    .page__object .object__about-title {
-        grid-area: title;
-        margin-top: 0;
-        margin-bottom: 24px;
-    }
-
-    .page__object .object__about-information {
-        width: 338px;
-    }
-
-    .page__object .object__about-video {
-        margin-bottom: 0;
-        grid-area: video;
-    }
-
-    .page__object .object__about-text {
-        grid-area: text;
-        font-size: 12px;
-        line-height: 17px;
-    }
-
-    .page__object .object__about-list {
-        grid-area: list;
-    }
-
-    .page__object .object__selection-wrapper {
-        display: flex;
-        justify-content: space-between;
-        margin: 0 16px 32px;
-        align-items: center;
-    }
-
-    .page__object .object__selection-title {
-        font-size: 32px;
-        line-height: 38px;
-        margin: 0;
-    }
-
-    .page__object .object__selection-option {
-        column-gap: 0;
-        margin: 0;
-        background: var(--base-white);
-        border: 1px solid var(--background-block);
-        border-radius: 12px;
-        overflow: hidden;
-    }
-
-    .page__object .option__button {
-        padding: 16px 20px;
-        border: none;
-        border-radius: 0;
-        min-width: auto;
-    }
-
-    .page__object .object__selection-buttons {
-        display: none;
-    }
-
-    .page__object .object__selection-subtitle {
-        font-size: 32px;
-        line-height: 38px;
-        padding: 32px 32px 0;
-    }
-
-    .page__object .object__selection-button {
-       justify-content: end;
-        margin-top: 554px;
-    }
-
-    .page__object .ipoteka__calculation {
-        margin-bottom: 64px;
-    }
-
-.page__object .ipoteka__calculation-subtitle {
-    font-size: 20px;
-    line-height: 24px;
-    }
-
-    .page__object .object__advantage-list {
-        column-gap: 12px;
-    }
-    
-    .page__object .object__advantage-title {
-        margin-bottom: 48px;
-    }
-
-    .page__object .object__design-container {
-        display: grid;
-        grid-template-areas: 
-                            "design-image design-title"
-                            "design-image design-radio";
-        column-gap: 16px;
-    }
-
-    .page__object .object__design-title {
-        grid-area: design-title;
-        font-size: 32px;
-line-height: 38px;
-margin-bottom: 24px;
-    }
-
-    .page__object .object__design-list {
-        grid-area: design-image;
-        margin-bottom: 0;
-
-    }
-
-    .page__object .object__design-slider {
-        grid-area: design-radio;
-        margin-bottom: 0;
-    }
-
-    .page__object .design__card {
-        width: 456px;
-        height: 441px;
-    }
-
-    .page__object .object__design-name {
-font-size: 24px;
-line-height: 29px;
-}
-
-.page__object .object__design-item .object__selection-button {
+  .page__object .slider__complex-list {
     display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+
+  .page__object .slider__complex-item {
+    align-items: center;
+    line-height: 20px;
+    padding: 10px 0 10px 56px;
+    margin-right: 20px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .page__object .slider__complex-item-1::before {
+    width: 40px;
+    height: 40px;
+    background-image: url("../../icons/location40.svg");
+  }
+
+  .page__object .slider__complex-item-2::before {
+    width: 40px;
+    height: 40px;
+    background-image: url("../../icons/deadline40.svg");
+  }
+
+  .page__object .button-main {
+    margin-top: 32px;
+    margin-bottom: 48px;
+  }
+
+  .page__object .slider picture {
+    height: 1000px;
+  }
+
+  .page__object .page__header-wrapper-object .page__header-logo-wrapper {
+    margin-bottom: 64px;
+  }
+
+  .page__object .page__header-buttons-link .buttons-text {
+    display: inline;
+  }
+
+  .page__object .page__header-buttons-list {
+    display: flex;
+    padding: 0;
     margin: 0;
-    justify-content: flex-start;
+    margin-bottom: 32px;
+    border: none;
+    list-style: none;
+    column-gap: 16px;
+  }
+
+  .page__object .page__header-buttons-item {
+    position: relative;
+  }
+
+  .page__object .page__header-wrapper-object .page__header-buttons-link {
+    min-width: 220px;
+    line-height: 17px;
+    padding: 18.5px;
+    text-align: right;
+    font-size: 12px;
+  }
+
+  .page__object .buttons-text-mobile {
+    display: none;
+  }
+
+  .page__object .page__header-buttons-call::before {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 24px;
+    height: 24px;
+    background-image: url("../../icons/call24.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    content: "";
+  }
+
+  .page__object .page__header-buttons-ipoteka::before {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 24px;
+    height: 24px;
+    background-image: url("../../icons/ipoteka-filter24.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    content: "";
+  }
+
+  .page__object .page__header-buttons-booklet::before {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 24px;
+    height: 24px;
+    background-image: url("../../icons/Booklet24.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    content: "";
+  }
+
+  .page__object .page__header-buttons-taxi::before {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 24px;
+    height: 24px;
+    background-image: url("../../icons/Taxi24.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    content: "";
+  }
+
+  .page__object
+    .page__header-wrapper-object--opened
+    .header__contacts-container {
+    display: block;
+  }
+
+  .page__object .page__header-wrapper-object--opened .header__contacts-email {
+    display: block;
+    line-height: 24px;
+    color: var(--gray-text);
+    font-family: "Geologica", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  .page__object
+    .page__header-wrapper-object--opened
+    .page__header-buttons2-list {
+    display: none;
+  }
+
+  .page__object
+    .page__header-wrapper-object--opened
+    .page__header-logo-wrapper {
+    margin-bottom: 1px;
+  }
+
+  .page__object
+    .page__header-wrapper-object--opened
+    .header__contacts-container {
+    margin-bottom: 21px;
+  }
+
+  .page__object
+    .page__header-wrapper-object--opened
+    .header__contacts-connection {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page__object .page__header-wrapper-object--opened .header__contacts-buttons {
+    display: flex;
+    column-gap: 10px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+  }
+
+  .page__object .page__header-wrapper-object--opened .header__contacts-button {
+    min-width: 216px;
+    padding: 15px;
+    margin: 0;
+    border: 1px solid var(--accent);
+    border-radius: 16px;
+    background: var(--base-white);
+  }
+
+  .page__object
+    .page__header-wrapper-object--opened
+    .header__contacts-subtitle {
+    color: var(--base-text);
+    font-weight: 400;
+  }
+
+  .page__object
+    .page__header-wrapper-object--opened
+    .header__contacts-connection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-flow: column;
+  }
+
+  .page__object .page__header-wrapper-object--opened .header__nav-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .page__object .page__header-wrapper-object .header__nav-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .page__object
+    .page__header-wrapper-object--opened
+    .header__nav-list-additional {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-auto-flow: column;
+  }
+
+  .page__object .page__header-wrapper-object--opened .header__nav-list-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-flow: column;
+  }
+
+  .page__object .object__about-info {
+    display: grid;
+    grid-template-areas:
+      "title video"
+      "text video"
+      "list video";
+    column-gap: 16px;
+    grid-template-columns: 36.5% auto;
+    grid-template-rows: repeat(3, auto);
+  }
+
+  .page__object .object__about-title {
+    margin-top: 0;
+    margin-bottom: 24px;
+    grid-area: title;
+  }
+
+  .page__object .object__about-information {
+    width: 338px;
+  }
+
+  .page__object .object__about-video {
+    margin-bottom: 0;
+    grid-area: video;
+  }
+
+  .page__object .object__about-text {
+    line-height: 17px;
+    font-size: 12px;
+    grid-area: text;
+  }
+
+  .page__object .object__about-list {
+    grid-area: list;
+  }
+
+  .page__object .object__selection-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 16px 32px;
+  }
+
+  .page__object .object__selection-title {
+    line-height: 38px;
+    margin: 0;
+    font-size: 32px;
+  }
+
+  .page__object .object__selection-option {
+    overflow: hidden;
+    margin: 0;
+    border: 1px solid var(--background-block);
+    border-radius: 12px;
+    background: var(--base-white);
+    column-gap: 0;
+  }
+
+  .page__object .option__button {
+    min-width: auto;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 0;
+  }
+
+  .page__object .object__selection-buttons {
+    display: none;
+  }
+
+  .page__object .object__selection-subtitle {
+    line-height: 38px;
+    padding: 32px 32px 0;
+    font-size: 32px;
+  }
+
+  .page__object .object__selection-button {
+    justify-content: end;
+    margin-top: 554px;
+  }
+
+  .page__object .ipoteka__calculation {
+    margin-bottom: 64px;
+  }
+
+  .page__object .ipoteka__calculation-subtitle {
+    line-height: 24px;
+    font-size: 20px;
+  }
+
+  .page__object .object__advantage-list {
+    column-gap: 12px;
+  }
+
+  .page__object .object__advantage-title {
+    margin-bottom: 48px;
+  }
+
+  .page__object .object__design-container {
+    display: grid;
+    grid-template-areas:
+      "design-image design-title"
+      "design-image design-radio";
+    column-gap: 16px;
+  }
+
+  .page__object .object__design-title {
+    line-height: 38px;
+    margin-bottom: 24px;
+    font-size: 32px;
+    grid-area: design-title;
+  }
+
+  .page__object .object__design-list {
+    margin-bottom: 0;
+    grid-area: design-image;
+  }
+
+  .page__object .object__design-slider {
+    margin-bottom: 0;
+    grid-area: design-radio;
+  }
+
+  .page__object .design__card {
+    width: 456px;
+    height: 441px;
+  }
+
+  .page__object .object__design-name {
+    line-height: 29px;
+    font-size: 24px;
+  }
+
+  .page__object .object__design-item .object__selection-button {
     position: absolute;
     bottom: 16px;
     left: 16px;
-}
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+  }
 }

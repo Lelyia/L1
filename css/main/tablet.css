@@ -11,11 +11,11 @@
     /* navigation */
     .page__header-wrapper--opened .header__contacts-email {
         display: block;
+        line-height: 24px;
         font-family: "Geologica", Arial, sans-serif;
+        font-size: 20px;
         font-style: normal;
         font-weight: 300;
-        font-size: 20px;
-        line-height: 24px;
     }
 
     .page__header-wrapper--opened .header__nav {
@@ -29,18 +29,18 @@
 
     .page__header-wrapper--opened .header__nav-list {
         display: grid;
+        margin-bottom: 28px;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-auto-flow: column;
-        margin-bottom: 28px;
     }
 
     .page__header-wrapper--opened .info {
         display: grid;
+        margin-bottom: 14px;
         grid-column-gap: 16px;
         grid-template-rows: 1fr auto;
         grid-template-columns: 1fr 1fr 1fr;
-        margin-bottom: 14px;
     }
 
     .page__header-wrapper--opened .info__realty {
@@ -65,9 +65,9 @@
 
     .page__header-wrapper--opened .info__buy-container {
         order: 1;
+        height: max-content;
         grid-column: 3 / 4;
         grid-row: 1 / 4;
-        height: max-content;
     }
 
     .page__header-wrapper--opened .info__buy-list {
@@ -80,10 +80,10 @@
 
     .page__header-wrapper--opened .info__business-container {
         order: 2;
+        height: max-content;
+        margin-top: 0;
         grid-column: 1 / 3;
         grid-row: 2 / 3;
-        margin-top: 0;
-        height: max-content;
     }
 
     .button.button-main {
@@ -98,17 +98,17 @@
     }
 
     .complex {
+        max-height: 56px;
+        line-height: 56px;
         margin-top: 746px;
         font-size: 40px;
-        line-height: 56px;
-        max-height: 56px;
     }
 
     .slider__complex-item {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 22px;
         max-height: 45px;
+        line-height: 22px;
+        font-size: 16px;
+        font-weight: 400;
     }
 
     .button {
@@ -128,8 +128,8 @@
 
     ul.filters {
         display: flex;
-        justify-content: end;
         flex-direction: row;
+        justify-content: end;
     }
 
     .room-count {
@@ -157,8 +157,8 @@
 
     .object-item:nth-child(2),
     .object-item:nth-child(3n+2) {
-        margin-right: 0;
         width: 300px;
+        margin-right: 0;
     }
 
     /* Action*/
@@ -181,15 +181,15 @@
     }
 
     .button.button-phone {
-        text-align: center;
-        width: auto;
-        margin-top: 56px;
-        margin: 56px auto 115px auto;
-        padding: 22px 116px 21px 116px;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 22px;
         display: inline-block;
+        width: auto;
+        line-height: 22px;
+        padding: 22px 116px 21px 116px;
+        margin: 56px auto 115px auto;
+        margin-top: 56px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
     }
 
     .object-button {
@@ -206,9 +206,9 @@
     /* Footer */
 
     .footer__contacts {
-        font-weight: 400;
-        font-size: 10px;
         line-height: 14px;
+        font-size: 10px;
+        font-weight: 400;
     }
 
     .footer__social {
@@ -239,14 +239,14 @@
     }
 
     .footer__menu-container {
-        margin-top: 28px;
-        grid-area: menu;
         display: grid;
+        margin-top: 28px;
+        margin-bottom: 32px;
+        grid-area: menu;
         grid-template-areas:
             "realty flat object about"
             "location deadline buy other";
         column-gap: 16px;
-        margin-bottom: 32px;
 
     }
 
@@ -372,16 +372,16 @@
     */
 
     .footer__subscription-container {
+        display: flex;
+        justify-content: space-between;
         margin-top: 32px;
         margin-bottom: 47px;
-        display: flex;
         column-gap: 16px;
-        justify-content: space-between;
     }
 
     .footer__subscription-container p {
-        margin: 0;
         width: 50%;
+        margin: 0;
     }
 
     .footer__subscription-container input {
@@ -389,9 +389,9 @@
     }
 
     label.label-email {
-        color: var(--base-text);
         display: block;
         width: 100%;
+        color: var(--base-text);
     }
 
     label.label-email br {
@@ -403,19 +403,19 @@
     }
 
     button.button-submit {
-        cursor: pointer;
+        align-self: flex-end;
         width: 50%;
+        height: 54px;
+        line-height: 20px;
+        padding: 17px;
+        margin-top: 0;
+        margin-bottom: 0;
         border: 1px solid var(--accent);
         border-radius: 16px;
         color: var(--base-text);
-        padding: 17px;
-        font-size: 14px;
-        line-height: 20px;
         background-color: var(--base-white);
-        margin-top: 0;
-        margin-bottom: 0;
-        height: 54px;
-        align-self: flex-end;
+        cursor: pointer;
+        font-size: 14px;
     }
 
     .footer__logo-container {
@@ -441,17 +441,17 @@
     }
 
     .modal__subtitle {
-        font-size: 32px;
         line-height: 38px;
         margin: 16px;
+        font-size: 32px;
     }
 
     .modal__text {
-        font-size: 14px;
         line-height: 20px;
-        color: var(--gray-text);
         padding: 0;
         margin: 24px 16px 32px 16px;
+        color: var(--gray-text);
+        font-size: 14px;
     }
 
     .modal__button {
@@ -477,11 +477,11 @@
     }
 
     .object-item {
+        z-index: -1px;
         flex-basis: 298px;
         max-width: 298px;
-        margin-right: 16px;
-        z-index: -1px;
         max-height: 550px;
+        margin-right: 16px;
     }
 
 
@@ -496,22 +496,22 @@
     }
 
     .object-item:first-child .object-link {
+        max-width: 612px;
         cursor: pointer;
         pointer-events: auto;
         grid-template-areas:
             "a a"
             "c b";
-        max-width: 612px;
     }
 
     .object-link {
+        max-width: 298px;
         cursor: pointer;
         pointer-events: auto;
         grid-template-areas:
             "a a"
             "c c"
-            "b b";
-        max-width: 298px;    
+            "b b";    
     }
 
     .object__image-object {
@@ -519,14 +519,14 @@
     }
 
     .object__slider {
+        position: absolute;
+        top: 323px;
+        left: 50%;
+        display: flex;
         width: 64px;
         height: 10px;
-        display: flex;
-        column-gap: 8px;
-        position: absolute;
         transform: translate(-50%, 0);
-        left: 50%;
-        top: 323px;
+        column-gap: 8px;
     }
 
     .object__slider label {
@@ -538,13 +538,13 @@
 
     .object__slider label::before {
         position: absolute;
-        content: "";
         top: 0;
         left: 0;
         width: 10px;
         height: 10px;
-        background: rgba(255, 255, 255, 0.6);
         border-radius: 900px;
+        background: rgba(255, 255, 255, 0.6);
+        content: "";
     }
 
     .object__slider label::before:active {
@@ -556,20 +556,20 @@
     }
 
     .object-subtitle {
+        line-height: 38px;
         margin-bottom: 16px;
         font-size: 32px;
-        line-height: 38px;
     }
 
     .object__advantages {
-        bottom: -73px;
         z-index: 100;
+        bottom: -73px;
         max-width: 237px;
     }
 
     .object__advantages-title {
-        font-size: 12px;
         line-height: 17px;
+        font-size: 12px;
     }
 
     .flats {
@@ -585,16 +585,16 @@
 
     .object__flats {
         display: block;
-        grid-area: g;
-        font-size: 14px;
         line-height: 20px;
         color: var(--gray-text);
+        font-size: 14px;
+        grid-area: g;
     }
 
     .object__price {
-        font-size: 24px;
         line-height: 29px;
         margin-left: 16px;
+        font-size: 24px;
     }
 
     .object-item:not(:first-child) .metro {
@@ -610,8 +610,8 @@
     }
 
     .object__metro {
-        font-size: 14px;
         line-height: 20px;
+        font-size: 14px;
     }
 
     .object__metro::before {
@@ -619,8 +619,8 @@
     }
 
     .object__metro-time {
-        font-size: 14px;
         line-height: 20px;
+        font-size: 14px;
     }
 
     .object__metro-time-transport {
@@ -633,8 +633,8 @@
     }
 
     .object__metro-time-walk {
-        display: block;
         position: relative;
+        display: block;
         padding: 0;
         padding-left: 20px;
         margin-right: 12px;
@@ -642,14 +642,14 @@
 
     .object__metro-time-walk::before {
         position: absolute;
-        content: "";
-        width: 16px;
-        height: 16px;
         top: 2px;
         left: 0;
+        width: 16px;
+        height: 16px;
         background-image: url("../../icons/Walk.svg");
         background-repeat: no-repeat;
         background-position: 0 0;
+        content: "";
     }
 
     .button {
@@ -661,7 +661,7 @@
     }
 
     .flat-subtitle {
-        font-size: 20px;
         line-height: 24px;
+        font-size: 20px;
     }
 }

@@ -49,10 +49,10 @@
 
     .page__catalog .object__breadcrumbs-list {
         display: flex;
+        padding: 0;
         margin-top: 184px;
         margin-bottom: 4px;
         list-style: none;
-        padding: 0;
     }
 
     .page__catalog .object__breadcrumbs-item {
@@ -69,9 +69,9 @@
     }
 
     .page__catalog .object__breadcrumbs-link span {
-        font-size: 12px;
         line-height: 17px;
         color: var(--background-block);
+        font-size: 12px;
     }
 
     .page__catalog .object__breadcrumbs-item:first-child .object__breadcrumbs-link span {
@@ -79,16 +79,16 @@
     }
 
     .page__catalog .object__breadcrumbs-item:not(:last-child) .object__breadcrumbs-link::after {
-        content: "—";
         position: absolute;
-        margin: 1px 8px 0;
         display: inline-block;
-        vertical-align: middle;
-        font-weight: 400;
-        font-size: 12px;
         line-height: 17px;
         line-height: 1;
+        margin: 1px 8px 0;
         color: var(--gray-text);
+        content: "—";
+        vertical-align: middle;
+        font-size: 12px;
+        font-weight: 400;
     }
 
     .page__catalog .object-item-catalog .object__image-object {
@@ -97,29 +97,29 @@
 
     .page__catalog .object__filter-catalog {
         display: flex;
+        align-items: flex-end;
         justify-content: space-between;
         margin-bottom: 64px;
-        align-items: flex-end;
     }
 
     .page__catalog .object__catalog-view {
-        font-weight: 500;
-        font-size: 14px;
+        display: flex;
+        height: 50px;
         line-height: 20px;
-        background: var(--base-white);
         border: 1px solid var(--background-block);
         border-radius: 12px;
-        height: 50px;
-        display: flex;
+        background: var(--base-white);
+        font-size: 14px;
+        font-weight: 500;
     }
 
     .page__catalog .catalog-button {
         display: inline-block;
         padding: 16px 20px;
-        color: var(--gray-text);
-        border: none;
-        background-color: var(--base-white);
         margin: 0;
+        border: none;
+        color: var(--gray-text);
+        background-color: var(--base-white);
     }
 
     .page__catalog .catalog-button:active,
@@ -137,8 +137,8 @@
     }
 
     .page__catalog .object-item-catalog .object__advantages  {
-        bottom: -73px;
         z-index: 100;
+        bottom: -73px;
         max-width: 237px;
     }
 
@@ -148,43 +148,43 @@
     }
 
     .page__catalog .object-item-catalog .object__advantages-title {
-        font-size: 12px;
         line-height: 17px;
+        font-size: 12px;
     }
 
     .page__catalog .object-item .object-link,
     .page__catalog .object-item:first-child .link-catalog.object-link{
+        max-width: 612px;
         cursor: pointer;
         pointer-events: auto;
         grid-template-areas:
         "a a"
         "c b";
-        max-width: 612px;
     }
 
     .page__catalog .object-item .link-catalog .object-subtitle {
+        line-height: 38px;
         margin-bottom: 89px;
         font-size: 32px;
-        line-height: 38px;
     }
 
     .page__catalog .object-item .link-catalog .object__metro,
     .page__catalog .object-item .link-catalog .object__metro-time {
-        font-size: 14px;
         line-height: 20px;
+        font-size: 14px;
     }
 
     .page__catalog .object-item .link-catalog .object__flats {
         display: block;
-        font-size: 14px;
         line-height: 20px;
         color: var(--gray-text);
+        font-size: 14px;
     }
 
     .page__catalog .object-item .link-catalog .object__price {
-        font-size: 24px;
         line-height: 29px;
         margin-left: 16px;
+        font-size: 24px;
     }
 
 
@@ -197,7 +197,7 @@
     }
 
     .page__catalog .object-item.object__classic  div.object__advantages  {
-        max-width: 170px;
         flex-wrap: wrap;
+        max-width: 170px;
     }
 }

@@ -2,21 +2,21 @@
     /* PAGE OBJECT */
 
     .page__object .complex {
+        line-height: 67px;
         margin-top: 593px;
         margin-bottom: 8px;
         font-size: 48px;
-        line-height: 67px;
     }
 
     .page__object .slider-main {
+        max-width: 1240px;
         margin: 0 auto;
         margin-bottom: 48px;
-        max-width: 1240px;
     }
 
     .page__object .slider__button {
-        left: 0;
         top: -147px;
+        left: 0;
     }
 
     .page__object .slider__complex-list {
@@ -25,13 +25,13 @@
     }
 
     .page__object .slider__complex-item {
-        padding: 9px 0 9px 52px;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 22px;
-        margin: 0 24px 0 0;
-        justify-self: flex-start;
         width: auto;
+        line-height: 22px;
+        padding: 9px 0 9px 52px;
+        margin: 0 24px 0 0;
+        font-size: 16px;
+        font-weight: 500;
+        justify-self: flex-start;
     } 
 
     .page__object .slider picture {
@@ -39,11 +39,11 @@
      }
 
      .page__object .button-main {
+        min-width: 290px;
+        line-height: 22px;
+        padding: 21px;
         margin: 0;
         font-size: 16px;
-        line-height: 22px;
-        min-width: 290px;
-        padding: 21px;
  }
 
     .page__object .header {
@@ -55,10 +55,10 @@
     }
 
     .page__object .page__header-wrapper-object .page__header-buttons-list {
-        order: 5;
-        margin: 48px auto;
         justify-content: space-between;
+        order: 5;
         max-width: 1240px;
+        margin: 48px auto;
     }
 
     .page__object .page__header-wrapper-object .page__header-buttons-link {
@@ -70,15 +70,15 @@
         display: inline;
     }
 
-    .page__object .page__header-wrapper-object .header {
-        order: 2; 
+    .page__object .page__header-wrapper-object .header { 
         flex-grow: 1;
+        order: 2;
     }
     
 
     .page__object .page__header-wrapper-object .page__header-logo {
-        margin: 21px 16px 21px 32px;
         order: 1;
+        margin: 21px 16px 21px 32px;
     }
 
     .page__object .page__header-wrapper-object .header__nav-list-main {
@@ -91,8 +91,8 @@
     }
 
     .page__object .page__header-wrapper-object .page__header-buttons2-list {
-        order: 3;
         display: flex;
+        order: 3;
         list-style: none;
     } 
 
@@ -122,21 +122,21 @@
     .page__object .header__nav-more:hover .header__nav-list-additional,
     .page__object .header__nav-more:active .header__nav-list-additional {
         position: absolute;
+        top: 84px;
+        left: -141px;
         display: grid;
-        grid-template-rows: repeat(4, 1fr) ;
-        grid-template-columns: repeat(2, 1fr);
         max-width: 336px;
-        justify-items: start;
-        background: var(--base-white);
-        border: 1px solid var(--accent);
-        box-shadow: 0px 69px 27px rgba(0, 0, 0, 0.01), 0px 39px 23px rgba(0, 0, 0, 0.05), 0px 17px 17px rgba(0, 0, 0, 0.09), 0px 4px 9px rgba(0, 0, 0, 0.1);
-        border-radius: 16px;
         padding: 16px;
         margin-right: 0;
+        border: 1px solid var(--accent);
+        border-radius: 16px;
+        background: var(--base-white);
+        box-shadow: 0px 69px 27px rgba(0, 0, 0, 0.01), 0px 39px 23px rgba(0, 0, 0, 0.05), 0px 17px 17px rgba(0, 0, 0, 0.09), 0px 4px 9px rgba(0, 0, 0, 0.1);
+        grid-template-rows: repeat(4, 1fr) ;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: start;
         column-gap: 20px;
         row-gap: 16px;
-        left: -141px;
-        top: 84px;
         grid-auto-flow: column;
    }
 
@@ -157,10 +157,10 @@
     }
 
     .page__object .header__nav-more:hover .header__nav-list-additional .header__nav-item a {
-        font-weight: 400;
-        font-size: 16px;
         line-height: 22px;
         padding: 0;
+        font-size: 16px;
+        font-weight: 400;
     }
 
     .page__object .page__header-wrapper-object .header__contacts-phone  {
@@ -172,10 +172,10 @@
     }
 
     .page__object .page__header-wrapper-object .page__header-buttons2-link {
+        margin: 18px 32px;
+        margin-top: 18px;
         margin-right: 32px;
         margin-bottom: 0;
-        margin-top: 18px;
-        margin: 18px 32px;
     }
 
     .page__object .page__header-wrapper-object .page__header-buttons2-title {
@@ -219,15 +219,15 @@
     }
 
     .page__object .object__about-info {
+        max-width: 1240px;
         margin: 0 auto 128px;
         grid-template-columns: 40.9% auto;
-        max-width: 1240px;
     }
 
     .page__object .object-title {
+        line-height: 56px;
         margin-bottom: 16px;
         font-size: 40px;
-        line-height: 56px;
     }
 
     .page__object .object__about-list {
@@ -239,18 +239,18 @@
     }
 
     .page__object .object__about-text {
-       font-size: 16px;
         line-height: 22px;
         margin-bottom: 24px;
+       font-size: 16px;
     }
     .page__object .object__about-data {
-      font-size: 32px;
         line-height: 38px;
+      font-size: 32px;
     }
 
     .page__object .object__about-description {
-        font-size: 14px;
         line-height: 20px;
+        font-size: 14px;
     }
 
     .page__object .object__selection-wrapper {
@@ -263,33 +263,33 @@
     }
 
     .page__object .object__selection-slider {
-        margin: 0 0 128px;
         max-width: none;
+        margin: 0 0 128px;
     }
 
     .page__object .object__selection-subtitle {
         max-width: 1240px;
-        margin-left: auto;
-        margin-right: auto;
         padding: 32px 0 0;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     .page__object .object__selection-button {
         max-width: 1240px;
-        margin-left: auto;
         margin-right: auto;
+        margin-left: auto;
     }
 
     .page__object .object__selection-slider picture {
-        max-height: 661px;
         z-index: -1;
+        max-height: 661px;
     }
 
     .page__object .action {
         max-width: 1240px;
-        margin-left: auto;
         margin-right: auto;
         margin-bottom: 20px;
+        margin-left: auto;
     }    
 
     .page__object .action__title {
@@ -303,45 +303,45 @@
 
     .page__object .ipoteka__widget-text {
         max-width: 1240px;
+        line-height: 56px;
         margin: 0 auto;
+        margin-bottom: 48px;
+        color: var(--base-text);
         font-family: "Geologica", Arial, sans-serif;
+        font-size: 40px;
         font-style: normal;
         font-weight: 300;
-        font-size: 40px;
-        line-height: 56px;
-        color: var(--base-text);
-        margin-bottom: 48px;
     }
 
     .page__object .ipoteka__widget-content {
         position: relative;
-        height: 614px;
-        border: 1px solid var(--background-block);
         max-width: 1440px;
+        height: 614px;
         margin: 0 auto;
+        border: 1px solid var(--background-block);
     }
 
     .page__object .ipoteka__widget-description {
+        max-width: 1240px;
+        line-height: 56px;
+        margin: 0 auto;
+        color: var(--gray-text);
         font-family: "Geologica", Arial, sans-serif;
+        font-size: 40px;
         font-style: normal;
         font-weight: 300;
-        font-size: 40px;
-        line-height: 56px;
-        color: var(--gray-text);
-        max-width: 1240px;
-        margin: 0 auto;
 
     }
 
     .page__object .ipoteka__calculation {
         max-width: 1240px;
-        margin: 0 auto 128px;
         padding: 32px;
+        margin: 0 auto 128px;
     }
 
     .page__object .ipoteka__calculation-subtitle {
-       font-size: 32px;
         line-height: 38px;
+       font-size: 32px;
    }
 
    .page__object .ipoteka__calculation-button {
@@ -364,21 +364,21 @@
 }
 
 .page__object .object__advantage-title {
-    margin: 128px auto 58px auto;
     max-width: 1240px;
+    margin: 128px auto 58px auto;
 }
 
 .page__object .object__advantage-list {
-    margin: 0 auto;
-    max-width: 1240px;
     overflow-x: hidden;
+    max-width: 1240px;
+    margin: 0 auto;
 }
 
 .page__object .object__advantage-slider {
-    display: flex;
     position: absolute;
-    right: 0;
     top: 0;
+    right: 0;
+    display: flex;
 }
 
 }

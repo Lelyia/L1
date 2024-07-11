@@ -5,16 +5,16 @@
 }
 
 .page__object .complex {
+    max-height: none;
+    line-height: 29px;
     margin-top: 435px;
     margin-bottom: 8px;
     font-size: 24px;
-    line-height: 29px;
-    max-height: none;
 }
 
 .page__object .slider {
-    margin-left: 16px;
     margin-right: 16px;
+    margin-left: 16px;
 }
 
 .page__object .slider__complex-list {
@@ -26,13 +26,12 @@
 }
 
 .page__object .slider__complex-item {
+    position: relative;
     padding: 7.5px 48px;
     margin-bottom: 8px;
-    position: relative;
 }
 
 .page__object .slider__complex-item-1::before {
-    content: "";
     position: absolute;
     top: 0;
     left: 0px;
@@ -41,10 +40,10 @@
     background-image: url("../../icons/location32.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+    content: "";
 }
 
 .page__object .slider__complex-item-2::before {
-    content: "";
     position: absolute;
     top: 0;
     left: 0px;
@@ -53,6 +52,7 @@
     background-image: url("../../icons/deadline32.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+    content: "";
 }
 
 .page__object .slider .action-button {
@@ -69,11 +69,11 @@
 }
 
 .page__object .page__header-wrapper-object {
-    background-color: var(--base-white);
-    margin-left: 16px;
-    margin-right: 16px;
-    width: auto;
     position: relative;
+    width: auto;
+    margin-right: 16px;
+    margin-left: 16px;
+    background-color: var(--base-white);
 }
 
 .page__object .page__header-wrapper-object .header__nav-link-more {
@@ -86,14 +86,14 @@
 
 .page__object .page__header-wrapper-object--opened::before {
     position: absolute;
+    z-index: -1;
     right: 0;
     bottom: 0;
     left: 0;
-    box-sizing: border-box;
     height: 100%;
-    content: '';
+    box-sizing: border-box;
     background-color: var(--base-white);
-    z-index: -1;
+    content: '';
 }
 
 .page__object .header {
@@ -114,16 +114,16 @@
 
 .page__object .page__header-wrapper-object--opened {
     position: fixed;
-    background-color: var(--base-white);
+    z-index: 1000;
     top: 0;
     left: 0;
-    width: 100%;
     overflow: hidden;
-    height: 100%;
     overflow-y: scroll;
-    z-index: 1000;
-    margin-left: 0;
+    width: 100%;
+    height: 100%;
     margin-right: 0;
+    margin-left: 0;
+    background-color: var(--base-white);
 }
 
 .page__object .page__header-wrapper-object .page__header-logo-wrapper {
@@ -136,12 +136,12 @@
 }
 
 .page__object .page__header-buttons-list {
-    list-style: none;
     padding: 16px;
     margin: 0;
+    margin-bottom: 32px;
     border: 1px solid var(--background-block);
     border-radius: 16px;
-    margin-bottom: 32px;
+    list-style: none;
 }
 
 .page__object .page__header-wrapper-object--opened .page__header-buttons-list {
@@ -153,14 +153,14 @@
 }
 
 .page__object .page__header-buttons-link {
-    font-weight: 400;
-    font-size: 10px;
+    width: 100%;
     line-height: 14px;
     padding: 11px;
-    width: 100%;
     margin: 0 0 8px 0;
-    border-radius: 12px;
     border: 1px solid var(--accent);
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: 400;
 }
 
 .page__object .page__header-buttons-item:not(:first-child) .page__header-buttons-link {
@@ -180,37 +180,37 @@
 }
 
 .page__object .page__header-wrapper-object--opened .page__header-object-toggle::before {
-    content: "";
     position: absolute;
+    z-index: 3;
     top: 19px;
     right: 11px;
     width: 18px;
     height: 2px;
-    background-color: var(--base-white);
-    transform: rotate(45deg);
-    box-shadow: none;
     border: none;
     border-radius: 1px;
-    z-index: 3;
+    background-color: var(--base-white);
+    box-shadow: none;
+    content: "";
+    transform: rotate(45deg);
 }
 
 .page__object .page__header-wrapper-object--opened .page__header-object-toggle::after {
-    content: "";
     position: absolute;
     top: 19px;
     right: 11px;
     width: 18px;
     height: 2px;
-    background-color: var(--base-white);
-    transform: rotate(-45deg);
-    box-shadow: none;
     border: none;
     border-radius: 1px;
+    background-color: var(--base-white);
+    box-shadow: none;
+    content: "";
+    transform: rotate(-45deg);
 }
 
 .header__nav-list-main {
-    list-style: none;
     padding: 0;
+    list-style: none;
 }
 
 .header__nav-list-main .header__nav-item:last-child {
@@ -218,8 +218,8 @@
 }
 
 .header__nav-list-additional {
-    list-style: none;
     padding: 0;
+    list-style: none;
 }
 
 .page__object .page__header-buttons2-list {
@@ -228,10 +228,10 @@
 
 .page__object .page__header-wrapper-object--opened .page__header-buttons2-list {
     display: flex;
-    column-gap: 12px;
-    list-style: none;
-    margin: 0 16px 6px;
     padding: 0;
+    margin: 0 16px 6px;
+    list-style: none;
+    column-gap: 12px;
 }
 
 .page__object .page__header-wrapper-object--opened .page__header-buttons2-item {
@@ -239,31 +239,31 @@
 }
 
 .page__object .page__header-wrapper-object--opened .page__header-buttons2-link {
-    font-weight: 400;
-    font-size: 10px;
+    min-width: 165px;
     line-height: 14px;
     padding: 12px;
     margin: 0;
     border-radius: 8px;
-    min-width: 165px;
+    font-size: 10px;
+    font-weight: 400;
 }
 
 .page__object .page__header-wrapper-object--opened .page__header-buttons2-link {
-    font-weight: 400;
-    font-size: 10px;
+    min-width: 165px;
     line-height: 14px;
     padding: 12px;
     margin: 0;
     border-radius: 8px;
-    min-width: 165px;
+    font-size: 10px;
+    font-weight: 400;
 }
 
 .page__object .page__header-wrapper-object--opened .page__header-buttons2-item:first-child .page__header-buttons2-link {
-    background-color: var(--base-white);
-    border: 1px solid var(--accent);
-    color: var(--base-text);
-    border-radius: 8px;
     padding: 11px;
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+    color: var(--base-text);
+    background-color: var(--base-white);
 }
 
 .page__object .page__header-wrapper-object .page__header-buttons2-title-desktop {
@@ -283,67 +283,67 @@
 }
 
 .page__object .object-title {
-    font-family: "Geologica", Arial, sans-serif;
-    font-weight: 300;
-    font-size: 24px;
     line-height: 29px;
-    color: var(--base-text);
     padding: 0;
     margin-bottom: 32px;
+    color: var(--base-text);
+    font-family: "Geologica", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 300;
 }
 
 .page__object .object__about-info {
+    margin-right: 16px;
     margin-bottom: 64px;
     margin-left: 16px;
-    margin-right: 16px;
 }
 
 .page__object .object__about-video {
     position: relative;
-    padding-bottom: 75%;
+    overflow: hidden;
     /* задаёт высоту контейнера для 4:3 (если 16:9 — поставить 56.25%) */
     height: 0;
-    overflow: hidden;
-    background: var(--base-white);
+    padding-bottom: 75%;
+    margin: 0 0 16px;
     border: 1px solid var(--background-block);
     border-radius: 16px;
-    margin: 0 0 16px;
+    background: var(--base-white);
 }
 
 .page__object .object__about-video iframe {
-    max-height: 100%;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    max-height: 100%;
     border-width: 0;
     outline-width: 0;
 }
 
 .page__object .object__about-text {
+    line-height: 20px;
     padding: 0;
     margin: 0 0 12px;
     font-size: 14px;
-    line-height: 20px;
 }
 
 .page__object .object__about-list {
-    list-style: none;
     display: flex;
     flex-wrap: wrap;
-    max-width: 279px;
     justify-content: space-between;
+    max-width: 279px;
     padding: 0;
     margin: 0;
+    list-style: none;
 }
 
 .page__object .object__about-item {
     display: flex;
     flex-direction: column;
-    margin: 0;
-    padding: 0;
     min-width: 104px;
+    padding: 0;
+    margin: 0;
     margin-bottom: 16px;
 }
 
@@ -352,41 +352,41 @@
 }
 
 .page__object .object__about-data {
-    font-family: "Geologica", Arial, sans-serif;
-    font-weight: 300;
-    font-size: 20px;
     line-height: 24px;
-    color: var(--accent-1);
     margin-bottom: 4px;
+    color: var(--accent-1);
+    font-family: "Geologica", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
 }
 
 .page__object .object__selection-title {
-    margin-left: 16px;
     margin-right: 16px;
+    margin-left: 16px;
 }
 
 .page__object .object__selection-option {
     display: flex;
     justify-content: flex-start;
-    column-gap: 8px;
-    margin-left: 16px;
     margin-right: 16px;
+    margin-left: 16px;
+    column-gap: 8px;
 }
 
 .page__object .option__button {
+    min-width: 160px;
     padding: 11px;
-    background: var(--base-white);
+    margin: 0;
     border: 1px solid var(--background-block);
     border-radius: 900px;
-    font-weight: 400;
     color: var(--base-text);
-    min-width: 160px;
-    margin: 0;
+    background: var(--base-white);
+    font-weight: 400;
 }
 
 .page__object .option__button--active {
-    background: var(--accent);
     color: var(--base-white);
+    background: var(--accent);
 }
 
 .page__object .object__selection-slider {
@@ -396,39 +396,39 @@
 }
 
 .page__object .object__selection-subtitle {
-    margin: 0;
-    font-size: 24px;
-    color: var(--base-white);
-    padding: 24px 16px 0;
-    font-weight: 300;
     line-height: 29px;
+    padding: 24px 16px 0;
+    margin: 0;
+    color: var(--base-white);
+    font-size: 24px;
+    font-weight: 300;
 }
 
 .page__object .object__selection-list {
-    list-style: none;
     padding: 0;
     margin: 0;
+    list-style: none;
 }
 
 .page__object .object__selection-slider picture {
-    max-height: 661px;
     z-index: -1;
+    max-height: 661px;
 }
 
 .page__object .object__selection-button {
     display: flex;
-    list-style: none;
     padding: 0;
     margin: 0;
-    column-gap: 12px;
     margin: 532px 16px 16px;
+    list-style: none;
+    column-gap: 12px;
 }
 
 .page__object .selection-button-item {
     width: 43px;
     height: 5px;
-    background: rgba(208, 208, 208, 0.5);
     border-radius: 4px;
+    background: rgba(208, 208, 208, 0.5);
 }
 
 .page__object .selection-button-item--active {
@@ -452,12 +452,12 @@
 }
 
 .page__object .object__selection-line {
-    padding: 0;
-    margin: 0;
-    background: rgba(255, 255, 255, 0.7);
-    border-radius: 900px;
     width: 100%;
     height: 11px;
+    padding: 0;
+    margin: 0;
+    border-radius: 900px;
+    background: rgba(255, 255, 255, 0.7);
 }
 
 .page__object .action {
@@ -475,27 +475,26 @@
 
 .page__object .ipoteka__calculation {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background: var(--base-white);
+    justify-content: space-between;
+    width: auto;
+    padding: 16px;
+    margin: 0 16px;
     border: 1px solid var(--accent);
     border-radius: 12px;
-    margin: 0 16px;
-    padding: 16px;
-    width: auto;
+    background: var(--base-white);
 }
 
 .page__object .ipoteka__calculation-button {
     position: relative;
     width: 36px;
     height: 36px;
-    background: var(--accent);
     border-radius: 8px;
+    background: var(--accent);
     cursor: pointer;
 }
 
 .page__object .ipoteka__calculation-button::before {
-    content: "";
     position: absolute;
     top: 10px;
     left: 10px;
@@ -504,15 +503,16 @@
     background-image: url("../../icons/Go_to.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+    content: "";
 }
 
 .page__object .ipoteka__calculation-subtitle {
-    font-family: "Geologica", Arial, sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
     line-height: 19px;
     color: var(--base-text);
+    font-family: "Geologica", Arial, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
 }
 
 .page__object .object__advantage {
@@ -525,20 +525,20 @@
 }
 
 .page__object .object__advantage-list {
-    list-style: none;
+    display: flex;
     padding: 0;
     margin: 0 0 16px 0;
-    display: flex;
+    list-style: none;
     column-gap: 16px;
 }
 
 .page__object .object__advantage-item {
+    overflow: hidden;
     min-width: 296px;
     min-height: 429px;
-    background: var(--background-color);
-    border-radius: 16px;
-    overflow: hidden;
     border: 1px solid var(--background-block);
+    border-radius: 16px;
+    background: var(--background-color);
 }
 
 .page__object .object__advantage-item:first-child {
@@ -546,13 +546,13 @@
 }
 
 .page__object .object__advantage-card {
+    position: relative;
+    overflow: hidden;
     width: 296px;
     height: 429px;
-    border-radius: 16px;
-    position: relative;
-    margin: 0;
     padding: 0;
-    overflow: hidden;
+    margin: 0;
+    border-radius: 16px;
 }
 
 .page__object .object__advantage-item:first-child .object__advantage-card {
@@ -563,32 +563,32 @@
     position: absolute;
     top: 0;
     left: 0;
+    display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
     border-radius: 12px;
-    display: block;
+    object-fit: cover;
 }
 
 .page__object .object__advantage-text {
-    font-size: 16px;
+    max-width: 298px;
     line-height: 22px;
     padding: 16px 24px;
     margin: 0;
-    max-width: 298px;
+    font-size: 16px;
 }
 
 .page__object .object__advantage-subtitle {
     position: absolute;
-    width: 203px;
-    left: 24px;
     bottom: 16px;
-    font-weight: 500;
-    font-size: 20px;
+    left: 24px;
+    width: 203px;
     line-height: 28px;
-    color: var(--base-white);
     padding: 0;
     margin: 0;
+    color: var(--base-white);
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .page__object .object__advantage-slider {
@@ -613,15 +613,15 @@
 }
 
 .page__object .object__design-list {
-    margin: 0;
     padding: 0;
+    margin: 0;
     list-style: none;
 }
 
 .page__object .object__design-item--active {
+    position: relative;
     display: block;
     margin: 0 16px 16px;
-    position: relative;
 }
 
 .page__object .object__design-item .object__selection-button {
@@ -629,21 +629,21 @@
 }
 
 .page__object .design__list {
-    margin: 0;
     padding: 0;
+    margin: 0;
     list-style: none;
 }
 
 .page__object .design__card {
-    width: 296px;
-    height: 429px;
-    border-radius: 16px;
     position: relative;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
+    width: 296px;
     width: 343px;
+    height: 429px;
     height: 315px;
+    padding: 0;
+    margin: 0;
+    border-radius: 16px;
     border-radius: 16px;
 }
 
@@ -651,16 +651,16 @@
     position: absolute;
     top: 0;
     left: 0;
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
 }
 
 .page__object .object__design-control {
-    margin: 0 16px 24px;
     display: flex;
     flex-direction: column;
+    margin: 0 16px 24px;
     row-gap: 12px;
 }
 
@@ -672,38 +672,38 @@
 }
 
 .page__object .object__design-control-item {
-    background: var(--base-white);
+    display: block;
     border: 1px solid var(--background-block);
     border-radius: 12px;
-    display: block;
+    background: var(--base-white);
 }
 
 .page__object .object__design-name {
-    font-family: "Geologica", Arial, sans-serif;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 24px;
-    color: var(--base-text);
-    margin: 15px 16px 12px;
-    padding: 0;
     display: block;
+    line-height: 24px;
+    padding: 0;
+    margin: 15px 16px 12px;
+    color: var(--base-text);
+    font-family: "Geologica", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
 }
 
 .page__object .object__design-description {
-    font-size: 12px;
     line-height: 17px;
-    margin: 0 16px 15px;
     padding: 0;
+    margin: 0 16px 15px;
+    font-size: 12px;
 }
 
 .page__object .object__design-buttons-list {
-    list-style: none;
-    margin: 0 16px;
-    padding: 0;
     display: flex;
     flex-direction: column;
-    row-gap: 12px;
+    padding: 0;
+    margin: 0 16px;
     margin-bottom: 64px;
+    list-style: none;
+    row-gap: 12px;
 }
 
 .page__object .object__design-buttons-link {
@@ -711,7 +711,7 @@
 }
 
 .page__object .object__design-buttons-detailed .object__design-buttons-link {
+    border: 1px solid var(--accent);
     color: var(--base-text);
     background: var(--base-white);
-    border: 1px solid var(--accent);
 }
