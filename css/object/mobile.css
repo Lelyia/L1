@@ -711,7 +711,49 @@
 }
 
 .page__object .object__design-buttons-detailed .object__design-buttons-link {
+    padding: 21px;
     border: 1px solid var(--accent);
     color: var(--base-text);
     background: var(--base-white);
+}
+
+.page__object .object__map-container {
+    width: auto;
+    height: 559px;
+    margin-bottom: 16px;
+}
+
+.page__object .object__map-title {
+    margin: 0 16px 48px;
+}
+
+.page__object .object__map-buttons-list {
+    display: flex;
+    padding: 0;
+    margin: 0 0 0 16px;
+    list-style: none;
+    column-gap: 8px;
+    
+}
+
+.page__object .object__map-buttons-item {
+    flex-shrink: 0;
+    width: max-content;
+}
+
+.page__object .object__map-buttons-link {
+    line-height: 17px;
+    padding: 11px 31px;
+    margin: 0;
+    border: 1px solid var(--background-block);
+    border-radius: 900px;
+    color: var(--base-text);
+    background: var(--base-white);
+    font-size: 12px;
+}
+
+.page__object .object__map-buttons-link--active {
+    padding: 12px 32px;
+    color: var(--base-white);
+    background: var(--accent);
 }

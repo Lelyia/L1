@@ -325,13 +325,27 @@
     display: grid;
     grid-template-areas:
       "design-image design-title"
-      "design-image design-radio";
+      "design-image design-radio"
+      "design-buttons design-buttons";
     column-gap: 16px;
+  }
+
+  .page__object .object__design-control {
+    margin-left: 0;
+  }
+
+  .page__object .object__design-buttons-list {
+    grid-area: design-buttons;
+  }
+
+  .page__object .object__design-buttons-detailed .object__design-buttons-link {
+    padding: 19px;
   }
 
   .page__object .object__design-title {
     line-height: 38px;
     margin-bottom: 24px;
+    margin-left: 0;
     font-size: 32px;
     grid-area: design-title;
   }
@@ -339,6 +353,11 @@
   .page__object .object__design-list {
     margin-bottom: 0;
     grid-area: design-image;
+  }
+
+  
+  .page__object .object__design-item--active { 
+    margin-right: 0;
   }
 
   .page__object .object__design-slider {
@@ -364,4 +383,25 @@
     justify-content: flex-start;
     margin: 0;
   }
+
+  .page__object .object__map {
+    margin-bottom: 16px;
+  }
+
+  .page__object .object__map-container {
+    width: 960px;
+    height: 559px;
+    margin-bottom: 17px;
+}
+
+  .page__object .object__map-title {
+line-height: 38px;
+font-size: 32px;
+}
+
+.page__object .object__map-buttons-link {
+  line-height: 20px ;
+  font-size: 14px;
+}
+
 }

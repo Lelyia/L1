@@ -32,19 +32,19 @@
         font-size: 16px;
         font-weight: 500;
         justify-self: flex-start;
-    } 
+    }
 
     .page__object .slider picture {
         height: 780px;
-     }
+    }
 
-     .page__object .button-main {
+    .page__object .button-main {
         min-width: 290px;
         line-height: 22px;
         padding: 21px;
         margin: 0;
         font-size: 16px;
- }
+    }
 
     .page__object .header {
         display: block;
@@ -70,11 +70,11 @@
         display: inline;
     }
 
-    .page__object .page__header-wrapper-object .header { 
+    .page__object .page__header-wrapper-object .header {
         flex-grow: 1;
         order: 2;
     }
-    
+
 
     .page__object .page__header-wrapper-object .page__header-logo {
         order: 1;
@@ -94,25 +94,25 @@
         display: flex;
         order: 3;
         list-style: none;
-    } 
+    }
 
     .page__object .page__header-wrapper-object .header__nav-list-main {
         display: flex;
     }
-    
+
     .page__object .page__header-wrapper-object .header__nav-link-more {
         display: inline;
         order: 5;
-   }
-
-   .page__object .page__header-wrapper-object .header__nav-more {
-    position: relative;
     }
 
-   
-   .page__object .header__nav-list-additional {
-    display: none;
-}
+    .page__object .page__header-wrapper-object .header__nav-more {
+        position: relative;
+    }
+
+
+    .page__object .header__nav-list-additional {
+        display: none;
+    }
 
     .page__object .page__header-wrapper-object .header__nav-link-more:hover,
     .page__object .page__header-wrapper-object .header__nav-link-more:active {
@@ -132,13 +132,13 @@
         border-radius: 16px;
         background: var(--base-white);
         box-shadow: 0px 69px 27px rgba(0, 0, 0, 0.01), 0px 39px 23px rgba(0, 0, 0, 0.05), 0px 17px 17px rgba(0, 0, 0, 0.09), 0px 4px 9px rgba(0, 0, 0, 0.1);
-        grid-template-rows: repeat(4, 1fr) ;
+        grid-template-rows: repeat(4, 1fr);
         grid-template-columns: repeat(2, 1fr);
         justify-items: start;
         column-gap: 20px;
         row-gap: 16px;
         grid-auto-flow: column;
-   }
+    }
 
     .page__object .page__header-wrapper-object .header__nav-item:last-child {
         margin-bottom: 0;
@@ -163,7 +163,7 @@
         font-weight: 400;
     }
 
-    .page__object .page__header-wrapper-object .header__contacts-phone  {
+    .page__object .page__header-wrapper-object .header__contacts-phone {
         display: none;
     }
 
@@ -209,7 +209,7 @@
     .page__object .page__header-wrapper-object {
         position: relative;
     }
-    
+
     .page__object .page__header-wrapper-object .page__header-buttons-ipoteka::before {
         background-image: url(../../icons/Bank24.svg);
     }
@@ -241,11 +241,12 @@
     .page__object .object__about-text {
         line-height: 22px;
         margin-bottom: 24px;
-       font-size: 16px;
+        font-size: 16px;
     }
+
     .page__object .object__about-data {
         line-height: 38px;
-      font-size: 32px;
+        font-size: 32px;
     }
 
     .page__object .object__about-description {
@@ -290,12 +291,12 @@
         margin-right: auto;
         margin-bottom: 20px;
         margin-left: auto;
-    }    
+    }
 
     .page__object .action__title {
         margin-bottom: 48px;
     }
-        
+
     .page__object .ipoteka__widget {
         display: block;
         margin-bottom: 128px;
@@ -341,44 +342,181 @@
 
     .page__object .ipoteka__calculation-subtitle {
         line-height: 38px;
-       font-size: 32px;
-   }
+        font-size: 32px;
+    }
 
-   .page__object .ipoteka__calculation-button {
-    width: 64px;
-    height: 64px;
-}
+    .page__object .ipoteka__calculation-button {
+        width: 64px;
+        height: 64px;
+    }
 
-.page__object .ipoteka__calculation-button::before {
-    top: 16px;
-    left: 16px;
-    width: 32px;
-    height: 32px;
-    background-image: url("../../icons/Go_to32.svg");
-}
+    .page__object .ipoteka__calculation-button::before {
+        top: 16px;
+        left: 16px;
+        width: 32px;
+        height: 32px;
+        background-image: url("../../icons/Go_to32.svg");
+    }
 
-.page__object .object__advantage {
-    position: relative;
-    max-width: 1240px;
-    margin: 0 auto;
-}
+    .page__object .object__advantage {
+        position: relative;
+        max-width: 1240px;
+        margin: 0 auto 118px;
+    }
 
-.page__object .object__advantage-title {
-    max-width: 1240px;
-    margin: 128px auto 58px auto;
-}
+    .page__object .object__advantage-title {
+        max-width: 1240px;
+        margin: 128px auto 58px auto;
+    }
 
-.page__object .object__advantage-list {
-    overflow-x: hidden;
-    max-width: 1240px;
-    margin: 0 auto;
-}
+    .page__object .object__advantage-list {
+        overflow-x: hidden;
+        max-width: 1240px;
+        margin: 0 auto;
+    }
 
-.page__object .object__advantage-slider {
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: flex;
-}
+    .page__object .object__advantage-slider {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+    }
 
+    .page__object .object__design {
+        max-width: 1240px;
+        margin: 0 auto 128px;
+    }
+
+    .page__object .object__design-container {
+        grid-template-areas:
+            "design-image design-title"
+            "design-image design-radio"
+            "design-image design-buttons";
+    }
+
+    .page__object .object__design-slider {
+        margin-bottom: 33px;
+    }
+
+
+    .page__object .design__card {
+        width: 717px;
+        height: 668px;
+    }
+
+    .page__object .object__design-title {
+        line-height: 56px;
+        margin-right: 0;
+        margin-bottom: 34px;
+        font-size: 40px;
+    }
+
+    .page__object .object__design-name {
+        line-height: 29px;
+        font-size: 24px;
+    }
+
+    .page__object .object__design-buttons-list {
+        margin: 0;
+    }
+
+    .page__object .object__design-buttons-title {
+        line-height: 22px;
+        font-size: 16px;
+    }
+
+    .page__object .object__design-control {
+        margin-right: 0;
+    }
+
+    .page__object .object__design-item--active {
+        margin: 0;
+    }
+
+    .page__object .object__design-buttons-3d .object__design-buttons-link {
+        padding: 21px;
+    }
+
+    .page__object .object__map-container {
+        width: 1440px;
+        height: 671px;
+        margin: 0 auto 10px;
+    }
+
+    .page__object .object__map-buttons-list {
+        flex-wrap: wrap;
+        max-width: 1240px;
+        margin: 0 auto;
+    }
+
+    .page__object .object__map-title {
+        max-width: 1240px;
+        margin: 0 auto 48px;
+    }
+
+    .page__object .object__map-buttons-link {
+        line-height: 22px;
+        margin-bottom: 14px;
+        font-size: 16px;
+    }
+
+    .page__object .object__map-buttons-item:not(:first-child) .object__map-buttons-link {
+        position: relative;
+        padding: 12px 31px 12px 65px;
+    }
+
+    .page__object .object__map-buttons-item:not(:first-child) .object__map-buttons-link::before {
+        position: absolute;
+        top: 12px;
+        left: 31px;
+        width: 24px;
+        height: 24px;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        content: "";
+    }
+
+    .page__object .object__map-school.object__map-buttons-link::before {
+        background-image: url("../../icons/map/school.svg");
+    }
+
+    .page__object .object__map-kindergarten.object__map-buttons-link::before {
+        background-image: url("../../icons/map/ToyBear.svg");
+    }
+
+    .page__object .object__map-medicine.object__map-buttons-link::before {
+        background-image: url("../../icons/map/Aid.svg");
+    }
+
+    .page__object .object__map-shop.object__map-buttons-link::before {
+        background-image: url("../../icons/map/Shopping_Cart.svg");
+    }
+
+    .page__object .object__map-park.object__map-buttons-link::before {
+        background-image: url("../../icons/map/Leaf.svg");
+    }
+
+    .page__object .object__map-cafe.object__map-buttons-link::before {
+        background-image: url("../../icons/map/Dish.svg");
+    }
+
+    .page__object .object__map-gasstation.object__map-buttons-link::before {
+        background-image: url("../../icons/map/Gas_Station.svg");
+    }
+
+    .page__object .object__map-metro.object__map-buttons-link::before {
+        background-image: url("../../icons/map/Metro.svg");
+    }
+
+    .page__object .object__map-mail.object__map-buttons-link::before {
+        background-image: url("../../icons/map/Mail.svg");
+    }
+
+    .page__object .object__map-bank.object__map-buttons-link::before {
+        background-image: url("../../icons/map/Bank.svg");
+    }
+
+    .page__object .object__map-sport.object__map-buttons-link::before {
+        background-image: url("../../icons/map/Gym.svg");
+    }
 }
