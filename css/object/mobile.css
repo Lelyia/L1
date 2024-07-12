@@ -717,7 +717,12 @@
     background: var(--base-white);
 }
 
+.page__object .object__map {
+    margin-bottom: 52px;
+}
+
 .page__object .object__map-container {
+    overflow: hidden;
     width: auto;
     height: 559px;
     margin-bottom: 16px;
@@ -733,7 +738,7 @@
     margin: 0 0 0 16px;
     list-style: none;
     column-gap: 8px;
-    
+
 }
 
 .page__object .object__map-buttons-item {
@@ -756,4 +761,73 @@
     padding: 12px 32px;
     color: var(--base-white);
     background: var(--accent);
+}
+
+.page__object .other__title {
+    margin: 64px 16px 32px;
+}
+
+.page__object .other__list {
+    margin-left: 16px;
+}
+
+.page__object .other__action-button {
+    margin-left: 16px;
+}
+
+.page__object .object__news__title {
+    margin: 0 16px 48px;
+}
+
+.page__object .object__news {
+    margin-bottom: 64px;
+}
+
+.page__object .object__news-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 16px;
+    list-style: none;
+    row-gap: 12px;
+}
+
+.page__object .object__news-item {
+    position: relative;
+    padding: 17.5px 16px;
+    margin: 0 16px;
+    border: 1px solid var(--background-block);
+    border-radius: 12px;
+    background: var(--background-color);
+}
+
+.page__object .object__news-description {
+    margin: 0 0 2px;
+}
+
+.page__object .object__news-text {
+    line-height: 17px;
+    margin: 0;
+    color: var(--base-text);
+    font-family: "Geologica", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.page__object .object__news-link {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    width: 36px;
+    height: 36px;
+}
+
+.page__object .object__news-link-show {
+    line-height: 19px;
+    padding: 0 16px;
+    color: var(--accent-1);
+    font-family: "Geologica", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
 }

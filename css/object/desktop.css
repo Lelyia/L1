@@ -519,4 +519,19 @@
     .page__object .object__map-sport.object__map-buttons-link::before {
         background-image: url("../../icons/map/Gym.svg");
     }
+
+    .page__object .other__list {
+        display: flex;
+        height: auto;
+        margin: 0;
+    }
+
+    .other__list figure {
+        width: 403px;
+        height: 405px;
+    }
+
+    .other {
+        margin-bottom: 128px;
+    }
 }
