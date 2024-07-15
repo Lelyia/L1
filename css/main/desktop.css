@@ -55,7 +55,7 @@
         align-items: center;
         flex-direction: row;
         justify-content: space-between;
-        padding: 34px 0;
+        padding: 32px 0;
     }
 
     .header__nav-list {
@@ -64,13 +64,13 @@
 
     .page__header-logo-wrapper {
         align-items: center;
-        max-height: 120px;
+        max-height: 104px;
         padding: 20px 24px 20px 32px;
     }
 
     .page__header-logo picture {
-        width: 144px;
-        height: 80px;
+        width: 115px;
+        height: 64px;
     }
 
     .header__nav {
@@ -116,6 +116,10 @@
         display: block;
         padding: 0 10px;
         color: var(--base-white);
+    }
+
+    .header__usernav-link svg {
+        vertical-align: middle;
     }
 
 
@@ -536,7 +540,7 @@
     .complex {
         max-height: 67px;
         line-height: 67px;
-        margin-top: 677px;
+        margin-top: 693px;
         font-family: "Geologica", Arial, sans-serif;
         font-size: 48px;
         font-style: normal;
@@ -563,7 +567,7 @@
 
     .slider__button {
         position: absolute;
-        top: -171px;
+        top: -155px;
         left: 0;
         display: flex;
         display: flex;
