@@ -427,7 +427,8 @@
         justify-content: space-between;
     }
 
-    .footer__info {
+    .footer__info,
+    .footer__requisites {
         width: 338px;
         padding: 0;
         margin: 0;
@@ -477,10 +478,9 @@
     }
 
     .object-item {
-        z-index: -1px;
         flex-basis: 298px;
         max-width: 298px;
-        max-height: 550px;
+        height: 550px;
         margin-right: 16px;
     }
 
@@ -504,14 +504,15 @@
             "c b";
     }
 
-    .object-link {
-        max-width: 298px;
+    .object-link {   
+        flex-grow: 1;
+        max-width: none;
         cursor: pointer;
         pointer-events: auto;
         grid-template-areas:
             "a a"
             "c c"
-            "b b";    
+            "b b";
     }
 
     .object__image-object {
@@ -551,14 +552,10 @@
         background: var(--base-white);
     }
 
-    .object-item:first-child .object-subtitle {
-        margin-bottom: 89px;
-    }
-
     .object-subtitle {
-        line-height: 38px;
-        margin-bottom: 16px;
-        font-size: 32px;
+        line-height: 29px;
+        margin-bottom: 0;
+        font-size: 24px;
     }
 
     .object__advantages {
@@ -572,15 +569,14 @@
         font-size: 12px;
     }
 
+    .object__start {
+        padding-left: 36px;
+    }
+
     .flats {
         align-items: center;
         padding-top: 2px;
-
-    }
-
-    .object-item:not(:first-child) .flats {
-        padding-top: 0px;
-        margin-bottom: 15px;
+        margin: auto 0 16px;
     }
 
     .object__flats {
@@ -596,14 +592,6 @@
         margin-left: 16px;
         font-size: 24px;
     }
-
-    .object-item:not(:first-child) .metro {
-        margin-bottom: 46px;
-    }
-
-    .object-item.object__classic .metro {
-        margin-bottom: 27px;
-     }
 
     .metro {
         margin-bottom: 17px;
