@@ -526,12 +526,12 @@
         margin: 0;
     }
 
-    .other__list figure {
+    .page__object.other__list figure {
         width: 403px;
         height: 405px;
     }
 
-    .other {
+    .page__object .other {
         margin-bottom: 128px;
     }
 }
