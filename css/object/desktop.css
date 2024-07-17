@@ -526,7 +526,11 @@
         margin: 0;
     }
 
+<<<<<<< HEAD
     .page__object .other__list figure {
+=======
+    .page__object.other__list figure {
+>>>>>>> b57993d32b3a19b692968a767e40242643334307
         width: 403px;
         height: 405px;
     }
