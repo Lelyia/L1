@@ -127,9 +127,7 @@
     content: "";
   }
 
-  .page__object
-    .page__header-wrapper-object--opened
-    .header__contacts-container {
+  .page__object .page__header-wrapper-object--opened .header__contacts-container {
     display: block;
   }
 
@@ -142,27 +140,19 @@
     font-weight: 300;
   }
 
-  .page__object
-    .page__header-wrapper-object--opened
-    .page__header-buttons2-list {
+  .page__object .page__header-wrapper-object--opened .page__header-buttons2-list {
     display: none;
   }
 
-  .page__object
-    .page__header-wrapper-object--opened
-    .page__header-logo-wrapper {
+  .page__object .page__header-wrapper-object--opened .page__header-logo-wrapper {
     margin-bottom: 1px;
   }
 
-  .page__object
-    .page__header-wrapper-object--opened
-    .header__contacts-container {
+  .page__object .page__header-wrapper-object--opened .header__contacts-container {
     margin-bottom: 21px;
   }
 
-  .page__object
-    .page__header-wrapper-object--opened
-    .header__contacts-connection {
+  .page__object .page__header-wrapper-object--opened .header__contacts-connection {
     display: flex;
     justify-content: space-between;
   }
@@ -183,16 +173,12 @@
     background: var(--base-white);
   }
 
-  .page__object
-    .page__header-wrapper-object--opened
-    .header__contacts-subtitle {
+  .page__object .page__header-wrapper-object--opened .header__contacts-subtitle {
     color: var(--base-text);
     font-weight: 400;
   }
 
-  .page__object
-    .page__header-wrapper-object--opened
-    .header__contacts-connection {
+  .page__object .page__header-wrapper-object--opened .header__contacts-connection {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -208,9 +194,7 @@
     margin-bottom: 0;
   }
 
-  .page__object
-    .page__header-wrapper-object--opened
-    .header__nav-list-additional {
+  .page__object .page__header-wrapper-object--opened .header__nav-list-additional {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -355,8 +339,8 @@
     grid-area: design-image;
   }
 
-  
-  .page__object .object__design-item--active { 
+
+  .page__object .object__design-item--active {
     margin-right: 0;
   }
 
@@ -392,28 +376,85 @@
     width: 960px;
     height: 559px;
     margin-bottom: 17px;
-}
+  }
 
   .page__object .object__map-title {
-line-height: 38px;
-font-size: 32px;
-}
+    line-height: 38px;
+    font-size: 32px;
+  }
 
-.page__object .object__map-buttons-link {
-  line-height: 20px ;
-  font-size: 14px;
-}
+  .page__object .object__map-buttons-link {
+    line-height: 20px;
+    font-size: 14px;
+  }
 
-.page__object .other__title {
-line-height: 38px;
-  margin: 48px 16px 48px;
- font-size: 32px;
-}
+  .page__object .other {
+    margin-bottom: 64px;
+  }
 
-.page__object .other__list {
-  margin: 0 16px 16px;
-} 
+  .page__object .other__title {
+    line-height: 38px;
+    margin: 48px 16px 48px;
+    font-size: 32px;
+  }
 
+  .page__object .other__list {
+    margin: 0 16px 16px;
+  }
 
+  .page__object .other__action-button {
+    margin-bottom: 0;
+  }
 
+  .page__object .object__info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .page__object .object__info-title {
+    line-height: 38px;
+    font-size: 32px;
+  }
+
+  .page__object .object__info-news .object__info-item {
+    margin-right: 0;
+  }
+
+  .page__object .object__info-item {
+    width: 456px;
+  }
+
+  .page__object .object__info-news {
+    margin-bottom: 0;
+  }
+
+  .page__object .object__gallery-title {
+    line-height: 38px;
+    font-size: 32px;
+  }
+
+  .page__object .object__gallery-item {
+    min-width: 298px;
+    min-height: 298px;
+  }
+
+  .page__object .object__gallery-item figure {
+    width: 298px;
+    height: 298px;
+  }
+
+  .page__object .object__customer {
+    margin-bottom: 48px;
+  }
+
+  .page__object .object__customer-title {
+    line-height: 38px;
+    margin-bottom: 32px;
+    font-size: 32px;
+  }
+
+  .page__object .object__customer-container {
+    line-height: 20px;
+    font-size: 14px;
+  }
 }

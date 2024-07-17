@@ -534,4 +534,108 @@
     .page__object .other {
         margin-bottom: 128px;
     }
+
+    .page__object .object__info {
+        width: 1240px;
+        margin: 0 auto;
+    }
+
+    .page__object .object__info-title {
+        line-height: 56px;
+        margin-left: 0;
+        font-size: 40px;
+    }
+
+    .page__object .object__info-item {
+        margin: 0;
+    }
+
+    .page__object .object__info-news .object__info-item {
+        width: 507px;
+    }
+
+    .page__object .object__info-documents .object__info-item {
+        width: 612px;
+    }
+
+    .page__object .object__info-documents .object__info-item {
+        padding-left: 88px;
+    }
+
+    .page__object .object__info-description {
+        line-height: 17px;
+        font-size: 12px;
+    }
+
+    .page__object .object__info-text {
+        line-height: 29px;
+        font-size: 24px;
+    }
+
+    .page__object .object__info-link--mobile {
+        display: none;
+    }
+
+    .page__object .object__info-link--desktop {
+        display: block;
+        width: 48px;
+        height: 48px;
+    }
+
+    .page__object .object__info-documents .object__info-item:before {
+        width: 48px;
+        height: 48px;
+        background-image: url(../../icons/Document48.svg);
+    }
+
+    .page__object .object__info-news {
+        margin-bottom: 0;
+    }
+
+    .page__object .object__info {
+        margin-bottom: 100px;
+    }
+
+    .page__object .object__gallery {
+        max-width: 1240px;
+        margin: 0 auto;
+        margin-bottom: 100px;
+    }
+
+    .page__object .object__gallery-title {
+        line-height: 56px;
+        margin-bottom: 58px;
+        margin-left: 0;
+        font-size: 40px;
+    }
+
+    .page__object .object__gallery-list {
+        overflow-x: hidden;
+        margin-left: 0;
+    }
+
+    .page__object .object__customer {
+        max-width: 1240px;
+        margin: 0 auto;
+        margin-bottom: 48px;
+    }
+
+    .page__object .object__customer-title {
+        line-height: 56px;
+        margin-left: 0;
+        font-size: 40px;
+    }
+
+    .page__object .object__customer-container {
+        line-height: 28px;
+        font-size: 20px;
+    }
+
+    .page__object .object__customer-reviews {
+        max-width: 1148px;
+    }
+    
+    .page__object .object__customer-complaints {
+        max-width: 1031px;
+    }
 }
