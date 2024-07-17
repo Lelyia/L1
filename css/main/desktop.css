@@ -549,6 +549,7 @@
     }
 
     .complex {
+        max-width: 1240px;
         max-height: 67px;
         line-height: 67px;
         margin-top: 677px;
