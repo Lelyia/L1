@@ -628,14 +628,55 @@
 
     .page__object .object__customer-container {
         line-height: 28px;
+        margin-bottom: 48px;
         font-size: 20px;
+    }
+
+    .page__object .text-selection {
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        text-decoration-thickness: 0.5px;
     }
 
     .page__object .object__customer-reviews {
         max-width: 1148px;
     }
-    
+
     .page__object .object__customer-complaints {
         max-width: 1031px;
+        line-height: 22px;
+        font-size: 16px;
+    }
+
+    .page__object .object__customer .object__info-list {
+        max-width: 1240px;
+        margin: 0 auto 24px;
+    }
+
+    .page__object .object__customer-account {
+        max-width: 1240px;
+        padding: 32px;
+        margin: 0 auto 48px;
+    }
+
+    .page__object .object__customer .object__info-text {
+        line-height: 24px;
+        font-size: 20px;
+    }
+
+    .page__object .object__customer .object__info-item {
+        width: auto;
+    }
+
+    .page__object .object__customer-account-title {
+        max-width: 700px;
+        line-height: 29px;
+        font-size: 24px;
+    }
+
+    .page__object .object__customer-account-button {
+        line-height: 22px;
+        padding: 21px 108.5px;
+        font-size: 16px;
     }
 }

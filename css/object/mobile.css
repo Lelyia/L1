@@ -799,7 +799,10 @@
 
 .page__object .object__info-item {
     position: relative;
-    padding: 17.5px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
     margin: 0 16px;
     border: 1px solid var(--background-block);
     border-radius: 12px;
@@ -820,9 +823,6 @@
 }
 
 .page__object .object__info-link {
-    position: absolute;
-    right: 15px;
-    bottom: 15px;
     width: 36px;
     height: 36px;
 }
@@ -842,7 +842,7 @@
 
 .page__object .object__info-documents .object__info-item {
     position: relative;
-    padding: 16px 16px 16px 60px;
+    padding-left: 59px;
 }
 
 .page__object .object__info-documents .object__info-item:before {
@@ -901,15 +901,16 @@
 }
 
 .page__object .object__customer {
-    margin: 0 16px 64px;
+    margin: 0 0 64px;
 }
 
 .page__object .object__customer-title {
-    margin-bottom: 48px;
+    margin: 0 16px 48px;
 }
 
 .page__object .object__customer-container {
     line-height: 17px;
+    margin: 0 16px;
     color: var(--base-text);
     font-size: 12px;
 }
@@ -921,4 +922,40 @@
 
 .page__object .object__customer-complaints {
     font-weight: 400;
+}
+
+.page__object .object__customer .object__info-item {
+    max-height: 80px;
+}
+
+.page__object .object__customer .object__info-text {
+    line-height: 14px;
+    font-size: 12px;
+}
+
+.page__object .object__customer .object__info-link {
+    width: 48px;
+    height: 48px;
+}
+
+.page__object .object__customer-account {
+    padding: 16px;
+    margin: 0 16px;
+    border: 1px solid var(--background-block);
+    border-radius: 16px;
+    background: var(--color-action);
+}
+
+.page__object .object__customer-account-title {
+    max-width: 228px;
+    line-height: 19px;
+    margin-bottom: 24px;
+    color: var(--base-text);
+    font-family: "Geologica", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.page__object .object__customer-account-button {
+    margin: 0;
 }
