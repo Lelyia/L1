@@ -628,7 +628,7 @@
 
     .page__object .object__customer-container {
         line-height: 28px;
-        margin-bottom: 48px;
+        margin: 0 0 48px;
         font-size: 20px;
     }
 
@@ -636,6 +636,10 @@
         text-decoration: underline;
         text-underline-offset: 3px;
         text-decoration-thickness: 0.5px;
+    }
+
+    .page__object .object__customer {
+        margin-bottom: 80px;
     }
 
     .page__object .object__customer-reviews {
@@ -679,4 +683,30 @@
         padding: 21px 108.5px;
         font-size: 16px;
     }
+
+    .page__object .object__customer-service {
+        margin: 0 0 48px;
+    }
+
+    .page__object .object__customer-service-title {
+        line-height: 29px;
+        font-size: 24px;
+    }
+
+    .page__object .object__customer-service-text {
+        line-height: 38px;
+        font-size: 32px;
+    }
+
+    .page__object .object__customer-office {
+        margin: 0 0 80px;
+    }
+
+    .page__object .object__customer-office figure {
+        height: 415px;
+      }
+    
+      .page__object .object__customer-office .object__map-container {
+        height: 415px;
+      }
 }

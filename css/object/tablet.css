@@ -486,6 +486,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 24px;
+    margin-bottom: 32px;
   }
 
   .page__object .object__customer-account-title {
@@ -498,4 +499,43 @@
   .page__object .object__customer-account-button {
     padding: 22px 19.5px;
   }
+
+  .page__object .object__customer-service {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page__object .object__customer-service-address {
+    text-align: end;
+  }
+
+  .page__object .object__customer-service-south {
+    margin-bottom: 16px;
+  }
+
+  .page__object .object__customer-office {
+    display: grid;
+    margin: 0 16px 80px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .page__object .object__customer-office figure {
+    width: auto;
+    height: 309px;
+    margin: 0;
+  }
+
+  .page__object .object__customer-office .object__map-container {
+    width: auto;
+    height: 309px;
+    margin: 0;
+  }
+
+  .page__object .object__customer .button-phone {
+    display: block;
+    width: 407px;
+    padding: 21px;
+    margin: 0 auto;
 }
+  }

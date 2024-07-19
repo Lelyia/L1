@@ -901,7 +901,7 @@
 }
 
 .page__object .object__customer {
-    margin: 0 0 64px;
+    margin: 0 0 72px;
 }
 
 .page__object .object__customer-title {
@@ -940,7 +940,7 @@
 
 .page__object .object__customer-account {
     padding: 16px;
-    margin: 0 16px;
+    margin: 0 16px 14px;
     border: 1px solid var(--background-block);
     border-radius: 16px;
     background: var(--color-action);
@@ -959,3 +959,61 @@
 .page__object .object__customer-account-button {
     margin: 0;
 }
+
+.page__object .object__customer-service {
+    margin: 0 16px 32px;
+}
+
+.page__object .object__customer-service-title {
+    line-height: 19px;
+    margin: 0 0 12px;
+    color: var(--base-text);
+    font-family: "Geologica", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.page__object .object__customer-service-phone {
+    margin-bottom: 16px;
+}
+
+.page__object .object__customer-service-text {
+    line-height: 24px;
+    color: var(--accent);
+    font-family: "Geologica", Arial, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.page__object .object__customer-office figure {
+    overflow: hidden;
+    width: 343px;
+    height: 233px;
+    padding: 0;
+    margin: 0 16px 16px;
+    border: 1px solid var(--gray-text);
+    border-radius: 16px;
+    background: var(--background-color);
+}
+
+.page__object .object__customer-office-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.page__object .object__customer-office .object__map-container {
+    height: 233px;
+    margin: 0 16px 48px;
+    border: 1px solid var(--gray-text);
+    border-radius: 16px;
+    background: var(--background-color);
+}
+
+.page__object .button-phone {
+    width: auto;
+    margin: 0 16px;
+}
+
