@@ -2,6 +2,7 @@
     /* PAGE OBJECT */
 
     .page__object .complex {
+        max-height: 67px;
         line-height: 67px;
         margin-top: 593px;
         margin-bottom: 8px;
