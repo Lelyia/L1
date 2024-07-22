@@ -381,7 +381,10 @@
         top: 0;
         right: 0;
         display: flex;
+        width: 140px;
+        height: 64px;
     }
+
 
     .page__object .object__design {
         max-width: 1240px;
@@ -581,6 +584,39 @@
         display: block;
         width: 48px;
         height: 48px;
+    }
+
+    .page__object .object__info-link--desktop svg,
+    .page__object .object__info-link svg {
+        overflow: visible;
+    }
+
+    .page__object .object__info-link--desktop:hover svg rect,
+    .page__object .object__info-link:hover svg rect{
+        stroke: var(--accent);
+        fill: var(--base-white);
+        fill-opacity: 1;
+    }
+
+    .page__object .object__info-link--desktop:hover svg path,
+    .page__object .object__info-link:hover svg path {
+        stroke: var(--accent);
+    }
+
+    .page__object .object__info-link--desktop:active svg rect,
+    .page__object .object__info-link:active svg rect {
+        stroke: var(--accent);
+        fill: var(--color-action);
+    }
+
+    .page__object .object__info-link--desktop:active svg path,
+    .page__object .object__info-link:active svg path  {
+        stroke: var(--accent);
+    }
+
+    .page__object .object__info-link--desktop:active svg,
+    .page__object .object__info-link:active svg  {
+        stroke: var(--accent);
     }
 
     .page__object .object__info-documents .object__info-item:before {

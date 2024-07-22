@@ -19,6 +19,7 @@
 --accent-1:  #125EAA;
 --accent-2: #23325B;
 --accent-3: #85DCF0;
+--accent-4: #3C9CF5;
 --base-text: #212121;
 --gray-text: #818181;
 
@@ -51,190 +52,190 @@
 
 @font-face {
     font-family: "Cygre";
+    font-style: normal;
+    font-weight: normal;
     src: url("../fonts/Cygre/Cygre-Regular.woff2") format("woff2"),
         url("../fonts/Cygre/Cygre-Regular.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
     font-display: swap;
 }
 
 @font-face {
     font-family: "Geologica";
+    font-style: normal;
+    font-weight: bold;
     src: url("../fonts/Geologica/Geologica-Bold.woff2") format("woff2"),
         url("../fonts/Geologica/Geologica-Bold.woff") format("woff");
-    font-weight: bold;
-    font-style: normal;
     font-display: swap;
 }
 
 @font-face {
     font-family: "Geologica";
+    font-style: normal;
+    font-weight: 500;
     src: url("../fonts/Geologica/Geologica-Medium.woff2") format("woff2"),
         url("../fonts/Geologica/Geologica-Medium.woff") format('woff');
-    font-weight: 500;
-    font-style: normal;
     font-display: swap;
 }
 
 @font-face {
     font-family: "Geologica";
+    font-style: normal;
+    font-weight: 900;
     src: url("../fonts/Geologica/Geologica-Black.woff2") format("woff2"),
         url("../fonts/Geologica/Geologica-Black.woff") format("woff");
-    font-weight: 900;
-    font-style: normal;
     font-display: swap;
 }
 
 @font-face {
     font-family: "Geologica";
+    font-style: normal;
+    font-weight: normal;
     src: url("../fonts/Geologica/Geologica-Regular.woff2") format("woff2"),
         url("../fonts/Geologica/Geologica-Regular.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
     font-display: swap;
 }
 
 @font-face {
     font-family: "Geologica";
+    font-style: normal;
+    font-weight: 300;
     src: url("../fonts/Geologica/Geologica-Light.woff2") format("woff2"),
         url("../fonts/Geologica/Geologica-Light.woff") format("woff");
-    font-weight: 300;
-    font-style: normal;
     font-display: swap;
 }
 
 @font-face {
     font-family: "GillSans";
+    font-style: normal;
+    font-weight: normal;
     src: url("../fonts/gill sans/GillSans.woff2") format("woff2"),
         url("../fonts/gill sans/GillSans.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
     font-display: swap;
 }
 
 @font-face {
     font-family: "Heraclito";
+    font-style: normal;
+    font-weight: normal;
     src: url("../fonts/heraclito/Heraclito-Regular.woff2") format("woff2"),
         url("../fonts/heraclito/Heraclito-Regular.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
     font-display: swap;
 }
 
 @font-face {
     font-family: "Inter";
+    font-style: normal;
+    font-weight: normal;
     src: url("../fonts/Inter/Inter-Regular.woff2") format("woff2"),
         url("../fonts/Inter/Inter-Regular.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
     font-display: swap;
 }
 
 @font-face {
     font-family: "LT Amber";
+    font-style: normal;
+    font-weight: 500;
     src: url("/fonts/LT Amber/LTAmber-Medium.woff2") format("woff2"),
         url("../fonts/LT Amber/LTAmber-Medium.woff") format("woff");
-    font-weight: 500;
-    font-style: normal;
     font-display: swap;
 }
 
 @font-face {
     font-family: "Min Sans";
+    font-style: normal;
+    font-weight: 900;
     src: url("../fonts/min_sans/MinSans-Black.woff2") format('woff2'),
         url("../fonts/min_sans/MinSans-Black.woff") format("woff");
-    font-weight: 900;
-    font-style: normal;
     font-display: swap;
 }
 
 @font-face {
     font-family: "Min Sans";
+    font-style: normal;
+    font-weight: 500;
     src: url("../fonts/min_sans/MinSans-Medium.woff2") format("woff2"),
         url("../fonts/min_sans/MinSans-Medium.woff") format("woff");
-    font-weight: 500;
-    font-style: normal;
     font-display: swap;
 }
 
 @font-face {
     font-family: "Min Sans";
+    font-style: normal;
+    font-weight: normal;
     src: url("../fonts/min_sans/MinSans-Regular.woff2") format("woff2"),
         url("../fonts/min_sans/MinSans-Regular.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
     font-display: swap;
 }
 
 @font-face {
     font-family: "Muller";
+    font-style: normal;
+    font-weight: normal;
     src: url("../fonts/muller/MullerRegular.woff2") format("woff2"),
         url("../fonts/muller/MullerRegular.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
     font-display: swap;
 }
 
 @font-face {
     font-family: "NT Somic";
+    font-style: normal;
+    font-weight: normal;
     src: url("../fonts/NT Somic/NTSomic-Regular.woff2") format("woff2"),
         url("../fonts/NT Somic/NTSomic-Regular.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
     font-display: swap;
 }
 
 @font-face {
     font-family: "Nunito";
+    font-style: normal;
+    font-weight: normal;
     src: url("../fonts/Nunito/Nunito-Regular.woff2") format("woff2"),
         url("../fonts/Nunito/Nunito-Regular.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
     font-display: swap;
 }
 
 @font-face {
     font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
     src: url("../fonts/Open_Sans/OpenSans-Regular.woff2") format("woff2"),
         url("../fonts/Open_Sans/OpenSans-Regular.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
     font-display: swap;
 }
 
 @font-face {
     font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
     src: url("../fonts/Roboto/Roboto-Regular.woff2") format("woff2"),
         url("../fonts/Roboto/Roboto-Regular.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
     font-display: swap;
 }
 
 @font-face {
     font-family: "RockStar";
+    font-style: normal;
+    font-weight: normal;
     src: url("../fonts/RS RockStar/RockStar.woff2") format("woff2"),
         url("../fonts/RS RockStar/RockStar.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
     font-display: swap;
 }
 
 @font-face {
     font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 600;
     src: url("../fonts/SF Pro/SFProDisplay-Semibold.woff2") format("woff2"),
         url("../fonts/SF Pro/SFProDisplay-Semibold.woff") format("woff");
-    font-weight: 600;
-    font-style: normal;
     font-display: swap;
 }
 
 @font-face {
     font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 500;
     src: url("../fonts/SF Pro/SFProDisplay-Medium.woff2") format("woff2"),
         url("../fonts/SF Pro/SFProDisplay-Medium.woff") format("woff");
-    font-weight: 500;
-    font-style: normal;
     font-display: swap;
 }
 
@@ -243,14 +244,14 @@
 
 .visually-hidden {
   position: absolute;
+  overflow: hidden;
   width: 1px;
   height: 1px;
+  padding: 0;
   margin: -1px;
   border: 0;
-  padding: 0;
   white-space: nowrap;
   clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 img {
@@ -269,20 +270,20 @@ a {
 }
   
 .page__body {
+     position: relative;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
     min-width: 375px;
-    background-color: var(--base-white);
-    color: var(--base-black);
+    min-height: 100vh;
+     line-height: 14px;
     margin: 0 auto;
+    color: var(--base-black);
+     color: var(--gray-text);
+    background-color: var(--base-white);
     font-family: "Min Sans", Arial, sans-serif;
+     font-size: 10px;
      font-style: normal;
      font-weight: 400;
-     font-size: 10px;
-     line-height: 14px;
-     color: var(--gray-text);
-     position: relative;
 }
 
 .page__container {
@@ -290,12 +291,12 @@ a {
 }
 
 .page__background-shadow {
-    display: none;
     position: fixed;
-    background: var(--dark-1);
+    z-index: 4;
+    display: none;
     width: 100%;
     height: 100%;
-    z-index: 4;
+    background: var(--dark-1);
     background: rgba(33, 33, 33, 0.5);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }

@@ -593,6 +593,10 @@
         cursor: pointer;
     }
 
+    .slider__button__link svg {
+        overflow: visible;
+    }
+
     .slider__button__link:first-child {
         margin-right: 12px;
     }

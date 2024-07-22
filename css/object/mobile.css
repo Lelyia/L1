@@ -163,7 +163,7 @@
     font-weight: 400;
 }
 
-.page__object .page__header-buttons-item:not(:first-child) .page__header-buttons-link {
+.page__object .page__header-buttons-item.page__header-buttons-link {
     background-color: var(--accent-1);
 }
 
@@ -494,6 +494,14 @@
     cursor: pointer;
 }
 
+.page__object .ipoteka__calculation-button:hover {
+    background: var(--accent-4);
+}
+
+.page__object .ipoteka__calculation-button:active {
+    background: var(--accent-3);
+}
+
 .page__object .ipoteka__calculation-button::before {
     position: absolute;
     top: 10px;
@@ -808,6 +816,11 @@
     border: 1px solid var(--background-block);
     border-radius: 12px;
     background: var(--background-color);
+}
+
+.page__object .object__info-item:hover,
+.page__object .object__info-item:focus {
+    border: 1px solid var(--accent);
 }
 
 .page__object .object__info-description {
