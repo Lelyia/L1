@@ -1,0 +1,30 @@
+@media (min-width: 1440px) {
+    .page__object_test .slider__complex,
+    .page__object_test .complex {
+        display: none;
+    }
+
+    .page__object_test .slider picture {
+        top: 104px;
+    }
+
+    .page__object_test .slider img {
+        object-fit: contain;
+    }
+    
+    .page__object_test .slider-main {
+        margin-bottom: 820px;
+    }
+
+    .page__object_test .page__header-wrapper::before {
+        background-color: var(--base-white);
+    }
+
+    .page__object_test .page__header-wrapper svg path {
+        stroke: var(--base-black);
+    }
+
+    .page__object_test .page__header-wrapper .header__nav-item a {
+            color: var(--base-text);
+        }
+}

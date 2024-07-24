@@ -49,6 +49,7 @@
 
     .page__object .header {
         display: block;
+        flex-grow: 1;
     }
 
     .page__object .header__contacts-container {
@@ -190,6 +191,10 @@
     .page__object .page__header-wrapper-object .header__stats {
         padding-top: 0;
         padding-bottom: 0;
+    }
+
+    .page__object .header__nav {
+        flex-grow: 1;
     }
 
     .page__object .page__header-wrapper-object .header__nav-list-main .header__nav-item,
@@ -442,12 +447,12 @@
     }
 
     .page__object .object__map-container {
-        width: 1440px;
+        width: auto;
         height: 671px;
         margin: 0 auto 10px;
     }
 
-    .page__object .object__map-buttons-list {
+        .page__object .object__map-buttons-list {
         flex-wrap: wrap;
         max-width: 1240px;
         margin: 0 auto;

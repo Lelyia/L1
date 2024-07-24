@@ -6,6 +6,7 @@
     .page__catalog .object-item.object-item-catalog  {
         flex-basis: 456px;
         max-width: 456px;
+        height: 443px;
         margin-right: 16px;
     }
 
@@ -38,7 +39,7 @@
     }
 
     .page__catalog .title__catalog {
-        margin: 48px 0 32px;
+        margin: 128px 0 32px;
     }
 
     .page__catalog .object-item .link-catalog .object-subtitle {
@@ -52,13 +53,17 @@
         font-size: 10px;
     }
 
-    .page__catalog .object-item .link-catalog .metro {
-        margin-bottom: 34px;
+    .page__catalog .object__metro::before {
+        top: 3px;
+    }
+
+    .page__catalog .object__metro-time-transport::before {
+        top:-1px;
     }
 
     .page__catalog .object-item .catalog__button {
         display: grid;
-        margin-top: 0;
+        margin: auto 16px 16px;
     } 
 
     .page__catalog .catalog__button .object__button-title {

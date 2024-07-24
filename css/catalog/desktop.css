@@ -28,6 +28,11 @@
 
     .page__catalog .line-3 {
         display: block;
+        margin-top: 104px;
+    }
+
+    .page__catalog .object-item-catalog, .page__catalog .object-item:first-child.object-item-catalog, .page__catalog .object-item.object-item-catalog {
+        height: 550px;
     }
 
     .page__catalog .object__title {
@@ -50,7 +55,7 @@
     .page__catalog .object__breadcrumbs-list {
         display: flex;
         padding: 0;
-        margin-top: 184px;
+        margin-top: 64px;
         margin-bottom: 4px;
         list-style: none;
     }

@@ -7,6 +7,9 @@
 @import "object/mobile.css";
 @import "object/tablet.css";
 @import "object/desktop.css";
+@import "object_test/mobile.css";
+@import "object_test/tablet.css";
+@import "object_test/desktop.css";
 
 /* Variables */
 
