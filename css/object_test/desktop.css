@@ -29,7 +29,4 @@
         color: var(--base-text);
     }
 
-    .page__object_test .footer {
-        background-color: var(--color-lightblue);
-    }
 }
