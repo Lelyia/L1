@@ -1,0 +1,778 @@
+/* Footer */
+
+ /* footer contacts */
+
+ .footer {
+    padding-top: 16px;
+    background: var(--background-color);
+ 
+  }
+ 
+  .footer--static {
+      display: none;
+  }
+ 
+  .footer__container {
+      margin: 0 16px;
+  }
+ 
+  .footer__contacts-wrapper {
+      display: flex;
+      flex-direction: column;
+      margin: 16px auto 24px 0;
+  }
+ 
+  .footer__contacts {
+      margin: 0;
+      margin-bottom: 4px;
+  }
+ 
+  .footer__contacts-phone {
+      line-height: 24px;
+      margin-bottom: 8px;
+      color: var(--base-text);
+      font-family: "Geologica", Arial, sans-serif;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 300;
+  }
+ 
+  .footer__contacts-mail {
+      line-height: 24px;
+      color: var(--gray-text);
+      font-family: "Geologica", Arial, sans-serif;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 300;
+  }
+ 
+  /* footer social */
+ 
+  .footer__social,
+  .footer__social-tablet {
+      line-height: 17px;
+      margin-bottom: 16px;
+      color: var(--gray-text);
+      font-family: "Geologica", Arial, sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+  }
+ 
+  .footer__social-tablet {
+      display: none;
+  }
+ 
+  .footer__social-list {
+      display: grid;
+      padding: 0;
+      margin: 0;
+      grid-auto-flow: column;
+      grid-template-columns: 177px 1fr;
+      grid-template-rows: 1fr 1fr;
+  }
+ 
+  .footer__social-item {
+      margin-bottom: 20px;
+      list-style: none;
+  }
+ 
+  .footer__social-item:nth-child(2n) {
+      margin-bottom: 16px;
+  }
+ 
+  .footer__social-link {
+      line-height: 17px;
+      color: var(--base-text);
+      font-family: "Geologica", Arial, sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+  }
+ 
+  /*Vertical line*/
+ 
+  .vertical-line {
+      display: none;
+  }
+ 
+  /*footer menu*/
+ 
+  .footer__menu-title {
+      line-height: 17px;
+      margin-top: 20px;
+      margin-bottom: 16px;
+      color: var(--gray-text);
+      font-family: "Geologica", Arial, sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+  }
+ 
+  .footer__menu-list {
+      padding: 0;
+      margin: 0;
+      margin-bottom: 20px;
+      list-style: none;
+  }
+ 
+  .footer__menu-item {
+      line-height: 19px;
+      margin-bottom: 16px;
+      font-family: "Geologica", Arial, sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+  }
+ 
+  .footer__menu-link {
+      color: var(--base-text);
+  }
+ 
+  .footer__subscription-container {
+      margin-top: 20px;
+  }
+ 
+  .footer__subscription-container label {
+      line-height: 22px;
+      color: var(--base-text);
+      font-size: 16px;
+  }
+ 
+  .footer__subscription-container input {
+      position: relative;
+      width: 100%;
+      line-height: 22px;
+      padding: 16px;
+      margin: 16px 0 8px;
+      border: 1px solid var(--background-block);
+      border-radius: 12px;
+      background-color: var(--base-white);
+      font-size: 16px;
+  }
+ 
+  .footer__subscription-container input:hover,
+  .footer__subscription-container input:active,
+  .footer__subscription-container p input:focus {
+      border: 1px solid var(--accent);
+      outline: none;
+  }
+ 
+ 
+  .footer__subscription-container input::placeholder {
+      line-height: 22px;
+      color: var(--gray-text);
+      font-family: "Min Sans", Arial, sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+  }
+ 
+  .label-email br {
+      display: none;
+  }
+ 
+  button.button-submit {
+      width: 100%;
+      padding: 16px;
+      margin-top: 0;
+      margin-bottom: 35px;
+      border: 1px solid var(--accent);
+      border-radius: 16px;
+      color: var(--base-text);
+      background-color: var(--base-white);
+      cursor: pointer;
+  }
+ 
+  button.button-submit:hover {
+      background: var(--base-white);
+  }
+ 
+  button.button-submit:active {
+      background: var(--color-action);
+  }
+ 
+  .footer__logo-container {
+      margin: 16px 0;
+  }
+ 
+  .footer__info {
+      margin-bottom: 12px;
+  }
+ 
+  .footer__requisites {
+     margin-bottom: 31px;
+ }
+ 
+ @media (min-width: 375px) and (max-width:959px) {
+    /* .footer__menu-container {                    ---Изначальная версия футера по дизайну
+       display: grid;
+       grid-template-columns: 179px 1fr;
+       grid-template-rows: 337px 1px 177px 174px 1px 208px 128px 282px;
+   }
+   
+    .footer__flat-container {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+   
+    .line-6 {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+    }
+   
+    .line-7 {
+        grid-column: 1 / 3;
+        grid-row: 5 / 6;
+    }
+   
+    .footer__realty-container {
+        grid-row: 3 / 5;
+        grid-column: 1 / 2;
+    }
+   
+    .footer__buy-container {
+        grid-row: 3 / 4;
+        grid-column: 2 / 3;
+    }
+   
+    .footer__object-container {
+        grid-row: 5 / 7;
+        grid-column: 1 / 2;
+        margin-bottom: 12px;
+    }
+   
+    .footer__other-container {
+        grid-row: 4 / 5;
+        grid-column: 2 / 3;
+    }
+   
+    .footer__about-container {
+        grid-row: 8 / 10;
+        grid-column: 1 / 2;
+        margin-top: 12px;
+    }
+   
+    .footer__location-container {
+        grid-row: 6 / 7;
+        grid-column: 2 / 3;
+    }
+   
+    .footer__deadline-container {
+        grid-row: 7 / 10;
+        grid-column: 2 / 3;
+    }*/
+
+    .footer__menu-container {
+        display: grid;
+        flex-wrap: wrap;
+        grid-template-areas:
+            "flat ."
+            "line1 line1"
+            "realty object"
+            "location buy"
+            "deadline other"
+            "about ."
+            "line2 line2";
+
+    }
+
+    .footer__menu-list {
+        max-width: 178px;
+    }
+
+    .footer__flat-container {
+        grid-area: flat;
+    }
+
+    .line-6 {
+        grid-area: line1;
+    }
+
+    .line-7 {
+        grid-area: line2;
+    }
+
+    .footer__realty-container {
+        grid-area: realty;
+    }
+
+    .footer__buy-container {
+        grid-area: buy;
+    }
+
+    .footer__object-container {
+        grid-area: object;
+    }
+
+    .footer__other-container {
+        grid-area: other;
+    }
+
+    .footer__about-container {
+        grid-area: about;
+    }
+
+    .footer__location-container {
+        grid-area: location;
+    }
+
+    .footer__deadline-container {
+        grid-area: deadline;
+    }
+} 
+
+@media (min-width: 960px) and (max-width:1439px) {
+    /* Footer */
+
+    .footer__contacts {
+        line-height: 14px;
+        font-size: 10px;
+        font-weight: 400;
+    }
+
+    .footer__social {
+        display: none;
+    }
+
+    .footer__social-tablet {
+        display: block;
+        margin-top: 0;
+        margin-bottom: 32px;
+    }
+
+    .footer__social-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer__social-list {
+        display: flex;
+    }
+
+    .footer__social-item {
+        margin-left: 20px;
+    }
+
+    .link-telegram {
+        display: none;
+    }
+
+    .footer__menu-container {
+        display: grid;
+        margin-top: 28px;
+        margin-bottom: 32px;
+        grid-area: menu;
+        grid-template-areas:
+            "realty flat object about"
+            "location deadline buy other";
+        column-gap: 16px;
+
+    }
+
+    .footer__flat-container {
+        grid-area: flat;
+    }
+
+    .footer__realty-container {
+        grid-area: realty;
+    }
+
+    .footer__buy-container {
+        grid-area: buy;
+    }
+
+    .footer__object-container {
+        grid-area: object;
+    }
+
+    .footer__other-container {
+        grid-area: other;
+    }
+
+    .footer__about-container {
+        grid-area: about;
+    }
+
+    .footer__location-container {
+        grid-area: location;
+    }
+
+    .footer__deadline-container {
+        grid-area: deadline;
+    }
+
+    .line-6,
+    .line-7 {
+        display: none;
+    }
+
+
+    /* Версия на гридах с плиткой
+    .footer__menu-container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 155px 1px 201px 12px 78px 233px 1px;
+    }
+
+    .footer__menu-item {
+        margin-bottom: 20px;
+    }
+
+    .footer__menu-list .footer__menu-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .footer__menu-title {
+        margin-top: 32px;
+        margin-bottom: 16px;
+    }
+
+    .footer__flat-container {
+        grid-column: 1 / 5;
+        grid-row: 1 / 2;
+
+    }
+
+    .footer__flat-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-auto-flow: column;
+    }
+   
+    .line-6 {
+        grid-column: 1 / 5;
+        grid-row: 2 / 3;
+    }
+   
+    .line-7 {
+        grid-column: 1 / 5;
+        grid-row: 9 / 10;
+    }
+   
+    .footer__realty-container {
+        grid-row: 3 / 5;
+        grid-column: 1 / 2;
+    }
+   
+    .footer__buy-container {
+        grid-row: 3 / 4;
+        grid-column: 2 / 3;
+    }
+   
+    .footer__object-container {
+        grid-row: 3 / 10;
+        grid-column: 4 / 5;
+    }
+   
+    .footer__other-container {
+        grid-row: 3/ 4;
+        grid-column: 3 / 4;
+    }
+   
+    .footer__about-container {
+        grid-row: 4 / 9;
+        grid-column: 3 / 4;
+        margin-top: 0;
+    }
+
+    .footer__about-title {
+        margin-top: 0;
+    }
+   
+    .footer__location-container {
+        grid-row: 6 / 9;
+        grid-column: 1 / 2;
+    }
+   
+    .footer__deadline-container {
+        grid-row: 5 / 9;
+        grid-column: 2 / 3;
+    }
+    */
+
+    .footer__subscription-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 32px;
+        margin-bottom: 47px;
+        column-gap: 16px;
+    }
+
+    .footer__subscription-container p {
+        width: 50%;
+        margin: 0;
+    }
+
+    .footer__subscription-container input {
+        margin: 24px 0 0;
+    }
+
+    label.label-email {
+        display: block;
+        width: 100%;
+        color: var(--base-text);
+    }
+
+    label.label-email br {
+        display: none;
+    }
+
+    p.footer__subscription-container {
+        width: 50%;
+    }
+
+    button.button-submit {
+        align-self: flex-end;
+        width: 50%;
+        height: 54px;
+        line-height: 20px;
+        padding: 17px;
+        margin-top: 0;
+        margin-bottom: 0;
+        border: 1px solid var(--accent);
+        border-radius: 16px;
+        color: var(--base-text);
+        background-color: var(--base-white);
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+    .footer__logo-container {
+        margin: 32px 0 49px;
+    }
+
+    .footer__logo-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer__info,
+    .footer__requisites {
+        width: 338px;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media (min-width: 1140px) {
+     /* Footer */
+
+     .footer__container {
+        display: grid;
+        max-width: 1240px;
+        margin: 0 auto;
+        grid-template-areas:
+            "contacts vertical-line menu"
+            "social vertical-line menu"
+            "subscription vertical-line menu"
+            "line line line"
+            "logo logo logo";
+    }
+
+    .footer__social-container {
+        grid-area: social;
+    }
+
+    .footer__contacts-wrapper {
+        max-width: 1240px;
+        margin-top: 48px;
+        grid-area: contacts;
+    }
+
+    .footer__subscription-container {
+        grid-area: subscription;
+    }
+
+    .line-9 {
+        display: block;
+        grid-area: line;
+    }
+
+    .footer__logo-container {
+        max-width: 1440px;
+        grid-area: logo;
+    }
+
+    .footer__menu-container {
+        display: grid;
+        margin-top: 28px;
+        margin-right: 0px;
+        margin-bottom: 48px;
+        margin-left: 62px;
+        grid-area: menu;
+        grid-template-areas:
+            "realty flat object buy"
+            "location deadline other about";
+        column-gap: 75px;
+    }
+
+    .footer__flat-container {
+        min-width: max-content;
+        grid-area: flat;
+    }
+
+    .footer__realty-container {
+        grid-area: realty;
+    }
+
+    .footer__buy-container {
+        grid-area: buy;
+    }
+
+    .footer__object-container {
+        min-width: 154px;
+        grid-area: object;
+    }
+
+    .footer__other-container {
+        min-width: max-content;
+        grid-area: other;
+    }
+
+    .footer__about-container {
+        min-width: max-content;
+        grid-area: about;
+    }
+
+    .footer__location-container {
+        max-width: 194px;
+        grid-area: location;
+    }
+
+    .footer__deadline-container {
+        grid-area: deadline;
+    }
+
+    .vertical-line {
+        display: block;
+        height: 94%;
+        padding: 0;
+        margin: 0;
+        margin-top: 23px;
+        grid-area: vertical-line;
+    }
+
+    .vertical-line__mobile {
+        width: 1px;
+        height: 100%;
+        padding: 16px 0;
+        margin: 0;
+        border-radius: 2px;
+        background: var(--background-block);
+    }
+
+    .footer__contacts {
+        display: none;
+    }
+
+    .footer__contacts-phone {
+        line-height: 28px;
+        font-family: "Min Sans", Arial, sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .footer__contacts-mail {
+        line-height: 28px;
+        font-family: "Min Sans", Arial, sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .footer__social {
+        display: none;
+    }
+
+    .footer__social-tablet {
+        display: block;
+        line-height: 22px;
+        margin-bottom: 24px;
+        font-family: "Min Sans", Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .footer__social-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__social-item {
+        margin-bottom: 12px;
+    }
+
+    .footer__social-link {
+        line-height: 22px;
+        font-family: "Min Sans", Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        text-decoration-line: underline;
+    }
+
+    .label-email br {
+        display: block;
+    }
+
+    .footer__subscription-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__subscription-container p {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer__subscription-container input {
+        width: 235px;
+        height: 64px;
+        margin: 12px 16px 16px 0;
+    }
+
+    button.button-submit {
+        width: 235px;
+        padding: 20px;
+        margin-top: 0;
+        margin-right: 16px;
+        border: 1px solid var(--accent);
+        border-radius: 16px;
+        color: var(--base-text);
+        background-color: var(--base-white);
+        cursor: pointer;
+    }
+
+    .footer__menu-title {
+        line-height: 28px;
+        color: var(--base-text);
+        font-family: "Min Sans", Arial, sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .footer__menu-item {
+        line-height: 22px;
+        margin-bottom: 8px;
+        color: var(--base-text);
+        font-family: "Min Sans", Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .footer__deadline-title {
+        margin-top: 20px;
+    }
+
+    .footer__info,
+    .footer__requisites {
+        width: 974px;
+        line-height: 17px;
+        font-size: 12px;
+    }
+
+    .footer__info br {
+        display: none;
+    }
+}

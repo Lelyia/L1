@@ -1,0 +1,17 @@
+/* Logo */
+.page__header-logo-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.page__header-logo {
+    display: block;
+    justify-content: space-between;
+}
+
+.page__header-logo picture {
+    display: block;
+    width: 87px;
+    height: 48px;
+}

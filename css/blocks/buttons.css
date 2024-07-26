@@ -1,0 +1,172 @@
+.button {
+    display: block;
+    line-height: 20px;
+    padding: 22px;
+    margin: 32px 0;
+    border: none;
+    border-radius: 16px;
+    color: var(--base-white);
+    background: var(--accent);
+    text-align: center;
+    font-family: "Min Sans", Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.button:hover {
+    background: var(--accent-1);
+}
+
+.button:active {
+    background: var(--accent-3);
+}
+
+
+.action-button {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 32px;
+    list-style: none;
+}
+
+.action-button-item {
+    width: 10px;
+    height: 10px;
+    margin-right: 4px;
+    border-radius: 90px;
+    background: var(--background-block);
+}
+
+.action-button-item--active {
+    width: 25px;
+    height: 10px;
+    border-radius: 90px;
+    background: var(--accent);
+}
+
+.button-phone {
+    position: relative;
+    width: 100%;
+    padding: 14px 0;
+    margin: 48px 0 52px 0;
+}
+
+.button-phone span {
+    position: relative;
+    padding: 0 0 0 36px;
+}
+
+.button-phone span::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background-image: url("../../icons/phone24.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    content: "";
+}
+
+.option__button {
+    min-width: 160px;
+    padding: 11px;
+    margin: 0;
+    border: 1px solid var(--background-block);
+    border-radius: 900px;
+    color: var(--base-text);
+    background: var(--base-white);
+    font-weight: 400;
+}
+
+.option__button--active {
+    color: var(--base-white);
+    background: var(--accent);
+}
+
+.page__object .object__selection-button {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin: 532px 16px 16px;
+    list-style: none;
+    column-gap: 12px;
+}
+
+.page__object .selection-button-item {
+    width: 43px;
+    height: 5px;
+    border-radius: 4px;
+    background: rgba(208, 208, 208, 0.5);
+}
+
+.page__object .selection-button-item--active {
+    background-color: var(--base-white);
+}
+
+.page__object .object__selection-buttons {
+    width: auto;
+    margin: 0 16px;
+}
+
+.page__object .selection__buttons-link {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page__object .buttons-link {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+@media (min-width: 960px) and (max-width:1439px) {
+    .button.button-main {
+        margin-top: 64px;
+        margin-bottom: 32px;
+    }
+
+    .button {
+        margin-top: 64px;
+    }
+
+    .action-button {
+        margin-bottom: 24px;
+    }
+
+    .button.button-phone {
+        display: inline-block;
+        width: auto;
+        line-height: 22px;
+        padding: 22px 116px 21px 116px;
+        margin: 56px auto 115px auto;
+        margin-top: 56px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .object-button {
+        min-width: 928px;
+        margin-top: 4px;
+    }
+}
+
+@media (min-width: 960px) {
+
+    .button {
+        margin-top: 6px;
+    }
+
+    .object__button {
+        display: none;
+    }
+}
+
+@media (min-width: 1440px) {
+    .action-button {
+        display: none;
+    }
+}

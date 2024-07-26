@@ -2,10 +2,6 @@
 
     /* CATALOG PAGE */
 
-    .page__catalog .page__header-wrapper .header {
-        flex-grow: 1;
-    }
-
     .page__catalog .page__header-wrapper .header__nav-item a {
         color: var(--base-text);
     }

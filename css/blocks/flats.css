@@ -1,0 +1,531 @@
+/* Flats carousel */
+
+.carousel {
+    overflow: hidden;
+}
+
+.flats {
+    display: flex;
+    justify-content: flex-end;
+    grid-area: b;
+}
+
+.object__price {
+    line-height: 24px;
+    margin: 0;
+    margin-right: 16px;
+    color: var(--base-text);
+    text-align: end;
+    font-family: "Geologica", Arial, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.object__flats {
+    display: none;
+}
+
+.metro {
+    display: flex;
+    flex-direction: column;
+    grid-area: c;
+}
+
+.object__metro {
+    position: relative;
+    padding: 0;
+    padding-left: 16px;
+    margin: 0;
+    margin-bottom: 4px;
+    margin-left: 16px;
+    color: var(--base-text);
+}
+
+.object__metro::before {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 900px;
+    background: var(--red-metro);
+    content: "";
+}
+
+
+.object__metro-time {
+    position: relative;
+    position: relative;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-left: 16px;
+    color: var(--gray-text);
+
+}
+
+.object__metro-time-transport {
+    position: relative;
+    padding: 1px 0 1px 20px;
+    margin: 0;
+}
+
+.object__metro-time-transport::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background-image: url("../../icons/Car16.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    content: "";
+}
+
+.object__metro-time-walk {
+    display: none;
+}
+
+.object__button {
+    display: grid;
+    margin: auto 16px 16px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 12px;
+}
+
+.object__button-button {
+    display: block;
+    padding: 11px;
+    border-radius: 12px;
+}
+
+.object__button-link {
+    border: 1px solid var(--accent);
+    background-color: var(--base-white);
+}
+
+.object__button-flat {
+    padding: 12px;
+    background-color: var(--accent);
+}
+
+.object__button-title {
+    display: block;
+    color: var(--base-text);
+    text-align: center;
+}
+
+.object-flat {
+    color: var(--base-white);
+}
+
+.object-button {
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
+.object__action {
+    display: none;
+}
+
+/* Flats */
+
+.carousel__slider {
+    display: none;
+}
+
+.sorting {
+    display: none;
+}
+
+.flat {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 16px;
+    column-gap: 16px;
+}
+
+.object-subtitle.flat-subtitle {
+    margin-bottom: 8px;
+    margin-bottom: 8px;
+}
+
+.flat__card {
+    position: relative;
+}
+
+.flat__card::before {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 40px;
+    height: 40px;
+    background-image: url("../../icons/special40.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    content: "";
+}
+
+.flat__list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    column-gap: 16px;
+}
+
+.flat__item {
+    display: flex;
+    flex-direction: column;
+    width: 276px;
+    height: 519px;
+    box-sizing: border-box;
+    border: 1px solid var(--background-block);
+    border-radius: 12px;
+    background: var(--base-white);
+}
+
+.flat__item:hover,
+.flat__item:active {
+    border: 1px solid var(--accent);
+}
+
+.flat__image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 175px;
+    padding: 0;
+    margin: 16px 0;
+}
+
+.flat__image-object {
+    height: 100%;
+    object-fit: contain;
+}
+
+.flat__link {
+    z-index: 111;
+    display: block;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.favourite-link {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.comparison-link {
+    position: absolute;
+    top: 68px;
+    right: 16px;
+}
+
+.favourite-link:hover svg rect {
+    fill: var(--color-lightred);
+}
+
+.favourite-link:active svg {
+    fill: var(--color-red);
+}
+
+.favourite-link:active svg rect {
+    fill: var(--color-lightred);
+}
+
+.favourite-link:visited svg {
+    fill: var(--color-red);
+}
+
+.favourite-link:visited svg rect {
+    fill: var(--color-visited);
+}
+
+.comparison-link:hover svg rect,
+.comparison-link:active svg rect {
+    fill: var(--color-action);
+}
+
+.comparison-link:active svg path {
+    stroke: none;
+    fill: var(--accent-1);
+}
+
+.comparison-link:active svg {
+    fill: var(--accent-1);
+}
+
+.comparison-link:visited svg rect {
+    fill: var(--color-visited);
+}
+
+.comparison-link:visited svg path {
+    stroke: none;
+    fill: var(--accent-1);
+}
+
+.comparison-link:visited svg {
+    fill: var(--accent-1);
+}
+
+.flat__advantages {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    max-width: 210px;
+    height: 68px;
+    margin: 0;
+    margin-bottom: 12px;
+    margin-left: 16px;
+}
+
+.flat__description-list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+}
+
+.flat__advantages-title {
+    position: relative;
+    height: 33px;
+    padding: 8px 12px;
+    margin: 0;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border-radius: 8px;
+    color: var(--base-text);
+    background: var(--color-lightgreen);
+}
+
+.flat__description-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+.flat__design {
+    margin-bottom: 20px;
+}
+
+.description {
+    line-height: 17px;
+    margin-left: 16px;
+    font-size: 12px;
+}
+
+.data {
+    line-height: 17px;
+    margin-right: 16px;
+    color: var(--base-text);
+    font-size: 12px;
+}
+
+.flat__price {
+    margin-top: 4px;
+}
+
+.flat__price del {
+    line-height: 20px;
+    margin-left: 16px;
+    font-size: 14px;
+}
+
+.flat__price span {
+    line-height: 24px;
+    margin-right: 16px;
+    color: var(--accent-1);
+    font-family: "Geologica", Arial, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.button-flats:hover {
+    background: var(--base-white);
+}
+
+.button-flats:active {
+    background: var(--color-action);
+}
+
+@media (min-width: 1440px) {
+
+.carousel {
+    position: relative;
+    max-width: 1240px;
+    margin: 0 auto 100px auto;
+}
+
+.carousel-title {
+    margin-top: 0;
+}
+
+.carousel__slider {
+    position: absolute;
+    top: 95px;
+    right: 0;
+    display: flex;
+    width: 140px;
+    height: 64px;
+}
+
+.carousel__link {
+    cursor: pointer;
+}
+
+.carousel__link:hover svg rect {
+    stroke: var(--accent-2);
+}
+
+.carousel__link:active svg {
+    fill: var(--color-action);
+}
+
+
+.carousel__link:first-child {
+    margin-right: 12px;
+}
+
+.sorting {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+
+.sorting-price {
+    display: flex;
+}
+
+.sorting-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    column-gap: 12px;
+}
+
+.sorting-item {
+    padding: 7px 23px;
+    margin-bottom: 12px;
+    border: 1px solid var(--background-block);
+    border-radius: 900px;
+}
+
+.sorting-item:hover {
+    border: 1px solid var(--accent);
+}
+
+.sorting-item:active {
+    background: var(--accent);
+}
+
+.sorting-item a {
+    line-height: 17px;
+    color: var(--base-text);
+    font-size: 12px;
+}
+
+.sorting-item:active a {
+    color: var(--base-white);
+}
+
+.flat {
+    margin-bottom: 24px;
+}
+
+.flat-subtitle {
+    line-height: 29px;
+    font-size: 24px;
+}
+
+.flat__item {
+    width: 298px;
+    height: 645px;
+}
+
+.flat__image {
+    height: 200px;
+    margin: 39px 0;
+}
+
+.data {
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.filter {
+    margin-bottom: 100px;
+}
+
+.filter__button-flat {
+    width: 402px;
+    height: 64px;
+    line-height: 22px;
+    padding: 21px 62px;
+    margin: 0 auto;
+    border: 1px solid var(--accent);
+    border-radius: 16px;
+    color: var(--base-text);
+    background: var(--base-white);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.flat__advantages-title {
+    line-height: 17px;
+    font-size: 12px;
+}
+
+.flat__advantages {
+    max-width: 225px;
+    height: 70px;
+    margin-bottom: 16px;
+}
+
+.flat__description-item {
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.flat__design {
+    margin-bottom: 24px;
+}
+
+.flat__price {
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.flat__price span {
+    line-height: 29px;
+    margin-left: 8px;
+    font-size: 24px;
+}
+
+.button-flats {
+    width: 402px;
+    height: 54px;
+    line-height: 22px;
+    padding: 16px 48px;
+    margin: 0 auto;
+    border: 1px solid var(--accent);
+    border-radius: 16px;
+    color: var(--base-text);
+    background: var(--base-white);
+    font-size: 16px;
+    font-weight: 400;
+}
+}

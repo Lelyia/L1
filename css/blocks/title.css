@@ -1,0 +1,25 @@
+.title {
+    line-height: 29px;
+    padding: 0;
+    margin: 32px 0;
+    color: var(--base-text);
+    font-family: "Geologica", Arial, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+@media (min-width: 960px) and (max-width:1439px) {
+    .title {
+        margin-bottom: 48px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .title {
+        line-height: 56px;
+        margin-top: 0;
+        margin-bottom: 48px;
+        font-size: 40px;
+    }
+}

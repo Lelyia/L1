@@ -1,0 +1,440 @@
+/* Objects*/
+
+.object-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.object-item {
+    position: relative;
+    display: grid;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 443px;
+    margin-bottom: 20px;
+    border: 1px solid var(--background-block);
+    border-radius: 16px;
+    background: var(--base-white);
+}
+
+.object-item:hover,
+.object-item:active {
+    border: 1px solid var(--accent);
+}
+
+.object-link {
+    display: grid;
+    max-width: 343px;
+    pointer-events: none;
+    grid-template-areas:
+        "a b"
+        "c .";
+}
+
+.object-item--static {
+    display: none;
+}
+
+
+.object__card {
+    position: relative;
+}
+
+.object__image {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.object__image-object {
+    display: block;
+    width: 100%;
+    height: 266px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.object__slider {
+    display: none;
+}
+
+.object__month {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    line-height: 17px;
+    padding: 8px 12px 8px 36px;
+    border: 1px solid var(--color-orange);
+    border-radius: 8px;
+    color: var(--color-orange);
+    background: var(--color-lightorange);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.object__month::before {
+    position: absolute;
+    left: 12px;
+    width: 16px;
+    height: 16px;
+    background-image: url("../../icons/Fire16.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    content: "";
+}
+
+.object__advantages {
+    position: absolute;
+    right: 16px;
+    bottom: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    max-width: 210px;
+    margin: 0;
+}
+
+.object__advantages-title {
+    position: relative;
+    padding: 8px 12px;
+    margin: 0;
+    margin-bottom: 4px;
+    margin-left: 4px;
+    border-radius: 8px;
+    color: var(--base-text);
+    background: var(--color-lightgreen);
+}
+
+.object__start {
+    padding: 9px 12px 9px 36px;
+    padding-left: 24px;
+    color: var(--base-text);
+    font-weight: 500;
+}
+
+.object__start {
+    position: relative;
+}
+
+.object__start::before {
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    width: 16px;
+    height: 16px;
+    background-image: url("../../icons/Megaphone16.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    content: "";
+}
+
+.object-subtitle {
+    line-height: 24px;
+    margin: 0;
+    margin-bottom: 8px;
+    margin-left: 16px;
+    color: var(--base-text);
+    font-family: "Geologica", Arial, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    grid-area: a;
+}
+
+.object__action-link {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+@media (min-width: 960px) and (max-width:1439px) {
+
+    .object-item:nth-child(2),
+    .object-item:nth-child(3n+2) {
+        width: 300px;
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 960px) {
+    .object-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .object-item:first-child {
+        flex-basis: 612px;
+        max-width: 612px;
+    }
+
+    .object-item {
+        flex-basis: 298px;
+        max-width: 298px;
+        height: 550px;
+        margin-right: 16px;
+    }
+
+    .object__image {
+        position: relative;
+        margin-bottom: 16px;
+    }
+
+    .object-item:not(:first-child) div.object__advantages,
+    .object-item:not(:first-child) span.object__month {
+        display: none;
+    }
+
+    .object-item:first-child .object-link {
+        max-width: 612px;
+        cursor: pointer;
+        pointer-events: auto;
+        grid-template-areas:
+            "a a"
+            "c b";
+    }
+
+    .object-link {
+        flex-grow: 1;
+        max-width: none;
+        cursor: pointer;
+        pointer-events: auto;
+        grid-template-areas:
+            "a a"
+            "c c"
+            "b b";
+    }
+
+    .object__image-object {
+        height: 345px;
+    }
+
+    .object__slider {
+        position: absolute;
+        top: 323px;
+        left: 50%;
+        display: flex;
+        width: 64px;
+        height: 10px;
+        transform: translate(-50%, 0);
+        column-gap: 8px;
+    }
+
+    .object__slider label {
+        position: relative;
+        width: 10px;
+        height: 10px;
+        cursor: pointer;
+    }
+
+    .object__slider label::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        border-radius: 900px;
+        background: rgba(255, 255, 255, 0.6);
+        content: "";
+    }
+
+    .object__slider label::before:active {
+        background: var(--base-white);
+    }
+
+    .object-subtitle {
+        line-height: 29px;
+        margin-bottom: 0;
+        font-size: 24px;
+    }
+
+    .object__advantages {
+        z-index: 100;
+        bottom: -73px;
+        max-width: 237px;
+    }
+
+    .object__advantages-title {
+        line-height: 17px;
+        font-size: 12px;
+    }
+
+    .object__start {
+        padding-left: 36px;
+    }
+
+    .flats {
+        align-items: center;
+        padding-top: 2px;
+        margin: auto 0 16px;
+    }
+
+    .object__flats {
+        display: block;
+        line-height: 20px;
+        color: var(--gray-text);
+        font-size: 14px;
+        grid-area: g;
+    }
+
+    .object__price {
+        line-height: 29px;
+        margin-left: 16px;
+        font-size: 24px;
+    }
+
+    .metro {
+        margin-bottom: 17px;
+    }
+
+    .object__metro {
+        line-height: 20px;
+        font-size: 14px;
+    }
+
+    .object__metro::before {
+        top: 6px;
+    }
+
+    .object__metro-time {
+        line-height: 20px;
+        font-size: 14px;
+    }
+
+    .object__metro-time-transport {
+        position: relative;
+        padding: 0 0 0 20px;
+    }
+
+    .object__metro-time-transport::before {
+        top: 2px;
+    }
+
+    .object__metro-time-walk {
+        position: relative;
+        display: block;
+        padding: 0;
+        padding-left: 20px;
+        margin-right: 12px;
+    }
+
+    .object__metro-time-walk::before {
+        position: absolute;
+        top: 2px;
+        left: 0;
+        width: 16px;
+        height: 16px;
+        background-image: url("../../icons/Walk.svg");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        content: "";
+    }
+
+    .flat-subtitle {
+        line-height: 24px;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    .object {
+        max-width: 1240px;
+        margin: 0 auto 100px;
+    }
+
+    .object__title {
+        margin-top: 0;
+    }
+
+    .object-item:nth-child(4n+3) {
+        margin-right: 0;
+    }
+
+    .object__action-item {
+        display: flex;
+        flex-direction: column;
+        max-width: 298px;
+        max-height: 550px;
+    }
+
+    .object__action {
+        position: relative;
+        display: block;
+        min-width: 298px;
+        min-height: 415px;
+        margin-right: 0;
+        margin-bottom: 16px;
+        border-radius: 12px;
+        background-color: var(--accent-1);
+    }
+
+    .object-button {
+        position: relative;
+        display: block;
+        align-self: flex-end;
+        flex-grow: 1;
+        width: 100%;
+        height: 100%;
+        line-height: 20px;
+        padding: 82px 52px 16px 16px;
+        margin: 0;
+        font-size: 14px;
+
+    }
+
+    .object-button::after {
+        position: absolute;
+        right: 16px;
+        bottom: 16px;
+        width: 24px;
+        height: 24px;
+        background-image: url("../../icons/Left_24px.svg");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        content: "";
+    }
+
+    .action__slider {
+        position: absolute;
+        bottom: 16px;
+        left: 16px;
+        display: flex;
+        width: 266px;
+        height: 3px;
+        column-gap: 12px;
+    }
+
+    .action__slider p {
+        position: relative;
+        width: 44px;
+        height: 3px;
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+    }
+
+    .action__slider p::before {
+        position: absolute;
+        z-index: 25;
+        top: 0;
+        left: 0;
+        width: 44px;
+        height: 3px;
+        border-radius: 4px;
+        background: var(--base-white);
+        content: "";
+    }
+
+    .object__action .action__subtitle {
+        bottom: 39px;
+    }
+}

@@ -1,3 +1,19 @@
+@import "blocks/header.css";
+@import "blocks/header__object.css";
+@import "blocks/line.css";
+@import "blocks/title.css";
+@import "blocks/footer.css";
+@import "blocks/buttons.css";
+@import "blocks/slider.css";
+@import "blocks/logo.css";
+@import "blocks/action.css";
+@import "blocks/objects.css";
+@import "blocks/flats.css";
+@import "blocks/other.css";
+@import "blocks/modal.css";
+@import "general/mobile.css";
+@import "general/tablet.css";
+@import "general/desktop.css";
 @import "main/mobile.css";
 @import "main/tablet.css";
 @import "main/desktop.css";
@@ -14,41 +30,41 @@
 /* Variables */
 
 :root {
-/* Colors */
-/* Base colors */
---base-white: #ffffff;
---base-black: #000000;
---accent: #04B7E0;
---accent-1:  #125EAA;
---accent-2: #23325B;
---accent-3: #85DCF0;
---accent-4: #3C9CF5;
---base-text: #212121;
---gray-text: #818181;
+    /* Colors */
+    /* Base colors */
+    --base-white: #ffffff;
+    --base-black: #000000;
+    --accent: #04B7E0;
+    --accent-1: #125EAA;
+    --accent-2: #23325B;
+    --accent-3: #85DCF0;
+    --accent-4: #3C9CF5;
+    --base-text: #212121;
+    --gray-text: #818181;
 
-/* Background colors */
---background-color: #F9FAFF;
---background-block: #D0D0D0;
---opacity-background: rgba(33, 33, 33, 0.15);
---background-modal: rgba(208, 208, 208, 0.5);
+    /* Background colors */
+    --background-color: #F9FAFF;
+    --background-block: #D0D0D0;
+    --opacity-background: rgba(33, 33, 33, 0.15);
+    --background-modal: rgba(208, 208, 208, 0.5);
 
-/* metro */
---red-metro: #DA2127;
---blue-metro: #0078BE;
---green-metro: #48B85E;
---orange-metro: #F58220;
---purple-metro: #8E479B;
+    /* metro */
+    --red-metro: #DA2127;
+    --blue-metro: #0078BE;
+    --green-metro: #48B85E;
+    --orange-metro: #F58220;
+    --purple-metro: #8E479B;
 
-/* Other colors */
---color-green: #2AD127;
---color-lightgreen: #D6F2B3;
---color-red: #D12728;
---color-lightred:#FFDADB;
---color-orange: #F67E27;
---color-lightorange: #FFEBD3;
---color-lightblue: #C5E3FF;
---color-action: #E0ECF7;
---color-visited: #E7E7E7;
+    /* Other colors */
+    --color-green: #2AD127;
+    --color-lightgreen: #D6F2B3;
+    --color-red: #D12728;
+    --color-lightred: #FFDADB;
+    --color-orange: #F67E27;
+    --color-lightorange: #FFEBD3;
+    --color-lightblue: #C5E3FF;
+    --color-action: #E0ECF7;
+    --color-visited: #E7E7E7;
 }
 
 /* Fonts */
@@ -246,47 +262,46 @@
 /* Global */
 
 .visually-hidden {
-  position: absolute;
-  overflow: hidden;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  border: 0;
-  white-space: nowrap;
-  clip: rect(0 0 0 0);
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    border: 0;
+    white-space: nowrap;
+    clip: rect(0 0 0 0);
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 *,
 *::after,
 *::before {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
-  
+
 .page__body {
-     position: relative;
+    position: relative;
     display: flex;
     flex-direction: column;
     min-width: 375px;
     min-height: 100vh;
-     line-height: 14px;
+    line-height: 14px;
     margin: 0 auto;
-    color: var(--base-black);
-     color: var(--gray-text);
+    color: var(--gray-text);
     background-color: var(--base-white);
     font-family: "Min Sans", Arial, sans-serif;
-     font-size: 10px;
-     font-style: normal;
-     font-weight: 400;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .page__container {

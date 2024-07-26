@@ -1,0 +1,206 @@
+/* Other */
+
+.other {
+    overflow: hidden;
+}
+
+.other__container {
+    position: relative;
+}
+
+.other__list {
+    display: flex;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 16px;
+    list-style: none;
+    column-gap: 16px;
+}
+
+.other__item {
+    position: relative;
+    display: block;
+    min-width: 343px;
+    min-height: 315px;
+    border-radius: 12px;
+    background: var(--background-block);
+}
+
+.other__slider {
+    display: none;
+}
+
+.other__list figure {
+    overflow: hidden;
+    width: 343px;
+    height: 315px;
+    padding: 0;
+    margin: 0;
+    border-radius: 12px;
+}
+
+.other__link {
+    position: relative;
+}
+
+.other__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.other__subtitle {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    line-height: 29px;
+    color: var(--base-white);
+    font-family: "Geologica", Arial, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.line-4 {
+    display: none;
+}
+
+
+@media (min-width: 960px) and (max-width:1439px) {
+    .other__container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 1440px) {
+    
+        /* Other */
+
+        .other {
+            max-width: 1240px;
+            margin: 0 auto 54px auto;
+        }
+    
+        .other__subtitle {
+            line-height: 38px;
+            font-size: 32px;
+            font-weight: 300;
+        }
+    
+        .other__carplaces {
+            grid-area: carplaces;
+        }
+    
+        .other__commerce {
+            grid-area: commerce;
+        }
+    
+        .other__storage {
+            grid-area: storage;
+        }
+    
+        .other__design {
+            grid-area: design;
+        }
+    
+        .other__rent {
+            grid-area: rent;
+        }
+    
+        .other__career {
+            grid-area: career;
+        }
+    
+        .other__empty {
+            display: block;
+            width: 0;
+            height: 0;
+            grid-area: empty;
+        }
+    
+        .other__list {
+            display: grid;
+            height: 842px;
+            margin-bottom: 80px;
+            grid-template-areas:
+                "carplaces carplaces commerce commerce storage storage"
+                "carplaces carplaces commerce commerce storage storage"
+                "empty empty empty empty empty empty"
+                "design design design rent rent rent"
+                "design design design career career career";
+            row-gap: 16px;
+        }
+    
+        .other__list figure {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+    
+        .other__item {
+            position: relative;
+            width: 100%;
+            min-width: 403px;
+            height: 100%;
+            min-height: 194px;
+        }
+    
+        .other__slider {
+            position: absolute;
+            right: 16px;
+            bottom: 16px;
+            display: block;
+            width: 48px;
+            height: 48px;
+            padding: 0;
+            margin: 0;
+            cursor: pointer;
+        }
+    
+        .other__slider:hover svg rect {
+            stroke: var(--accent);
+            fill: var(--base-white);
+            fill-opacity: 1;
+        }
+    
+        .other__slider:hover svg path {
+            stroke: var(--accent);
+        }
+    
+        .other__slider:active svg rect {
+            stroke: var(--accent);
+            fill: var(--color-action);
+        }
+    
+        .other__slider:active svg path {
+            stroke: var(--accent);
+        }
+    
+        .other__slider:active svg {
+            stroke: var(--accent);
+        }
+    
+        .other__link {
+            height: 100%;
+            pointer-events: none;
+        }
+    
+        .button-phone {
+            width: 407px;
+            height: 64px;
+            line-height: 22px;
+            padding: 21px 116px 21px 116px;
+            margin: 0 auto;
+            border-radius: 16px;
+            font-size: 16px;
+            font-weight: 400;
+        }
+    
+        .line-4 {
+            display: block;
+        }
+    
+}

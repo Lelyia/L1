@@ -731,13 +731,23 @@
     }
 
     .page__object .object__customer-service-title {
-        line-height: 29px;
-        font-size: 24px;
+        line-height: 19px;
+        margin-bottom: 16px;
+        font-size: 16px;
+    }
+
+    .page__object .object__customer-service-title span {
+        display: block;
+        margin-bottom: 16px;
+    }
+
+    .page__object .object__customer-service-south {
+        margin-bottom: 35px;
     }
 
     .page__object .object__customer-service-text {
-        line-height: 38px;
-        font-size: 32px;
+        line-height: 29px;
+        font-size: 24px;
     }
 
     .page__object .object__customer-office {
