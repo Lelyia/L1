@@ -252,8 +252,9 @@
         margin: 0 auto 48px;
     }
 
-    .object__selection-title {
+    .page__object .object__selection-title {
         margin-bottom: 0;
+        margin-left: 0;
     }
 
     .object__selection .object__selection-slider {
