@@ -1,9 +1,5 @@
 /* Action */
 
-.action {
-    margin-top: 96px;
-}
-
 .action__container {
     display: flex;
 }
@@ -95,7 +91,7 @@
 
 .action {
     max-width: 1240px;
-    margin: 64px auto 100px auto;
+    margin: 0 auto;
 
 }
 

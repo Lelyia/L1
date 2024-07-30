@@ -1,0 +1,9 @@
+.container {
+    margin-bottom: 64px;
+}
+
+@media (min-width: 1440px) {
+    section.container {
+        margin-bottom: 100px;
+    }
+}

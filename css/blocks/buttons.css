@@ -2,7 +2,7 @@
     display: block;
     line-height: 20px;
     padding: 22px;
-    margin: 32px 0;
+    margin: 0;
     border: none;
     border-radius: 16px;
     color: var(--base-white);
@@ -27,7 +27,6 @@
     display: flex;
     padding: 0;
     margin: 0;
-    margin-bottom: 32px;
     list-style: none;
 }
 
@@ -50,7 +49,6 @@
     position: relative;
     width: 100%;
     padding: 14px 0;
-    margin: 48px 0 52px 0;
 }
 
 .button-phone span {
@@ -70,6 +68,35 @@
     content: "";
 }
 
+.object__button {
+    display: grid;
+    margin: auto 16px 16px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 12px;
+}
+
+.object__button-button {
+    display: block;
+    padding: 11px;
+    border-radius: 12px;
+}
+
+.object__button-link {
+    border: 1px solid var(--accent);
+    background-color: var(--base-white);
+}
+
+.object__button-flat {
+    padding: 12px;
+    background-color: var(--accent);
+}
+
+.object__button-title {
+    display: block;
+    color: var(--base-text);
+    text-align: center;
+}
+
 .option__button {
     min-width: 160px;
     padding: 11px;
@@ -86,7 +113,7 @@
     background: var(--accent);
 }
 
-.page__object .object__selection-button {
+.object__selection-button {
     display: flex;
     padding: 0;
     margin: 0;
@@ -95,14 +122,14 @@
     column-gap: 12px;
 }
 
-.page__object .selection-button-item {
+.selection-button-item {
     width: 43px;
     height: 5px;
     border-radius: 4px;
     background: rgba(208, 208, 208, 0.5);
 }
 
-.page__object .selection-button-item--active {
+.selection-button-item--active {
     background-color: var(--base-white);
 }
 
@@ -111,15 +138,67 @@
     margin: 0 16px;
 }
 
-.page__object .selection__buttons-link {
+.selection__buttons-link {
     display: flex;
     justify-content: space-between;
 }
 
-.page__object .buttons-link {
+.buttons-link {
     width: 24px;
     height: 24px;
     cursor: pointer;
+}
+
+.page__header-buttons-list {
+    padding: 16px;
+    margin: 0;
+    margin-bottom: 32px;
+    border: 1px solid var(--background-block);
+    border-radius: 16px;
+    list-style: none;
+}
+
+.page__header-wrapper-object--opened .page__header-buttons-list {
+    margin: 16px;
+}
+
+.page__header-wrapper-object--opened .page__header-buttons-list {
+    display: none;
+}
+
+.page__header-buttons-link {
+    width: 100%;
+    line-height: 14px;
+    padding: 11px;
+    margin: 0 0 8px 0;
+    border: 1px solid var(--accent);
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.page__header-buttons-item.page__header-buttons-link {
+    background-color: var(--accent-1);
+}
+
+.page__header-buttons-item:last-child .page__header-buttons-link {
+    margin-bottom: 0;
+}
+
+.page__header-buttons-link .buttons-text {
+    display: none;
+}
+
+.object__catalog-view {
+    display: none;
+}
+
+.filter__button-flat--desktop {
+    display: none;
+}
+
+.slider__button {
+    display: none;
 }
 
 @media (min-width: 960px) and (max-width:1439px) {
@@ -141,8 +220,7 @@
         width: auto;
         line-height: 22px;
         padding: 22px 116px 21px 116px;
-        margin: 56px auto 115px auto;
-        margin-top: 56px;
+        margin: 0 auto;
         text-align: center;
         font-size: 16px;
         font-weight: 500;
@@ -152,6 +230,11 @@
         min-width: 928px;
         margin-top: 4px;
     }
+
+    .object__button {
+        display: none;
+    }
+
 }
 
 @media (min-width: 960px) {
@@ -163,10 +246,254 @@
     .object__button {
         display: none;
     }
+
+    .page__header-buttons-link .buttons-text {
+        display: inline;
+    }
+
+    .page__header-buttons-list {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 32px;
+        border: none;
+        list-style: none;
+        column-gap: 16px;
+    }
+
+    .page__header-buttons-item {
+        position: relative;
+    }
+
+    .page__header-wrapper-object .page__header-buttons-link {
+        min-width: 220px;
+        line-height: 17px;
+        padding: 18.5px;
+        text-align: right;
+        font-size: 12px;
+    }
+
+    .buttons-text-mobile {
+        display: none;
+    }
+
+    .page__header-buttons-call::before {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        width: 24px;
+        height: 24px;
+        background-image: url("../../icons/call24.svg");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        content: "";
+    }
+
+    .page__header-buttons-ipoteka::before {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        width: 24px;
+        height: 24px;
+        background-image: url("../../icons/ipoteka-filter24.svg");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        content: "";
+    }
+
+    .page__header-buttons-booklet::before {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        width: 24px;
+        height: 24px;
+        background-image: url("../../icons/Booklet24.svg");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        content: "";
+    }
+
+    .page__header-buttons-taxi::before {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        width: 24px;
+        height: 24px;
+        background-image: url("../../icons/Taxi24.svg");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        content: "";
+    }
+
+    .option__button {
+        min-width: auto;
+        padding: 16px 20px;
+        margin-top: 0;
+        border: none;
+        border-radius: 0;
+    }
+
+    .object__selection-buttons {
+        display: none;
+    }
 }
 
 @media (min-width: 1440px) {
+
+    .page__header-wrapper-object {
+        margin-bottom: 0;
+    }
+
+    .page__header-wrapper-object .page__header-buttons-link {
+        padding: 16px;
+    }
+
     .action-button {
         display: none;
     }
+
+    .button-card {
+        border-radius: 12px 0px 0px 12px;
+    }
+
+    .object__filter-catalog {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-bottom: 64px;
+    }
+
+    .object__catalog-view {
+        display: flex;
+        height: 50px;
+        line-height: 20px;
+        border: 1px solid var(--background-block);
+        border-radius: 12px;
+        background: var(--base-white);
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .catalog-button {
+        display: inline-block;
+        padding: 16px 20px;
+        margin: 0;
+        border: none;
+        color: var(--gray-text);
+        background-color: var(--base-white);
+    }
+
+    .catalog-button:active,
+    .catalog-button--active {
+        color: var(--base-white);
+        background: var(--accent);
+    }
+
+    .filter__button-flat--mobile {
+        display: none;
+    }
+
+    .filter__button-flat--desktop {
+        display: block;
+    }
+
+    .button-flats {
+        width: 402px;
+        height: 54px;
+        line-height: 22px;
+        padding: 16px 48px;
+        margin: 0 auto;
+        border: 1px solid var(--accent);
+        border-radius: 16px;
+        color: var(--base-text);
+        background: var(--base-white);
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .button-phone {
+        width: 407px;
+        height: 64px;
+        line-height: 22px;
+        padding: 21px 116px 21px 116px;
+        margin: 0 auto;
+        border-radius: 16px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .button-main {
+        align-self: flex-end;
+        width: 298px;
+        height: 64px;
+        margin: 0;
+        margin: 0;
+    }
+
+    .slider__button {
+        position: absolute;
+        top: -169px;
+        left: 0;
+        display: flex;
+        width: 140px;
+        height: 64px;
+    }
+
+    .slider__button__link {
+        position: relative;
+        width: 64px;
+        height: 64px;
+        cursor: pointer;
+    }
+
+    .slider__button__link svg {
+        overflow: visible;
+    }
+
+    .slider__button__link:first-child {
+        margin-right: 12px;
+    }
+
+    .slider__button__link:hover svg rect {
+        stroke: var(--accent);
+        fill: var(--base-white);
+        fill-opacity: 1;
+    }
+
+    .slider__button__link:hover svg path {
+        stroke: var(--accent);
+    }
+
+    .slider__button__link:active svg rect {
+        stroke: var(--accent);
+        fill: var(--color-action);
+    }
+
+    .slider__button__link:active svg path {
+        stroke: var(--accent);
+    }
+
+    .slider__button__link:active svg {
+        stroke: var(--accent);
+    }
+
+    .page__header-wrapper-object .page__header-buttons-list {
+        justify-content: space-between;
+        order: 5;
+        max-width: 1240px;
+        margin: 48px auto;
+    }
+
+    .page__header-wrapper-object .page__header-buttons-link {
+        min-width: 298px;
+        line-height: 22px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 16px;
+    }
+
+    .page__header-wrapper-object .page__header-buttons-ipoteka::before {
+        background-image: url(../../icons/Bank24.svg);
+    }
+
 }

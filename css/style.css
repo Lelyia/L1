@@ -1,32 +1,3 @@
-@import "blocks/header.css";
-@import "blocks/header__object.css";
-@import "blocks/line.css";
-@import "blocks/title.css";
-@import "blocks/footer.css";
-@import "blocks/buttons.css";
-@import "blocks/slider.css";
-@import "blocks/logo.css";
-@import "blocks/action.css";
-@import "blocks/objects.css";
-@import "blocks/flats.css";
-@import "blocks/other.css";
-@import "blocks/modal.css";
-@import "general/mobile.css";
-@import "general/tablet.css";
-@import "general/desktop.css";
-@import "main/mobile.css";
-@import "main/tablet.css";
-@import "main/desktop.css";
-@import "catalog/mobile.css";
-@import "catalog/tablet.css";
-@import "catalog/desktop.css";
-@import "object/mobile.css";
-@import "object/tablet.css";
-@import "object/desktop.css";
-@import "object_test/mobile.css";
-@import "object_test/tablet.css";
-@import "object_test/desktop.css";
-
 /* Variables */
 
 :root {

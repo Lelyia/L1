@@ -1,6 +1,10 @@
 @media (min-width: 1440px) {
     /* PAGE OBJECT */
 
+    .page__object .slider {
+        padding-bottom: 48px;
+    }
+
     .page__object .complex {
         max-height: 67px;
         line-height: 67px;
@@ -9,23 +13,23 @@
         font-size: 48px;
     }
 
-    .page__object .slider-main {
+    .slider .slider-main {
         max-width: 1240px;
         margin: 0 auto;
         margin-bottom: 48px;
     }
 
-    .page__object .slider__button {
+    .slider .slider__button {
         top: -147px;
         left: 0;
     }
 
-    .page__object .slider__complex-list {
+    .slider .slider__complex-list {
         justify-content: flex-start;
         margin-bottom: 0;
     }
 
-    .page__object .slider__complex-item {
+    .slider .slider__complex-item {
         width: auto;
         line-height: 22px;
         padding: 9px 0 9px 52px;
@@ -39,90 +43,76 @@
         height: 780px;
     }
 
-    .page__object .button-main {
-        min-width: 290px;
+    .slider .button.button-main {
+        max-width: 290px;
         line-height: 22px;
         padding: 21px;
         margin: 0;
         font-size: 16px;
     }
 
-    .page__object .header {
-        display: block;
-        flex-grow: 1;
-    }
-
-    .page__object .header__contacts-container {
+    .header__contacts-container {
         display: block;
     }
 
-    .page__object .page__header-wrapper-object .page__header-buttons-list {
-        justify-content: space-between;
-        order: 5;
-        max-width: 1240px;
-        margin: 48px auto;
-    }
-
-    .page__object .page__header-wrapper-object .page__header-buttons-link {
-        min-width: 298px;
-        margin-bottom: 0;
-    }
-
-    .page__object .page__header-wrapper-object .page__header-buttons-link .buttons-text-mobile {
+    .page__header-wrapper-object .page__header-buttons-link .buttons-text {
         display: inline;
     }
 
-    .page__object .page__header-wrapper-object .header {
+    .buttons-text-mobile.buttons-text-mobile-call {
+        display: inline;
+    }
+
+    .page__header-wrapper-object .header {
         flex-grow: 1;
         order: 2;
     }
 
-
-    .page__object .page__header-wrapper-object .page__header-logo {
+    .page__header-wrapper-object .page__header-logo {
         order: 1;
         margin: 21px 16px 21px 32px;
     }
 
-    .page__object .page__header-wrapper-object .header__nav-list-main {
+    .page__header-wrapper-object .header__nav-list-main {
         max-width: 723px;
         margin-right: 0;
     }
 
-    .page__object .page__header-wrapper-object .header__nav-item a {
+    .page__header-wrapper-object .header__nav-item a {
         color: var(--base-text);
     }
 
-    .page__object .page__header-wrapper-object .page__header-buttons2-list {
+    .page__header-wrapper-object .page__header-buttons2-list {
         display: flex;
         order: 3;
         list-style: none;
     }
 
-    .page__object .page__header-wrapper-object .header__nav-list-main {
+    .page__header-wrapper-object .header__nav-list-main {
         display: flex;
     }
 
-    .page__object .page__header-wrapper-object .header__nav-link-more {
+    .page__header-wrapper-object .header__nav-link-more {
         display: inline;
         order: 5;
     }
 
-    .page__object .page__header-wrapper-object .header__nav-more {
+    .page__header-wrapper-object .header__nav-more {
         position: relative;
     }
 
 
-    .page__object .header__nav-list-additional {
+    .header__nav-list-additional {
         display: none;
     }
 
-    .page__object .page__header-wrapper-object .header__nav-link-more:hover,
-    .page__object .page__header-wrapper-object .header__nav-link-more:active {
+    .page__header-wrapper-object .header__nav-link-more:hover,
+    .page__header-wrapper-object .header__nav-link-more:active {
         color: var(--accent);
     }
 
-    .page__object .header__nav-more:hover .header__nav-list-additional,
-    .page__object .header__nav-more:active .header__nav-list-additional {
+    .header__nav-more:hover .header__nav-list-additional,
+    .header__nav-more:active .header__nav-list-additional {
         position: absolute;
         top: 84px;
         left: -141px;
@@ -142,45 +132,46 @@
         grid-auto-flow: column;
     }
 
-    .page__object .page__header-wrapper-object .header__nav-item:last-child {
+    .page__header-wrapper-object .header__nav-item:last-child {
         margin-bottom: 0;
     }
 
-    .page__object .header__nav-more:hover .header__nav-list-additional .header__nav-item {
+    .header__nav-more:hover .header__nav-list-additional .header__nav-item {
         width: max-content;
     }
 
-    .page__object .header__nav-more:hover .header__nav-list-additional .header__nav-item:hover,
-    .page__object .header__nav-more:hover .header__nav-list-additional .header__nav-item:active {
+    .header__nav-more:hover .header__nav-list-additional .header__nav-item:hover,
+    .header__nav-more:hover .header__nav-list-additional .header__nav-item:active {
         text-decoration: underline;
         text-decoration-color: var(--accent);
         text-underline-offset: 8px;
         text-decoration-thickness: 2px;
     }
 
-    .page__object .header__nav-more:hover .header__nav-list-additional .header__nav-item a {
+    .header__nav-more:hover .header__nav-list-additional .header__nav-item a {
         line-height: 22px;
         padding: 0;
         font-size: 16px;
         font-weight: 400;
     }
 
-    .page__object .page__header-wrapper-object .header__contacts-phone {
+    .page__header-wrapper-object .header__contacts-phone {
         display: none;
     }
 
-    .page__object .page__header-wrapper-object .page__header-buttons2-item:first-child {
+    .page__header-wrapper-object .page__header-buttons2-item:first-child {
         display: none;
     }
 
-    .page__object .page__header-wrapper-object .page__header-buttons2-link {
+    .page__header-wrapper-object .page__header-buttons2-link {
+        min-width: 216px;
         margin: 18px 32px;
         margin-top: 18px;
         margin-right: 32px;
         margin-bottom: 0;
     }
 
-    .page__object .page__header-wrapper-object .page__header-buttons2-title {
+    .page__header-wrapper-object .page__header-buttons2-title {
         display: none;
     }
 
@@ -188,45 +179,41 @@
         display: block;
     }
 
-    .page__object .page__header-wrapper-object .header__stats {
+    .page__header-wrapper-object .header__stats {
         padding-top: 0;
         padding-bottom: 0;
     }
 
-    .page__object .header__nav {
+    .header__nav {
         flex-grow: 1;
     }
 
-    .page__object .page__header-wrapper-object .header__nav-list-main .header__nav-item,
-    .page__object .page__header-wrapper-object .header__nav-more {
+    .page__header-wrapper-object .header__nav-list-main .header__nav-item,
+    .page__header-wrapper-object .header__nav-more {
         padding-top: 49px;
         padding-bottom: 49px;
     }
 
-    .page__object .page__header-wrapper-object .page__header-logo-wrapper {
+    .page__header-wrapper-object .page__header-logo-wrapper {
         margin-bottom: 5px;
     }
 
-    .page__object .line-object {
+    .line-object {
         display: block;
         order: 4;
     }
 
-    .page__object .page__header-wrapper-object {
+    .page__header-wrapper-object {
         position: relative;
     }
 
-    .page__object .page__header-wrapper-object .page__header-buttons-ipoteka::before {
-        background-image: url(../../icons/Bank24.svg);
-    }
-
-    .page__object .slider__complex-item-2::before {
+    .slider__complex-item-2::before {
         background-image: url(../../icons/deadline-desktop40.svg);
     }
 
-    .page__object .object__about-info {
+    .object__about-info {
         max-width: 1240px;
-        margin: 0 auto 128px;
+        margin: 0 auto;
         grid-template-columns: 40.9% auto;
     }
 
@@ -236,58 +223,58 @@
         font-size: 40px;
     }
 
-    .page__object .object__about-list {
+    .object__about-list {
         max-width: 419px;
     }
 
-    .page__object .object__about-item {
+    .object__about-item {
         min-width: 178px;
     }
 
-    .page__object .object__about-text {
+    .object__about-text {
         line-height: 22px;
         margin-bottom: 24px;
         font-size: 16px;
     }
 
-    .page__object .object__about-data {
+    .object__about-data {
         line-height: 38px;
         font-size: 32px;
     }
 
-    .page__object .object__about-description {
+    .object__about-description {
         line-height: 20px;
         font-size: 14px;
     }
 
-    .page__object .object__selection-wrapper {
+    .object__selection-wrapper {
         max-width: 1240px;
         margin: 0 auto 48px;
     }
 
-    .page__object .object__selection-title {
+    .object__selection-title {
         margin-bottom: 0;
     }
 
-    .page__object .object__selection-slider {
+    .object__selection .object__selection-slider {
         max-width: none;
-        margin: 0 0 128px;
+        margin: 0;
     }
 
-    .page__object .object__selection-subtitle {
+    .object__selection-subtitle {
         max-width: 1240px;
         padding: 32px 0 0;
         margin-right: auto;
         margin-left: auto;
     }
 
-    .page__object .object__selection-button {
+    .object__selection-button {
         max-width: 1240px;
         margin-right: auto;
         margin-left: auto;
     }
 
-    .page__object .object__selection-slider picture {
+    .object__selection-slider picture {
         z-index: -1;
         max-height: 661px;
     }
@@ -299,16 +286,15 @@
         margin-left: auto;
     }
 
-    .page__object .action__title {
+    .action__title {
         margin-bottom: 48px;
     }
 
-    .page__object .ipoteka__widget {
+    .ipoteka__widget {
         display: block;
-        margin-bottom: 128px;
     }
 
-    .page__object .ipoteka__widget-text {
+    .ipoteka__widget-text {
         max-width: 1240px;
         line-height: 56px;
         margin: 0 auto;
@@ -320,7 +306,7 @@
         font-weight: 300;
     }
 
-    .page__object .ipoteka__widget-content {
+    .ipoteka__widget-content {
         position: relative;
         max-width: 1440px;
         height: 614px;
@@ -328,7 +314,7 @@
         border: 1px solid var(--background-block);
     }
 
-    .page__object .ipoteka__widget-description {
+    .ipoteka__widget-description {
         max-width: 1240px;
         line-height: 56px;
         margin: 0 auto;
@@ -340,23 +326,23 @@
 
     }
 
-    .page__object .ipoteka__calculation {
+    .ipoteka__calculation {
         max-width: 1240px;
         padding: 32px;
-        margin: 0 auto 128px;
+        margin: 0 auto;
     }
 
-    .page__object .ipoteka__calculation-subtitle {
+    .ipoteka__calculation-subtitle {
         line-height: 38px;
         font-size: 32px;
     }
 
-    .page__object .ipoteka__calculation-button {
+    .ipoteka__calculation-button {
         width: 64px;
         height: 64px;
     }
 
-    .page__object .ipoteka__calculation-button::before {
+    .ipoteka__calculation-button::before {
         top: 16px;
         left: 16px;
         width: 32px;
@@ -372,7 +358,7 @@
 
     .page__object .object__advantage-title {
         max-width: 1240px;
-        margin: 128px auto 58px auto;
+        margin: 0 auto 58px auto;
     }
 
     .page__object .object__advantage-list {
@@ -381,7 +367,7 @@
         margin: 0 auto;
     }
 
-    .page__object .object__advantage-slider {
+    .object__advantage-slider {
         position: absolute;
         top: 0;
         right: 0;
@@ -390,60 +376,63 @@
         height: 64px;
     }
 
-
-    .page__object .object__design {
+    .object__design {
         max-width: 1240px;
         margin: 0 auto 128px;
     }
 
-    .page__object .object__design-container {
+    .object__design-container {
         grid-template-areas:
             "design-image design-title"
             "design-image design-radio"
             "design-image design-buttons";
     }
 
-    .page__object .object__design-slider {
+    .object__design-slider {
         margin-bottom: 33px;
     }
 
 
-    .page__object .design__card {
+    .design__card {
         width: 717px;
         height: 668px;
     }
 
-    .page__object .object__design-title {
+    .object__design-title {
         line-height: 56px;
         margin-right: 0;
         margin-bottom: 34px;
         font-size: 40px;
     }
 
-    .page__object .object__design-name {
+    .object__design-name {
         line-height: 29px;
         font-size: 24px;
     }
 
-    .page__object .object__design-buttons-list {
+    .object__design-buttons-list {
         margin: 0;
     }
 
-    .page__object .object__design-buttons-title {
+    .object__design-buttons-title {
         line-height: 22px;
         font-size: 16px;
     }
 
-    .page__object .object__design-control {
+    .object__design-control {
         margin-right: 0;
     }
 
-    .page__object .object__design-item--active {
+    .object__design-item--active {
         margin: 0;
     }
 
-    .page__object .object__design-buttons-3d .object__design-buttons-link {
+    .object__design-buttons-3d .object__design-buttons-link {
         padding: 21px;
+    }
+
+    .object__map.container {
+        margin-bottom: 32px;
     }
 
     .page__object .object__map-container {
@@ -452,7 +441,7 @@
         margin: 0 auto 10px;
     }
 
-        .page__object .object__map-buttons-list {
+    .page__object .object__map-buttons-list {
         flex-wrap: wrap;
         max-width: 1240px;
         margin: 0 auto;
@@ -540,11 +529,7 @@
         height: 405px;
     }
 
-    .page__object .other {
-        margin-bottom: 128px;
-    }
-
-    .page__object .object__info {
+    .object__info {
         width: 1240px;
         margin: 0 auto;
     }
@@ -575,7 +560,7 @@
         line-height: 17px;
         font-size: 12px;
     }
-
+ 
     .page__object .object__info-text {
         line-height: 29px;
         font-size: 24px;
@@ -597,7 +582,7 @@
     }
 
     .page__object .object__info-link--desktop:hover svg rect,
-    .page__object .object__info-link:hover svg rect{
+    .page__object .object__info-link:hover svg rect {
         stroke: var(--accent);
         fill: var(--base-white);
         fill-opacity: 1;
@@ -615,12 +600,12 @@
     }
 
     .page__object .object__info-link--desktop:active svg path,
-    .page__object .object__info-link:active svg path  {
+    .page__object .object__info-link:active svg path {
         stroke: var(--accent);
     }
 
     .page__object .object__info-link--desktop:active svg,
-    .page__object .object__info-link:active svg  {
+    .page__object .object__info-link:active svg {
         stroke: var(--accent);
     }
 
@@ -694,7 +679,7 @@
         font-size: 16px;
     }
 
-    .page__object .object__customer .object__info-list {
+    .o.page__object bject__customer .object__info-list {
         max-width: 1240px;
         margin: 0 auto 24px;
     }
@@ -756,9 +741,9 @@
 
     .page__object .object__customer-office figure {
         height: 415px;
-      }
-    
-      .page__object .object__customer-office .object__map-container {
+    }
+
+    .page__object .object__customer-office .object__map-container {
         height: 415px;
-      }
+    }
 }

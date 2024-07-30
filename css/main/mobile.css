@@ -18,10 +18,8 @@
 
 .complex {
     max-height: 24px;
-    line-height: 24px;
     margin-top: 573px;
     margin-bottom: 16px;
-    font-size: 20px;
 }
 
 .slider__complex-list {
@@ -41,8 +39,21 @@
      justify-content: flex-start;
      width: 100%;
      padding: 0;
+     margin: 0;
      list-style: none;
  }
+
+ .filters li {
+    margin-bottom: 16px;
+}
+
+.filters .price {
+    margin-bottom: 32px;
+}
+
+.filters .filter-button {
+    margin: 0;
+}
 
  .filter__title--tablet,
  .filter__title--desktop {
@@ -52,7 +63,6 @@
  .room-count {
      position: relative;
      width: 100%;
-     margin-bottom: 16px;
  }
 
  .room-title {
@@ -81,12 +91,13 @@
      border: 1px solid var(--accent);
  }
 
- .room-count-item {
+ li.room-count-item {
      overflow: hidden;
      line-height: 22px;
      box-sizing: border-box;
      padding: 0;
      padding: 18px 20px 11px;
+     margin-bottom: 0;
      color: var(--base-text);
      background: var(--base-white);
      font-size: 16px;
@@ -203,6 +214,20 @@
      background: var(--accent-1);
  }
 
+.filter__button-flat {
+    width: 402px;
+    height: 64px;
+    line-height: 22px;
+    padding: 21px 62px;
+    margin: 0 auto;
+    border: 1px solid var(--accent);
+    border-radius: 16px;
+    color: var(--base-text);
+    background: var(--base-white);
+    font-size: 16px;
+    font-weight: 400;
+}
+
  .button.filter__button-flat {
      width: 100%;
  }
@@ -213,6 +238,14 @@
 
  .filter__button-flat:active {
      background: var(--color-action);
+ }
+
+ .other.container {
+    margin-bottom: 52px;
+ }
+
+ .other__container .other__action-button {
+    margin-bottom: 48px;
  }
 
 

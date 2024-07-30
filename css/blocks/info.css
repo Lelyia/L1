@@ -1,0 +1,106 @@
+.object__info {
+    margin-bottom: 64px;
+}
+
+.object__info-title {
+    margin: 0 16px 48px;
+}
+
+.object__info-news {
+    margin-bottom: 64px;
+}
+
+.object__info-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 16px;
+    list-style: none;
+    row-gap: 12px;
+}
+
+.object__info-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 0 16px;
+    border: 1px solid var(--background-block);
+    border-radius: 12px;
+    background: var(--background-color);
+}
+
+.object__info-item:hover,
+.object__info-item:focus {
+    border: 1px solid var(--accent);
+}
+
+.object__info-description {
+    margin: 0 0 2px;
+}
+
+.object__info-text {
+    line-height: 17px;
+    margin: 0;
+    color: var(--base-text);
+    font-family: "Geologica", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.object__info-link {
+    width: 36px;
+    height: 36px;
+}
+
+.object__info-link--desktop {
+    display: none;
+}
+
+.object__info-link-show {
+    line-height: 19px;
+    padding: 0 16px;
+    color: var(--accent-1);
+    font-family: "Geologica", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.object__info-documents .object__info-item {
+    position: relative;
+    padding-left: 59px;
+}
+
+.object__info-documents .object__info-item:before {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 36px;
+    height: 36px;
+    background-image: url("../../icons/Document.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    content: "";
+}
+
+@media (min-width: 960px) {
+    .object__info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .object__info-news .object__info-item {
+        margin-right: 0;
+    }
+
+    .object__info-item {
+        width: 456px;
+    }
+
+    .object__info-news {
+        margin-bottom: 0;
+    }
+
+}

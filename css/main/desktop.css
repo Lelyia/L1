@@ -1,105 +1,7 @@
 @media (min-width: 1440px) {
     /*Main*/
 
-    .slider {
-        max-width: 1240px;
-        padding-bottom: 64px;
-        margin: 0 auto;
-    }
-
-    .slider__complex {
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .slider picture {
-        height: 900px;
-    }
-
-    .complex {
-        max-width: 1240px;
-        max-height: 67px;
-        line-height: 67px;
-        margin-top: 677px;
-        margin-bottom: 24px;
-        font-family: "Geologica", Arial, sans-serif;
-        font-size: 48px;
-        font-style: normal;
-        font-weight: 500;
-    }
-
-    .slider__complex-list {
-        margin-bottom: 0;
-    }
-
-    .slider__complex-item {
-        width: 325px;
-        max-height: 68px;
-        line-height: 34px;
-        font-family: 'Min Sans';
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 400;
-    }
-
-    .button-main {
-        align-self: flex-end;
-        width: 298px;
-        height: 64px;
-        margin: 0;
-        margin: 0;
-    }
-
-    .slider__button {
-        position: absolute;
-        top: -155px;
-        left: 0;
-        display: flex;
-        display: flex;
-        width: 140px;
-        height: 64px;
-    }
-
-    .slider__button__link {
-        position: relative;
-        width: 64px;
-        height: 64px;
-        cursor: pointer;
-    }
-
-    .slider__button__link svg {
-        overflow: visible;
-    }
-
-    .slider__button__link:first-child {
-        margin-right: 12px;
-    }
-
-    .slider__button__link:hover svg rect {
-        stroke: var(--accent);
-        fill: var(--base-white);
-        fill-opacity: 1;
-    }
-
-    .slider__button__link:hover svg path {
-        stroke: var(--accent);
-    }
-
-    .slider__button__link:active svg rect {
-        stroke: var(--accent);
-        fill: var(--color-action);
-    }
-
-    .slider__button__link:active svg path {
-        stroke: var(--accent);
-    }
-
-    .slider__button__link:active svg {
-        stroke: var(--accent);
-    }
-
-    .action__title {
+       .action__title {
         margin-top: 0;
     }
 
@@ -114,7 +16,7 @@
         display: none;
     }
 
-    
+
     .filter__title--desktop {
         display: block;
     }
@@ -146,5 +48,14 @@
     .room-count-list {
         flex-wrap: nowrap;
         padding-right: 14px;
+    }
+
+    .object-item:first-child .metro {
+        margin: auto 0 17px;
+    }
+
+    .object__selection-button .selection-button-item {
+        width: 44px;
+        height: 3px;
     }
 }

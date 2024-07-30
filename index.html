@@ -9,6 +9,30 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  
+  <link rel="stylesheet" href="css/general/mobile.css"> <!-- Общие стили при разных разрешениях экрана-->
+  <link rel="stylesheet" href="css/general/tablet.css">
+  <link rel="stylesheet" href="css/general/desktop.css">
+
+  <link rel="stylesheet" href="css/main/mobile.css"> <!--Стили только для данной страницы-->
+  <link rel="stylesheet" href="css/main/tablet.css">
+  <link rel="stylesheet" href="css/main/desktop.css">
+
+  <link rel="stylesheet" href="css/blocks/header.css"> <!--Стили используются на каждой странице-->
+  <link rel="stylesheet" href="css/blocks/container.css">
+  <link rel="stylesheet" href="css/blocks/title.css">
+  <link rel="stylesheet" href="css/blocks/logo.css">
+  <link rel="stylesheet" href="css/blocks/buttons.css">
+  <link rel="stylesheet" href="css/blocks/line.css">
+  <link rel="stylesheet" href="css/blocks/footer.css">
+  <link rel="stylesheet" href="css/blocks/modal.css">
+  
+  <link rel="stylesheet" href="css/blocks/slider.css"> <!--Стили блоков, повторяющихся на разных страницах-->
+  <link rel="stylesheet" href="css/blocks/action.css">
+  <link rel="stylesheet" href="css/blocks/objects.css">
+  <link rel="stylesheet" href="css/blocks/flats.css">
+  <link rel="stylesheet" href="css/blocks/other.css">
+
   <link rel="icon" href="favicon.ico">
   <!--<link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicons/apple-icon.png"> запросить фавиконку-->
@@ -449,7 +473,7 @@
     </div>
 
     <main class="page-main">
-      <section class="slider">
+      <section class="slider container">
         <picture>
           <source media="(max-width: 1440px)" srcset="images/desktop/header_image-desktop_max.jpg">
           <img src="images/desktop/header_image-desktop_max.jpg" alt="ЖК Загляденье">
@@ -485,7 +509,7 @@
         </div>
       </section>
 
-      <section class="action">
+      <section class="action container">
         <h2 class="action__title title">Акции</h2>
         <ul class="action__list">
           <li class="action__container action__container-1">
@@ -584,7 +608,7 @@
         </ul>
       </section>
 
-      <section class="filter">
+      <section class="filter container">
         <div class="filter__chooser">
           <h2 class="filter__title title">Подбор</h2>
           <h2 class="filter__title filter__title--tablet title">Быстрый подбор квартиры в Санкт-Петербурге</h2>
@@ -675,15 +699,22 @@
                 </div>
               </li>
               <li class="filter-button">
-                <button class="button filter__button-flat" type="submit">Выбрать квартиру</button>
+                <button class="button filter__button-flat filter__button-flat--mobile" type="submit">Выбрать квартиру</button>
+                <button class="button filter__button-flat filter__button-flat--desktop" type="submit">Подобрать квартиру</button>
               </li>
             </ul>
           </form>
         </div>
       </section>
 
-      <section class="object">
-        <h2 class="object__title title">Наши объекты</h2>
+      <section class="object container">
+        <div class="object__filter-catalog">
+          <h2 class="object__title title">Наши объекты</h2>
+          <div class="object__catalog-view">
+            <button class="catalog-button button-card catalog-button--active">Карточками</button>
+            <button class="catalog-button button-map">На карте</button>   
+          </div>  
+        </div>    
         <ul class="object-list">
           <li class="object-item object__zaglyadenie">
             <div class="object__card">
@@ -1083,23 +1114,6 @@
           <li class="object__action-item action-item">
             <div class="object__action">
               <a class="object__action-link">
-                <div class="object__action-slider">
-                  <p>
-                    <span class="visually-hidden">1</span>
-                  </p>
-                  <p>
-                    <span class="visually-hidden">2</span>
-                  </p>
-                  <p>
-                    <span class="visually-hidden">3</span>
-                  </p>
-                  <p>
-                    <span class="visually-hidden">4</span>
-                  </p>
-                  <p>
-                    <span class="visually-hidden">5</span>
-                  </p>
-                </div>
                 <figure class="action__card">
                   <img class="action__image" src="images/mobile/Design.jpg" alt="Акция 1">
                 </figure>
@@ -1109,6 +1123,23 @@
                   <span class="action__info action__bairon">Байрон</span>
                   <span class="action__info action__orlov">Граф Орлов</span>
                 </p>
+                <ul class="object__selection-button">
+                  <li class="selection-button-item selection-button-item--active">
+                    <span class="visually-hidden">1</span>
+                  </li>
+                  <li class="selection-button-item">
+                    <span class="visually-hidden">2</span>
+                  </li>
+                  <li class="selection-button-item">
+                    <span class="visually-hidden">3</span>
+                  </li>
+                  <li class="selection-button-item">
+                    <span class="visually-hidden">4</span>
+                  </li>
+                  <li class="selection-button-item">
+                    <span class="visually-hidden">5</span>
+                  </li>
+                </ul>
               </a>
             </div>
 
@@ -1118,7 +1149,7 @@
 
       </section>
 
-      <section class="carousel">
+      <section class="carousel container">
         <div class="carousel__slider">
           <a class="carousel__link left-link" href="">
             <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1501,7 +1532,7 @@
 
 
 
-      <section class="other">
+      <section class="other container">
         <h2 class="other__title title">Кроме квартир</h2>
         <div class="other__container">
           <ul class="other__list">

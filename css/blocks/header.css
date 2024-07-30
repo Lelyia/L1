@@ -561,18 +561,7 @@
         flex-direction: row;
     }
 
-    .page__header-logo-wrapper {
-        align-items: center;
-        max-height: 104px;
-        padding: 20px 24px 20px 32px;
-    }
-
-    .page__header-logo picture {
-        width: 115px;
-        height: 64px;
-    }
-
-    .header__nav {
+   .header__nav {
         margin-top: 0;
     }
 

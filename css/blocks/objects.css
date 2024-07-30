@@ -115,7 +115,6 @@
 
 .object__start {
     padding: 9px 12px 9px 36px;
-    padding-left: 24px;
     color: var(--base-text);
     font-weight: 500;
 }
@@ -154,6 +153,99 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+}
+
+/* Flats carousel */
+
+.flats {
+    display: flex;
+    justify-content: flex-end;
+    grid-area: b;
+}
+
+.object__price {
+    line-height: 24px;
+    margin: 0;
+    margin-right: 16px;
+    color: var(--base-text);
+    text-align: end;
+    font-family: "Geologica", Arial, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.object__flats {
+    display: none;
+}
+
+.metro {
+    display: flex;
+    flex-direction: column;
+    grid-area: c;
+}
+
+.object__metro {
+    position: relative;
+    padding: 0;
+    padding-left: 16px;
+    margin: 0;
+    margin-bottom: 4px;
+    margin-left: 16px;
+    color: var(--base-text);
+}
+
+.object__metro::before {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 900px;
+    background: var(--red-metro);
+    content: "";
+}
+
+
+.object__metro-time {
+    position: relative;
+    position: relative;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-left: 16px;
+    color: var(--gray-text);
+
+}
+
+.object__metro-time-transport {
+    position: relative;
+    padding: 1px 0 1px 20px;
+    margin: 0;
+}
+
+.object__metro-time-transport::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background-image: url("../../icons/Car16.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    content: "";
+}
+
+.object__metro-time-walk {
+    display: none;
+}
+
+.object-flat {
+    color: var(--base-white);
+}
+
+.object__action {
+    display: none;
 }
 
 @media (min-width: 960px) and (max-width:1439px) {
@@ -348,11 +440,13 @@
 
     .object {
         max-width: 1240px;
-        margin: 0 auto 100px;
+        padding: 0;
+        margin: 0 auto;
     }
 
     .object__title {
         margin-top: 0;
+        margin-bottom: 0;
     }
 
     .object-item:nth-child(4n+3) {
@@ -377,6 +471,11 @@
         background-color: var(--accent-1);
     }
 
+    .object__selection-button {
+        z-index: 100;
+        margin: auto 16px 16px;
+    }
+
     .object-button {
         position: relative;
         display: block;
@@ -385,7 +484,7 @@
         width: 100%;
         height: 100%;
         line-height: 20px;
-        padding: 82px 52px 16px 16px;
+        padding: 82px 0 16px 16px;
         margin: 0;
         font-size: 14px;
 

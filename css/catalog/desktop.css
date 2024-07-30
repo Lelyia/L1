@@ -2,53 +2,48 @@
 
     /* CATALOG PAGE */
 
-    .page__catalog .page__header-wrapper .header__nav-item a {
+    .page__header-wrapper .header__nav-item a {
         color: var(--base-text);
     }
 
-    .page__catalog .page__header-wrapper .header__contacts-phone {
+    .page__header-wrapper .header__contacts-phone {
         color: var(--base-text);
     }
 
-    .page__catalog .page__header-wrapper .header__usernav-comparison svg path {
+    .page__header-wrapper .header__usernav-comparison svg path {
         stroke: var(--base-black);
     }
 
-    .page__catalog .page__header-wrapper .header__usernav-favourite svg path {
+    .page__header-wrapper .header__usernav-favourite svg path {
         stroke: var(--base-black);
     }
 
-    .page__catalog .page__header-wrapper .header__usernav-account svg path {
+    .page__header-wrapper .header__usernav-account svg path {
         stroke: var(--base-black);
     }
 
-    .page__catalog .line-3 {
+    .line.line-3 {
         display: block;
         margin-top: 104px;
     }
 
-    .page__catalog .object-item-catalog, .page__catalog .object-item:first-child.object-item-catalog, .page__catalog .object-item.object-item-catalog {
+    .object-list .object-item-catalog, .object-list .object-item:first-child.object-item-catalog, .object-list .object-item.object-item-catalog {
+        flex-basis: 612px;
+        max-width: 612px;
         height: 550px;
+        margin-right: 16px;
     }
 
-    .page__catalog .object__title {
+    .object__title.title__catalog.object__title {
         margin-top: 0;
         margin-bottom: 0;
     }
 
-    .page__catalog .object-item-catalog,
-    .page__catalog .object-item:first-child.object-item-catalog,
-    .page__catalog .object-item.object-item-catalog  {
-        flex-basis: 612px;
-        max-width: 612px;
-        margin-right: 16px;
-    }
-
-    .page__catalog .object-item-catalog:nth-child(2n) {
+    .object-list .object-item-catalog:nth-child(2n) {
         margin-right: 0;
     }
 
-    .page__catalog .object__breadcrumbs-list {
+    .object__breadcrumbs-list {
         display: flex;
         padding: 0;
         margin-top: 64px;
@@ -56,30 +51,30 @@
         list-style: none;
     }
 
-    .page__catalog .object__breadcrumbs-item {
+    .object__breadcrumbs-item {
         padding: 0 19px 0 0;
         margin-right: 8px;
     }
 
-    .page__catalog .object__breadcrumbs-item:last-child {
+    .object__breadcrumbs-item:last-child {
         margin-right: 0;
     }
 
-    .page__catalog .object__breadcrumbs-link {
+    .object__breadcrumbs-link {
         position: relative;
     }
 
-    .page__catalog .object__breadcrumbs-link span {
+    .object__breadcrumbs-link span {
         line-height: 17px;
         color: var(--background-block);
         font-size: 12px;
     }
 
-    .page__catalog .object__breadcrumbs-item:first-child .object__breadcrumbs-link span {
+    .object__breadcrumbs-item:first-child .object__breadcrumbs-link span {
         color: var(--gray-text);
     }
 
-    .page__catalog .object__breadcrumbs-item:not(:last-child) .object__breadcrumbs-link::after {
+    .object__breadcrumbs-item:not(:last-child) .object__breadcrumbs-link::after {
         position: absolute;
         display: inline-block;
         line-height: 17px;
@@ -92,69 +87,32 @@
         font-weight: 400;
     }
 
-    .page__catalog .object-item-catalog .object__image-object {
+    .object-item-catalog .object__image-object {
         height: 345px;
     }
 
-    .page__catalog .object__filter-catalog {
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-between;
-        margin-bottom: 64px;
-    }
-
-    .page__catalog .object__catalog-view {
-        display: flex;
-        height: 50px;
-        line-height: 20px;
-        border: 1px solid var(--background-block);
-        border-radius: 12px;
-        background: var(--base-white);
-        font-size: 14px;
-        font-weight: 500;
-    }
-
-    .page__catalog .catalog-button {
-        display: inline-block;
-        padding: 16px 20px;
-        margin: 0;
-        border: none;
-        color: var(--gray-text);
-        background-color: var(--base-white);
-    }
-
-    .page__catalog .catalog-button:active,
-    .page__catalog .catalog-button--active {
-        color: var(--base-white);
-        background: var(--accent);
-    }
-
-    .page__catalog .button-card {    
-        border-radius: 12px 0px 0px 12px;
-    }
-
-    .page__catalog .button-map {  
+    .button-map {  
         border-radius: 0px 12px 12px 0px;
     }
 
-    .page__catalog .object-item-catalog .object__advantages  {
+    .object-item-catalog .object__advantages  {
         z-index: 100;
         bottom: -73px;
         max-width: 237px;
     }
 
-    .page__catalog .object-item:not(:first-child) div.object__advantages {
+    .object-item:not(:first-child) div.object__advantages {
         display: flex;
         max-width: 266px;
     }
 
-    .page__catalog .object-item-catalog .object__advantages-title {
+    .object-item-catalog .object__advantages-title {
         line-height: 17px;
         font-size: 12px;
     }
 
-    .page__catalog .object-item .object-link,
-    .page__catalog .object-item:first-child .link-catalog.object-link{
+    .object-item .object-link,
+    .object-item:first-child .link-catalog.object-link{
         max-width: 612px;
         cursor: pointer;
         pointer-events: auto;
@@ -163,42 +121,45 @@
         "c b";
     }
 
-    .page__catalog .object-item .link-catalog .object-subtitle {
+    .object-item .link-catalog .object-subtitle {
         line-height: 38px;
         margin-bottom: 89px;
         font-size: 32px;
     }
 
-    .page__catalog .object-item .link-catalog .object__metro,
-    .page__catalog .object-item .link-catalog .object__metro-time {
+    .object-item .link-catalog .object__metro,
+    .object-item .link-catalog .object__metro-time {
         line-height: 20px;
         font-size: 14px;
     }
 
-    .page__catalog .object-item .link-catalog .object__flats {
+    .object-item .link-catalog .object__flats {
         display: block;
         line-height: 20px;
         color: var(--gray-text);
         font-size: 14px;
     }
 
-    .page__catalog .object-item .link-catalog .object__price {
+    .object-item .link-catalog .object__price {
         line-height: 29px;
         margin-left: 16px;
         font-size: 24px;
     }
 
-
-    .page__catalog .object-item .catalog__button {
+    .object-item .catalog__button {
         display: none;
     }
 
-    .page__catalog .catalog__slider {
+    .catalog__slider {
         display: flex;
     }
 
-    .page__catalog .object-item.object__classic  div.object__advantages  {
+    .object-item.object__classic  div.object__advantages  {
         flex-wrap: wrap;
         max-width: 170px;
+    }
+
+    .line.line-4 {
+        display: block;
     }
 }

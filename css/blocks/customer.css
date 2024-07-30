@@ -1,0 +1,212 @@
+.object__customer {
+    margin: 0 0 72px;
+}
+
+.object__customer-title {
+    margin: 0 16px 48px;
+}
+
+.object__customer-container {
+    line-height: 17px;
+    margin: 0 16px;
+    color: var(--base-text);
+    font-size: 12px;
+}
+
+.object__customer-reviews {
+    margin-bottom: 24px;
+    font-weight: 500;
+}
+
+.object__customer-complaints {
+    font-weight: 400;
+}
+
+.object__customer .object__info-item {
+    max-height: 80px;
+}
+
+.object__customer .object__info-text {
+    line-height: 14px;
+    font-size: 12px;
+}
+
+.object__customer .object__info-link {
+    width: 48px;
+    height: 48px;
+}
+
+.object__customer-account {
+    padding: 16px;
+    margin: 0 16px 14px;
+    border: 1px solid var(--background-block);
+    border-radius: 16px;
+    background: var(--color-action);
+}
+
+.object__customer-account-title {
+    max-width: 228px;
+    line-height: 19px;
+    margin-bottom: 24px;
+    color: var(--base-text);
+    font-family: "Geologica", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.object__customer-account-button {
+    margin: 0;
+}
+
+.object__customer-service {
+    margin: 0 16px 32px;
+}
+
+.object__customer-service-title {
+    line-height: 19px;
+    margin: 0 0 12px;
+    color: var(--base-text);
+    font-family: "Geologica", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+.object__customer-service-title span {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.object__customer-service-phone {
+    margin-bottom: 16px;
+}
+
+.object__customer-service-text {
+    line-height: 24px;
+    color: var(--accent);
+    font-family: "Geologica", Arial, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.object__customer-office figure {
+    overflow: hidden;
+    width: 343px;
+    height: 233px;
+    padding: 0;
+    margin: 0 16px 16px;
+    border: 1px solid var(--gray-text);
+    border-radius: 16px;
+    background: var(--background-color);
+}
+
+.object__customer-office-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.object__customer-office .object__map-container {
+    overflow: hidden;
+    height: 233px;
+    margin: 0 16px 48px;
+    border: 1px solid var(--gray-text);
+    border-radius: 16px;
+    background: var(--background-color);
+}
+
+@media (min-width: 960px) {
+    .object__customer {
+        margin-bottom: 48px;
+    }
+
+    .object__customer-title {
+        margin-bottom: 32px;
+    }
+
+    .object__customer-container {
+        line-height: 20px;
+        margin-bottom: 48px;
+        font-size: 14px;
+    }
+
+    .object__customer .object__info-list {
+        display: grid;
+        margin: 0 16px 32px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-auto-flow: column;
+        gap: 16px;
+    }
+
+    .object__customer .object__info-item {
+        margin: 0;
+    }
+
+    .object__customer .object__info-text {
+        line-height: 19px;
+        font-size: 16px;
+    }
+
+    .object__info-text-long br {
+        display: none;
+    }
+
+    .object__customer-account {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 24px;
+        margin-bottom: 32px;
+    }
+
+    .object__customer-account-title {
+        max-width: 628px;
+        line-height: 24px;
+        margin: 0;
+        font-size: 20px;
+    }
+
+    .object__customer-account-button {
+        padding: 22px 19.5px;
+    }
+
+    .object__customer-service {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .object__customer-service-address {
+        text-align: end;
+    }
+
+    .object__customer-service-south {
+        margin-bottom: 16px;
+    }
+
+    .object__customer-office {
+        display: grid;
+        margin: 0 16px 80px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .object__customer-office figure {
+        width: auto;
+        height: 309px;
+        margin: 0;
+    }
+
+    .object__customer-office .object__map-container {
+        width: auto;
+        height: 309px;
+        margin: 0;
+    }
+
+    .object__customer .button-phone {
+        display: block;
+        width: 407px;
+        padding: 21px;
+        margin: 0 auto;
+    }
+}

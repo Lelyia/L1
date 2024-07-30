@@ -1,135 +1,8 @@
-/* Flats carousel */
+/* Flats */
 
 .carousel {
     overflow: hidden;
 }
-
-.flats {
-    display: flex;
-    justify-content: flex-end;
-    grid-area: b;
-}
-
-.object__price {
-    line-height: 24px;
-    margin: 0;
-    margin-right: 16px;
-    color: var(--base-text);
-    text-align: end;
-    font-family: "Geologica", Arial, sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 300;
-}
-
-.object__flats {
-    display: none;
-}
-
-.metro {
-    display: flex;
-    flex-direction: column;
-    grid-area: c;
-}
-
-.object__metro {
-    position: relative;
-    padding: 0;
-    padding-left: 16px;
-    margin: 0;
-    margin-bottom: 4px;
-    margin-left: 16px;
-    color: var(--base-text);
-}
-
-.object__metro::before {
-    position: absolute;
-    top: 3px;
-    left: 0;
-    width: 8px;
-    height: 8px;
-    border-radius: 900px;
-    background: var(--red-metro);
-    content: "";
-}
-
-
-.object__metro-time {
-    position: relative;
-    position: relative;
-    display: flex;
-    padding: 0;
-    margin: 0;
-    margin-left: 16px;
-    color: var(--gray-text);
-
-}
-
-.object__metro-time-transport {
-    position: relative;
-    padding: 1px 0 1px 20px;
-    margin: 0;
-}
-
-.object__metro-time-transport::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 16px;
-    height: 16px;
-    background-image: url("../../icons/Car16.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    content: "";
-}
-
-.object__metro-time-walk {
-    display: none;
-}
-
-.object__button {
-    display: grid;
-    margin: auto 16px 16px;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 12px;
-}
-
-.object__button-button {
-    display: block;
-    padding: 11px;
-    border-radius: 12px;
-}
-
-.object__button-link {
-    border: 1px solid var(--accent);
-    background-color: var(--base-white);
-}
-
-.object__button-flat {
-    padding: 12px;
-    background-color: var(--accent);
-}
-
-.object__button-title {
-    display: block;
-    color: var(--base-text);
-    text-align: center;
-}
-
-.object-flat {
-    color: var(--base-white);
-}
-
-.object-button {
-    margin-top: 0;
-    margin-bottom: 32px;
-}
-
-.object__action {
-    display: none;
-}
-
-/* Flats */
 
 .carousel__slider {
     display: none;
@@ -353,12 +226,8 @@
     font-weight: 300;
 }
 
-.button-flats:hover {
-    background: var(--base-white);
-}
-
-.button-flats:active {
-    background: var(--color-action);
+.carousel__action-button {
+    margin-bottom: 24px;
 }
 
 @media (min-width: 1440px) {
@@ -366,11 +235,12 @@
 .carousel {
     position: relative;
     max-width: 1240px;
-    margin: 0 auto 100px auto;
+    margin: 0 auto;
 }
 
 .carousel-title {
     margin-top: 0;
+    margin-bottom: 32px;
 }
 
 .carousel__slider {
@@ -466,24 +336,6 @@
     font-size: 14px;
 }
 
-.filter {
-    margin-bottom: 100px;
-}
-
-.filter__button-flat {
-    width: 402px;
-    height: 64px;
-    line-height: 22px;
-    padding: 21px 62px;
-    margin: 0 auto;
-    border: 1px solid var(--accent);
-    border-radius: 16px;
-    color: var(--base-text);
-    background: var(--base-white);
-    font-size: 16px;
-    font-weight: 400;
-}
-
 .flat__advantages-title {
     line-height: 17px;
     font-size: 12px;
@@ -515,17 +367,4 @@
     font-size: 24px;
 }
 
-.button-flats {
-    width: 402px;
-    height: 54px;
-    line-height: 22px;
-    padding: 16px 48px;
-    margin: 0 auto;
-    border: 1px solid var(--accent);
-    border-radius: 16px;
-    color: var(--base-text);
-    background: var(--base-white);
-    font-size: 16px;
-    font-weight: 400;
-}
 }

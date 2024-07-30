@@ -1,93 +1,101 @@
 @media (min-width: 960px) {
     /* CATALOG PAGE */
 
-    .page__catalog .object-item-catalog,
-    .page__catalog .object-item:first-child.object-item-catalog,
-    .page__catalog .object-item.object-item-catalog  {
+    .object-list .object-item-catalog,
+    .object-list .object-item:first-child.object-item-catalog,
+    .object-list .object-item.object-item-catalog  {
         flex-basis: 456px;
         max-width: 456px;
         height: 443px;
         margin-right: 16px;
     }
 
-    .page__catalog .link-catalog,
-    .page__catalog .object-item:first-child .link-catalog.object-link {
+    .object-link.link-catalog,
+    .object-item:first-child .link-catalog.object-link {
         max-width: 456px;
         grid-template-areas:
             "a b"
             "c .";
     }
 
-    .page__catalog .object-item-catalog .object__flats {
+    .object-item-catalog .object__flats {
         display: none;
     }
 
-    .page__catalog .object-item-catalog:nth-child(2n) {
+    .object-list .object-item-catalog:nth-child(2n) {
         margin-right: 0;
     }
 
-    .page__catalog .object-item-catalog .object__advantages {
+    .object-item-catalog .object__advantages {
         bottom: 28px;
     }
 
-    .page__catalog .object-item-catalog .object__image-object {
+    .object-item-catalog .object__image-object {
         height: 266px;
     }
 
-    .page__catalog .catalog__slider {
+    .catalog__slider {
         display: none;
     }
 
-    .page__catalog .title__catalog {
+    .object__title.title__catalog {
         margin: 128px 0 32px;
     }
 
-    .page__catalog .object-item .link-catalog .object-subtitle {
+    .object-item .link-catalog .object-subtitle {
         line-height: 24px;
         margin-bottom: 12px;
         font-size: 20px;
     }
 
-    .page__catalog .object-item-catalog .object__advantages-title {
+    .object-item-catalog .object__advantages-title {
         line-height: 14px;
         font-size: 10px;
     }
 
-    .page__catalog .object__metro::before {
+    .object__metro::before {
         top: 3px;
     }
 
-    .page__catalog .object__metro-time-transport::before {
+    .object__metro-time-transport::before {
         top:-1px;
     }
 
-    .page__catalog .object-item .catalog__button {
+    .object-item .catalog__button {
         display: grid;
         margin: auto 16px 16px;
     } 
 
-    .page__catalog .catalog__button .object__button-title {
+    .catalog__button .object__button-title {
         line-height: 17px;
         font-size: 12px;
     }
 
-    .page__catalog .object-item .link-catalog .object__metro,
-    .page__catalog .object-item .link-catalog .object__metro-time {
+    .object-item .link-catalog .object__metro,
+    .object-item .link-catalog .object__metro-time {
         line-height: 14px;
         font-size: 10px;  
     }
 
-    .page__catalog .object-item .link-catalog .object__price {
+    .object-item .link-catalog .object__price {
         line-height: 24px;
         font-size: 20px;
     }
 
-    .page__catalog .object__classic .link-catalog br {
+    .object__classic .link-catalog br {
         display: none;
     }
 
-    .page__catalog .button-catalog.button.button-phone {
+    .button-catalog.button.button-phone {
         margin-top: 80px;
         margin-bottom: 72px;
+    }
+
+    .object__metro-time .object__metro-time-walk::before {
+        top:0;
+    }
+
+    .object {
+        margin-bottom: 0;
     }
 }

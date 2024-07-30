@@ -203,6 +203,10 @@
   .footer__requisites {
      margin-bottom: 31px;
  }
+
+ .line-7 {
+    display: none;
+ }
  
  @media (min-width: 375px) and (max-width:959px) {
     /* .footer__menu-container {                    ---Изначальная версия футера по дизайну
@@ -555,7 +559,13 @@
     }
 }
 
-@media (min-width: 1140px) {
+@media (min-width: 960px) {
+    .line-7 {
+        display: block;
+    }
+}
+
+@media (min-width: 1440px) {
      /* Footer */
 
      .footer__container {
@@ -588,7 +598,7 @@
         display: block;
         grid-area: line;
     }
-
+    
     .footer__logo-container {
         max-width: 1440px;
         grid-area: logo;

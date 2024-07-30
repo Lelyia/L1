@@ -25,7 +25,8 @@
         stroke: var(--base-black);
     }
 
-    .page__object_test .page__header-wrapper .header__nav-item a {
+    .page__object_test .page__header-wrapper .header__nav-item a,
+    .page__object_test .page__header-wrapper .header__contacts-phone {
         color: var(--base-text);
     }
 

@@ -89,8 +89,36 @@
             font-size: 32px;
             font-weight: 300;
         }
+
+        .other__list {
+            display: grid;
+            height: 842px;
+            margin-bottom: 80px;
+            grid-template-areas:
+                "carplaces carplaces commerce commerce storage storage"
+                "carplaces carplaces commerce commerce storage storage"
+                "empty empty empty empty empty empty"
+                "design design design rent rent rent"
+                "design design design career career career";
+            row-gap: 16px;
+        }
     
+        .other__list figure {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+    
+        .other__item {
+            position: relative;
+            width: 100%;
+            min-width: 403px;
+            height: 100%;
+            min-height: 194px;
+        }
+        
         .other__carplaces {
+            height: 405px;
             grid-area: carplaces;
         }
     
@@ -120,34 +148,7 @@
             height: 0;
             grid-area: empty;
         }
-    
-        .other__list {
-            display: grid;
-            height: 842px;
-            margin-bottom: 80px;
-            grid-template-areas:
-                "carplaces carplaces commerce commerce storage storage"
-                "carplaces carplaces commerce commerce storage storage"
-                "empty empty empty empty empty empty"
-                "design design design rent rent rent"
-                "design design design career career career";
-            row-gap: 16px;
-        }
-    
-        .other__list figure {
-            position: relative;
-            width: 100%;
-            height: 100%;
-        }
-    
-        .other__item {
-            position: relative;
-            width: 100%;
-            min-width: 403px;
-            height: 100%;
-            min-height: 194px;
-        }
-    
+           
         .other__slider {
             position: absolute;
             right: 16px;
@@ -186,17 +187,6 @@
         .other__link {
             height: 100%;
             pointer-events: none;
-        }
-    
-        .button-phone {
-            width: 407px;
-            height: 64px;
-            line-height: 22px;
-            padding: 21px 116px 21px 116px;
-            margin: 0 auto;
-            border-radius: 16px;
-            font-size: 16px;
-            font-weight: 400;
         }
     
         .line-4 {

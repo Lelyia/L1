@@ -1,23 +1,11 @@
 @media (min-width: 960px) and (max-width:1439px) {
     /* Main */
 
-    .slider picture {
-        height: 1000px;
-    }
-
     .complex {
         max-height: 56px;
-        line-height: 56px;
-        margin-top: 746px;
-        font-size: 40px;
+        margin-top: 746px;  
     }
 
-    .slider__complex-item {
-        max-height: 45px;
-        line-height: 22px;
-        font-size: 16px;
-        font-weight: 400;
-    }
 
     /* Filters */
 
@@ -36,9 +24,17 @@
         justify-content: end;
     }
 
+    .filters li {
+        margin-bottom: 0;
+    }
+
     .room-count {
         width: max-content;
         margin: 0 16px;
+    }
+
+    .filters .price {
+        margin-bottom: 0;
     }
 
     .price {
@@ -52,4 +48,17 @@
     .filter-button .button {
         margin-top: 40px;
     }
+
+    .button-flats:hover {
+        background: var(--base-white);
+    }
+    
+    .button-flats:active {
+        background: var(--color-action);
+    }
+
+    .object-item:first-child .metro {
+        margin: auto 0 17px;
+    }
+
 }

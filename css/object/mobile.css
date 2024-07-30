@@ -1,10 +1,14 @@
 /* PAGE OBJECT */
 
-.page__object .page-main {
+.page-main {
     margin: 0;
 }
 
-.page__object .complex {
+.slider {
+    margin: 0 16px;
+}
+
+.slider .complex {
     max-height: none;
     line-height: 29px;
     margin-top: 435px;
@@ -12,26 +16,25 @@
     font-size: 24px;
 }
 
-.page__object .slider {
-    margin-right: 16px;
-    margin-left: 16px;
+.slider .slider__complex {
+    padding-bottom: 0;
 }
 
-.page__object .slider__complex-list {
+.slider .slider__complex-list {
     margin-bottom: 32px;
 }
 
-.page__object .slider__complex-item-2 {
+.slider .slider__complex-item-2 {
     display: block;
 }
 
-.page__object .slider__complex-item {
+.slider .slider__complex-item {
     position: relative;
     padding: 7.5px 48px;
     margin-bottom: 8px;
 }
 
-.page__object .slider__complex-item-1::before {
+.slider .slider__complex-item-1::before {
     position: absolute;
     top: 0;
     left: 0px;
@@ -43,7 +46,7 @@
     content: "";
 }
 
-.page__object .slider__complex-item-2::before {
+.slider .slider__complex-item-2::before {
     position: absolute;
     top: 0;
     left: 0px;
@@ -55,38 +58,34 @@
     content: "";
 }
 
-.page__object .slider .action-button {
+.slider .action-button {
     margin-bottom: 24px;
 }
 
-.page__object .button-main {
+.slider .button-main {
     margin-top: 24px;
     margin-bottom: 24px;
 }
 
-.page__object .slider picture {
+.slider picture {
     height: 698px;
 }
 
-.page__object .feedback {
+.feedback {
     display: none;
 }
 
-.page__object .line-object {
+.line-object {
     display: none;
 }
 
-.page__object .object-title {
-    margin-bottom: 32px;
-}
-
-.page__object .object__about-info {
+.object__about-info {
     margin-right: 16px;
     margin-bottom: 64px;
     margin-left: 16px;
 }
 
-.page__object .object__about-video {
+.object__about-video {
     position: relative;
     overflow: hidden;
     height: 0;
@@ -97,7 +96,7 @@
     background: var(--base-white);
 }
 
-.page__object .object__about-video iframe {
+.object__about-video iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -108,14 +107,14 @@
     outline-width: 0;
 }
 
-.page__object .object__about-text {
+.object__about-text {
     line-height: 20px;
     padding: 0;
     margin: 0 0 12px;
     font-size: 14px;
 }
 
-.page__object .object__about-list {
+.object__about-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -125,7 +124,7 @@
     list-style: none;
 }
 
-.page__object .object__about-item {
+.object__about-item {
     display: flex;
     flex-direction: column;
     min-width: 104px;
@@ -134,11 +133,11 @@
     margin-bottom: 16px;
 }
 
-.page__object .object__about-item:nth-last-child(-n+2) {
+.object__about-item:nth-last-child(-n+2) {
     margin-bottom: 0;
 }
 
-.page__object .object__about-data {
+.object__about-data {
     line-height: 24px;
     margin-bottom: 4px;
     color: var(--accent-1);
@@ -147,26 +146,25 @@
     font-weight: 300;
 }
 
-.page__object .object__selection-title {
+.object-title.object__selection-title {
     margin-right: 16px;
     margin-left: 16px;
 }
 
-.page__object .object__selection-option {
+.object__selection-option {
     display: flex;
     justify-content: flex-start;
-    margin-right: 16px;
-    margin-left: 16px;
+    margin: 0 16px 16px;
     column-gap: 8px;
 }
 
-.page__object .object__selection-slider {
+.object__selection-slider {
     position: relative;
     height: 661px;
     margin: 16px 0 0;
 }
 
-.page__object .object__selection-subtitle {
+.object__selection-subtitle {
     line-height: 29px;
     padding: 24px 16px 0;
     margin: 0;
@@ -175,18 +173,18 @@
     font-weight: 300;
 }
 
-.page__object .object__selection-list {
+.object__selection-list {
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
-.page__object .object__selection-slider picture {
+.object__selection-slider picture {
     z-index: -1;
     max-height: 661px;
 }
 
-.page__object .object__selection-item iframe {
+.object__selection-item iframe {
     position: absolute;
     z-index: -2;
     top: 0;
@@ -199,7 +197,7 @@
     border: none;
 }
 
-.page__object .object__selection-line {
+.object__selection-line {
     width: 100%;
     height: 11px;
     padding: 0;
@@ -208,20 +206,16 @@
     background: rgba(255, 255, 255, 0.7);
 }
 
-.page__object .action {
-    margin-top: 64px;
+.action.container {
+    margin-bottom: 24px;
     margin-left: 16px;
 }
 
-.page__object .action-button {
-    margin-bottom: 24px;
-}
-
-.page__object .ipoteka__widget {
+.ipoteka__widget {
     display: none;
 }
 
-.page__object .ipoteka__calculation {
+.ipoteka__calculation {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -233,7 +227,7 @@
     background: var(--base-white);
 }
 
-.page__object .ipoteka__calculation-button {
+.ipoteka__calculation-button {
     position: relative;
     width: 36px;
     height: 36px;
@@ -242,15 +236,15 @@
     cursor: pointer;
 }
 
-.page__object .ipoteka__calculation-button:hover {
+.ipoteka__calculation-button:hover {
     background: var(--accent-4);
 }
 
-.page__object .ipoteka__calculation-button:active {
+.ipoteka__calculation-button:active {
     background: var(--accent-3);
 }
 
-.page__object .ipoteka__calculation-button::before {
+.ipoteka__calculation-button::before {
     position: absolute;
     top: 10px;
     left: 10px;
@@ -262,7 +256,7 @@
     content: "";
 }
 
-.page__object .ipoteka__calculation-subtitle {
+.ipoteka__calculation-subtitle {
     line-height: 19px;
     color: var(--base-text);
     font-family: "Geologica", Arial, sans-serif;
@@ -271,126 +265,42 @@
     font-weight: 300;
 }
 
-.page__object .object__advantage {
-    margin-bottom: 16px;
-    margin-left: 16px;
-}
-
-.page__object .object__advantage-title {
-    margin: 64px 16px 32px;
-}
-
-.page__object .object__advantage-list {
-    display: flex;
-    padding: 0;
-    margin: 0 0 16px 0;
-    list-style: none;
-    column-gap: 16px;
-}
-
-.page__object .object__advantage-item {
-    overflow: hidden;
-    min-width: 296px;
-    min-height: 429px;
-    border: 1px solid var(--background-block);
-    border-radius: 16px;
-    background: var(--background-color);
-}
-
-.page__object .object__advantage-item:first-child {
-    border: 1px solid var(--accent);
-}
-
-.page__object .object__advantage-card {
-    position: relative;
-    overflow: hidden;
-    width: 296px;
-    height: 429px;
-    padding: 0;
-    margin: 0;
-    border-radius: 16px;
-}
-
-.page__object .object__advantage-item:first-child .object__advantage-card {
-    height: 161px;
-}
-
-.page__object .object__advantage-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    border-radius: 12px;
-    object-fit: cover;
-}
-
-.page__object .object__advantage-text {
-    max-width: 298px;
-    line-height: 22px;
-    padding: 16px 24px;
-    margin: 0;
-    font-size: 16px;
-}
-
-.page__object .object__advantage-subtitle {
-    position: absolute;
-    bottom: 16px;
-    left: 24px;
-    width: 203px;
-    line-height: 28px;
-    padding: 0;
-    margin: 0;
-    color: var(--base-white);
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.page__object .object__advantage-slider {
-    display: none;
-}
-
-.page__object .object__design {
-    margin-top: 64px;
-}
-
-.page__object .object__design-container {
+.object__design-container {
     display: flex;
     flex-direction: column;
 }
 
-.page__object .object__design-title {
+.object__design-title.object-title {
     margin: 0 16px 32px;
 }
 
-.page__object .object__design-item {
+.object__design-item {
     display: none;
 }
 
-.page__object .object__design-list {
+.object__design-list {
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
-.page__object .object__design-item--active {
+.object__design-item--active {
     position: relative;
     display: block;
     margin: 0 16px 16px;
 }
 
-.page__object .object__design-item .object__selection-button {
+.object__design-item .object__selection-button {
     display: none;
 }
 
-.page__object .design__list {
+.design__list {
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
-.page__object .design__card {
+.design__card {
     position: relative;
     overflow: hidden;
     width: 296px;
@@ -403,7 +313,7 @@
     border-radius: 16px;
 }
 
-.page__object .design_image {
+.design_image {
     position: absolute;
     top: 0;
     left: 0;
@@ -413,7 +323,7 @@
     object-fit: cover;
 }
 
-.page__object .object__design-control {
+.object__design-control {
     display: flex;
     flex-direction: column;
     margin: 0 16px 24px;
@@ -427,14 +337,14 @@
     background: var(--background-color);
 }
 
-.page__object .object__design-control-item {
+.object__design-control-item {
     display: block;
     border: 1px solid var(--background-block);
     border-radius: 12px;
     background: var(--base-white);
 }
 
-.page__object .object__design-name {
+.object__design-name {
     display: block;
     line-height: 24px;
     padding: 0;
@@ -445,7 +355,7 @@
     font-weight: 300;
 }
 
-.page__object .object__design-description {
+.object__design-description {
     display: block;
     line-height: 17px;
     padding: 0;
@@ -453,332 +363,39 @@
     font-size: 12px;
 }
 
-.page__object .object__design-buttons-list {
+.object__design-buttons-list {
     display: flex;
     flex-direction: column;
     padding: 0;
     margin: 0 16px;
-    margin-bottom: 64px;
     list-style: none;
     row-gap: 12px;
 }
 
-.page__object .object__design-buttons-link {
+.object__design-buttons-link {
     margin: 0;
 }
 
-.page__object .object__design-buttons-detailed .object__design-buttons-link {
+.object__design-buttons-detailed .object__design-buttons-link {
     padding: 21px;
     border: 1px solid var(--accent);
     color: var(--base-text);
     background: var(--base-white);
 }
 
-.page__object .object__map {
-    margin-bottom: 52px;
-}
-
-.page__object .object__map-container {
-    overflow: hidden;
-    width: auto;
-    height: 559px;
-    margin-bottom: 16px;
-}
-
-.page__object .object__map-container iframe {
-    border: none;
-}
-
-.page__object .object__map-title {
-    margin: 0 16px 48px;
-}
-
-.page__object .object__map-buttons-list {
-    display: flex;
-    padding: 0;
-    margin: 0 0 0 16px;
-    list-style: none;
-    column-gap: 8px;
-
-}
-
-.page__object .object__map-buttons-item {
-    flex-shrink: 0;
-    width: max-content;
-}
-
-.page__object .object__map-buttons-link {
-    line-height: 17px;
-    padding: 11px 31px;
-    margin: 0;
-    border: 1px solid var(--background-block);
-    border-radius: 900px;
-    color: var(--base-text);
-    background: var(--base-white);
-    font-size: 12px;
-}
-
-.page__object .object__map-buttons-link--active {
-    padding: 12px 32px;
-    color: var(--base-white);
-    background: var(--accent);
-}
-
-.page__object .other__title {
-    margin: 64px 16px 32px;
-}
-
-.page__object .other__list {
-    margin-left: 16px;
-}
-
-.page__object .other__action-button {
-    margin-left: 16px;
-}
-
-.page__object .object__info {
-    margin-bottom: 64px;
-}
-
-.page__object .object__info-title {
-    margin: 0 16px 48px;
-}
-
-.page__object .object__info-news {
-    margin-bottom: 64px;
-}
-
-.page__object .object__info-list {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 16px;
-    list-style: none;
-    row-gap: 12px;
-}
-
-.page__object .object__info-item {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px;
-    margin: 0 16px;
-    border: 1px solid var(--background-block);
-    border-radius: 12px;
-    background: var(--background-color);
-}
-
-.page__object .object__info-item:hover,
-.page__object .object__info-item:focus {
-    border: 1px solid var(--accent);
-}
-
-.page__object .object__info-description {
-    margin: 0 0 2px;
-}
-
-.page__object .object__info-text {
-    line-height: 17px;
-    margin: 0;
-    color: var(--base-text);
-    font-family: "Geologica", Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-}
-
-.page__object .object__info-link {
-    width: 36px;
-    height: 36px;
-}
-
-.page__object .object__info-link--desktop {
-    display: none;
-}
-
-.page__object .object__info-link-show {
-    line-height: 19px;
-    padding: 0 16px;
-    color: var(--accent-1);
-    font-family: "Geologica", Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-}
-
-.page__object .object__info-documents .object__info-item {
-    position: relative;
-    padding-left: 59px;
-}
-
-.page__object .object__info-documents .object__info-item:before {
-    position: absolute;
-    top: 16px;
-    left: 16px;
-    width: 36px;
-    height: 36px;
-    background-image: url("../../icons/Document.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    content: "";
-}
-
-.page__object .object__gallery {
-    position: relative;
-    margin-bottom: 64px;
-}
-
-
-.page__object .object__gallery-title {
-    margin: 0 16px 48px;
-}
-
-.page__object .object__gallery-list {
-    display: flex;
-    padding: 0;
-    margin: 0 0 0 16px;
-    list-style: 0;
-    column-gap: 16px;
-}
-
-.page__object .object__gallery-item {
-    position: relative;
-    display: block;
-    min-width: 198px;
-    min-height: 198px;
-    border-radius: 16px;
-    background: var(--background-block);
-}
-
-.page__object .object__gallery-item figure {
-    overflow: hidden;
-    width: 198px;
-    height: 198px;
-    padding: 0;
-    margin: 0;
-    border-radius: 16px;
-}
-
-.page__object .object__gallery__image {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.page__object .object__customer {
-    margin: 0 0 72px;
-}
-
-.page__object .object__customer-title {
-    margin: 0 16px 48px;
-}
-
-.page__object .object__customer-container {
-    line-height: 17px;
-    margin: 0 16px;
-    color: var(--base-text);
-    font-size: 12px;
-}
-
-.page__object .object__customer-reviews {
-    margin-bottom: 24px;
-    font-weight: 500;
-}
-
-.page__object .object__customer-complaints {
-    font-weight: 400;
-}
-
-.page__object .object__customer .object__info-item {
-    max-height: 80px;
-}
-
-.page__object .object__customer .object__info-text {
-    line-height: 14px;
-    font-size: 12px;
-}
-
-.page__object .object__customer .object__info-link {
-    width: 48px;
-    height: 48px;
-}
-
-.page__object .object__customer-account {
-    padding: 16px;
-    margin: 0 16px 14px;
-    border: 1px solid var(--background-block);
-    border-radius: 16px;
-    background: var(--color-action);
-}
-
-.page__object .object__customer-account-title {
-    max-width: 228px;
-    line-height: 19px;
-    margin-bottom: 24px;
-    color: var(--base-text);
-    font-family: "Geologica", Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-}
-
-.page__object .object__customer-account-button {
-    margin: 0;
-}
-
-.page__object .object__customer-service {
+.other__title.title {
     margin: 0 16px 32px;
 }
 
-.page__object .object__customer-service-title {
-    line-height: 19px;
-    margin: 0 0 12px;
-    color: var(--base-text);
-    font-family: "Geologica", Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 300;
+.other .other__list {
+    margin-left: 16px;
 }
 
-.page__object .object__customer-service-phone {
-    margin-bottom: 16px;
+.other .other__action-button {
+    margin-left: 16px;
 }
 
-.page__object .object__customer-service-text {
-    line-height: 24px;
-    color: var(--accent);
-    font-family: "Geologica", Arial, sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 300;
-}
-
-.page__object .object__customer-office figure {
-    overflow: hidden;
-    width: 343px;
-    height: 233px;
-    padding: 0;
-    margin: 0 16px 16px;
-    border: 1px solid var(--gray-text);
-    border-radius: 16px;
-    background: var(--background-color);
-}
-
-.page__object .object__customer-office-image {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.page__object .object__customer-office .object__map-container {
-    height: 233px;
-    margin: 0 16px 48px;
-    border: 1px solid var(--gray-text);
-    border-radius: 16px;
-    background: var(--background-color);
-}
-
-.page__object .button-phone {
+.object__customer .button-phone {
     width: auto;
     margin: 0 16px;
 }
