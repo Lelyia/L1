@@ -365,6 +365,7 @@
 
     .object__catalog-view {
         display: flex;
+        overflow: hidden;
         height: 50px;
         line-height: 20px;
         border: 1px solid var(--background-block);
