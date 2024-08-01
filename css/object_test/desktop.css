@@ -5,6 +5,10 @@
         display: none;
     }
 
+    .page__object_test .slider {
+        padding-bottom: 64px;
+    }
+
     .page__object_test .slider picture {
         top: 104px;
     }
