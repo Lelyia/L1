@@ -92,37 +92,6 @@
     grid-area: list;
   }
 
-  .object__selection-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 16px 32px;
-  }
-
-  .object__selection-title {
-    margin: 0;
-  }
-
-  .object__selection-option {
-    overflow: hidden;
-    margin: 0;
-    border: 1px solid var(--background-block);
-    border-radius: 12px;
-    background: var(--base-white);
-    column-gap: 0;
-  }
-
-  .object__selection-subtitle {
-    line-height: 38px;
-    padding: 32px 32px 0;
-    font-size: 32px;
-  }
-
-  .object__selection-button {
-    justify-content: end;
-    margin-top: 554px;
-  }
-
   .ipoteka__calculation {
     margin-bottom: 64px;
   }

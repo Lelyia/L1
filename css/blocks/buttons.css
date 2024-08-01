@@ -114,10 +114,12 @@
 }
 
 .object__selection-button {
+    position: absolute;
+    bottom: 71px;
+    left: 16px;
     display: flex;
     padding: 0;
     margin: 0;
-    margin: 532px 16px 16px;
     list-style: none;
     column-gap: 12px;
 }
@@ -134,8 +136,10 @@
 }
 
 .page__object .object__selection-buttons {
-    width: auto;
-    margin: 0 16px;
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    left: 16px;
 }
 
 .selection__buttons-link {

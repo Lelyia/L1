@@ -1,0 +1,40 @@
+@media (min-width: 1440px) {
+
+    .page__selection .object__selection.container {
+        margin-top: 104px;
+        margin-bottom: 75px;
+    }
+
+    .page__selection .object__selection-slider {
+        height: 856px;
+    }
+    
+    .page__selection .page__header-wrapper svg path {
+        stroke: var(--base-black);
+    }
+
+    .page__selection .page__header-wrapper .header__nav-item a,
+    .page__selection .page__header-wrapper .header__contacts-phone {
+        color: var(--base-text);
+    }
+
+    .page__selection .object__selection-item iframe {
+        height: 856px;
+    }
+
+    .page__selection .slider__button {
+        top: auto;
+        width: 1240px;
+        margin: 0 auto;
+        
+    }
+
+    .slider__button-description {
+        line-height: 29px;
+        font-size: 24px;
+    }
+
+    .page__selection .line-4 {
+        display: block;
+    }
+}

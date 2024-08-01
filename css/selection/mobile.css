@@ -1,0 +1,48 @@
+.page__selection .object__selection-slider {
+    margin-top: 80px;
+}
+
+.page__selection .object__selection.container {
+    margin-bottom: 0;
+}
+
+.page__selection .page__header-wrapper::before {
+    background-color: var(--base-white);
+}
+
+.page__selection .slider__button {
+    position: absolute;
+    right: 16px;
+    bottom: 71px;
+    left: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.slider__button__link--tablet {
+    display: none;
+}
+
+.slider__button-description {
+    line-height: 17px;
+    color: var(--base-white);
+    font-family: "Geologica", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.page__selection .object__selection-button {
+    display: none;
+}
+
+.page__selection .object__selection-buttons {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    left: 16px;
+}
+
+.page__selection .page__selection-building .footer {
+    padding-top: 0;
+}

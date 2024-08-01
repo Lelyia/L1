@@ -247,39 +247,6 @@
         font-size: 14px;
     }
 
-    .object__selection-wrapper {
-        max-width: 1240px;
-        margin: 0 auto 48px;
-    }
-
-    .page__object .object__selection-title {
-        margin-bottom: 0;
-        margin-left: 0;
-    }
-
-    .object__selection .object__selection-slider {
-        max-width: none;
-        margin: 0;
-    }
-
-    .object__selection-subtitle {
-        max-width: 1240px;
-        padding: 32px 0 0;
-        margin-right: auto;
-        margin-left: auto;
-    }
-
-    .object__selection-button {
-        max-width: 1240px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-
-    .object__selection-slider picture {
-        z-index: -1;
-        max-height: 661px;
-    }
-
     .page__object .action {
         max-width: 1240px;
         margin-right: auto;

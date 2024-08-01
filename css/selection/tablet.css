@@ -1,0 +1,27 @@
+@media (min-width: 960px) {
+    .page__selection .object__selection.container {
+        margin-bottom: 62px;
+    }
+
+    .page__selection .slider__button {
+        bottom: 32px;
+        left: 32px;
+    }
+
+    .slider__button-description {
+        line-height: 24px;
+        font-size: 20px;
+    }
+
+    .slider__button__link--mobile {
+        display: none;
+    }
+
+    .slider__button__link--tablet {
+        display: block;
+    }
+
+    .page__selection .object__selection-button {
+        display: flex;
+    }
+}
