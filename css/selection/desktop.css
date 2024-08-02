@@ -37,4 +37,15 @@
     .page__selection .line-4 {
         display: block;
     }
+
+    .page__selection .object__selection-slider picture {
+        height: 856px;
+        max-height: 856px;
+    }
+
+    .page__selection .object__selection-slider img {
+        width: 100%;
+        height: 856px;
+    }
+   
 }

@@ -33,8 +33,15 @@
 }
 
 .object__selection-slider picture {
-    z-index: -1;
-    max-height: 661px;
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    overflow: hidden;
+    height: 661px;
 }
 
 .object__selection-item iframe {
@@ -91,6 +98,10 @@
         bottom: 32px;
         justify-content: flex-end;
       }    
+
+      .page__selection-floor .object__selection-slider img {
+        margin-left: 0;
+      }
 }
 
 @media (min-width: 1440px) {
@@ -106,6 +117,7 @@
 
     .object__selection .object__selection-slider {
         max-width: none;
+        padding-bottom: 0;
         margin: 0;
     }
 

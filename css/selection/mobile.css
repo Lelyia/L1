@@ -10,6 +10,17 @@
     background-color: var(--base-white);
 }
 
+
+.page__selection .object__selection-slider img {
+    max-width: none;
+    height: 661px;
+    object-fit: cover;
+}
+
+.page__selection-floor .object__selection-slider img {
+    margin-left: -400px;
+}
+
 .page__selection .slider__button {
     position: absolute;
     right: 16px;
@@ -41,6 +52,10 @@
     right: 16px;
     bottom: 16px;
     left: 16px;
+}
+
+.page__selection .line-4 {
+    display: none;
 }
 
 .page__selection .page__selection-building .footer {
