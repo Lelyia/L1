@@ -24,4 +24,43 @@
     .page__selection .object__selection-button {
         display: flex;
     }
+
+    .section__selection {
+        top: 90px;
+        width: 100%;
+
+    }
+
+    .floor__selection {
+        justify-content: space-between; 
+        margin-right: 80px;
+        margin-left: 32px;  
+    }
+
+    .floor__selection-title {
+        line-height: 29px;
+        font-size: 24px;
+    }
+
+    .floor__selection-buttons {
+        height: 333px;
+    }
+
+    .floor__selection-item {
+        line-height: 29px;
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .floor__selection-item--active {
+        padding-bottom: 0;
+    }
+
+    .floor__selection-item--active::before {
+        top: 37px;
+        left: -11px;
+    }
+    .page__selection .footer {
+        padding-top: 16px;
+    }
 }
