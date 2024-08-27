@@ -31,7 +31,7 @@
     list-style: none;
 }
 
-.object__selection-slider picture {
+.object__selection .object__selection-slider picture {
     position: absolute;
     z-index: -2;
     top: 0;

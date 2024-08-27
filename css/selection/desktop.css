@@ -8,7 +8,7 @@
     .page__selection .object__selection-slider {
         height: 856px;
     }
-    
+
     .page__selection .page__header-wrapper svg path {
         stroke: var(--base-black);
     }
@@ -26,7 +26,7 @@
         top: auto;
         width: 1240px;
         margin: 0 auto;
-        
+
     }
 
     .slider__button-description {
@@ -38,17 +38,18 @@
         display: block;
     }
 
-    .page__selection .object__selection-slider picture {
+    .page__selection .object__selection .object__selection-slider picture {
         height: 856px;
         max-height: 856px;
     }
 
-    .page__selection .object__selection-slider img {
+    .page__selection .object__selection .object__selection-slider img {
         width: 100%;
         height: 856px;
     }
 
     .section__selection {
+        z-index: -1;
         top: 128px;
         left: 50%;
         width: 1240px;
@@ -63,7 +64,7 @@
         height: 443px;
     }
 
-    .floor__selection-image {
+    .page__selection-section .floor__selection-image {
         position: absolute;
         top: -80px;
         right: 0;
@@ -71,20 +72,49 @@
         height: 722px;
     }
 
-    .page__selection-section .object__selection-slider picture {
+    .page__selection-section .object__selection .object__selection-slider picture {
         height: 722px;
     }
 
-    .page__selection-section .object__selection-slider img {
+    .page__selection-section .object__selection .object__selection-slider img {
         height: 722px;
     }
 
-    .page__selection-section .slider__button {
+    .page__selection-section .slider__button,
+    .page__selection-flat .slider__button,
+    .page__selection-parking .slider__button,
+    .page__selection-parking-space .slider__button {
         bottom: 48px;
-        margin: 0;
-}
+    }
 
-.page__selection-section .object__selection-button {
-    bottom: 48px;
-}
+    .page__selection-section .object__selection-button,
+    .page__selection-flat .object__selection-button,
+    .page__selection-parking .object__selection-button,
+    .page__selection-parking-space .object__selection-button  {
+        bottom: 48px;
+    }
+
+    .page__selection-flat .object__selection-subtitle span,
+    .page__selection-parking-space .object__selection-subtitle span {
+        display: inline;
+    }
+
+    .page__selection-flat .object__selection .object__selection-slider picture,
+    .page__selection-parking .object__selection .object__selection-slider picture,
+    .page__selection-parking-space .object__selection .object__selection-slider picture  {
+        height: 639px;
+        max-height: 639px;
+    }
+
+    .page__selection-flat .object__selection .object__selection-slider img,
+    .page__selection-parking .object__selection .object__selection-slider img,
+    .page__selection-parking-space .object__selection .object__selection-slider img {
+        height: 639px;
+    }
+
+    .page__selection-parking .floor__selection-buttons,
+    .page__selection-parking-space .floor__selection-buttons {
+        height: 272px;
+    }
+
 }

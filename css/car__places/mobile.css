@@ -1,0 +1,20 @@
+.page__car-places .object__selection-list img {
+    position: absolute;
+    width: auto;
+    height: 661px;
+    filter: blur(24px);
+}
+
+.floor__selection-image {
+    position: absolute;
+    top: 63px;
+    left: 16px;
+}
+
+.object__selection-list {
+    position: relative;
+}
+
+.object__selection-item {
+    position: absolute;
+}

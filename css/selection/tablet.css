@@ -63,4 +63,14 @@
     .page__selection .footer {
         padding-top: 16px;
     }
+
+    .page__selection-parking .floor__selection-buttons,
+    .page__selection-parking-space .floor__selection-buttons {
+        height: 269px;
+    }
+
+    .page__selection-parking .floor__selection-item--active::before,
+    .page__selection-parking-space .floor__selection-item--active::before {
+        left: -13px;
+    }
 }
