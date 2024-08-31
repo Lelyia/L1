@@ -1,0 +1,8 @@
+@media (min-width: 960px) {
+    .page__car-places .object__selection .object__selection-slider picture {
+        top: 109px;
+        left: 98px;
+        width: 765px;
+        height: 476px;
+    }
+}

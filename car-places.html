@@ -9,14 +9,17 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  
+
   <link rel="stylesheet" href="css/general/mobile.css"> <!-- Общие стили при разных разрешениях экрана-->
   <link rel="stylesheet" href="css/general/tablet.css">
   <link rel="stylesheet" href="css/general/desktop.css">
 
-  <link rel="stylesheet" href="css/main/mobile.css"> <!--Стили только для данной страницы-->
-  <link rel="stylesheet" href="css/main/tablet.css">
-  <link rel="stylesheet" href="css/main/desktop.css">
+  <link rel="stylesheet" href="css/object/mobile.css"> <!--Стили только для данной страницы-->
+  <link rel="stylesheet" href="css/object/tablet.css">
+  <link rel="stylesheet" href="css/object/desktop.css">
+  <link rel="stylesheet" href="css/car__places/mobile.css">
+  <link rel="stylesheet" href="css/car__places/tablet.css">
+  <link rel="stylesheet" href="css/car__places/desktop.css"> <!--Стили только для данной страницы-->
 
   <link rel="stylesheet" href="css/blocks/header.css"> <!--Стили используются на каждой странице-->
   <link rel="stylesheet" href="css/blocks/container.css">
@@ -27,11 +30,16 @@
   <link rel="stylesheet" href="css/blocks/footer.css">
   <link rel="stylesheet" href="css/blocks/modal.css">
   
-  <link rel="stylesheet" href="css/blocks/slider.css"> <!--Стили блоков, повторяющихся на разных страницах-->
+  <link rel="stylesheet" href="css/blocks/header__object.css"><!--Стили блоков, повторяющихся на разных страницах-->
+  <link rel="stylesheet" href="css/blocks/selection.css">
+  <link rel="stylesheet" href="css/blocks/advantages.css">
   <link rel="stylesheet" href="css/blocks/action.css">
-  <link rel="stylesheet" href="css/blocks/objects.css">
-  <link rel="stylesheet" href="css/blocks/flats.css">
+  <link rel="stylesheet" href="css/blocks/slider.css">
+  <link rel="stylesheet" href="css/blocks/map.css">
   <link rel="stylesheet" href="css/blocks/other.css">
+  <link rel="stylesheet" href="css/blocks/info.css">
+  <link rel="stylesheet" href="css/blocks/gallery.css">
+  <link rel="stylesheet" href="css/blocks/customer.css">
 
   <link rel="icon" href="favicon.ico">
   <!--<link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
@@ -42,7 +50,7 @@
 
 <body class="page__body">
   <div class="page__background-shadow"></div>
-  <div class="page__container">
+  <div class="page__container page__object page__car-places">
     <div class="page__header-wrapper page__header-wrapper--nojs">
       <!-- opened / closed - открытое, закрытое меню; nojs - кнопка исчезает  при мобильных и планшетных версиях-->
       <div class="page__header-logo-wrapper">
@@ -60,7 +68,7 @@
         </button>
       </div>
 
-      <header class="header">
+       <header class="header">
         <div class="header__stats">
           <div class="header__contacts-container">
             <h2 class="visually-hidden">Контакты</h2>
@@ -164,7 +172,9 @@
       <div class="info">
         <div class="info__realty-container info-wrapper">
           <h2 class="info__realty info-title">Недвижимость</h2>
-          <h2 class="info__realty info-title info-title--tablet">В продаже</h2>
+          <h2 class="info__realty info-title info-title--tablet">
+            В продаже
+          </h2>
           <ul class="info__realty-list info-list">
             <li class="info__realty-item info-item">
               <a class="info__realty-link info-link" href="#">
@@ -473,17 +483,20 @@
     </div>
 
     <main class="page-main">
-      <section class="slider container">
+      <section class="slider slider-main">
         <picture>
-          <source media="(max-width: 1440px)" srcset="images/desktop/header_image-desktop_max.jpg">
           <img src="images/desktop/header_image-desktop_max.jpg" alt="ЖК Загляденье">
         </picture>
         <h2 class="visually-hidden">Жилой комплекс</h2>
         <h3 class="complex">Загляденье</h3>
         <div class="slider__complex">
           <ul class="slider__complex-list">
-            <li class="slider__complex-item slider__complex-item-1">Краткое описание комплекса</li>
-            <li class="slider__complex-item slider__complex-item-2">Краткое описание комплекса</li>
+            <li class="slider__complex-item slider__complex-item-1">
+              Ленинградская область, Новоселье
+            </li>
+            <li class="slider__complex-item slider__complex-item-2">
+              IV квартал 2026
+            </li>
           </ul>
 
           <div class="slider__button">
@@ -505,12 +518,279 @@
               <span class="visually-hidden">Показать следующий слайд</span>
             </a>
           </div>
+          <ul class="action-button">
+            <li class="action-button-item action-button-item--active">
+              <span class="visually-hidden">1</span>
+            </li>
+            <li class="action-button-item">
+              <span class="visually-hidden">2</span>
+            </li>
+            <li class="action-button-item">
+              <span class="visually-hidden">3</span>
+            </li>
+            <li class="action-button-item">
+              <span class="visually-hidden">4</span>
+            </li>
+            <li class="action-button-item">
+              <span class="visually-hidden">5</span>
+            </li>
+            <li class="action-button-item">
+              <span class="visually-hidden">6</span>
+            </li>
+          </ul>
           <a class="button button-main" href="selection__building.html">Выбрать квартиру</a>
         </div>
       </section>
 
+      <div class="page__header-wrapper page__header-wrapper-object page__header-wrapper-object--nojs">
+        <!-- opened / closed - открытое, закрытое меню; nojs - кнопка исчезает  при мобильных и планшетных версиях-->
+        <div class="page__header-logo-wrapper">
+          <a class="page__header-logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="icons/logo_zaglyadenie-desktop.svg" type="image/svg+xml"
+                width="132" height="78">
+              <img src="icons/logo_zaglyadenie.svg" width="81" height="48" alt="Логотип Л1">
+            </picture>
+          </a>
+
+          <h1 class="visually-hidden">Л1 Строительная компания №1</h1>
+          <button class="page__header-nav-toggle page__header-object-toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+
+        <ul class="page__header-buttons-list">
+          <li class="page__header-buttons-item page__header-buttons-call">
+            <a class="button page__header-buttons-link" href="#">
+              <span class="page__header-buttons-title">Заказать
+                <span class="buttons-text-mobile buttons-text-mobile-call">обратный</span> звонок</span>
+            </a>
+          </li>
+          <li class="page__header-buttons-item page__header-buttons-ipoteka">
+            <a class="button page__header-buttons-link" href="#">
+              <span class="page__header-buttons-title">Рассчитать ипотеку</span>
+            </a>
+          </li>
+          <li class="page__header-buttons-item page__header-buttons-booklet">
+            <a class="button page__header-buttons-link" href="#">
+              <span class="page__header-buttons-title">Скачать буклет
+                <span class="buttons-text">объекта</span></span>
+            </a>
+          </li>
+          <li class="page__header-buttons-item page__header-buttons-taxi">
+            <a class="button page__header-buttons-link" href="#">
+              <span class="page__header-buttons-title">Заказать такси
+                <span class="buttons-text-mobile">на объект</span><span class="buttons-text"> в офис</span></span>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="page__header-buttons2-list">
+          <li class="page__header-buttons2-item">
+            <a class="button page__header-buttons2-link" href="#">
+              <span class="page__header-buttons2-title">Консультация</span>
+            </a>
+          </li>
+          <li class="page__header-buttons2-item">
+            <a class="button page__header-buttons2-link" href="#">
+              <span class="page__header-buttons2-title" href="selection__building.html">Купить квартиру</span>
+              <span class="page__header-buttons2-title-desktop" href="selection__building.html">Выбрать квартиру</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="header">
+          <div class="header__stats">
+            <div class="header__contacts-container">
+              <h2 class="visually-hidden">Контакты</h2>
+              <div class="header__contacts-connection">
+                <p class="header__contacts-title">Офис продаж</p>
+                <div class="header__contacts-link">
+                  <a class="header__contacts-phone" href="tel:+78123053355">+ 7 (812) 305-33-55</a>
+                  <a class="header__contacts-email" href="mailto:3053355@l1n1.ru">3053355@l1n1.ru</a>
+                </div>
+                <div class="header__contacts-buttons">
+                  <a class="button header__contacts-button header__contacts-show" href="#">
+                    <span class="header__contacts-subtitle">Записаться на показ</span>
+                  </a>
+                  <a class="button header__contacts-button header__contacts-show" href="#">
+                    <span class="header__contacts-subtitle" href="selection__building.html">Выбрать квартиру</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="line line-1">
+              <p class="line__mobile"></p>
+            </div>
+
+            <nav class="header__nav">
+              <h2 class="visually-hidden">Навигация по объекту</h2>
+              <div class="header__nav-wrapper">
+                <ul class="header__nav-list">
+                  <li class="header__nav-main">
+                    <ul class="header__nav-list-main">
+                      <li class="header__nav-item header__nav-about-object">
+                        <a class="header__nav-link" href="#">О проекте</a>
+                      </li>
+                      <li class="header__nav-item header__nav-infrastructure">
+                        <a class="header__nav-link" href="#">Инфраструктура</a>
+                      </li>
+                      <li class="header__nav-item header__nav-apartment">
+                        <a class="header__nav-link" href="#">Выбор квартиры</a>
+                      </li>
+                      <li class="header__nav-item header__nav-action">
+                        <a class="header__nav-link" href="#">Акции</a>
+                      </li>
+                      <li class="header__nav-item header__nav-credit">
+                        <a class="header__nav-link" href="#">Ипотека</a>
+                      </li>
+                      <li class="header__nav-item header__nav-design">
+                        <a class="header__nav-link" href="#">Отделка</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header__nav-item header__nav-more">
+                    <a class="header__nav-link header__nav-link-more" href="#">Еще</a>
+                    <ul class="header__nav-list-additional">
+                      <li class="header__nav-item header__nav-advantages">
+                        <a class="header__nav-link" href="#">Преимущества</a>
+                      </li>
+                      <li class="header__nav-item header__nav-other">
+                        <a class="header__nav-link" href="#">Кроме квартир</a>
+                      </li>
+                      <li class="header__nav-item header__nav-news">
+                        <a class="header__nav-link" href="#">Новости</a>
+                      </li>
+                      <li class="header__nav-item header__nav-progress">
+                        <a class="header__nav-link" href="#">Ход строительства</a>
+                      </li>
+                      <li class="header__nav-item header__nav-documents">
+                        <a class="header__nav-link" href="#">Документы</a>
+                      </li>
+                      <li class="header__nav-item header__nav-camera">
+                        <a class="header__nav-link" href="#">Онлайн-камеры</a>
+                      </li>
+                      <li class="header__nav-item header__nav-gallery">
+                        <a class="header__nav-link" href="#">Галерея</a>
+                      </li>
+                      <li class="header__nav-item header__nav-customers">
+                        <a class="header__nav-link" href="#">Собственникам</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="line line-object">
+          <p class="line__mobile"></p>
+        </div>
+      </div>
+
+      <section class="object__about-info container">
+        <h2 class="object-title object__about-title title">О проекте</h2>
+        <div class="object__about-video">
+          <iframe src="https://www.youtube.com/embed/HtLIPnIrj6M?si=7tHDET6_KTm0bY88" title="YouTube video player"
+            style="border: 0px;"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <p class="object__about-text">Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et
+          velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+          per inceptos himenaeos. Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et
+          velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+          per inceptos himenaeos.</p>
+        <ul class="object__about-list">
+          <li class="object__about-item">
+            <span class="object__about-subtitle object__about-data">1 500,4 м2</span>
+            <span class="object__about-subtitle object__about-description">общая площадь квартир</span>
+          </li>
+          <li class="object__about-item">
+            <span class="object__about-subtitle object__about-data">25 этажей</span>
+            <span class="object__about-subtitle object__about-description">Этажность дома</span>
+          </li>
+          <li class="object__about-item">
+            <span class="object__about-subtitle object__about-data">1 500</span>
+            <span class="object__about-subtitle object__about-description">количество квартир</span>
+          </li>
+          <li class="object__about-item">
+            <span class="object__about-subtitle object__about-data">1 500</span>
+            <span class="object__about-subtitle object__about-description">количество квартир</span>
+          </li>
+          <li class="object__about-item">
+            <span class="object__about-subtitle object__about-data">1 500</span>
+            <span class="object__about-subtitle object__about-description">количество квартир</span>
+          </li>
+          <li class="object__about-item">
+            <span class="object__about-subtitle object__about-data">1 500</span>
+            <span class="object__about-subtitle object__about-description">количество квартир</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="object__selection container">
+        <div class="object__selection-wrapper">
+          <h2 class="object-title object__selection-title title object__selection-title--mobile">Выбор машиноместа</h2>
+          <div class="object__selection-option">
+            <button class="button option__button option__button--active">Генплан</button>
+            <button class="button option__button">Панорама 360&deg;</button>
+          </div>
+        </div>
+        <div class="slider object__selection-slider">
+          <h3 class="object__selection-subtitle">Выбор паркинга</h3>
+          <ul class="object__selection-list">
+            <li class="object__selection-item">
+              <picture>
+                <img src="images/desktop/parking.png" alt="Выбор корпуса">
+              </picture>
+              <!--<iframe src="https://pano.life-fly.ru/l1/dundicha/"></iframe>-->
+            </li>
+          </ul>
+          <ul class="object__selection-button">
+            <li class="selection-button-item selection-button-item--active">
+              <span class="visually-hidden">1</span>
+            </li>
+            <li class="selection-button-item">
+              <span class="visually-hidden">2</span>
+            </li>
+          </ul>
+          <div class="object__selection-buttons">
+            <div class="selection__buttons-link">
+              <a class="buttons__link buttons__link-left" href="#">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 12L8 17M3 12L8 7M3 12H21" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                <span class="visually-hidden">Показать предыдущий слайд</span>
+              </a>
+
+              <a class="buttons-link buttons__link-right" href="#">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 12L16 7M21 12L16 17M21 12L3 12" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                <span class="visually-hidden">Показать следующий слайд</span>
+              </a>
+            </div>
+            <p class="object__selection-line"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="ipoteka__widget container">
+        <h2 class="visually-hidden">Ипотечный виджет</h2>
+        <div class="ipoteka__widget-container">
+          <p class="ipoteka__widget-text">Рассчитайте свою идеальную ипотеку</p>
+          <div class="ipoteka__widget-content">
+            <p class="ipoteka__widget-description">Виджет ипотечного калькулятора</p>
+          </div>
+        </div>
+      </section>
+
       <section class="action container">
-        <h2 class="action__title title">Акции</h2>
+        <h2 class="action__title object-title title">Акции и скидки</h2>
         <ul class="action__list">
           <li class="action__container action__container-1">
             <div class="action__item">
@@ -608,929 +888,274 @@
         </ul>
       </section>
 
-      <section class="filter container">
-        <div class="filter__chooser">
-          <h2 class="filter__title title">Подбор</h2>
-          <h2 class="filter__title filter__title--tablet title">Быстрый подбор квартиры в Санкт-Петербурге</h2>
-          <h2 class="filter__title filter__title--desktop title">Выбрать квартиру в Санкт-Петербурге</h2>
-          <form class="filter__search" method="get" action="#">
-            <ul class="filters">
-              <!-- Выбор объекта -->
-              <li>
-                <input type="text" list="listId" placeholder="Любой">
-                <datalist id="listId">
-                  <option>Загляденье</option>
-                  <option>Шекспир</option>
-                  <option>Поэт</option>
-                  <option>Граф Орлов</option>
-                  <option>Классика. Дом для души</option>
-                </datalist>
-              </li>
-              <li class="room-count">
-                <span class="room-title">Комнатность</span>
-                <ul class="room-count-list">
-                  <li class="room-count-item">
-                    <input type="checkbox" class="state-to-parent state-switch-chooser checkbox-firstscreen"
-                      data-name="room_count" name="filter[checkbox][room_count][0]" id="filter[checkbox][room_count][0]"
-                      value="1">
-                    <label for="filter[checkbox][room_count][0]" class="long"><span
-                        data-short="Студия">Студия</span></label>
-                    <input style="display: none;" type="checkbox" data-name="room_count"
-                      name="filter[checkbox][room_count][1euro]" id="filter[checkbox][room_count][1euro]" value="1">
-                  </li>
-                  <li class="room-count-item">
-                    <input type="checkbox" class="state-to-parent state-switch-chooser checkbox-firstscreen"
-                      data-name="room_count" name="filter[checkbox][room_count][1]" id="filter[checkbox][room_count][1]"
-                      value="1">
-                    <label for="filter[checkbox][room_count][1]" class="long"><span data-short="1">1</span></label>
-                    <input style="display: none;" type="checkbox" data-name="room_count"
-                      name="filter[checkbox][room_count][2euro]" id="filter[checkbox][room_count][2euro]" value="2">
-                  </li>
-                  <li class="room-count-item">
-                    <input type="checkbox" class="state-to-parent state-switch-chooser checkbox-firstscreen"
-                      data-name="room_count" name="filter[checkbox][room_count][2]" id="filter[checkbox][room_count][2]"
-                      value="1">
-                    <label for="filter[checkbox][room_count][2]" class="long"><span data-short="2">2</span></label>
-                    <input style="display: none;" type="checkbox" data-name="room_count"
-                      name="filter[checkbox][room_count][3euro]" id="filter[checkbox][room_count][3euro]" value="3">
-                  </li>
-                  <li class="room-count-item">
-                    <input type="checkbox" class="state-to-parent state-switch-chooser checkbox-firstscreen"
-                      data-name="room_count" name="filter[checkbox][room_count][3]" id="filter[checkbox][room_count][3]"
-                      value="1">
-                    <label for="filter[checkbox][room_count][3]" class="long"><span data-short="3">3</span></label>
-                    <input style="display: none;" type="checkbox" data-name="room_count"
-                      name="filter[checkbox][room_count][4euro]" id="filter[checkbox][room_count][4euro]" value="4">
-                  </li>
-                  <li class="room-count-item">
-                    <input type="checkbox" class="state-to-parent state-switch-chooser checkbox-firstscreen"
-                      data-name="room_count" name="filter[checkbox][room_count][4]" id="filter[checkbox][room_count][4]"
-                      value="1">
-                    <label for="filter[checkbox][room_count][4]" class="long"><span data-short="4">4</span></label>
-                    <input style="display: none;" type="checkbox" data-name="room_count"
-                      name="filter[checkbox][room_count][5euro]" id="filter[checkbox][room_count][5euro]" value="5">
-                  </li>
-                </ul>
-
-              </li>
-
-              <li class="price">
-                <div class="range-wrapper">
-                  <span class="room-title">Стоимость&nbsp;млн.&nbsp;₽</span>
-                  <div class="new-range" data-name="price_full_payment" data-format="price" data-min="3600000.00"
-                    data-max="50200000.00">
-                    <ul class="inputs" data-min-range="0" data-step="50" data-decimal-places="0">
-                      <li><span class="input"><input class="user-min" disabled="" type="text"
-                            name="filter[range][price_full_payment][user_min]"
-                            id="price[user_min][price_full_payment][user_min]" value="36000000.00"
-                            aria-label="Минимальная стоимость"><span class="focus-out min">3.6</span></span>
-                      </li>
-                      <li><span class="input"><input class="user-max" type="text"
-                            name="filter[range][price_full_payment][user_max]"
-                            id="price[user_max][price_full_payment][user_max]" value="50200000.00"
-                            aria-label="Максимальная стоимость"><span class="focus-out max">50.2</span></span>
-                      </li>
-                    </ul>
-                    <div class="controls">
-                      <button style="left: 0; right: 100%" class="min" type="button" aria-label="min"></button>
-                      <button class="max" style="right: 0; left: 100%;" type="button" aria-label="max"></button><span
-                        class="range"></span></div>
-                  </div>
-                </div>
-              </li>
-              <li class="filter-button">
-                <button class="button filter__button-flat filter__button-flat--mobile" type="submit">Выбрать квартиру</button>
-                <button class="button filter__button-flat filter__button-flat--desktop" type="submit">Подобрать квартиру</button>
-              </li>
-            </ul>
-          </form>
-        </div>
+      <section class="ipoteka__calculation container">
+        <h2 class="visually-hidden">Рассчет ипотеки</h2>
+        <span class="ipoteka__calculation-subtitle">Рассчитать ипотеку</span>
+        <a class="ipoteka__calculation-button" href="#">
+          <span class="visually-hidden">Перейти</span>
+        </a>
       </section>
 
-      <section class="object container">
-        <div class="object__filter-catalog">
-          <h2 class="object__title title">Наши объекты</h2>
-          <div class="object__catalog-view">
-            <button class="catalog-button button-card catalog-button--active">Карточками</button>
-            <button class="catalog-button button-map">На карте</button>   
-          </div>  
-        </div>    
-        <ul class="object-list">
-          <li class="object-item object__zaglyadenie">
-            <div class="object__card">
-              <figure class="object__image">
-                <img class="object__image-object" src="images/desktop/header_image-desktop_max.jpg" alt="Акция 1">
-                <span class="object__month">Объект месяца</span>
-                <div class="object__slider">
-                  <label>
-                    <span class="visually-hidden">1</span>
-                  </label>
-                  <label>
-                    <span class="visually-hidden">2</span>
-                  </label>
-                  <label>
-                    <span class="visually-hidden">3</span>
-                  </label>
-                  <label>
-                    <span class="visually-hidden">4</span>
-                  </label>
-                </div>
-              </figure>
-              <div class="object__advantages">
-                <span class="object__advantages-title object__start">Cтарт продаж</span>
-                <span class="object__advantages-title object__sale">15% скидки</span>
-                <span class="object__advantages-title object__roof">Высокие потолки</span>
-              </div>
-            </div>
-
-            <a class="object-link" href="object.html">
-              <h3 class="object-subtitle">Загляденье</h3>
-              <div class="flats">
-                <span class="object__flats">89 квартир</span>
-                <span class="object__price">от 9 млн</span>
-              </div>
-              <div class="metro">
-                <p class="object__metro">Метро "Проспект Ветеранов"</p>
-                <p class="object__metro-time">
-                  <span class="object__metro-time-home object__metro-time-transport">20 мин</span>
-                </p>
-              </div>
-            </a>
-            <div class="object__button">
-              <a class="object__button-button object__button-link" href="object.html"><span class="object__button-title">На
-                  страницу объекта</span></a>
-              <a class="object__button-button object__button-flat" href=""><span
-                  class="object__button-title object-flat">120 квартир</span></a>
-            </div>
-          </li>
-
-
-          <li class="object-item object__shekspir">
-            <div class="object__card">
-              <figure class="object__image">
-                <img class="object__image-object" src="images/desktop/Shecspir.jpg" alt="Акция 1">
-                <span class="object__month">Объект месяца</span>
-                <div class="object__slider">
-                  <label>
-                    <span class="visually-hidden">1</span>
-                  </label>
-                  <label>
-                    <span class="visually-hidden">2</span>
-                  </label>
-                  <label>
-                    <span class="visually-hidden">3</span>
-                  </label>
-                  <label>
-                    <span class="visually-hidden">4</span>
-                  </label>
-                </div>
-              </figure>
-              <div class="object__advantages">
-                <span class="object__advantages-title object__start">Cтарт продаж</span>
-                <span class="object__advantages-title object__sale">15% скидки</span>
-                <span class="object__advantages-title object__roof">Высокие потолки</span>
-              </div>
-            </div>
-
-            <a class="object-link" href="#">
-              <h3 class="object-subtitle">Шекспир</h3>
-              <div class="flats">
-                <span class="object__flats">89 квартир</span>
-                <span class="object__price">от 9 млн</span>
-              </div>
-              <div class="metro">
-                <p class="object__metro">Метро "Проспект Ветеранов"</p>
-                <p class="object__metro-time">
-                  <span class="object__metro-time-home object__metro-time-walk">20 мин</span>
-                  <span class="object__metro-time-home object__metro-time-transport">20 мин</span>
-                </p>
-              </div>
-            </a>
-            <div class="object__button">
-              <a class="object__button-button object__button-link" href=""><span class="object__button-title">На
-                  страницу объекта</span></a>
-              <a class="object__button-button object__button-flat" href=""><span
-                  class="object__button-title object-flat">120 квартир</span></a>
-            </div>
-          </li>
-
-          <li class="object-item object__orlov">
-
-            <div class="object__card">
-              <figure class="object__image">
-                <img class="object__image-object" src="images/desktop/graf.jpg" alt="Акция 1">
-                <span class="object__month">Объект месяца</span>
-                <div class="object__slider">
-                  <label>
-                    <span class="visually-hidden">1</span>
-                  </label>
-                  <label>
-                    <span class="visually-hidden">2</span>
-                  </label>
-                  <label>
-                    <span class="visually-hidden">3</span>
-                  </label>
-                  <label>
-                    <span class="visually-hidden">4</span>
-                  </label>
-                </div>
-              </figure>
-              <div class="object__advantages">
-                <span class="object__advantages-title object__start">Cтарт продаж</span>
-                <span class="object__advantages-title object__sale">15% скидки</span>
-                <span class="object__advantages-title object__roof">Высокие потолки</span>
-              </div>
-            </div>
-
-            <a class="object-link" href="#">
-              <h3 class="object-subtitle">Граф Орлов</h3>
-              <div class="flats">
-                <span class="object__flats">89 квартир</span>
-                <span class="object__price">от 9 млн</span>
-              </div>
-              <div class="metro">
-                <p class="object__metro">Метро "Проспект Ветеранов"</p>
-                <p class="object__metro-time">
-                  <span class="object__metro-time-home object__metro-time-walk">5 мин</span>
-                </p>
-              </div>
-            </a>
-            <div class="object__button">
-              <a class="object__button-button object__button-link" href=""><span class="object__button-title">На
-                  страницу объекта</span></a>
-              <a class="object__button-button object__button-flat" href=""><span
-                  class="object__button-title object-flat">120 квартир</span></a>
-            </div>
-          </li>
-
-          <li class="object-item object__london">
-
-            <div class="object__card">
-              <figure class="object__image">
-                <img class="object__image-object" src="images/desktop/london.jpg" alt="Акция 1">
-                <span class="object__month">Объект месяца</span>
-                <div class="object__slider">
-                  <label>
-                    <span class="visually-hidden">1</span>
-                  </label>
-                  <label>
-                    <span class="visually-hidden">2</span>
-                  </label>
-                  <label>
-                    <span class="visually-hidden">3</span>
-                  </label>
-                  <label>
-                    <span class="visually-hidden">4</span>
-                  </label>
-                </div>
-              </figure>
-              <div class="object__advantages">
-                <span class="object__advantages-title object__start">Cтарт продаж</span>
-                <span class="object__advantages-title object__sale">15% скидки</span>
-                <span class="object__advantages-title object__roof">Высокие потолки</span>
-              </div>
-            </div>
-
-            <a class="object-link" href="#">
-              <h3 class="object-subtitle">Лондон Парк</h3>
-              <div class="flats">
-                <span class="object__flats">89 квартир</span>
-                <span class="object__price">от 9 млн</span>
-              </div>
-              <div class="metro">
-                <p class="object__metro">Метро "Проспект Ветеранов"</p>
-                <p class="object__metro-time">
-                  <span class="object__metro-time-home object__metro-time-walk">20 мин</span>
-                  <span class="object__metro-time-home object__metro-time-transport">20 мин</span>
-                </p>
-              </div>
-            </a>
-            <div class="object__button">
-              <a class="object__button-button object__button-link" href=""><span class="object__button-title">На
-                  страницу объекта</span></a>
-              <a class="object__button-button object__button-flat" href=""><span
-                  class="object__button-title object-flat">120 квартир</span></a>
-            </div>
-          </li>
-
-          <li class="object-item object__bairon">
-
-            <div class="object__card">
-              <figure class="object__image">
-                <img class="object__image-object" src="images/desktop/bairon.jpg" alt="Акция 1">
-                <span class="object__month">Объект месяца</span>
-                <div class="object__slider">
-                  <label>
-                    <span class="visually-hidden">1</span>
-                  </label>
-                  <label>
-                    <span class="visually-hidden">2</span>
-                  </label>
-                  <label>
-                    <span class="visually-hidden">3</span>
-                  </label>
-                  <label>
-                    <span class="visually-hidden">4</span>
-                  </label>
-                </div>
-              </figure>
-              <div class="object__advantages">
-                <span class="object__advantages-title object__start">Cтарт продаж</span>
-                <span class="object__advantages-title object__sale">15% скидки</span>
-                <span class="object__advantages-title object__roof">Высокие потолки</span>
-              </div>
-            </div>
-
-            <a class="object-link" href="#">
-              <h3 class="object-subtitle">Байрон</h3>
-              <div class="flats">
-                <span class="object__flats">89 квартир</span>
-                <span class="object__price">от 9 млн</span>
-              </div>
-              <div class="metro">
-                <p class="object__metro">Метро "Проспект Ветеранов"</p>
-                <p class="object__metro-time">
-                  <span class="object__metro-time-home object__metro-time-walk">20 мин</span>
-                  <span class="object__metro-time-home object__metro-time-transport">20 мин</span>
-                </p>
-              </div>
-            </a>
-            <div class="object__button">
-              <a class="object__button-button object__button-link" href=""><span class="object__button-title">На
-                  страницу объекта</span></a>
-              <a class="object__button-button object__button-flat" href=""><span
-                  class="object__button-title object-flat">120 квартир</span></a>
-            </div>
-          </li>
-
-          <li class="object-item object__poet">
-
-            <div class="object__card">
-              <figure class="object__image">
-                <img class="object__image-object" src="images/desktop/poet.jpg" alt="Акция 1">
-                <span class="object__month">Объект месяца</span>
-                <div class="object__slider">
-                  <label>
-                    <span class="visually-hidden">1</span>
-                  </label>
-                  <label>
-                    <span class="visually-hidden">2</span>
-                  </label>
-                  <label>
-                    <span class="visually-hidden">3</span>
-                  </label>
-                  <label>
-                    <span class="visually-hidden">4</span>
-                  </label>
-                </div>
-              </figure>
-              <div class="object__advantages">
-                <span class="object__advantages-title object__start">Cтарт продаж</span>
-                <span class="object__advantages-title object__sale">15% скидки</span>
-                <span class="object__advantages-title object__roof">Высокие потолки</span>
-              </div>
-            </div>
-
-            <a class="object-link" href="#">
-              <h3 class="object-subtitle">Поэт</h3>
-              <div class="flats">
-                <span class="object__flats">89 квартир</span>
-                <span class="object__price">от 9 млн</span>
-              </div>
-              <div class="metro">
-                <p class="object__metro">Метро "Проспект Ветеранов"</p>
-                <p class="object__metro-time">
-                  <span class="object__metro-time-home object__metro-time-walk">20 мин</span>
-                  <span class="object__metro-time-home object__metro-time-transport">10 мин</span>
-                </p>
-              </div>
-            </a>
-            <div class="object__button">
-              <a class="object__button-button object__button-link" href=""><span class="object__button-title">На
-                  страницу объекта</span></a>
-              <a class="object__button-button object__button-flat" href=""><span
-                  class="object__button-title object-flat">120 квартир</span></a>
-            </div>
-          </li>
-
-          <li class="object-item object__classic">
-
-            <div class="object__card">
-              <figure class="object__image">
-                <img class="object__image-object" src="images/desktop/classic.jpg" alt="Акция 1">
-                <span class="object__month">Объект месяца</span>
-                <div class="object__slider">
-                  <label>
-                    <span class="visually-hidden">1</span>
-                  </label>
-                  <label>
-                    <span class="visually-hidden">2</span>
-                  </label>
-                  <label>
-                    <span class="visually-hidden">3</span>
-                  </label>
-                  <label>
-                    <span class="visually-hidden">4</span>
-                  </label>
-                </div>
-              </figure>
-              <div class="object__advantages">
-                <span class="object__advantages-title object__start">Cтарт продаж</span>
-                <span class="object__advantages-title object__sale">15% скидки</span>
-                <span class="object__advantages-title object__roof">Высокие потолки</span>
-              </div>
-            </div>
-
-            <a class="object-link" href="#">
-              <h3 class="object-subtitle">Классика.<br> Дом для души</h3>
-              <div class="flats">
-                <span class="object__flats">89 квартир</span>
-                <span class="object__price">от 9 млн</span>
-              </div>
-              <div class="metro">
-                <p class="object__metro">Метро "Проспект Ветеранов"</p>
-                <p class="object__metro-time">
-                  <span class="object__metro-time-home object__metro-time-walk">8 мин</span>
-                </p>
-              </div>
-            </a>
-            <div class="object__button">
-              <a class="object__button-button object__button-link" href=""><span class="object__button-title">На
-                  страницу объекта</span></a>
-              <a class="object__button-button object__button-flat" href=""><span
-                  class="object__button-title object-flat">120 квартир</span></a>
-            </div>
-          </li>
-
-          <li class="object-item object__marshal">
-            <div class="object__card">
-              <figure class="object__image">
-                <img class="object__image-object" src="images/desktop/marshal.jpg" alt="Акция 1">
-                <span class="object__month">Объект месяца</span>
-                <div class="object__slider">
-                  <label>
-                    <span class="visually-hidden">1</span>
-                  </label>
-                  <label>
-                    <span class="visually-hidden">2</span>
-                  </label>
-                  <label>
-                    <span class="visually-hidden">3</span>
-                  </label>
-                  <label>
-                    <span class="visually-hidden">4</span>
-                  </label>
-                </div>
-              </figure>
-              <div class="object__advantages">
-                <span class="object__advantages-title object__start">Cтарт продаж</span>
-                <span class="object__advantages-title object__sale">15% скидки</span>
-                <span class="object__advantages-title object__roof">Высокие потолки</span>
-              </div>
-            </div>
-
-            <a class="object-link" href="#">
-              <h3 class="object-subtitle">Маршал</h3>
-              <div class="flats">
-                <span class="object__flats">89 квартир</span>
-                <span class="object__price">от 9 млн</span>
-              </div>
-              <div class="metro">
-                <p class="object__metro">Метро "Проспект Ветеранов"</p>
-                <p class="object__metro-time">
-                  <span class="object__metro-time-transport">20 мин</span>
-                  <span class="object__metro-time-walk">20 мин</span>
-                </p>
-              </div>
-            </a>
-            <div class="object__button">
-              <a class="object__button-button object__button-link" href=""><span class="object__button-title">На
-                  страницу объекта</span></a>
-              <a class="object__button-button object__button-flat" href=""><span
-                  class="object__button-title object-flat">120 квартир</span></a>
-            </div>
-          </li>
-
-          <li class="object__action-item action-item">
-            <div class="object__action">
-              <a class="object__action-link">
-                <figure class="action__card">
-                  <img class="action__image" src="images/mobile/Design.jpg" alt="Акция 1">
-                </figure>
-                <p class="action__subtitle">Скидка<br> на повторную<br> покупку до 5%</p>
-                <span class="action__info action__deadline">До 30.04.2024</span>
-                <p class="action__house">
-                  <span class="action__info action__bairon">Байрон</span>
-                  <span class="action__info action__orlov">Граф Орлов</span>
-                </p>
-                <ul class="object__selection-button">
-                  <li class="selection-button-item selection-button-item--active">
-                    <span class="visually-hidden">1</span>
-                  </li>
-                  <li class="selection-button-item">
-                    <span class="visually-hidden">2</span>
-                  </li>
-                  <li class="selection-button-item">
-                    <span class="visually-hidden">3</span>
-                  </li>
-                  <li class="selection-button-item">
-                    <span class="visually-hidden">4</span>
-                  </li>
-                  <li class="selection-button-item">
-                    <span class="visually-hidden">5</span>
-                  </li>
-                </ul>
-              </a>
-            </div>
-
-            <a class="button object-button">Посмотреть все объекты</a>
-          </li>
-        </ul>
-
-      </section>
-
-      <section class="carousel container">
-        <div class="carousel__slider">
-          <a class="carousel__link left-link" href="">
+      <section class="object__advantage container">
+        <h2 class="object__advantage-title object-title title">Преимущества ЖК</h2>
+        <div class="object__advantage-slider">
+          <a class="slider__button__link left-link" href="">
             <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="0.5" y="0.5" width="63" height="63" rx="31.5" stroke="#D0D0D0" />
-              <path d="M36 41.3335L26.6667 32.0002L36 22.6668" stroke="#212121" stroke-width="2" stroke-linecap="round"
+              <path d="M36 41.333L26.6667 31.9997L36 22.6663" stroke="#212121" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round" />
             </svg>
             <span class="visually-hidden">Показать предыдущий слайд</span>
           </a>
 
-
-          <a class="carousel__link right-link" href="">
+          <a class="slider__button__link right-link" href="">
             <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="0.5" y="0.5" width="63" height="63" rx="31.5" stroke="#D0D0D0" />
-              <path d="M28 22.6665L37.3333 31.9998L28 41.3332" stroke="#212121" stroke-width="2" stroke-linecap="round"
+              <path d="M28 22.667L37.3333 32.0003L28 41.3337" stroke="#212121" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round" />
             </svg>
             <span class="visually-hidden">Показать следующий слайд</span>
           </a>
-
         </div>
-        <h2 class="carousel-title title">Квартиры</h2>
-        <div class="sorting">
-          <div class="sorting-price">
-            <ul class="sorting-list">
-              <li class="sorting-item">
-                <a class="button-up active" href="#">
-                  <span> Сначала дорогие </span>
-                </a>
-              </li>
-              <li class="sorting-item">
-                <a class="button-down" href="#">
-                  <span> Сначала дешевые </span>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="sorting-room">
-            <p class="visually-hidden">Сортировка:</p>
-            <ul class="sorting-list">
-              <li class="sorting-item">
-                <a href="#"> Студии</a>
-              </li>
-              <li class="sorting-item">
-                <a href="#">1-комнатные</a>
-              </li>
-              <li class="sorting-item">
-                <a href="#">2-комнатные</a>
-              </li>
-              <li class="sorting-item">
-                <a href="#">3-комнатные</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <ul class="object__advantage-list">
+          <li class="object__advantage-item">
+            <figure class="object__advantage-card">
+              <img class="object__advantage-image" src="images/mobile/Design.jpg" alt="Преимущество 1">
+              <p class="object__advantage-subtitle">Квартиры с отделкой</p>
+            </figure>
+            <p class="object__advantage-text">Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+              libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per
+              conubia nostra, per inceptos himenaeos. Rorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </li>
+          <li class="object__advantage-item">
+            <figure class="object__advantage-card">
+              <img class="object__advantage-image" src="images/mobile/Design.jpg" alt="Преимущество 1">
+              <p class="object__advantage-subtitle">Квартиры с отделкой</p>
+            </figure>
+          </li>
+          <li class="object__advantage-item">
+            <figure class="object__advantage-card">
+              <img class="object__advantage-image" src="images/mobile/Design.jpg" alt="Преимущество 1">
+              <p class="object__advantage-subtitle">Квартиры с отделкой</p>
+            </figure>
+          </li>
+          <li class="object__advantage-item">
+            <figure class="object__advantage-card">
+              <img class="object__advantage-image" src="images/mobile/Design.jpg" alt="Преимущество 1">
+              <p class="object__advantage-subtitle">Квартиры с отделкой</p>
+            </figure>
+          </li>
+          <li class="object__advantage-item">
+            <figure class="object__advantage-card">
+              <img class="object__advantage-image" src="images/mobile/Design.jpg" alt="Преимущество 1">
+              <p class="object__advantage-subtitle">Квартиры с отделкой</p>
+            </figure>
+          </li>
+          <li class="object__advantage-item">
+            <figure class="object__advantage-card">
+              <img class="object__advantage-image" src="images/mobile/Design.jpg" alt="Преимущество 1">
+              <p class="object__advantage-subtitle">Квартиры с отделкой</p>
+            </figure>
+          </li>
+          <li class="object__advantage-item">
+            <figure class="object__advantage-card">
+              <img class="object__advantage-image" src="images/mobile/Design.jpg" alt="Преимущество 1">
+              <p class="object__advantage-subtitle">Квартиры с отделкой</p>
+            </figure>
+          </li>
+        </ul>
 
-        <div class="flat">
-          <ul class="flat__list">
-            <li class="flat__item">
-              <div class="flat__card">
-                <a class="flat__link favourite-link" href="#">
-                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="40" height="40" rx="20" fill="#D0D0D0" fill-opacity="0.5" />
-                    <path
-                      d="M20 15.6933C18 10.9989 11 11.4989 11 17.4989C11 23.499 20 28.4991 20 28.4991C20 28.4991 29 23.499 29 17.4989C29 11.4989 22 10.9989 20 15.6933Z"
-                      stroke="#D12728" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </a>
+        <ul class="action-button">
+          <li class="action-button-item action-button-item--active">
+            <span class="visually-hidden">1</span>
+          </li>
+          <li class="action-button-item">
+            <span class="visually-hidden">2</span>
+          </li>
+          <li class="action-button-item">
+            <span class="visually-hidden">3</span>
+          </li>
+          <li class="action-button-item">
+            <span class="visually-hidden">4</span>
+          </li>
+          <li class="action-button-item">
+            <span class="visually-hidden">5</span>
+          </li>
+          <li class="action-button-item">
+            <span class="visually-hidden">6</span>
+          </li>
+        </ul>
 
-                <a class="flat__link comparison-link" href="#">
-                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="40" height="40" rx="20" fill="#D0D0D0" fill-opacity="0.5" />
-                    <path
-                      d="M17 19V28M17 19H12.5996C12.0396 19 11.7598 19 11.5459 19.109C11.3577 19.2049 11.2049 19.3577 11.109 19.5459C11 19.7598 11 20.04 11 20.6001V28H17M17 19V13.6001C17 13.04 17 12.7598 17.109 12.5459C17.2049 12.3577 17.3577 12.2049 17.5459 12.109C17.7598 12 18.0396 12 18.5996 12H21.3996C21.9597 12 22.2403 12 22.4542 12.109C22.6423 12.2049 22.7948 12.3577 22.8906 12.5459C22.9996 12.7598 23 13.04 23 13.6001V16M17 28H23M23 28L29 28.0001V17.6001C29 17.04 28.9996 16.7598 28.8906 16.5459C28.7948 16.3577 28.6429 16.2049 28.4548 16.109C28.2409 16 27.9601 16 27.4 16H23M23 28V16"
-                      stroke="#818181" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </a>
-                <figure class="flat__image">
-                  <img class="flat__image-object" src="images/desktop/223.png" alt="Акция 1">
-                  <span class="flat__month visually-hidden">Объект месяца</span>
-                </figure>
-              </div>
+      </section>
 
-              <h3 class="flat-subtitle object-subtitle">Студия, №223</h3>
-              <div class="flat__advantages">
-                <span class="flat__advantages-title flat__sale">15% скидки</span>
-                <span class="flat__advantages-title flat__start">Выбор отделки</span>
-                <span class="flat__advantages-title flat__roof">Высокие потолки</span>
-              </div>
-              <ul class="flat__description-list">
-                <li class="flat__area flat__description-item">
-                  <span class="description">Площадь</span>
-                  <span class="data">30.5 м2</span>
-                </li>
-                <li class="flat__project flat__description-item">
-                  <span class="description">Проект</span>
-                  <span class="data">Байрон</span>
-                </li>
-                <li class="flat__location flat__description-item">
-                  <span class="description">Расположение</span>
-                  <span class="data">Корпус 25, 22/25 этаж</span>
-                </li>
-                <li class="flat__deadline flat__description-item">
-                  <span class="description">Срок сдачи</span>
-                  <span class="data">Сдан</span>
-                </li>
-                <li class="flat__design flat__description-item">
-                  <span class="description">Отделка</span>
-                  <span class="data">Чистовая / White Box</span>
-                </li>
-                <li class="flat__price flat__description-item">
-                  <del>5 559 999 ₽</del>
-                  <span>4 999 999 ₽</span>
+      <section class="object__design container">
+        <div class="object__design-container">
+          <h2 class="object__design-title object-title title">Выбор отделки</h2>
+          <ul class="object__design-list">
+            <li class="object__design-item design-1-item object__design-item--active">
+              <span class="visually-hidden">Голубика</span>
+              <ul class="design__list design-1__list">
+                <li class="design__item design-1__item">
+                  <figure class="design__card design-1__card">
+                    <img class="design_image design-1__image" src="images/mobile/Design.jpg" alt="">
+                  </figure>
+                  <ul class="object__selection-button">
+                    <li class="selection-button-item selection-button-item--active">
+                      <span class="visually-hidden">1</span>
+                    </li>
+                    <li class="selection-button-item">
+                      <span class="visually-hidden">2</span>
+                    </li>
+                    <li class="selection-button-item">
+                      <span class="visually-hidden">3</span>
+                    </li>
+                    <li class="selection-button-item">
+                      <span class="visually-hidden">4</span>
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </li>
-
-            <li class="flat__item">
-              <div class="flat__card">
-                <div class="flat__user">
-                  <a class="flat__link favourite-link" href="#">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect width="40" height="40" rx="20" fill="#D0D0D0" fill-opacity="0.5" />
-                      <path
-                        d="M20 15.6933C18 10.9989 11 11.4989 11 17.4989C11 23.499 20 28.4991 20 28.4991C20 28.4991 29 23.499 29 17.4989C29 11.4989 22 10.9989 20 15.6933Z"
-                        stroke="#D12728" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </a>
-                  <a class="flat__link comparison-link" href="#">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect width="40" height="40" rx="20" fill="#D0D0D0" fill-opacity="0.5" />
-                      <path
-                        d="M17 19V28M17 19H12.5996C12.0396 19 11.7598 19 11.5459 19.109C11.3577 19.2049 11.2049 19.3577 11.109 19.5459C11 19.7598 11 20.04 11 20.6001V28H17M17 19V13.6001C17 13.04 17 12.7598 17.109 12.5459C17.2049 12.3577 17.3577 12.2049 17.5459 12.109C17.7598 12 18.0396 12 18.5996 12H21.3996C21.9597 12 22.2403 12 22.4542 12.109C22.6423 12.2049 22.7948 12.3577 22.8906 12.5459C22.9996 12.7598 23 13.04 23 13.6001V16M17 28H23M23 28L29 28.0001V17.6001C29 17.04 28.9996 16.7598 28.8906 16.5459C28.7948 16.3577 28.6429 16.2049 28.4548 16.109C28.2409 16 27.9601 16 27.4 16H23M23 28V16"
-                        stroke="#818181" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </a>
-                </div>
-                <figure class="flat__image">
-                  <img class="flat__image-object" src="images/desktop/142.png" alt="Акция 1">
-                  <span class="flat__month visually-hidden">Объект месяца</span>
-
-                </figure>
-              </div>
-
-              <h3 class="flat-subtitle object-subtitle">1-комнатная, №142</h3>
-              <div class="flat__advantages">
-                <span class="flat__advantages-title flat__sale">15% скидки</span>
-                <span class="flat__advantages-title flat__start visually-hidden">Выбор отделки</span>
-                <span class="flat__advantages-title flat__roof">Высокие потолки</span>
-              </div>
-              <ul class="flat__description-list">
-                <li class="flat__area flat__description-item">
-                  <span class="description">Площадь</span>
-                  <span class="data">40,3 м2</span>
-                </li>
-                <li class="flat__project flat__description-item">
-                  <span class="description">Проект</span>
-                  <span class="data">Байрон</span>
-                </li>
-                <li class="flat__location flat__description-item">
-                  <span class="description">Расположение</span>
-                  <span class="data">Корпус 15, 3/25 этаж</span>
-                </li>
-                <li class="flat__deadline flat__description-item">
-                  <span class="description">Срок сдачи</span>
-                  <span class="data">Сдан</span>
-                </li>
-                <li class="flat__design flat__description-item">
-                  <span class="description">Отделка</span>
-                  <span class="data">White Box</span>
-                </li>
-                <li class="flat__price flat__description-item">
-                  <del>8 559 999 ₽</del>
-                  <span>7 999 999 ₽</span>
+            <li class="object__design-item design-2-item">
+              <span class="visually-hidden">Морошка</span>
+              <ul class="design__list design-2__list">
+                <li class="design__item design-2__item">
+                  <figure class="design__card design-2__card">
+                    <img class="design_image design-2__image" src="images/mobile/Design.jpg" alt="">
+                  </figure>
                 </li>
               </ul>
             </li>
-
-            <li class="flat__item">
-              <div class="flat__card">
-                <div class="flat__user">
-                  <a class="flat__link favourite-link" href="#">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect width="40" height="40" rx="20" fill="#D0D0D0" fill-opacity="0.5" />
-                      <path
-                        d="M20 15.6933C18 10.9989 11 11.4989 11 17.4989C11 23.499 20 28.4991 20 28.4991C20 28.4991 29 23.499 29 17.4989C29 11.4989 22 10.9989 20 15.6933Z"
-                        stroke="#D12728" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </a>
-                  <a class="flat__link comparison-link" href="#">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect width="40" height="40" rx="20" fill="#D0D0D0" fill-opacity="0.5" />
-                      <path
-                        d="M17 19V28M17 19H12.5996C12.0396 19 11.7598 19 11.5459 19.109C11.3577 19.2049 11.2049 19.3577 11.109 19.5459C11 19.7598 11 20.04 11 20.6001V28H17M17 19V13.6001C17 13.04 17 12.7598 17.109 12.5459C17.2049 12.3577 17.3577 12.2049 17.5459 12.109C17.7598 12 18.0396 12 18.5996 12H21.3996C21.9597 12 22.2403 12 22.4542 12.109C22.6423 12.2049 22.7948 12.3577 22.8906 12.5459C22.9996 12.7598 23 13.04 23 13.6001V16M17 28H23M23 28L29 28.0001V17.6001C29 17.04 28.9996 16.7598 28.8906 16.5459C28.7948 16.3577 28.6429 16.2049 28.4548 16.109C28.2409 16 27.9601 16 27.4 16H23M23 28V16"
-                        stroke="#818181" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </a>
-
-                </div>
-                <figure class="flat__image">
-                  <img class="flat__image-object" src="images/desktop/223_2.png" alt="Акция 1">
-                  <span class="flat__month visually-hidden">Объект месяца</span>
-
-                </figure>
-              </div>
-
-              <h3 class="flat-subtitle object-subtitle">2-комнатная, №223</h3>
-              <div class="flat__advantages">
-                <span class="flat__advantages-title flat__sale">15% скидки</span>
-                <span class="flat__advantages-title flat__start">Выбор отделки</span>
-                <span class="flat__advantages-title flat__roof">Высокие потолки</span>
-              </div>
-              <ul class="flat__description-list">
-                <li class="flat__area flat__description-item">
-                  <span class="description">Площадь</span>
-                  <span class="data">56,4 м2</span>
-                </li>
-                <li class="flat__project flat__description-item">
-                  <span class="description">Проект</span>
-                  <span class="data">Байрон</span>
-                </li>
-                <li class="flat__location flat__description-item">
-                  <span class="description">Расположение</span>
-                  <span class="data">Корпус 15, 5/25 этаж</span>
-                </li>
-                <li class="flat__deadline flat__description-item">
-                  <span class="description">Срок сдачи</span>
-                  <span class="data">Сдан</span>
-                </li>
-                <li class="flat__design flat__description-item">
-                  <span class="description">Отделка</span>
-                  <span class="data">Чистовая / White Box</span>
-                </li>
-                <li class="flat__price flat__description-item">
-                  <del>10 559 999 ₽</del>
-                  <span>9 999 999 ₽</span>
-                </li>
-              </ul>
-            </li>
-
-            <li class="flat__item">
-              <div class="flat__card">
-                <div class="flat__user">
-                  <a class="flat__link favourite-link" href="#">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect width="40" height="40" rx="20" fill="#D0D0D0" fill-opacity="0.5" />
-                      <path
-                        d="M20 15.6933C18 10.9989 11 11.4989 11 17.4989C11 23.499 20 28.4991 20 28.4991C20 28.4991 29 23.499 29 17.4989C29 11.4989 22 10.9989 20 15.6933Z"
-                        stroke="#D12728" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </a>
-                  <a class="flat__link comparison-link" href="#">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect width="40" height="40" rx="20" fill="#D0D0D0" fill-opacity="0.5" />
-                      <path
-                        d="M17 19V28M17 19H12.5996C12.0396 19 11.7598 19 11.5459 19.109C11.3577 19.2049 11.2049 19.3577 11.109 19.5459C11 19.7598 11 20.04 11 20.6001V28H17M17 19V13.6001C17 13.04 17 12.7598 17.109 12.5459C17.2049 12.3577 17.3577 12.2049 17.5459 12.109C17.7598 12 18.0396 12 18.5996 12H21.3996C21.9597 12 22.2403 12 22.4542 12.109C22.6423 12.2049 22.7948 12.3577 22.8906 12.5459C22.9996 12.7598 23 13.04 23 13.6001V16M17 28H23M23 28L29 28.0001V17.6001C29 17.04 28.9996 16.7598 28.8906 16.5459C28.7948 16.3577 28.6429 16.2049 28.4548 16.109C28.2409 16 27.9601 16 27.4 16H23M23 28V16"
-                        stroke="#818181" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </a>
-
-                </div>
-                <figure class="flat__image">
-                  <img class="flat__image-object" src="images/desktop/223_3.png" alt="Акция 1">
-                  <span class="flat__month visually-hidden">Объект месяца</span>
-
-                </figure>
-              </div>
-
-              <h3 class="flat-subtitle object-subtitle">3-комнатная, №223</h3>
-              <div class="flat__advantages">
-                <span class="flat__advantages-title flat__sale">15% скидки</span>
-                <span class="flat__advantages-title flat__start">Выбор отделки</span>
-                <span class="flat__advantages-title flat__roof">Высокие потолки</span>
-              </div>
-              <ul class="flat__description-list">
-                <li class="flat__area flat__description-item">
-                  <span class="description">Площадь</span>
-                  <span class="data">89,3 м2</span>
-                </li>
-                <li class="flat__project flat__description-item">
-                  <span class="description">Проект</span>
-                  <span class="data">Байрон</span>
-                </li>
-
-                <li class="flat__location flat__description-item">
-                  <span class="description">Расположение</span>
-                  <span class="data">Корпус 16, 3/25 этаж</span>
-                </li>
-
-                <li class="flat__deadline flat__description-item">
-                  <span class="description">Срок сдачи</span>
-                  <span class="data">Сдан</span>
-                </li>
-
-                <li class="flat__design flat__description-item">
-                  <span class="description">Отделка</span>
-                  <span class="data">Чистовая / White Box</span>
-                </li>
-
-                <li class="flat__price flat__description-item">
-                  <del>15 559 999 ₽</del>
-                  <span>14 999 999 ₽</span>
-                </li>
-              </ul>
-            </li>
-
-            <li class="flat__item">
-              <div class="flat__card">
-                <a class="flat__link favourite-link" href="#">
-                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="40" height="40" rx="20" fill="#D0D0D0" fill-opacity="0.5" />
-                    <path
-                      d="M20 15.6933C18 10.9989 11 11.4989 11 17.4989C11 23.499 20 28.4991 20 28.4991C20 28.4991 29 23.499 29 17.4989C29 11.4989 22 10.9989 20 15.6933Z"
-                      stroke="#D12728" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </a>
-                <a class="flat__ink comparison-link" href="#">
-                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="40" height="40" rx="20" fill="#D0D0D0" fill-opacity="0.5" />
-                    <path
-                      d="M17 19V28M17 19H12.5996C12.0396 19 11.7598 19 11.5459 19.109C11.3577 19.2049 11.2049 19.3577 11.109 19.5459C11 19.7598 11 20.04 11 20.6001V28H17M17 19V13.6001C17 13.04 17 12.7598 17.109 12.5459C17.2049 12.3577 17.3577 12.2049 17.5459 12.109C17.7598 12 18.0396 12 18.5996 12H21.3996C21.9597 12 22.2403 12 22.4542 12.109C22.6423 12.2049 22.7948 12.3577 22.8906 12.5459C22.9996 12.7598 23 13.04 23 13.6001V16M17 28H23M23 28L29 28.0001V17.6001C29 17.04 28.9996 16.7598 28.8906 16.5459C28.7948 16.3577 28.6429 16.2049 28.4548 16.109C28.2409 16 27.9601 16 27.4 16H23M23 28V16"
-                      stroke="#818181" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </a>
-                <figure class="flat__image">
-                  <img class="flat__image-object" src="images/desktop/223_3.png" alt="Акция 1">
-                  <span class="flat__month visually-hidden">Объект месяца</span>
-                </figure>
-              </div>
-
-              <h3 class="flat-subtitle object-subtitle">3-комнатная, №223</h3>
-              <div class="flat__advantages">
-                <span class="flat__advantages-title flat__sale">15% скидки</span>
-                <span class="flat__advantages-title flat__start">Выбор отделки</span>
-                <span class="flat__advantages-title flat__roof">Высокие потолки</span>
-              </div>
-              <ul class="flat__description-list">
-                <li class="flat__area flat__description-item">
-                  <span class="description">Площадь</span>
-                  <span class="data">89,3 м2</span>
-                </li>
-                <li class="flat__project flat__description-item">
-                  <span class="description">Проект</span>
-                  <span class="data">Байрон</span>
-                </li>
-
-                <li class="flat__location flat__description-item">
-                  <span class="description">Расположение</span>
-                  <span class="data">Корпус 16, 3/25 этаж</span>
-                </li>
-
-                <li class="flat__deadline flat__description-item">
-                  <span class="description">Срок сдачи</span>
-                  <span class="data">Сдан</span>
-                </li>
-
-                <li class="flat__design flat__description-item">
-                  <span class="description">Отделка</span>
-                  <span class="data">Чистовая / White Box</span>
-                </li>
-
-                <li class="flat__price flat__description-item">
-                  <del>15 559 999 ₽</del>
-                  <span>14 999 999 ₽</span>
+            <li class="object__design-item design-3-item">
+              <span class="visually-hidden">White Box</span>
+              <ul class="design__list design-3__list">
+                <li class="design__item design-3__item">
+                  <figure class="design__card design-3__card">
+                    <img class="design_image design-3__image" src="images/mobile/Design.jpg" alt="">
+                  </figure>
                 </li>
               </ul>
             </li>
           </ul>
+          <div class="object__design-slider">
+            <input class="visually-hidden" type="radio" name="object__design-buttons" id="design-1" checked="">
+            <input class="visually-hidden" type="radio" name="object__design-buttons" id="design-2">
+            <input class="visually-hidden" type="radio" name="object__design-buttons" id="design-3">
+            <div class="object__design-control">
+              <label class="object__design-control-item design-item-1" for="design-1">
+                <span class="object__design-name">"Голубика"</span>
+                <span class="object__design-description">Прохладные оттенки зрительно расширят пространство, помогут
+                  расслабиться и настроиться на умиротворяющий лад, создадут дополнительное ощущение гармонии и чистоты
+                </span>
+              </label>
+              <label class="object__design-control-item design-item-2" for="design-2">
+                <span class="object__design-name">"Морошка"</span>
+                <span class="object__design-description">Теплые оттенки сделают дом визуально светлее, создадут
+                  атмосферу
+                  уюта и комфорта, поднимут эмоциональный фон, привнесут ощущение защищенности и стабильности</span>
+              </label>
+              <label class="object__design-control-item design-item-3" for="design-3">
+                <span class="object__design-name">White box</span>
+                <span class="object__design-description">Пустая квартира, которая уже готова к любой отделке. Идеально
+                  для
+                  тех, кто знает, чего хочет</span>
+              </label>
+            </div>
+          </div>
+          <ul class="object__design-buttons-list">
+            <li class="object__design-buttons-item object__design-buttons-3d">
+              <a class="button object__design-buttons-link" href="#">
+                <span class="object__design-buttons-title">3D-тур</span>
+              </a>
+            </li>
+            <li class="object__design-buttons-item object__design-buttons-detailed">
+              <a class="button object__design-buttons-link" href="#">
+                <span class="object__design-buttons-title">Подробнее</span>
+              </a>
+            </li>
+          </ul>
         </div>
-        <ul class="carousel__action-button action-button">
-          <li class="carousel__action-button-item action-button-item action-button-item--active"><span
-              class="visually-hidden">1</span></li>
-          <li class="carousel__action-button-item action-button-item"><span class="visually-hidden">2</span></li>
-          <li class="carousel__action-button-item action-button-item"><span class="visually-hidden">3</span></li>
-          <li class="carousel__action-button-item action-button-item"><span class="visually-hidden">4</span></li>
-          <li class="carousel__action-button-item action-button-item"><span class="visually-hidden">5</span></li>
-        </ul>
-        <a class="button button-flats">Посмотреть все квартиры</a>
+
       </section>
 
+      <section class="object__map container">
+        <h2 class="object__map-title object-title title">Местоположение</h2>
+        <div class="object__map-container">
 
+          <div style="position:relative;overflow:hidden;"><a
+              href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps"
+              style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс Карты</a><a
+              href="https://yandex.ru/maps/?ll=30.049084%2C59.810158&source=serp_navig&utm_medium=mapframe&utm_source=maps&z=15"
+              style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты — транспорт, навигация, поиск
+              мест</a><iframe src="https://yandex.ru/map-widget/v1/?ll=30.049084%2C59.810158&source=serp_navig&z=15"
+              width="5120" height="2880" allowfullscreen style="position:relative;"></iframe>
+          </div>
+        </div>
+        <div class="object__map-buttons">
+          <ul class="object__map-buttons-list">
+            <li class="object__map-buttons-item">
+              <a class="button object__map-buttons-link object__map-all object__map-buttons-link--active" href="#">
+                <span class="object__map-buttons-title">Все (15)</span>
+              </a>
+            </li>
+            <li class="object__map-buttons-item">
+              <a class="button object__map-buttons-link object__map-school" href="#">
+                <span class="object__map-buttons-title">Школы (3)</span>
+              </a>
+            </li>
+            <li class="object__map-buttons-item">
+              <a class="button object__map-buttons-link object__map-kindergarten" href="#">
+                <span class="object__map-buttons-title">Детские сады (3)</span>
+              </a>
+            </li>
+            <li class="object__map-buttons-item">
+              <a class="button object__map-buttons-link object__map-medicine" href="#">
+                <span class="object__map-buttons-title">Медицина (2)</span>
+              </a>
+            </li>
+            <li class="object__map-buttons-item">
+              <a class="button object__map-buttons-link object__map-shop" href="#">
+                <span class="object__map-buttons-title">Магазины (2)</span>
+              </a>
+            </li>
+            <li class="object__map-buttons-item">
+              <a class="button object__map-buttons-link object__map-park" href="#">
+                <span class="object__map-buttons-title">Парки (3)</span>
+              </a>
+            </li>
+            <li class="object__map-buttons-item">
+              <a class="button object__map-buttons-link object__map-cafe" href="#">
+                <span class="object__map-buttons-title"> Кафе и рестораны (6)</span>
+              </a>
+            </li>
+            <li class="object__map-buttons-item">
+              <a class="button object__map-buttons-link object__map-gasstation" href="#">
+                <span class="object__map-buttons-title">АЗС (6)</span>
+              </a>
+            </li>
+            <li class="object__map-buttons-item">
+              <a class="button object__map-buttons-link object__map-metro" href="#">
+                <span class="object__map-buttons-title">Метро (2)</span>
+              </a>
+            </li>
+            <li class="object__map-buttons-item">
+              <a class="button object__map-buttons-link object__map-mail" href="#">
+                <span class="object__map-buttons-title">Почта (3)</span>
+              </a>
+            </li>
+            <li class="object__map-buttons-item">
+              <a class="button object__map-buttons-link object__map-bank" href="#">
+                <span class="object__map-buttons-title">Банки (3)</span>
+              </a>
+            </li>
+            <li class="object__map-buttons-item">
+              <a class="button object__map-buttons-link object__map-sport" href="#">
+                <span class="object__map-buttons-title">Спорт (2)</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
 
       <section class="other container">
         <h2 class="other__title title">Кроме квартир</h2>
@@ -1543,7 +1168,7 @@
                 </figure>
                 <span class="other__subtitle">Машиноместа</span>
               </a>
-              <a class="other__slider" href="car-places.html">
+              <a class="other__slider" href="">
                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect width="48" height="48" rx="24" fill="#D0D0D0" fill-opacity="0.5" />
                   <path d="M21 17L28 24L21 31" stroke="white" stroke-width="2" stroke-linecap="round"
@@ -1641,10 +1266,342 @@
             <li class="other__action-button-item action-button-item"><span class="visually-hidden">4</span></li>
             <li class="other__action-button-item action-button-item"><span class="visually-hidden">5</span></li>
           </ul>
-          <a class="button button-phone">
-            <span>Заказать звонок</span>
+        </div>
+      </section>
+
+      <div class="object__info container">
+        <section class="object__info-news">
+          <h2 class="object__info-title title">Новости</h2>
+          <div class="object__info-container">
+            <ul class="object__info-list">
+              <li class="object__info-item">
+                <div class="object__info-news-about">
+                  <p class="object__info-description">
+                    <time datetime="2023-09-23">23.09.2023</time> <span>/ Название новостного портала</span>
+                  </p>
+                  <p class="object__info-text">
+                    Постройка нового комплекса
+                  </p>
+                </div>
+                <a class="object__info-link object__info-link--mobile" href="#">
+                  <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="36" height="36" rx="18" fill="#D0D0D0" fill-opacity="0.5" />
+                    <path d="M16 13.332L20.6667 17.9987L16 22.6654" stroke="white" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+                <a class="object__info-link object__info-link--desktop" href="#">
+                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="48" height="48" rx="24" fill="#D0D0D0" fill-opacity="0.5" />
+                    <path d="M21 17L28 24L21 31" stroke="white" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </li>
+              <li class="object__info-item">
+                <div class="object__info-news-about">
+                  <p class="object__info-description">
+                    <time datetime="2023-09-23">23.09.2023</time> <span>/ Название новостного портала</span>
+                  </p>
+                  <p class="object__info-text">
+                    Постройка нового комплекса
+                  </p>
+                </div>
+                <a class="object__info-link object__info-link--mobile" href="#">
+                  <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="36" height="36" rx="18" fill="#D0D0D0" fill-opacity="0.5" />
+                    <path d="M16 13.332L20.6667 17.9987L16 22.6654" stroke="white" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+                <a class="object__info-link object__info-link--desktop" href="#">
+                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="48" height="48" rx="24" fill="#D0D0D0" fill-opacity="0.5" />
+                    <path d="M21 17L28 24L21 31" stroke="white" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </li>
+              <li class="object__info-item">
+                <div class="object__info-news-about">
+                  <p class="object__info-description">
+                    <time datetime="2023-09-23">23.09.2023</time> <span>/ Название новостного портала</span>
+                  </p>
+                  <p class="object__info-text">
+                    Постройка нового комплекса
+                  </p>
+                </div>
+                <a class="object__info-link object__info-link--mobile" href="#">
+                  <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="36" height="36" rx="18" fill="#D0D0D0" fill-opacity="0.5" />
+                    <path d="M16 13.332L20.6667 17.9987L16 22.6654" stroke="white" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+                <a class="object__info-link object__info-link--desktop" href="#">
+                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="48" height="48" rx="24" fill="#D0D0D0" fill-opacity="0.5" />
+                    <path d="M21 17L28 24L21 31" stroke="white" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <a class="object__info-link-show" href="#">Смотреть все</a>
+          </div>
+        </section>
+
+        <section class="object__info-documents">
+          <h2 class="object__info-title title">Документы</h2>
+          <div class="object__info-container">
+            <ul class="object__info-list">
+              <li class="object__info-item">
+                <div class="object__info-documents-about">
+                  <p class="object__info-description">
+                    <time datetime="2023-09-23">23.09.2023</time>
+                  </p>
+                  <p class="object__info-text">
+                    Документ 1
+                  </p>
+                </div>
+                <a class="object__info-link object__info-link--mobile" href="#">
+                  <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="36" height="36" rx="18" fill="#D0D0D0" fill-opacity="0.5" />
+                    <path d="M14 24H22M18 12V21.3333M18 21.3333L21.3333 18M18 21.3333L14.6667 18" stroke="white"
+                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+                <a class="object__info-link object__info-link--desktop" href="#">
+                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="48" height="48" rx="24" fill="#D0D0D0" fill-opacity="0.5" />
+                    <path d="M18 33H30M24 15V29M24 29L29 24M24 29L19 24" stroke="white" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </li>
+
+              <li class="object__info-item">
+                <div class="object__info-documents-about">
+                  <p class="object__info-description">
+                    <time datetime="2023-09-23">23.09.2023</time>
+                  </p>
+                  <p class="object__info-text">
+                    Документ 2
+                  </p>
+                </div>
+                <a class="object__info-link object__info-link--mobile" href="#">
+                  <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="36" height="36" rx="18" fill="#D0D0D0" fill-opacity="0.5" />
+                    <path d="M14 24H22M18 12V21.3333M18 21.3333L21.3333 18M18 21.3333L14.6667 18" stroke="white"
+                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+                <a class="object__info-link object__info-link--desktop" href="#">
+                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="48" height="48" rx="24" fill="#D0D0D0" fill-opacity="0.5" />
+                    <path d="M18 33H30M24 15V29M24 29L29 24M24 29L19 24" stroke="white" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <section class="object__gallery container">
+        <h2 class="object__gallery-title title">Галерея</h2>
+        <div class="object__advantage-slider">
+          <a class="slider__button__link left-link" href="">
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.5" y="0.5" width="63" height="63" rx="31.5" stroke="#D0D0D0" />
+              <path d="M36 41.333L26.6667 31.9997L36 22.6663" stroke="#212121" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            <span class="visually-hidden">Показать предыдущий слайд</span>
+          </a>
+
+          <a class="slider__button__link right-link" href="">
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.5" y="0.5" width="63" height="63" rx="31.5" stroke="#D0D0D0" />
+              <path d="M28 22.667L37.3333 32.0003L28 41.3337" stroke="#212121" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            <span class="visually-hidden">Показать следующий слайд</span>
           </a>
         </div>
+        <div class="object__gallery-container">
+          <ul class="object__gallery-list">
+            <li class="object__gallery-item">
+              <figure>
+                <img class="object__gallery__image" src="images/desktop/header_image-desktop.jpg" alt="ЖК Загляденье">
+              </figure>
+            </li>
+            <li class="object__gallery-item">
+              <figure>
+                <img class="object__gallery__image" src="images/desktop/graf.jpg" alt="ЖК Граф Орлов">
+              </figure>
+            </li>
+            <li class="object__gallery-item">
+              <figure>
+                <img class="object__gallery__image" src="images/desktop/header_image-desktop.jpg" alt="ЖК Загляденье">
+              </figure>
+            </li>
+            <li class="object__gallery-item">
+              <figure>
+                <img class="object__gallery__image" src="images/desktop/graf.jpg" alt="ЖК Граф Орлов">
+              </figure>
+            </li>
+            <li class="object__gallery-item">
+              <figure>
+                <img class="object__gallery__image" src="images/desktop/header_image-desktop.jpg" alt="ЖК Загляденье">
+              </figure>
+            </li>
+            <li class="object__gallery-item">
+              <figure>
+                <img class="object__gallery__image" src="images/desktop/graf.jpg" alt="ЖК Граф Орлов">
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="object__customer container">
+        <h2 class="object__customer-title title">Собственникам</h2>
+        <div class="object__customer-container">
+          <div class="object__customer-reviews">
+            <p>
+              Мы стремимся постоянно улучшать качество обслуживания, поэтому с благодарностью принимаем любые советы,
+              замечания и предложения, которые исходят от Вас.</p>
+            <p>Для нас очень важно, чтобы уровень клиентского сервиса был безукоризненным, а все сотрудники Компании,
+              отвечающие за работу с клиентами, были максимально лояльны и внимательны к Вам.</p>
+            <p>Поэтому мы вводим дополнительные сервисы, которые позволят Вам оценить качество клиентского обслуживания
+            </p>
+          </div>
+          <div class="object__customer-complaints">
+            <p>Мы публикуем <span class="text-selection">нормативные сроки</span> рассмотрения всех типовых вопросов,
+              которые Вы указываете в своих
+              заявлениях
+              и обращениях. В эти сроки менеджер послепродажного обслуживания (Управление финансирования и сопровождения
+              договоров) должен связаться с Вами, чтобы окончательно решить Ваш вопрос либо изложить позицию Компании.
+            </p>
+            <p>Мы
+              создаем на нашем сайте страницу <span class="text-selection">«Для обращений»</span>. В ней Вы можете
+              написать жалобу, если Вас не устраивают
+              какие-либо аспекты качества обслуживания со стороны сотрудников Управления финансирования и сопровождения
+              договоров. Любой Ваш сигнал будет самым внимательным образом рассмотрен и изучен. Если критика будет
+              носить
+              объективный и конструктивный характер, мы обязательно примем соответствующие меры, с Вами обязательно
+              свяжутся руководители Управления финансирования и сопровождения договоров для уточнения деталей и
+              устранения
+              возникших проблем.
+            </p>
+          </div>
+        </div>
+        <ul class="object__info-list">
+          <li class="object__info-item">
+            <p class="object__info-text">
+              Регламент заселения
+            </p>
+            <a class="object__info-link" href="#">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="48" height="48" rx="24" fill="#D0D0D0" fill-opacity="0.5" />
+                <path d="M21 17L28 24L21 31" stroke="white" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+          </li>
+          <li class="object__info-item">
+            <p class="object__info-text">
+              Регистрация права собственности
+            </p>
+            <a class="object__info-link" href="#">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="48" height="48" rx="24" fill="#D0D0D0" fill-opacity="0.5" />
+                <path d="M21 17L28 24L21 31" stroke="white" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+          </li>
+          <li class="object__info-item">
+            <p class="object__info-text">
+              Порядок подачи заявления клиентом
+            </p>
+            <a class="object__info-link" href="#">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="48" height="48" rx="24" fill="#D0D0D0" fill-opacity="0.5" />
+                <path d="M21 17L28 24L21 31" stroke="white" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+          </li>
+          <li class="object__info-item">
+            <p class="object__info-text object__info-text-long">
+              Нормативные сроки рассмотрения <br>вопросов
+            </p>
+            <a class="object__info-link" href="#">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="48" height="48" rx="24" fill="#D0D0D0" fill-opacity="0.5" />
+                <path d="M21 17L28 24L21 31" stroke="white" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+          </li>
+          <li class="object__info-item">
+            <p class="object__info-text">
+              Книга жалоб
+            </p>
+            <a class="object__info-link" href="#">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="48" height="48" rx="24" fill="#D0D0D0" fill-opacity="0.5" />
+                <path d="M21 17L28 24L21 31" stroke="white" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="object__customer-account">
+          <p class="object__customer-account-title">Заявления принимаются онлайн из личного кабинета</p>
+          <a class="button object__customer-account-button" href="#">
+            <span class="object__customer-account-text">Перейти в личный кабинет</span>
+          </a>
+        </div>
+        <div class="object__customer-service">
+          <div class="object__customer-service-phone">
+            <p class="object__customer-service-title">Телефон послепродажного обслуживания:</p>
+            <a class="object__customer-service-text" href="tel:+78122072626">+ 7 (812) 207-26-26</a>
+          </div>
+          <div class="object__customer-service-address">
+            <div class="object__customer-service-title">
+              <span>Послепродажное обслуживание ЮГ</span>
+              <address class="object__customer-service-text object__customer-service-south">Ул. Орджоникидзе, 52
+              </address>
+            </div>
+            <div class="object__customer-service-title">
+              <span>Послепродажное обслуживание СЕВЕР</span>
+              <address class="object__customer-service-text">Пр. Просвещения, 43а</address>
+            </div>
+          </div>
+        </div>
+        <div class="object__customer-office">
+          <figure>
+            <img class="object__customer-office-image" src="images/mobile/office.jpg" alt="Офис Л1">
+          </figure>
+          <div class="object__map-container">
+            <div style="position:relative;overflow:hidden;"><a
+                href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a
+                href="https://yandex.ru/maps/2/saint-petersburg/?ll=30.364418%2C60.044943&mode=whatshere&utm_medium=mapframe&utm_source=maps&whatshere%5Bpoint%5D=30.364270%2C60.045572&whatshere%5Bzoom%5D=14.8&z=14.8"
+                style="color:#eee;font-size:12px;position:absolute;top:14px;">Жилой комплекс Лондон Парк —
+                Яндекс Карты</a><iframe
+                src="https://yandex.ru/map-widget/v1/?ll=30.364418%2C60.044943&mode=whatshere&whatshere%5Bpoint%5D=30.364270%2C60.045572&whatshere%5Bzoom%5D=14.8&z=14.8"
+                width="612" height="415" allowfullscreen style="position:relative; border:0px;"></iframe>
+            </div>
+          </div>
+        </div>
+        <a class="button button-phone">
+          <span>Заказать звонок</span>
+        </a>
       </section>
       <div class="line line-4">
         <p class="line__mobile"></p>
@@ -1737,10 +1694,10 @@
                           <a class="footer__realty-link footer__menu-link" href="selection__parking.html">Машиноместа</a>
                       </li>
                       <li class="footer__realty-item footer__menu-item">
-                          <a class="footer__realty-link footer__menu-link" href="commerce.html">Коммерция</a>
+                          <a class="footer__realty-link footer__menu-link" href="#">Коммерция</a>
                       </li>
                       <li class="footer__realty-item footer__menu-item">
-                          <a class="footer__realty-link footer__menu-link" href="storerooms.html">Кладовые</a>
+                          <a class="footer__realty-link footer__menu-link" href="#">Кладовые</a>
                       </li>
                   </ul>
               </div>
@@ -1916,16 +1873,16 @@
                 </picture>
               </a>
               <div class="footer__text">
-              <p class="footer__info">
-                  Все права на публикуемые на сайте материалы принадлежат<br>
-                  ООО Л1 Строительная комания №1. Любая информация, представленная
-                  на данном сайте, носит исключительно информационный характер и ни
-                  при каких условиях не является публичной офертой, определяемой
-                  положениями статьи 437 ГК РФ.
-              </p>
-              <p class="footer__requisites">
-              «ООО «Л1 Строительная Компания №1» 196233, Санкт-Петербург, ул. Орджоникидзе, д. 52, литер А, пом. 92-Н, офис 4 ИНН 7810269443, ОГРН 1027804853559»
-              </p>
+                <p class="footer__info">
+                    Все права на публикуемые на сайте материалы принадлежат<br>
+                    ООО Л1 Строительная комания №1. Любая информация, представленная
+                    на данном сайте, носит исключительно информационный характер и ни
+                    при каких условиях не является публичной офертой, определяемой
+                    положениями статьи 437 ГК РФ.
+                </p>
+                <p class="footer__requisites">
+                «ООО «Л1 Строительная Компания №1» 196233, Санкт-Петербург, ул. Орджоникидзе, д. 52, литер А, пом. 92-Н, офис 4 ИНН 7810269443, ОГРН 1027804853559»
+                </p>
               </div>
           </div>
       </div>
@@ -1942,8 +1899,11 @@
         <img class="modal__image-modal" src="images/desktop/header_image-desktop_max.jpg" alt="">
       </figure>
       <h3 class="modal__subtitle">Избранное не пропадет</h3>
-      <p class="modal__text">Если вы зарегистрируетесь у нас на сайте. Так мы сможем сохранить ваше избранное и вы
-        навсегда сможете добавить понравившуюся квартиру или другую недвижимость</p>
+      <p class="modal__text">
+        Если вы зарегистрируетесь у нас на сайте. Так мы сможем сохранить ваше
+        избранное и вы навсегда сможете добавить понравившуюся квартиру или
+        другую недвижимость
+      </p>
       <a class="button modal__button" href="">
         <span class="button__modal-title">Зарегистрироваться</span>
       </a>
@@ -1953,12 +1913,14 @@
   <script>
     var navMain = document.querySelector(".page__header-wrapper");
     var navToggle = document.querySelector(".page__header-nav-toggle");
+    var navObject = document.querySelector(".page__header-wrapper-object");
+    var objectToggle = document.querySelector(".page__header-object-toggle");
     var linkFavourite = document.querySelector(".favourite-link");
     var modalFavourite = document.querySelector(".modal-favourite");
     var body = document.querySelector(".page__body");
-    var favourite = document.querySelector("favourite-link");
-    var modal = document.querySelector("modal");
-    var background = document.querySelector("page__background-shadow");
+    var favourite = document.querySelector(".favourite-link");
+    var modal = document.querySelector(".modal");
+    var background = document.querySelector(".page__background-shadow");
 
     navMain.classList.remove("page__header-wrapper--nojs");
 
@@ -1976,8 +1938,24 @@
       }
     });
 
-   </script>
+    navObject.classList.remove("page__header-wrapper-object--nojs");
 
+    objectToggle.addEventListener("click", function () {
+      if (
+        navObject.classList.contains("page__header-wrapper-object--opened")
+      ) {
+        navObject.classList.remove("page__header-wrapper-object--opened");
+        navObject.classList.add("page__header-wrapper-object--closed");
+        body.classList.add("body-in-modal");
+        body.classList.remove("body-in-modal");
+      } else {
+        navObject.classList.add("page__header-wrapper-object--opened");
+        navObject.classList.remove("page__header-wrapper-object--closed");
+        body.classList.remove("body-in-modal");
+        body.classList.add("body-in-modal");
+      }
+    });
+  </script>
 </body>
 
 </html>

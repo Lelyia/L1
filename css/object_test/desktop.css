@@ -1,7 +1,9 @@
 @media (min-width: 1440px) {
 
     .page__object_test .slider__complex,
-    .page__object_test .complex {
+    .page__object_test .complex,
+    .page__object_test2 .slider__complex,
+    .page__object_test2 .complex  {
         display: none;
     }
 
@@ -13,12 +15,17 @@
         top: 104px;
     }
 
-    .page__object_test .slider img {
+    .page__object_test .slider img,
+    .page__object_test2 .slider img {
         object-fit: contain;
     }
 
     .page__object_test .slider-main {
         margin-bottom: 820px;
+    }
+
+    .page__object_test2 .slider-main {
+        margin-bottom: 900px;
     }
 
     .page__object_test .page__header-wrapper::before {
@@ -32,6 +39,21 @@
     .page__object_test .page__header-wrapper .header__nav-item a,
     .page__object_test .page__header-wrapper .header__contacts-phone {
         color: var(--base-text);
+    }
+
+    .test-list {
+        width: 1440px;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .test-item {
+        margin-bottom: 16px;
+        font-size: 28px;
+    }
+
+    .page__object_test2 .slider picture {
+        height: 900px;
     }
 
 }

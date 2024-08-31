@@ -1,0 +1,13 @@
+@media (min-width: 1440px) {
+    .page__car-places .object__selection .object__selection-slider picture {
+        top: 152px;
+        left: 50%;
+        width: 1003px;
+        height: 627px;
+        transform: translateX(-50%);
+    }
+
+    .page__car-places .object__selection-slider {
+        height: 864px;
+}
+}

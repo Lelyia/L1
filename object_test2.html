@@ -17,7 +17,10 @@
   <link rel="stylesheet" href="css/object/mobile.css"> <!--Стили только для данной страницы-->
   <link rel="stylesheet" href="css/object/tablet.css">
   <link rel="stylesheet" href="css/object/desktop.css">
-  <link rel="stylesheet" href="css/car__places/mobile.css">
+
+  <link rel="stylesheet" href="css/object_test/mobile.css"> <!--Стили только для данной страницы-->
+  <link rel="stylesheet" href="css/object_test/tablet.css">
+  <link rel="stylesheet" href="css/object_test/desktop.css">
 
   <link rel="stylesheet" href="css/blocks/header.css"> <!--Стили используются на каждой странице-->
   <link rel="stylesheet" href="css/blocks/container.css">
@@ -29,7 +32,6 @@
   <link rel="stylesheet" href="css/blocks/modal.css">
   
   <link rel="stylesheet" href="css/blocks/header__object.css"><!--Стили блоков, повторяющихся на разных страницах-->
-  <link rel="stylesheet" href="css/blocks/selection.css">
   <link rel="stylesheet" href="css/blocks/advantages.css">
   <link rel="stylesheet" href="css/blocks/action.css">
   <link rel="stylesheet" href="css/blocks/slider.css">
@@ -39,9 +41,7 @@
   <link rel="stylesheet" href="css/blocks/gallery.css">
   <link rel="stylesheet" href="css/blocks/customer.css">
   <link rel="stylesheet" href="css/blocks/selection.css">
-  <link rel="stylesheet" href="css/selection/mobile.css">
-  <link rel="stylesheet" href="css/selection/tablet.css">
-  <link rel="stylesheet" href="css/selection/desktop.css">
+
 
   <link rel="icon" href="favicon.ico">
   <!--<link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
@@ -52,7 +52,7 @@
 
 <body class="page__body">
   <div class="page__background-shadow"></div>
-  <div class="page__container page__object page__car-places">
+  <div class="page__container page__object page__object_test">
     <div class="page__header-wrapper page__header-wrapper--nojs">
       <!-- opened / closed - открытое, закрытое меню; nojs - кнопка исчезает  при мобильных и планшетных версиях-->
       <div class="page__header-logo-wrapper">
@@ -93,7 +93,7 @@
                   <a class="header__nav-link" href="catalog.html">Объекты</a>
                 </li>
                 <li class="header__nav-item header__nav-realty">
-                  <a class="header__nav-link" href="object_test.html">В продаже</a>
+                  <a class="header__nav-link" href="#">В продаже</a>
                 </li>
                 <li class="header__nav-item header__nav-business">
                   <a class="header__nav-link" href="#">Для бизнеса</a>
@@ -133,36 +133,51 @@
           <div class="header__usernav">
             <ul class="header__usernav-list">
               <li class="header__usernav-item header__usernav-comparison">
-                <a class="header__usernav-link" href="#">
-                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" fill="#D0D0D0" fill-opacity="0.5"/>
-                    <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="#D0D0D0"/>
-                    <path d="M17 19V28M17 19H12.5996C12.0396 19 11.7598 19 11.5459 19.109C11.3577 19.2049 11.2049 19.3577 11.109 19.5459C11 19.7598 11 20.04 11 20.6001V28H17M17 19V13.6001C17 13.04 17 12.7598 17.109 12.5459C17.2049 12.3577 17.3577 12.2049 17.5459 12.109C17.7598 12 18.0396 12 18.5996 12H21.3996C21.9597 12 22.2403 12 22.4542 12.109C22.6423 12.2049 22.7948 12.3577 22.8906 12.5459C22.9996 12.7598 23 13.04 23 13.6001V16M17 28H23M23 28L29 28.0001V17.6001C29 17.04 28.9996 16.7598 28.8906 16.5459C28.7948 16.3577 28.6429 16.2049 28.4548 16.109C28.2409 16 27.9601 16 27.4 16H23M23 28V16" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  <span class="visually-hidden">Сравнение</span>
-                </a>
+                  <a class="header__usernav-link" href="#">
+                      <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" fill="#D0D0D0"
+                              fill-opacity="0.5" />
+                          <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="#D0D0D0" />
+                          <path
+                          d="M17 19V28M17 19H12.5996C12.0396 19 11.7598 19 11.5459 19.109C11.3577 19.2049 11.2049 19.3577 11.109 19.5459C11 19.7598 11 20.04 11 20.6001V28H17M17 19V13.6001C17 13.04 17 12.7598 17.109 12.5459C17.2049 12.3577 17.3577 12.2049 17.5459 12.109C17.7598 12 18.0396 12 18.5996 12H21.3996C21.9597 12 22.2403 12 22.4542 12.109C22.6423 12.2049 22.7948 12.3577 22.8906 12.5459C22.9996 12.7598 23 13.04 23 13.6001V16M17 28H23M23 28L29 28.0001V17.6001C29 17.04 28.9996 16.7598 28.8906 16.5459C28.7948 16.3577 28.6429 16.2049 28.4548 16.109C28.2409 16 27.9601 16 27.4 16H23M23 28V16" 
+                              stroke="white" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                      </svg>
+                      <span class="visually-hidden">Сравнение</span>
+                  </a>
               </li>
               <li class="header__usernav-item header__usernav-favourite">
-                <a class="header__usernav-link" href="#">
-                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" fill="#D0D0D0" fill-opacity="0.5"/>
-                    <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="#D0D0D0"/>
-                    <path d="M20 15.6943C18 10.9999 11 11.4999 11 17.4999C11 23.4999 20 28.5001 20 28.5001C20 28.5001 29 23.4999 29 17.4999C29 11.4999 22 10.9999 20 15.6943Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  <span class="visually-hidden">Избранное</span>
-                </a>
+                  <a class="header__usernav-link" href="#">
+                      <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" fill="#D0D0D0"
+                              fill-opacity="0.5" />
+                          <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="#D0D0D0" />
+                          <path
+                          d="M20 15.6943C18 10.9999 11 11.4999 11 17.4999C11 23.4999 20 28.5001 20 28.5001C20 28.5001 29 23.4999 29 17.4999C29 11.4999 22 10.9999 20 15.6943Z"
+                              stroke="white" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                      </svg>
+                      <span class="visually-hidden">Избранное</span>
+                  </a>
               </li>
               <li class="header__usernav-item header__usernav-account">
-                <a class="header__usernav-link" href="#">
-                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" fill="#D0D0D0" fill-opacity="0.5"/>
-                    <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="#D0D0D0"/>
-                    <path d="M28 29C28 26.2386 24.4183 24 20 24C15.5817 24 12 26.2386 12 29M20 21C17.2386 21 15 18.7614 15 16C15 13.2386 17.2386 11 20 11C22.7614 11 25 13.2386 25 16C25 18.7614 22.7614 21 20 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  <span class="visually-hidden">Личный кабинет</span>
-                </a>
+                  <a class="header__usernav-link" href="#">
+                      <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" fill="#D0D0D0"
+                              fill-opacity="0.5" />
+                          <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="#D0D0D0" />
+                          <path
+                          d="M28 29C28 26.2386 24.4183 24 20 24C15.5817 24 12 26.2386 12 29M20 21C17.2386 21 15 18.7614 15 16C15 13.2386 17.2386 11 20 11C22.7614 11 25 13.2386 25 16C25 18.7614 22.7614 21 20 21Z"
+                              stroke="white" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                      </svg>
+                      <span class="visually-hidden">Личный кабинет</span>
+                  </a>
               </li>
-            </ul>
+          </ul>
           </div>
         </div>
       </header>
@@ -487,6 +502,7 @@
     <main class="page-main">
       <section class="slider slider-main">
         <picture>
+          <source media="(min-width: 1440px)" srcset="images/desktop/object_test2.jpg" type="image/svg+xml">
           <img src="images/desktop/header_image-desktop_max.jpg" alt="ЖК Загляденье">
         </picture>
         <h2 class="visually-hidden">Жилой комплекс</h2>
@@ -734,28 +750,22 @@
 
       <section class="object__selection container">
         <div class="object__selection-wrapper">
-          <h2 class="object-title object__selection-title title">Выбор машиноместа</h2>
+          <h2 class="object-title object__selection-title title">Выбор квартиры</h2>
           <div class="object__selection-option">
             <button class="button option__button option__button--active">Генплан</button>
             <button class="button option__button">Панорама 360&deg;</button>
           </div>
         </div>
         <div class="slider object__selection-slider">
-          <h3 class="object__selection-subtitle">Выбор паркинга</h3>
+          <h3 class="object__selection-subtitle">Выбор корпуса</h3>
           <ul class="object__selection-list">
             <li class="object__selection-item">
-                <picture>
-                    <img src="images/desktop/header_image-desktop_max.jpg" alt="">
-                </picture>
-              </a>
+              <!--<picture>
+                <img src="images/mobile/bird_gorod-pervyh_3_1.jpg" alt="Выбор корпуса">
+              </picture>-->
+              <iframe src="https://pano.life-fly.ru/l1/dundicha/"></iframe>
             </li>
           </ul>
-          <div class="floor__selection-image">
-            <picture>
-                <img src="images/desktop/parking.png" alt="Выбор машиноместа">
-            </picture>
-            </div>
-        </div>
           <ul class="object__selection-button">
             <li class="selection-button-item selection-button-item--active">
               <span class="visually-hidden">1</span>
@@ -1705,10 +1715,10 @@
                           <a class="footer__realty-link footer__menu-link" href="#">Квартиры</a>
                       </li>
                       <li class="footer__realty-item footer__menu-item">
-                          <a class="footer__realty-link footer__menu-link" href="selection__parking.html">Машиноместа</a>
+                          <a class="footer__realty-link footer__menu-link" href="#">Машиноместа</a>
                       </li>
                       <li class="footer__realty-item footer__menu-item">
-                          <a class="footer__realty-link footer__menu-link" href="commerce.html">Коммерция</a>
+                          <a class="footer__realty-link footer__menu-link" href="#">Коммерция</a>
                       </li>
                       <li class="footer__realty-item footer__menu-item">
                           <a class="footer__realty-link footer__menu-link" href="#">Кладовые</a>
