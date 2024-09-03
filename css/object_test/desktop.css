@@ -20,6 +20,19 @@
         object-fit: contain;
     }
 
+    .page__object_test2 .slider.object_test7 picture  {
+        width: 100%;
+        height: max-content;
+    }
+
+    .page__object_test2 .slider.object_test7 picture img {
+        object-fit: cover;
+    }
+
+    .page__object_test2 .slider-main.object_test7 {
+        margin-bottom: 2000px;
+    }
+
     .page__object_test .slider-main {
         margin-bottom: 820px;
     }
