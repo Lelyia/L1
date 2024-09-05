@@ -1,0 +1,61 @@
+.page__favourite .page__header-wrapper::before {
+    background-color: var(--base-white);
+}
+
+.favourite__none {
+    margin: 124px 16px 64px;
+}
+
+.favourite__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 27px;
+}
+
+.favourite-title.title {
+    margin-bottom: 0;
+}
+
+.favourite-option {
+    display: flex;
+    overflow: hidden;
+    margin: 0;
+    border: 1px solid var(--background-block);
+    border-radius: 12px;
+    background: var(--base-white);
+    column-gap: 0;
+}
+
+.favourite-description {
+    line-height: 19px;
+    margin-bottom: 48px;
+    color: var(--base-text);
+    font-family: "Geologica", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.page__favourite .option__button {
+    min-width: min-content;
+    line-height: 14px;
+    padding: 12px;
+    border: none;
+    border-radius: 0;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.carousel {
+    margin-left: 16px;
+}
+
+.page__favourite .carousel__action-button {
+    margin-bottom: 0;
+}
+
+.page__favourite .button-phone {
+    width: auto;
+    margin: 0 16px 64px;
+}
+

@@ -207,7 +207,9 @@
 }
 
 .flat__price {
+    align-self: end;
     margin-top: 4px;
+    gap: 8px;
 }
 
 .flat__price del {

@@ -11,3 +11,9 @@
     margin: 0;
     background: var(--background-block);
 }
+
+@media (min-width:960px) {
+    .line__mobile {
+        display: none;
+    }
+}

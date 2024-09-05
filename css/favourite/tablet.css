@@ -1,0 +1,41 @@
+@media (min-width: 960px) {
+
+    .page__favourite .option__button {
+        line-height: 20px;
+        padding: 16px 20px;
+        color: var(--gray-text);
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .page__favourite .option__button--active {
+        color: var(--base-white);
+    }
+
+    .favourite__wrapper {
+        margin-bottom: 63px;
+    }
+
+    .favourite-description {
+        line-height: 29px;
+        margin-bottom: 32px;
+        font-size: 24px;
+    }
+
+    .page__favourite .title {
+        line-height: 29px;
+        margin-bottom: 32px;
+        font-size: 24px;
+    }
+
+    .page__favourite .flat__price span {
+        color: var(--base-text);
+    }
+
+    .phone__wrapper {
+        width: max-content;
+        margin: 0 auto;
+        margin-bottom: 53px;
+    }
+
+}
