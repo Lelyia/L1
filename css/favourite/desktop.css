@@ -1,0 +1,84 @@
+@media (min-width: 1440px) {
+    .favourite__none {
+        width: 1240px;
+        margin: 0 auto;
+    }
+
+    .page__header-wrapper .header__nav-item a {
+        color: var(--base-text);
+    }
+
+    .page__header-wrapper .header__contacts-phone {
+        color: var(--base-text);
+    }
+
+    .page__header-wrapper .header__usernav-comparison svg path {
+        stroke: var(--base-black);
+    }
+
+    .page__header-wrapper .header__usernav-favourite svg path {
+        stroke: var(--base-black);
+    }
+
+    .page__header-wrapper .header__usernav-account svg path {
+        stroke: var(--base-black);
+    }
+
+    .page__favourite .favourite-title.title {
+        line-height: 56px;
+        font-size: 40px;
+    }
+
+    .favourite__wrapper {
+        margin-bottom: 48px;
+    }
+
+    .favourite-description {
+        margin-bottom: 48px;
+    }
+
+    .page__favourite .line-3 {
+        display: block;
+    }
+
+    .line.line-3 {
+        display: block;
+        margin-top: 104px;
+    }
+
+    .page__favourite .button-main {
+        width: 427px;
+        line-height: 22px;
+        font-size: 16px;
+    }
+
+    .page__favourite .title {
+        line-height: 38px;
+        margin-bottom: 0;
+        font-size: 32px;
+    }
+
+    .carousel__stats {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 48px;
+    }
+
+    .carousel__button {
+        display: block;
+    }
+
+    .page__favourite .flat {
+        margin-bottom: 0;
+    }
+
+    main section:last-of-type {
+        margin-bottom: 80px;
+    }
+
+    .page__favourite .button-phone {
+        margin-bottom: 87px;
+    }
+}

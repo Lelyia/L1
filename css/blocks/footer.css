@@ -559,12 +559,6 @@
     }
 }
 
-@media (min-width: 960px) {
-    .line-7 {
-        display: block;
-    }
-}
-
 @media (min-width: 1440px) {
      /* Footer */
 
@@ -785,4 +779,6 @@
     .footer__info br {
         display: none;
     }
+
+  
 }

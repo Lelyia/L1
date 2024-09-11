@@ -16,6 +16,7 @@
 
     <link rel="stylesheet" href="css/favourite/mobile.css"> <!--Стили только для данной страницы-->
     <link rel="stylesheet" href="css/favourite/tablet.css">
+    <link rel="stylesheet" href="css/favourite/desktop.css">
     
     <link rel="stylesheet" href="css/blocks/header.css"> <!--Стили используются на каждой странице-->
     <link rel="stylesheet" href="css/blocks/container.css">
@@ -28,6 +29,7 @@
 
     <link rel="stylesheet" href="css/blocks/flats.css">    <!--Стили блоков, повторяющихся на разных страницах-->
     <link rel="stylesheet" href="css/blocks/objects.css">
+    <link rel="stylesheet" href="css/blocks/pagination.css">
 
     <link rel="icon" href="favicon.ico">
     <!--<link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
@@ -167,10 +169,6 @@
                     </div>
                 </div>
             </header>
-
-            <div class="line line-3 line-3--static">
-                <p class="line__mobile"></p>
-            </div>
 
             <div class="info">
                 <div class="info__realty-container info-wrapper">
@@ -485,7 +483,23 @@
         </div>
 
         <main>
-            <div class="favourite__none container">
+            <div class="line line-3 line-3--static">
+                <p class="line__mobile"></p>
+            </div>
+
+            <section class="favourite__none container">
+                <ul class="object__breadcrumbs-list">
+                    <li class="object__breadcrumbs-item">
+                        <a class="object__breadcrumbs-link" href="index.html">
+                            <span>Главная</span>
+                        </a>
+                    </li>
+                    <li class="object__breadcrumbs-item">
+                        <a class="object__breadcrumbs-link" href="#">
+                            <span>Избранное</span>
+                        </a>
+                    </li>
+                </ul>
                 <div class="favourite__none-wrapper favourite__wrapper">
                     <h2 class="favourite-title title">Избранное</h2>
                     <div class="favourite-option">
@@ -495,10 +509,12 @@
                 </div>
                 <p class="favourite-description">Вы пока ничего не добавили в избранное</p>
                 <a class="button button-main" href="selection__building.html">Подобрать квартиру</a>
-            </div>
+            </section>
 
             <section class="carousel container">
-                <div class="carousel__slider">
+                <div class="carousel__stats">
+                    <h2 class="carousel-title title">Специальные предложения</h2>
+                    <div class="carousel__button">
                     <a class="carousel__link left-link" href="">
                         <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x="0.5" y="0.5" width="63" height="63" rx="31.5" stroke="#D0D0D0" />
@@ -517,43 +533,10 @@
                         </svg>
                         <span class="visually-hidden">Показать следующий слайд</span>
                     </a>
-
-                </div>
-                <h2 class="carousel-title title">Специальные предложения</h2>
-                <div class="sorting">
-                    <div class="sorting-price">
-                        <ul class="sorting-list">
-                            <li class="sorting-item">
-                                <a class="button-up active" href="#">
-                                    <span> Сначала дорогие </span>
-                                </a>
-                            </li>
-                            <li class="sorting-item">
-                                <a class="button-down" href="#">
-                                    <span> Сначала дешевые </span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="sorting-room">
-                        <p class="visually-hidden">Сортировка:</p>
-                        <ul class="sorting-list">
-                            <li class="sorting-item">
-                                <a href="#"> Студии</a>
-                            </li>
-                            <li class="sorting-item">
-                                <a href="#">1-комнатные</a>
-                            </li>
-                            <li class="sorting-item">
-                                <a href="#">2-комнатные</a>
-                            </li>
-                            <li class="sorting-item">
-                                <a href="#">3-комнатные</a>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
 
+                </div>
+                
                 <div class="flat">
                     <ul class="flat__list">
                         <li class="flat__item">
@@ -903,7 +886,9 @@
             </section>
 
             <section class="carousel container">
-                <div class="carousel__slider">
+                <div class="carousel__stats">
+                    <h2 class="carousel-title title">Недавно просмотренные</h2>
+                    <div class="carousel__button">
                     <a class="carousel__link left-link" href="">
                         <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x="0.5" y="0.5" width="63" height="63" rx="31.5" stroke="#D0D0D0" />
@@ -922,43 +907,10 @@
                         </svg>
                         <span class="visually-hidden">Показать следующий слайд</span>
                     </a>
-
-                </div>
-                <h2 class="carousel-title title">Недавно просмотренные</h2>
-                <div class="sorting">
-                    <div class="sorting-price">
-                        <ul class="sorting-list">
-                            <li class="sorting-item">
-                                <a class="button-up active" href="#">
-                                    <span> Сначала дорогие </span>
-                                </a>
-                            </li>
-                            <li class="sorting-item">
-                                <a class="button-down" href="#">
-                                    <span> Сначала дешевые </span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="sorting-room">
-                        <p class="visually-hidden">Сортировка:</p>
-                        <ul class="sorting-list">
-                            <li class="sorting-item">
-                                <a href="#"> Студии</a>
-                            </li>
-                            <li class="sorting-item">
-                                <a href="#">1-комнатные</a>
-                            </li>
-                            <li class="sorting-item">
-                                <a href="#">2-комнатные</a>
-                            </li>
-                            <li class="sorting-item">
-                                <a href="#">3-комнатные</a>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
 
+                </div>
+                
                 <div class="flat">
                     <ul class="flat__list">
                         <li class="flat__item">
@@ -1314,6 +1266,9 @@
             </div>
         </main>
     </div>
+    <div class="line line-4">
+        <p class="line__mobile"></p>
+      </div>
     </main>
 
     <footer class="footer footer--active">

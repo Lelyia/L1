@@ -20,16 +20,23 @@
         object-fit: contain;
     }
 
-    .page__object_test2 .slider.object_test7 picture  {
+    .page__object_test2 .slider.object_test7 picture,
+    .page__object_test .slider.object_test8 picture,
+    .page__object_test .slider.object_test9 picture
+      {
         width: 100%;
         height: max-content;
     }
 
-    .page__object_test2 .slider.object_test7 picture img {
+    .page__object_test2 .slider.object_test7 picture img,
+    .page__object_test .slider.object_test8 picture img,
+    .page__object_test .slider.object_test9 picture img {
         object-fit: cover;
     }
 
-    .page__object_test2 .slider-main.object_test7 {
+    .page__object_test2 .slider-main.object_test7,
+    .page__object_test .slider-main.object_test8,
+    .page__object_test .slider-main.object_test9 {
         margin-bottom: 2000px;
     }
 

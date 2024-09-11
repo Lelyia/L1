@@ -63,9 +63,7 @@
     font-weight: 500;
 }
 
-.line-4 {
-    display: none;
-}
+
 
 
 @media (min-width: 960px) and (max-width:1439px) {
@@ -187,10 +185,6 @@
         .other__link {
             height: 100%;
             pointer-events: none;
-        }
-    
-        .line-4 {
-            display: block;
         }
     
 }

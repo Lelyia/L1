@@ -12,8 +12,12 @@
     background: var(--background-block);
 }
 
-@media (min-width:960px) {
-    .line__mobile {
-        display: none;
+.line-4 {
+    display: none;
+}
+
+@media (min-width: 1440px) {
+    .line-4 {
+        display: block;
     }
 }

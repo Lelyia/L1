@@ -13,7 +13,7 @@
     margin-bottom: 27px;
 }
 
-.favourite-title.title {
+.page__favourite .favourite-title.title {
     margin-bottom: 0;
 }
 
@@ -57,5 +57,9 @@
 .page__favourite .button-phone {
     width: auto;
     margin: 0 16px 64px;
+}
+
+.carousel__button {
+    display: none;
 }
 
