@@ -448,7 +448,12 @@
         position: relative;
         width: 64px;
         height: 64px;
+        padding: 0;
+        border: none;
+        color: inherit;
+        background-color: transparent;
         cursor: pointer;
+        font: inherit;
     }
 
     .slider__button__link svg {

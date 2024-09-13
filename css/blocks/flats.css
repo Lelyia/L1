@@ -255,7 +255,12 @@
 }
 
 .carousel__link {
+    padding: 0;
+    border: none;
+    color: inherit;
+    background-color: transparent;
     cursor: pointer;
+    font: inherit;
 }
 
 .carousel__link:hover svg rect {
@@ -304,7 +309,7 @@
     background: var(--accent);
 }
 
-.sorting-item a {
+.sorting-item span {
     line-height: 17px;
     color: var(--base-text);
     font-size: 12px;
