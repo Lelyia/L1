@@ -3,7 +3,7 @@
 .page__header-wrapper {
     position: fixed;
     z-index: 999;
-    top:0;
+    top: 0;
     width: 100%;
 }
 
@@ -203,6 +203,10 @@
     display: none;
 }
 
+.header__contacts-whatsapp {
+    display: none;
+}
+
 
 /* user navigation */
 
@@ -226,7 +230,7 @@
 }
 
 .header__usernav-item:nth-child(4n) {
-   margin-left: 0;
+    margin-left: 0;
 }
 
 .header__usernav-item:first-child {
@@ -515,7 +519,7 @@
         color: var(--base-text);
     }*/
 
-   /* .page__header-wrapper:hover .header__contacts-phone {
+    /* .page__header-wrapper:hover .header__contacts-phone {
         color: var(--base-text);
     }*/
 
@@ -561,7 +565,7 @@
         flex-direction: row;
     }
 
-   .header__nav {
+    .header__nav {
         margin-top: 0;
     }
 
@@ -677,6 +681,15 @@
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
+    }
+
+    .header__contacts-whatsapp {
+        display: block;
+        margin-right: 10px;
+    }
+
+    .header__contacts-link {
+        align-items: center;
     }
 
     .line {
